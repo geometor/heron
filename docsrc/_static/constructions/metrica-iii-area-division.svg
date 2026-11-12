@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" width="700" height="500" viewBox="0 0 700 500" data-graphic-id="g1" role="img" aria-label="Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division">
+  <title>Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division</title>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --geom-bg: #fafaf9;
+    --ink: #1c1917;
+    --geom-fg: #1c1917;
+    --geom-accent: #d97706;
+    --geom-assert: #059669;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --carrier: #334155;
+    --conic: #0284c7;
+    --cyclic: #7c3aed;
+    --bisector: #0f766e;
+    --aux: #64748b;
+    --golden: #b45309;
+    --tangent: #0369a1;
+    --radius-col: #059669;
+    --pt-given: #0f172a;
+    --pt-incenter: #d97706;
+    --pt-touch: #0284c7;
+    --pt-meet: #7c3aed;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --geom-bg: #141417;
+      --ink: #f4f4f5;
+      --geom-fg: #f4f4f5;
+      --geom-accent: #fbbf24;
+      --geom-assert: #34d399;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --carrier: #cbd5e1;
+      --conic: #38bdf8;
+      --cyclic: #c084fc;
+      --bisector: #2dd4bf;
+      --aux: #94a3b8;
+      --golden: #facc15;
+      --tangent: #38bdf8;
+      --radius-col: #34d399;
+      --pt-given: #f1f5f9;
+      --pt-incenter: #fbbf24;
+      --pt-touch: #38bdf8;
+      --pt-meet: #c084fc;
+    }
+  }
+  .euclid-graphic .svg-bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle.incircle-curve {
+    fill: none; stroke: var(--conic); stroke-width: 2.25; opacity: 0.92;
+  }
+  .euclid-graphic .geom-circle.cyclic-curve {
+    fill: none; stroke: var(--cyclic); stroke-width: 1.75;
+    stroke-dasharray: 6 4; opacity: 0.78;
+  }
+  .euclid-graphic .geom-circle.golden-curve {
+    fill: none; stroke: var(--golden); stroke-width: 1.9;
+    stroke-dasharray: 5 3.5; opacity: 0.85;
+  }
+  .euclid-graphic .geom-line {
+    fill: none; stroke: var(--aux); stroke-width: 1.35;
+    stroke-linecap: round; opacity: 0.72;
+  }
+  .euclid-graphic .carrier-line { stroke: var(--carrier); stroke-width: 2.05; opacity: 0.92; }
+  .euclid-graphic .bisector-line { stroke: var(--bisector); stroke-width: 1.85; opacity: 0.88; }
+  .euclid-graphic .aux-line {
+    stroke: var(--aux); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.75;
+  }
+  .euclid-graphic .quad-line { stroke: var(--cyclic); stroke-width: 1.75; opacity: 0.85; }
+  .euclid-graphic .geom-segment {
+    fill: none; stroke: var(--tangent); stroke-width: 2.5;
+    stroke-linecap: round; opacity: 0.85;
+  }
+  .euclid-graphic .geom-segment.golden-segment {
+    stroke: var(--golden); stroke-width: 3.3; opacity: 0.92;
+  }
+  .euclid-graphic .geom-segment.radius-segment {
+    stroke: var(--radius-col); stroke-width: 2.3; opacity: 0.9;
+  }
+  .euclid-graphic .geom-segment.semi-segment {
+    stroke: var(--carrier); stroke-width: 2.4; opacity: 0.82;
+  }
+  .euclid-graphic .geom-polygon.tri-poly {
+    fill: var(--conic); fill-opacity: 0.06;
+    stroke: var(--carrier); stroke-width: 1.9; stroke-linejoin: round;
+  }
+  .euclid-graphic .geom-polygon.cyclic-poly {
+    fill: var(--cyclic); fill-opacity: 0.07;
+    stroke: var(--cyclic); stroke-width: 1.6; stroke-linejoin: round;
+  }
+  .euclid-graphic .geom-polygon.quad-poly {
+    fill: var(--golden); fill-opacity: 0.07;
+    stroke: var(--golden); stroke-width: 1.6; stroke-linejoin: round;
+  }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .incenter-point { fill: var(--pt-incenter); stroke-width: 1.8; }
+  .euclid-graphic .touch-point { fill: var(--pt-touch); }
+  .euclid-graphic .meet-point { fill: var(--pt-meet); }
+  .euclid-graphic .golden-point { fill: var(--golden); stroke-width: 1.8; }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="700" height="500" rx="6" />
+  <g id="elements">
+    <g id="graphics">
+      <polygon class="geom-polygon tri-poly" points="350,241.23 279.4,410.68 477.09,410.68" data-ref="&lt; A B C &gt;" />
+      <polygon class="geom-polygon cyclic-poly" points="350,241.23 288.86,387.98 460.06,387.98" data-ref="&lt; A D E &gt;" />
+      <polygon class="geom-polygon quad-poly" points="288.86,387.98 279.4,410.68 477.09,410.68 460.06,387.98" data-ref="&lt; D B C E &gt;" />
+      <circle class="geom-circle incircle-curve" cx="314.7" cy="325.96" r="91.78" data-ref="( M1 A )" data-aliases="( M1 B ) | ( M1 R ) | ( B A R )" fill="none"><title>( M1 A ): (x - 5/2)**2 + (y - 6)**2 - 169/4 = 0</title></circle>
+      <circle class="geom-circle golden-curve" cx="350" cy="241.23" r="158.98" data-ref="( A R )" data-aliases="( A D )" fill="none"><title>( A R ): (x - 5)**2 + (y - 12)**2 - (15/4 + 3*sqrt(3))**2 - (9 - 5*sqrt(3)/4)**2 = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 410.68 L 350 410.68 L 686 410.68" data-ref="[ B C ]" data-aliases="[ C B ] | [ B V ] | [ V B ] | [ C V ] | [ V C ]" fill="none"><title>[ B C ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 248.01 486 L 346.35 250 L 444.68 14" data-ref="[ A B ]" data-aliases="[ B A ] | [ B P ] | [ P B ] | [ B D ] | [ D B ] | [ A P ] | [ P A ] | [ A D ] | [ D A ] | [ P D ] | [ D P ]" fill="none"><title>[ A B ]: 12*x - 5*y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 533.57 486 L 356.57 250 L 179.57 14" data-ref="[ C A ]" data-aliases="[ A C ] | [ C E ] | [ E C ] | [ A E ] | [ E A ]" fill="none"><title>[ C A ]: -12*x - 9*y + 168 = 0</title></path>
+      <path class="geom-line bisector-line" d="M 14 387.98 L 350 387.98 L 686 387.98" data-ref="[ M N ]" data-aliases="[ D E ] | [ E D ]" fill="none"><title>[ M N ]: y - 12 + 6*sqrt(3) = 0</title></path>
+      <path class="geom-segment" d="M 350 241.23 L 376.48 325.96 L 402.95 410.68" data-ref="/ A V /" data-aliases="/ V A /" fill="none"><title>/ A V /: |seg| = 3*sqrt(281)/4</title></path>
+      <path class="geom-segment radius-segment" d="M 297.05 368.32 L 260.36 353.03 L 223.67 337.75" data-ref="/ P R /" data-aliases="/ R P /" fill="none"><title>/ P R /: |seg| = 13*sqrt(3)/4</title></path>
+      <path class="geom-segment golden-segment" d="M 288.86 387.98 L 374.46 387.98 L 460.06 387.98" data-ref="/ D E /" data-aliases="/ E D /" fill="none"><title>/ D E /: |seg| = 7*sqrt(3)</title></path>
+    </g>
+    <g id="highlights" style="pointer-events: none;"></g>
+    <g id="points">
+      <circle class="geom-point" cx="279.4" cy="410.68" r="4.3" data-ref="B" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+      <circle class="geom-point" cx="477.09" cy="410.68" r="4.3" data-ref="C" data-latex-x="14" data-latex-y="0"><title>C = (14, 0)</title></circle>
+      <circle class="geom-point" cx="350" cy="241.23" r="4.3" data-ref="A" data-latex-x="5" data-latex-y="12"><title>A = (5, 12)</title></circle>
+      <circle class="geom-point touch-point" cx="402.95" cy="410.68" r="3.9" data-ref="V" data-latex-x="\frac{35}{4}" data-latex-y="0"><title>V = (35/4, 0)</title></circle>
+      <circle class="geom-point" cx="297.05" cy="368.32" r="3.9" data-ref="P" data-latex-x="\frac{5}{4}" data-latex-y="3"><title>P = (5/4, 3)</title></circle>
+      <circle class="geom-point touch-point" cx="223.67" cy="337.75" r="3.9" data-ref="R" data-latex-x="\frac{5}{4} - 3 \sqrt{3}" data-latex-y="\frac{5 \sqrt{3}}{4} + 3"><title>R = (5/4 - 3*sqrt(3), 5*sqrt(3)/4 + 3)</title></circle>
+      <circle class="geom-point incenter-point" cx="288.86" cy="387.98" r="5" data-ref="D" data-latex-x="5 - \frac{5 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>D = (5 - 5*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+      <circle class="geom-point incenter-point" cx="460.06" cy="387.98" r="5" data-ref="E" data-latex-x="5 + \frac{9 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>E = (5 + 9*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="286.47" y="430.31" data-ref="B">B</text>
+      <text class="geom-label" x="458.13" y="430.31" data-ref="C">C</text>
+      <text class="geom-label" x="364.48" y="245.99" data-ref="A">A</text>
+      <text class="geom-label" x="397.01" y="434.34" data-ref="V">V</text>
+      <text class="geom-label" x="311.13" y="373.08" data-ref="P">P</text>
+      <text class="geom-label" x="217.73" y="323.61" data-ref="R">R</text>
+      <text class="geom-label" x="269.45" y="377.33" data-ref="D">D</text>
+      <text class="geom-label" x="467.58" y="377.33" data-ref="E">E</text>
+    </g>
+  </g>
+</svg>

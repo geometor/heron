@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" width="680" height="440" viewBox="0 0 680 440" data-graphic-id="g1" role="img" aria-label="Hero Definitiones §58 — Universal Gnomon Realized on the Golden Rectangle in Q(phi)">
+  <title>Hero Definitiones §58 — Universal Gnomon Realized on the Golden Rectangle in Q(phi)</title>
+  <defs>
+    <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <style>
+.euclid-graphic {
+    --svg-bg: #fafaf9;
+    --geom-bg: #fafaf9;
+    --ink: #1c1917;
+    --geom-fg: #1c1917;
+    --geom-accent: #d97706;
+    --geom-assert: #059669;
+    --label-halo: rgba(250, 250, 249, 0.92);
+    --carrier: #334155;
+    --conic: #0284c7;
+    --cyclic: #7c3aed;
+    --bisector: #0f766e;
+    --aux: #64748b;
+    --golden: #b45309;
+    --tangent: #0369a1;
+    --radius-col: #059669;
+    --pt-given: #0f172a;
+    --pt-incenter: #d97706;
+    --pt-touch: #0284c7;
+    --pt-meet: #7c3aed;
+    font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    .euclid-graphic {
+      --svg-bg: #141417;
+      --geom-bg: #141417;
+      --ink: #f4f4f5;
+      --geom-fg: #f4f4f5;
+      --geom-accent: #fbbf24;
+      --geom-assert: #34d399;
+      --label-halo: rgba(20, 20, 23, 0.92);
+      --carrier: #cbd5e1;
+      --conic: #38bdf8;
+      --cyclic: #c084fc;
+      --bisector: #2dd4bf;
+      --aux: #94a3b8;
+      --golden: #facc15;
+      --tangent: #38bdf8;
+      --radius-col: #34d399;
+      --pt-given: #f1f5f9;
+      --pt-incenter: #fbbf24;
+      --pt-touch: #38bdf8;
+      --pt-meet: #c084fc;
+    }
+  }
+  .euclid-graphic .svg-bg { fill: var(--svg-bg); }
+  .euclid-graphic .geom-circle.incircle-curve {
+    fill: none; stroke: var(--conic); stroke-width: 2.25; opacity: 0.92;
+  }
+  .euclid-graphic .geom-circle.cyclic-curve {
+    fill: none; stroke: var(--cyclic); stroke-width: 1.75;
+    stroke-dasharray: 6 4; opacity: 0.78;
+  }
+  .euclid-graphic .geom-circle.golden-curve {
+    fill: none; stroke: var(--golden); stroke-width: 1.9;
+    stroke-dasharray: 5 3.5; opacity: 0.85;
+  }
+  .euclid-graphic .geom-line {
+    fill: none; stroke: var(--aux); stroke-width: 1.35;
+    stroke-linecap: round; opacity: 0.72;
+  }
+  .euclid-graphic .carrier-line { stroke: var(--carrier); stroke-width: 2.05; opacity: 0.92; }
+  .euclid-graphic .bisector-line { stroke: var(--bisector); stroke-width: 1.85; opacity: 0.88; }
+  .euclid-graphic .aux-line {
+    stroke: var(--aux); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.75;
+  }
+  .euclid-graphic .quad-line { stroke: var(--cyclic); stroke-width: 1.75; opacity: 0.85; }
+  .euclid-graphic .geom-segment {
+    fill: none; stroke: var(--tangent); stroke-width: 2.5;
+    stroke-linecap: round; opacity: 0.85;
+  }
+  .euclid-graphic .geom-segment.golden-segment {
+    stroke: var(--golden); stroke-width: 3.3; opacity: 0.92;
+  }
+  .euclid-graphic .geom-segment.radius-segment {
+    stroke: var(--radius-col); stroke-width: 2.3; opacity: 0.9;
+  }
+  .euclid-graphic .geom-segment.semi-segment {
+    stroke: var(--carrier); stroke-width: 2.4; opacity: 0.82;
+  }
+  .euclid-graphic .geom-polygon.tri-poly {
+    fill: var(--conic); fill-opacity: 0.06;
+    stroke: var(--carrier); stroke-width: 1.9; stroke-linejoin: round;
+  }
+  .euclid-graphic .geom-polygon.cyclic-poly {
+    fill: var(--cyclic); fill-opacity: 0.07;
+    stroke: var(--cyclic); stroke-width: 1.6; stroke-linejoin: round;
+  }
+  .euclid-graphic .geom-polygon.quad-poly {
+    fill: var(--golden); fill-opacity: 0.07;
+    stroke: var(--golden); stroke-width: 1.6; stroke-linejoin: round;
+  }
+  .euclid-graphic .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5; }
+  .euclid-graphic .incenter-point { fill: var(--pt-incenter); stroke-width: 1.8; }
+  .euclid-graphic .touch-point { fill: var(--pt-touch); }
+  .euclid-graphic .meet-point { fill: var(--pt-meet); }
+  .euclid-graphic .golden-point { fill: var(--golden); stroke-width: 1.8; }
+  .euclid-graphic .geom-label {
+    fill: var(--ink);
+    font-size: 13.5px;
+    font-weight: 600;
+    paint-order: stroke fill;
+    stroke: var(--label-halo);
+    stroke-width: 3.6px;
+    stroke-linejoin: round;
+    user-select: none;
+  }
+  .euclid-graphic .geom-label-sub { font-size: 10px; font-weight: 600; }
+  </style>
+  <rect class="svg-bg" x="0" y="0" width="680" height="440" rx="6" />
+  <g id="elements">
+    <g id="graphics">
+      <polygon class="geom-polygon tri-poly" points="236.13,220 364.52,220 364.52,91.61 236.13,91.61" data-ref="&lt; A B C D &gt;" />
+      <polygon class="geom-polygon cyclic-poly" points="236.13,220 443.87,220 443.87,91.61 236.13,91.61" data-ref="&lt; A E F D &gt;" />
+      <polygon class="geom-polygon quad-poly" points="364.52,220 443.87,220 443.87,91.61 364.52,91.61" data-ref="&lt; B E F C &gt;" />
+      <circle class="geom-circle golden-curve" cx="300.32" cy="220" r="143.55" data-ref="( M C )" data-aliases="( M D ) | ( M E ) | ( M E1 ) | ( D C E )" fill="none"><title>( M C ): y**2 + (x - 1/2)**2 - 5/4 = 0</title></circle>
+      <circle class="geom-circle incircle-curve" cx="443.87" cy="220" r="79.35" data-ref="( E B )" data-aliases="( E G )" fill="none"><title>( E B ): y**2 + (x - sqrt(5)/2 - 1/2)**2 - (-1/2 + sqrt(5)/2)**2 = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 220 L 340 220 L 666 220" data-ref="[ A B ]" data-aliases="[ B A ] | [ A M ] | [ M A ] | [ A E ] | [ E A ] | [ A E1 ] | [ E1 A ] | [ B M ] | [ M B ] | [ B E ] | [ E B ] | [ B E1 ] | [ E1 B ] | [ M E ] | [ E M ] | [ M E1 ] | [ E1 M ] | [ E E1 ] | [ E1 E ]" fill="none"><title>[ A B ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 236.13 426 L 236.13 220 L 236.13 14" data-ref="[ D E ]" data-aliases="[ A D ] | [ D A ]" fill="none"><title>[ D E ]: x = 0</title></path>
+      <path class="geom-line carrier-line" d="M 364.52 426 L 364.52 220 L 364.52 14" data-ref="[ G H ]" data-aliases="[ B C ] | [ C B ] | [ B H ] | [ H B ] | [ C H ] | [ H C ]" fill="none"><title>[ G H ]: x - 1 = 0</title></path>
+      <path class="geom-line carrier-line" d="M 14 91.61 L 340 91.61 L 666 91.61" data-ref="[ D C ]" data-aliases="[ C D ] | [ D F ] | [ F D ] | [ C F ] | [ F C ]" fill="none"><title>[ D C ]: y - 1 = 0</title></path>
+      <path class="geom-line carrier-line" d="M 443.87 426 L 443.87 220 L 443.87 14" data-ref="[ P Q ]" data-aliases="[ E F ] | [ F E ] | [ E G ] | [ G E ] | [ F G ] | [ G F ]" fill="none"><title>[ P Q ]: x - sqrt(5)/2 - 1/2 = 0</title></path>
+      <path class="geom-line bisector-line" d="M 14 140.65 L 340 140.65 L 666 140.65" data-ref="[ U V ]" data-aliases="[ G H ] | [ H G ]" fill="none"><title>[ U V ]: y - sqrt(5)/2 + 1/2 = 0</title></path>
+      <path class="geom-segment golden-segment" d="M 236.13 220 L 340 220 L 443.87 220" data-ref="/ A E /" data-aliases="/ E A /" fill="none"><title>/ A E /: |seg| = 1/2 + sqrt(5)/2</title></path>
+      <path class="geom-segment golden-segment" d="M 364.52 220 L 404.2 220 L 443.87 220" data-ref="/ B E /" data-aliases="/ E B /" fill="none"><title>/ B E /: |seg| = -1/2 + sqrt(5)/2</title></path>
+    </g>
+    <g id="highlights" style="pointer-events: none;"></g>
+    <g id="points">
+      <circle class="geom-point" cx="236.13" cy="220" r="4.3" data-ref="A" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+      <circle class="geom-point" cx="364.52" cy="220" r="4.3" data-ref="B" data-latex-x="1" data-latex-y="0"><title>B = (1, 0)</title></circle>
+      <circle class="geom-point" cx="236.13" cy="91.61" r="4.3" data-ref="D" data-latex-x="0" data-latex-y="1"><title>D = (0, 1)</title></circle>
+      <circle class="geom-point" cx="364.52" cy="91.61" r="4.3" data-ref="C" data-latex-x="1" data-latex-y="1"><title>C = (1, 1)</title></circle>
+      <circle class="geom-point touch-point" cx="300.32" cy="220" r="3.9" data-ref="M" data-latex-x="\frac{1}{2}" data-latex-y="0"><title>M = (1/2, 0)</title></circle>
+      <circle class="geom-point incenter-point" cx="443.87" cy="220" r="5" data-ref="E" data-latex-x="\frac{1}{2} + \frac{\sqrt{5}}{2}" data-latex-y="0"><title>E = (1/2 + sqrt(5)/2, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="443.87" cy="91.61" r="4.6" data-ref="F" data-latex-x="\frac{1}{2} + \frac{\sqrt{5}}{2}" data-latex-y="1"><title>F = (1/2 + sqrt(5)/2, 1)</title></circle>
+      <circle class="geom-point touch-point" cx="443.87" cy="140.65" r="3.9" data-ref="G" data-latex-x="\frac{1}{2} + \frac{\sqrt{5}}{2}" data-latex-y="- \frac{1}{2} + \frac{\sqrt{5}}{2}"><title>G = (1/2 + sqrt(5)/2, -1/2 + sqrt(5)/2)</title></circle>
+      <circle class="geom-point touch-point" cx="364.52" cy="140.65" r="3.9" data-ref="H" data-latex-x="1" data-latex-y="- \frac{1}{2} + \frac{\sqrt{5}}{2}"><title>H = (1, -1/2 + sqrt(5)/2)</title></circle>
+      <circle class="geom-point" cx="156.78" cy="220" r="3.9" data-ref="E1" data-latex-x="\frac{1}{2} - \frac{\sqrt{5}}{2}" data-latex-y="0"><title>E1 = (1/2 - sqrt(5)/2, 0)</title></circle>
+    </g>
+    <g id="labels">
+      <text class="geom-label" x="243.2" y="209.89" data-ref="A">A</text>
+      <text class="geom-label" x="371.6" y="209.89" data-ref="B">B</text>
+      <text class="geom-label" x="243.2" y="81.5" data-ref="D">D</text>
+      <text class="geom-label" x="371.6" y="81.5" data-ref="C">C</text>
+      <text class="geom-label" x="294.38" y="205.86" data-ref="M">M</text>
+      <text class="geom-label" x="451.39" y="209.35" data-ref="E">E</text>
+      <text class="geom-label" x="451.14" y="81.26" data-ref="F">F</text>
+      <text class="geom-label" x="450.69" y="130.85" data-ref="G">G</text>
+      <text class="geom-label" x="371.34" y="130.85" data-ref="H">H</text>
+      <text class="geom-label" x="148.05" y="205.86" data-ref="E1">E<tspan class="geom-label-sub" dy="3">1</tspan></text>
+    </g>
+  </g>
+</svg>

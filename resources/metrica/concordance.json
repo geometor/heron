@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "title": "Hero of Alexandria — Schöne / Schmidt / Hultsch & GEOMETOR Cross-Corpus Concordance",
+    "edition_metrica": "Hermann Schöne (ed.), Heronis Alexandrini Opera Vol. III (Teubner, 1903)",
+    "edition_catoptrica": "Wilhelm Schmidt & Ludwig Nix (eds.), Heronis Alexandrini Opera Vol. II.1 (Teubner, 1900)",
+    "edition_definitiones": "Friedrich Hultsch (ed.), Reliquiae (Weidmann, 1864) / J. L. Heiberg, Vol. IV (Teubner, 1912)",
+    "total_units": 5,
+    "total_entries": 24
+  },
+  "entries": [
+    {
+      "id": "locus-metrica-i-pref",
+      "codex_unit": "book-i-triangles",
+      "canonical_locus": "Metrica I, Prooemium (Schöne pp. 2–6; fols. 67r–68r)",
+      "codex_section_id": "sec-metrica-i-prooemium",
+      "codex_section_title": "Prooemium: Egyptian Origins & Orthogonal Unit Measures",
+      "topic": "Origins of geometry in Nile land-redivision; homogeneous orthogonal comparison units (linear foot/cubit, unit square, unit cube); triadic plan of the three books.",
+      "euclid_elements": ["I.def.1", "I.def.22"],
+      "sister_links": [
+        "proclus: Prologue II (Friedlein 64.16–65.7, Eudemian Summary on Egyptian Nile origins of geometry)",
+        "euclid: Vol. I Introductory Note on Greek mensuration"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-i-1-7",
+      "codex_unit": "book-i-triangles",
+      "canonical_locus": "Metrica I, Props. 1–7 (Schöne pp. 6–18; fols. 68r–70v)",
+      "codex_section_id": "sec-metrica-i-1-7",
+      "codex_section_title": "Props. I.1–I.7: Rectangles, Right/Isosceles Triangles & General Altitude Projections",
+      "topic": "Area of rectangles and right/isosceles triangles; distinguishing acute vs. obtuse triangles via inner/outer projection differences (Elements II.12–13); general altitude computation without case-splitting.",
+      "euclid_elements": ["I.41", "I.47", "II.12", "II.13"],
+      "sister_links": [
+        "elements: G-Index Book I.47 & Book II.12–13",
+        "wildberger: Cosine/Pythagoras Law in quadrances"
+      ],
+      "code_symbol": "geometor.heron.mensuration.archimedes_quadrea"
+    },
+    {
+      "id": "locus-metrica-i-8",
+      "codex_unit": "book-i-triangles",
+      "canonical_locus": "Metrica I, Prop. 8 (Schöne pp. 18–24, Fig. 7; fols. 70v–71v)",
+      "codex_section_id": "sec-metrica-i-8-proof",
+      "codex_section_title": "Prop. I.8: Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c))",
+      "topic": "Direct area of any triangle from its three sides without an altitude: illustrated on (7, 8, 9) → √720 and synthesized on (13, 14, 15) → √7056 = 84 via incircle center H = X(1), tangent segments s−a, s−b, s−c, orthogonal bisectors, and cyclic quadrilateral CHBL.",
+      "euclid_elements": ["III.22", "IV.4", "VI.4", "VI.8"],
+      "sister_links": [
+        "etc: X(1) Incenter (H = (6, 4) on (13, 14, 15))",
+        "wildberger: W.07 Archimedes' Function / Quadrea A = 16Δ² = 16s(s−a)(s−b)(s−c)",
+        "euclid: Book IV.4 & Book II.13 Heath historical excursus on Hero's Formula"
+      ],
+      "code_symbol": "geometor.heron.constructions.construct_heron_proof"
+    },
+    {
+      "id": "locus-metrica-i-8-sqrt",
+      "codex_unit": "book-i-triangles",
+      "canonical_locus": "Metrica I, Prop. 8b & Prop. 9 (Schöne pp. 18–20, 24–26; fols. 70v, 71v–72r)",
+      "codex_section_id": "sec-metrica-i-8-sqrt",
+      "codex_section_title": "Hero's Iterative Square-Root Extraction (√720 → 161/6 → 51841/1932)",
+      "topic": "Quadratic rational iteration x_{k+1} = (x_k + N/x_k)/2 applied to N = 720 from seed x_0 = 27 (27² = 729), yielding x_1 = 26 5/6 = 161/6 (residual 1/36) and x_2 = 51841/1932 (residual 1/3732624).",
+      "euclid_elements": ["II.4", "X.1"],
+      "sister_links": [
+        "euclid: Heath commentary on Greek root extraction & Eutocius testimony"
+      ],
+      "code_symbol": "geometor.heron.mensuration.heron_sqrt_convergents"
+    },
+    {
+      "id": "locus-metrica-i-10-16",
+      "codex_unit": "book-i-polygons-circles",
+      "canonical_locus": "Metrica I, Props. 10–16 (Schöne pp. 26–46; fols. 72r–76v)",
+      "codex_section_id": "sec-metrica-i-10-16",
+      "codex_section_title": "Props. I.10–I.16: Trapezia, Rhombi & General Quadrilaterals",
+      "topic": "Right, isosceles, acute, and obtuse trapezia; rhombi and rhomboids; general cyclic/non-cyclic quadrilaterals requiring a known diagonal or right angle to become determinate in area.",
+      "euclid_elements": ["I.34", "I.41", "I.47"],
+      "sister_links": [
+        "euclid: Book I.Def.22 & Heath note on Posidonius/Hero classification of quadrilaterals"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-i-18-golden",
+      "codex_unit": "book-i-polygons-circles",
+      "canonical_locus": "Metrica I, Prop. 18 & Lemma (Schöne pp. 50–52; fols. 77v–78r)",
+      "codex_section_id": "sec-metrica-i-17-25",
+      "codex_section_title": "Prop. I.18 Lemma: Pentagon Golden Section Identity (r + h)² = 5h²",
+      "topic": "Right triangle with 36° acute angle doubled into a 108° pentagon vertex angle cuts the base in extreme and mean ratio (φ = (1+√5)/2), proving (BA + AΓ)² = 5·AΓ² exactly over Q(φ), approximated rationally via 81 : 16 ≈ 5.",
+      "euclid_elements": ["II.11", "IV.11", "XIII.1", "XIII.8"],
+      "sister_links": [
+        "divine: Golden Section Q(φ) invariants",
+        "elements: Book IV.10–11 & Book XIII.1, XIII.8"
+      ],
+      "code_symbol": "geometor.heron.mensuration.pentagon_golden_lemma"
+    },
+    {
+      "id": "locus-metrica-i-17-25",
+      "codex_unit": "book-i-polygons-circles",
+      "canonical_locus": "Metrica I, Props. 17–25 (Schöne pp. 46–66; fols. 77r–81r)",
+      "codex_section_id": "sec-metrica-i-17-25",
+      "codex_section_title": "Props. I.17–I.25: Regular Polygons from 3-gon to 12-gon",
+      "topic": "Systematic area ratios A_n / s² for equilateral triangle (3/16 of s⁴), pentagon (5/3 or 12/7), hexagon (27/4 of s⁴), heptagon (43/12), octagon (29/6), enneagon (51/8 via Table of Chords), decagon (15/2), hendecagon (66/7 via Table of Chords), and dodecagon (45/4).",
+      "euclid_elements": ["IV.11", "IV.15", "XIII.9", "XIII.10"],
+      "sister_links": [
+        "elements: Regular polygon constructions (Book IV)",
+        "euclid: Vol. II Book IV & Vol. III Book XIII commentary"
+      ],
+      "code_symbol": "geometor.heron.mensuration.regular_polygon_ratios"
+    },
+    {
+      "id": "locus-metrica-i-26-itys",
+      "codex_unit": "book-i-polygons-circles",
+      "canonical_locus": "Metrica I, Prop. 26 (Schöne pp. 66–70; fols. 81r–82r)",
+      "codex_section_id": "sec-metrica-i-26-33",
+      "codex_section_title": "Prop. I.26: Archimedean Circle Bounds, Plinthides & Concentric Annulus (Ἴτυς)",
+      "topic": "Cites Archimedes' Measurement of a Circle (11 : 14 area ratio, π ≈ 22/7) and lost Plinthides and Cylinders; derives single-pass annulus formula (11/14)·4w(D₂ + w).",
+      "euclid_elements": ["II.8", "XII.2"],
+      "sister_links": [
+        "euclid: Book XII.2 & II.8 fourfold gnomon identity"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-i-27-39",
+      "codex_unit": "book-i-polygons-circles",
+      "canonical_locus": "Metrica I, Props. 27–39 (Schöne pp. 70–90; fols. 82r–86v)",
+      "codex_section_id": "sec-metrica-i-34-39",
+      "codex_section_title": "Props. I.27–I.39: Circular/Parabolic Segments, Ellipses & Curved Surfaces",
+      "topic": "Geometric series A/3 = B+C+D+D/3 (I.27); ancient vs. Archimedean circular-segment formulas and exact 4/3 parabolic quadrature citing the Method (I.28–35); ellipse area πab (I.34); conical, cylindrical, and spherical surfaces (I.36–39).",
+      "euclid_elements": ["XII.2"],
+      "sister_links": [
+        "pappus: Conic sections & Archimedean surface mensuration"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-ii-1-10",
+      "codex_unit": "book-ii-solids",
+      "canonical_locus": "Metrica II, Prooemium & Props. 1–10 (Schöne pp. 90–120; fols. 87r–94r)",
+      "codex_section_id": "sec-metrica-ii-1-10",
+      "codex_section_title": "Preface & Props. II.1–II.10: Eudoxus, Cones, Oblique Cylinders, Prisms & Frusta",
+      "topic": "Historical credit to Eudoxus and Archimedes; oblique cylinders and cones; obelisk/hip-roof wedge decomposition (II.8); pyramidal and conical frustum mean-plus-third-difference identity ((a+b)/2)² + (1/3)((a−b)/2)² = (a²+ab+b²)/3.",
+      "euclid_elements": ["XII.7", "XII.10"],
+      "sister_links": [
+        "euclid: Vol. III Book XII.7 & XII.10 commentary on Eudoxus's exhaustion"
+      ],
+      "code_symbol": "geometor.heron.mensuration.verify_frustum_mean_identity"
+    },
+    {
+      "id": "locus-metrica-ii-11-12",
+      "codex_unit": "book-ii-solids",
+      "canonical_locus": "Metrica II, Props. 11–12 (Schöne pp. 120–126; fols. 94r–95v)",
+      "codex_section_id": "sec-metrica-ii-11-15",
+      "codex_section_title": "Props. II.11–II.12: Spheres, Spherical Segments, Vaulted Basins & Apse Niches",
+      "topic": "Sphere volume (11/21)d³ from Archimedes On the Sphere and Cylinder I.34; spherical segments, basins (λουτῆρες), shells (κόγχαι), and vaults (καμάραι).",
+      "euclid_elements": ["XII.18"],
+      "sister_links": [
+        "euclid: Book XII.18 sphere-cubed proportionality"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-ii-13-torus",
+      "codex_unit": "book-ii-solids",
+      "canonical_locus": "Metrica II, Prop. 13 (Schöne pp. 126–130; fols. 95v–96r)",
+      "codex_section_id": "sec-metrica-ii-11-15",
+      "codex_section_title": "Prop. II.13: Dionysodorus's Torus Theorem (Σπεῖρα) & Unrolled Centroid Cylinder",
+      "topic": "Kinematic generation of the torus; Dionysodorus's theorem V = 2π²Rr² illustrated on outer diameter 40, tube diameter 12 (R=14, r=6 → 9956 4/7); second proof unrolling the torus along centroid circle circumference 2πR = 88 into a right cylinder, anticipating Pappus's Centroid Theorem.",
+      "euclid_elements": ["XI.def.14", "XII.14"],
+      "sister_links": [
+        "pappus: Synagoge Book VII.42 Pappus–Guldin Centroid Theorem"
+      ],
+      "code_symbol": "geometor.heron.mensuration.dionysodorus_torus_volume"
+    },
+    {
+      "id": "locus-metrica-ii-14-15-method",
+      "codex_unit": "book-ii-solids",
+      "canonical_locus": "Metrica II, Props. 14–15 (Schöne pp. 130–132; fols. 96v–97r)",
+      "codex_section_id": "sec-metrica-ii-11-15",
+      "codex_section_title": "Props. II.14–II.15: Cylindrical Ungula & Bicylinder Groin Vault (Archimedes' Method)",
+      "topic": "Preserves Archimedes' Method Props. 12–15: cylindrical hoof V = (1/6)d²h and intersecting perpendicular cylinders V = (2/3)d³ applied to four-way vaulted fountains and Roman-Alexandrian baths.",
+      "euclid_elements": ["XII.10"],
+      "sister_links": [
+        "euclid: Heath History II.332 on Hero & the 1906 Archimedes Palimpsest"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-ii-16-19-platonic",
+      "codex_unit": "book-ii-solids",
+      "canonical_locus": "Metrica II, Props. 16–19 (Schöne pp. 132–138; fols. 97r–98v)",
+      "codex_section_id": "sec-metrica-ii-16-20",
+      "codex_section_title": "Props. II.16–II.19: Volumes of the Five Platonic Solids",
+      "topic": "Cube (a³), regular tetrahedron (a³√2/12, edge 12), octahedron (a³√2/3, edge 7), icosahedron (5(3+√5)a³/12 via inradius ratio 93:127, edge 10), and dodecahedron ((15+7√5)a³/4 via inradius ratio 9:8, edge 10).",
+      "euclid_elements": ["XIII.13", "XIII.14", "XIII.15", "XIII.16", "XIII.17", "XIII.18"],
+      "sister_links": [
+        "elements: Book XIII Platonic Solids",
+        "pacioli: De Divina Proportione polyhedral proportions in Q(φ)"
+      ],
+      "code_symbol": "geometor.heron.mensuration.platonic_solid_volumes"
+    },
+    {
+      "id": "locus-metrica-ii-20-displacement",
+      "codex_unit": "book-ii-solids",
+      "canonical_locus": "Metrica II, Prop. 20 (Schöne pp. 138–140; fols. 98v–99r)",
+      "codex_section_id": "sec-metrica-ii-16-20",
+      "codex_section_title": "Prop. II.20: Irregular Solids by Hydrostatic Displacement & Wax/Clay Encasing",
+      "topic": "Measuring gnarled roots, rough stones, or statues via Archimedean water displacement in a rectangular prism tank, or encasing immovable sculptures in a rectangular block of wax/clay.",
+      "euclid_elements": ["XI.31"],
+      "sister_links": [
+        "aristotle: Physical vs. intelligible magnitude"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-iii-pref",
+      "codex_unit": "book-iii-divisions",
+      "canonical_locus": "Metrica III, Prooemium (Schöne pp. 140–142; fols. 99v–100r)",
+      "codex_section_id": "sec-metrica-iii-prooemium",
+      "codex_section_title": "Prooemium: Geometric Proportion & Distributive Justice",
+      "topic": "Philosophical manifesto echoing Plato (Laws VI 757b) and Aristotle (Nicomachean Ethics V.3): geometry alone guarantees exact proportional division without exceeding or falling short by a single millet-seed (κέγχρον μίαν).",
+      "euclid_elements": ["V.def.6"],
+      "sister_links": [
+        "aristotle: Posterior Analytics & proportional equality",
+        "proclus: Prologue I on mathematical proportion in civic order"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-iii-1-3",
+      "codex_unit": "book-iii-divisions",
+      "canonical_locus": "Metrica III, Props. 1–3 (Schöne pp. 142–148, Fig. 61; fols. 100r–101v)",
+      "codex_section_id": "sec-metrica-iii-1-3",
+      "codex_section_title": "Props. III.1–III.3: Dividing Triangles in a Given Ratio (Vertex, Parallel, Boundary Point)",
+      "topic": "Dividing the (13, 14, 15) triangle of area 84: (III.1) from vertex A in ratio 5 : 3 (CD = 5 1/4, BD = 8 3/4); (III.2) parallel to base BC in ratio 3 : 1 via AD² = (3/4)·169 = 126 3/4 (AD = 13√3/2); (III.3) from an arbitrary point on a side.",
+      "euclid_elements": ["VI.1", "VI.2", "VI.13", "VI.19"],
+      "sister_links": [
+        "elements: Book VI.1, VI.13 (mean proportional), VI.19 (duplicate ratio of similar triangles)"
+      ],
+      "code_symbol": "geometor.heron.constructions.construct_area_division"
+    },
+    {
+      "id": "locus-metrica-iii-4-19",
+      "codex_unit": "book-iii-divisions",
+      "canonical_locus": "Metrica III, Props. 4–19 (Schöne pp. 148–174; fols. 101v–106r)",
+      "codex_section_id": "sec-metrica-iii-4-19",
+      "codex_section_title": "Props. III.4–III.19: Dividing Trapezia, Quadrilaterals, Polygons, Circles & Exterior-Point Cuts",
+      "topic": "Parallel, vertex, interior-point, and exterior-point area divisions of trapezia, arbitrary quadrilaterals (via auxiliary area-preserving triangles), concentric circles (III.9), circular segments, and general polygons.",
+      "euclid_elements": ["I.37", "VI.19", "XII.2"],
+      "sister_links": [
+        "euclid: Lost On Divisions of Figures reconstruction (Heath Vol. I)"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-metrica-iii-20-23",
+      "codex_unit": "book-iii-divisions",
+      "canonical_locus": "Metrica III, Props. 20–23 (Schöne pp. 174–184; fols. 106r–107v)",
+      "codex_section_id": "sec-metrica-iii-20-23",
+      "codex_section_title": "Props. III.20–III.23: Stereometric Division of Pyramids, Cones, Frusta, Spheres & Cube Root Iteration",
+      "topic": "Cutting pyramids, cones, and frusta parallel to the base in a given volume ratio via cube-root extraction (III.20 yields Hero's famous cube-root algorithm on ∛100 ≈ 4 9/14); dividing a sphere in ratio m : n via Archimedes On the Sphere and Cylinder II.4 cubic.",
+      "euclid_elements": ["XII.8", "XII.12"],
+      "sister_links": [
+        "euclid: Heath History II.341–343 on Hero's cube-root extraction of 100"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-def-1-27",
+      "codex_unit": "definitiones-catoptrica-dioptra",
+      "canonical_locus": "Definitiones §§1–4, §27 [Hultsch §§1–5, §29] (pp. 7–8, 15)",
+      "codex_section_id": "sec-definitiones",
+      "codex_section_title": "Definitiones §§1–4 & §27: Point, Flowing Line, Axial Straight Line & Genetic Circle",
+      "topic": "Supplements Euclid's static definitions with kinematic generation: line from the flux of a point; straight line as shortest path and invariant axis under rotation between fixed poles; genetic compass circle swept by a rotating finite segment.",
+      "euclid_elements": ["I.def.1", "I.def.2", "I.def.4", "I.def.15", "I.post.3"],
+      "sister_links": [
+        "proclus: Definitions Commentary (Friedlein 97–110, 184–187)",
+        "hilbert: Axioms of Incidence & Congruence"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-def-58-gnomon",
+      "codex_unit": "definitiones-catoptrica-dioptra",
+      "canonical_locus": "Definitiones §58 & §67 [Hultsch §59 & §68] (pp. 21–22)",
+      "codex_section_id": "sec-definitiones-gnomon",
+      "codex_section_title": "Definitiones §58: The Universal Heronian Gnomon (Καθόλου Γνώμων)",
+      "topic": "Hero's celebrated universal definition: 'A gnomon is anything which, when added to anything whatever, number or figure, makes the whole similar to that to which it was added' — realized continuously in Q(φ) by the Golden Rectangle and Golden Triangle.",
+      "euclid_elements": ["II.def.2", "II.11", "VI.def.1"],
+      "sister_links": [
+        "divine: Golden gnomon & recursive self-similarity in Q(φ)",
+        "phyllotaxis: Gnomonic botanical growth"
+      ],
+      "code_symbol": "geometor.heron.constructions.construct_heronian_gnomon"
+    },
+    {
+      "id": "locus-proclus-hero-postulates",
+      "codex_unit": "definitiones-catoptrica-dioptra",
+      "canonical_locus": "Proclus In Euclidem pp. 196, 305, 323–326, 340–346 Friedlein",
+      "codex_section_id": "sec-definitiones-gnomon",
+      "codex_section_title": "Hero's Economy of Postulates & Direct Proofs without Reductio",
+      "topic": "Testimonies preserved in Proclus showing Hero's axiomatic program: reducing Euclid's five postulates to three constructive postulates, proving Prop. I.19–20 and I.25 directly without reductio ad absurdum.",
+      "euclid_elements": ["I.post.1", "I.post.2", "I.post.3", "I.19", "I.20", "I.25"],
+      "sister_links": [
+        "proclus: Postulates & Axioms (Friedlein 196.15–21) and Props. I.16–32 (Friedlein 305, 323, 340)"
+      ],
+      "code_symbol": ""
+    },
+    {
+      "id": "locus-catoptrica-4",
+      "codex_unit": "definitiones-catoptrica-dioptra",
+      "canonical_locus": "Catoptrica Prop. 4 / Greek Fragment (Schmidt pp. 324–329, 368–372, Fig. 92)",
+      "codex_section_id": "sec-catoptrica-reflection",
+      "codex_section_title": "Catoptrica Prop. 4: Variational Shortest-Path Proof of the Law of Reflection",
+      "topic": "First variational extremum principle in mathematical physics: reflecting target Δ across mirror AB to K unfolds equal-angle path ΓΕ + ΕΔ into straight segment ΓΕΚ, strictly shorter than any unequal-angle path ΓΖ + ΖΔ = ΓΖ + ΖΚ by the triangle inequality (Elements I.20).",
+      "euclid_elements": ["I.4", "I.14", "I.15", "I.20"],
+      "sister_links": [
+        "elements: Book I.4, I.15, I.20",
+        "wildberger: Equal line spreads s(AB, CE) = s(AB, ED)"
+      ],
+      "code_symbol": "geometor.heron.constructions.construct_catoptrica_reflection"
+    },
+    {
+      "id": "locus-dioptra-15",
+      "codex_unit": "definitiones-catoptrica-dioptra",
+      "canonical_locus": "Dioptra Ch. 15 (Schöne pp. 238–240, Fig. 95; fols. 69v–70r)",
+      "codex_section_id": "sec-dioptra-tunnel",
+      "codex_section_title": "Dioptra Ch. 15: Tunneling a Mountain Straight Through from Both Portals",
+      "topic": "Reconstructs Eupalinian two-portal tunneling by traversing orthogonal dioptra stations BE, EZ, ZH, HΘ, ΘM, MD around the mountain base, summing signed Cartesian displacements (BN, DN), and erecting similar exterior sighting triangles BXO and DQP.",
+      "euclid_elements": ["I.29", "I.34", "I.47", "VI.4"],
+      "sister_links": [
+        "elements: Book VI.4 similar right triangles"
+      ],
+      "code_symbol": "geometor.heron.constructions.construct_dioptra_tunnel"
+    }
+  ]
+}

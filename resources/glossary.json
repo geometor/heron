@@ -1,0 +1,172 @@
+{
+  "embadon": {
+    "term": "embadon",
+    "headword": "ἐμβαδόν",
+    "greek": "ἐμβαδόν",
+    "latin": "area",
+    "english": "area / planar content",
+    "translation": "area / planar content",
+    "definition": "The numerical measure of a plane or curved surface expressed in unit squares (μονάδες τετράγωνοι), standard throughout Hero's Metrica Book I and Book III.",
+    "hero_loci": "Metrica I Preface, I.1–39, III.1–19"
+  },
+  "perimetros": {
+    "term": "perimetros",
+    "headword": "περίμετρος",
+    "greek": "περίμετρος",
+    "latin": "perimetros / ambitus",
+    "english": "perimeter / circumference",
+    "translation": "perimeter / circumference",
+    "definition": "Total boundary length of a polygon or circle; in Metrica I.8, half the perimeter (τὸ ἥμισυ τῆς περιμέτρου, s = (a+b+c)/2) governs the area product Δ² = s(s−a)(s−b)(s−c).",
+    "hero_loci": "Metrica I.8, I.26"
+  },
+  "kathetos": {
+    "term": "kathetos",
+    "headword": "κάθετος",
+    "greek": "κάθετος",
+    "latin": "perpendicularis / altitudo",
+    "english": "perpendicular / altitude",
+    "translation": "perpendicular / altitude",
+    "definition": "The perpendicular dropped from a vertex or apex to the opposite base line or base plane. Metrica I.5–7 compute the altitude via Elements II.12–13, whereas I.8 finds the area directly 'without an altitude' (χωρὶς καθέτου).",
+    "hero_loci": "Metrica I.3–8, II.1–19"
+  },
+  "pleura": {
+    "term": "pleura",
+    "headword": "πλευρά",
+    "greek": "πλευρά",
+    "latin": "latus / radix quadrata",
+    "english": "side / square root",
+    "translation": "side / square root",
+    "definition": "Literally the 'side' of a geometric figure or of an arithmetic square; hence 'take the side of N' (λαβὲ πλευράν) means extract √N, either exactly when rational (ῥητή) or iteratively by Hero's method when irrational.",
+    "hero_loci": "Metrica I.8 (ψκ πλευρά), I.17, II.16–17"
+  },
+  "rhetos": {
+    "term": "rhetos",
+    "headword": "ῥητός / οὐ ῥητός",
+    "greek": "ῥητὴ πλευρά / ἄλογος",
+    "latin": "rationalis / irrationalis",
+    "english": "rational (expressible) / irrational root",
+    "translation": "rational / irrational",
+    "definition": "A number possessing an exact integer or fractional root has a 'rational side' (ῥητὴ πλευρά, e.g., √7056 = 84); when it lacks a rational side (e.g., 720 in Metrica I.8), Hero approximates it to arbitrary rational precision 'with minimal difference' (μετὰ διαφόρου ἐλαχίστου).",
+    "hero_loci": "Metrica I.8 (Schöne p. 18), I.17 (Schöne p. 48)"
+  },
+  "dynamodynamis": {
+    "term": "dynamodynamis",
+    "headword": "δυναμοδύναμις",
+    "greek": "δυναμοδύναμις",
+    "latin": "quadrato-quadratum",
+    "english": "fourth power (square-square, x⁴)",
+    "translation": "fourth power (x⁴)",
+    "definition": "Remarkable algebraic fourth-degree power introduced explicitly by Hero in Metrica I.17 (and implied in I.8's product of two squares ΓΘ² · ΕΗ²), violating strict three-dimensional homogeneity centuries before Diophantus.",
+    "hero_loci": "Metrica I.8 (Schöne p. 22), I.17 (Schöne p. 48)"
+  },
+  "itys": {
+    "term": "itys",
+    "headword": "ἴτυς",
+    "greek": "ἴτυς",
+    "latin": "annulus / corona circularis",
+    "english": "circular ring / annulus",
+    "translation": "annulus (concentric ring)",
+    "definition": "The planar ring bounded by two concentric circles of diameters D₁ and D₂; Hero avoids measuring two circles separately in Metrica I.26 by factoring D₁² − D₂² = 4w(D₂ + w) where w = (D₁ − D₂)/2 is the rim width.",
+    "hero_loci": "Metrica I.26 (Schöne pp. 68–70), III.9"
+  },
+  "speira": {
+    "term": "speira",
+    "headword": "σπεῖρα",
+    "greek": "σπεῖρα",
+    "latin": "spira / torus",
+    "english": "torus (solid ring of revolution)",
+    "translation": "torus",
+    "definition": "Surface and solid generated when a circle perpendicular to a base plane revolves around a fixed coplanar center; measured in Metrica II.13 via Dionysodorus's theorem and by unrolling into a right cylinder of length 2πR.",
+    "hero_loci": "Metrica II.13 (Schöne pp. 126–130)"
+  },
+  "kolouros": {
+    "term": "kolouros",
+    "headword": "κόλουρος",
+    "greek": "κόλουρος πυραμὶς / κόλουρος κῶνος",
+    "latin": "frustum pyramidis / coni",
+    "english": "truncated pyramid or cone (frustum)",
+    "translation": "frustum",
+    "definition": "Literally 'dock-tailed' or truncated pyramid or cone cut parallel to its base; in Metrica II.6–10 Hero proves the remarkable decomposition (a + b)/2 squared plus 1/3 of ((a − b)/2)², equivalent to (a² + ab + b²)/3.",
+    "hero_loci": "Metrica II.6–10 (Schöne pp. 104–120), III.21–22"
+  },
+  "ephodikon": {
+    "term": "ephodikon",
+    "headword": "Ἐφοδικόν",
+    "greek": "τὸ Ἐφοδικόν (Ἔφοδος)",
+    "latin": "Methodus",
+    "english": "Archimedes' Method of Mechanical Theorems",
+    "translation": "Archimedes' Method",
+    "definition": "Hero's title for Archimedes' heuristic mechanical treatise to Eratosthenes, cited in Metrica I.32, II.14, and II.15 for parabolic areas, the cylindrical ungula (V = d²h/6), and the bicylinder groin vault (V = 2a³/3).",
+    "hero_loci": "Metrica I.32, II.14–15 (Schöne pp. 80, 130–132)"
+  },
+  "gnomon": {
+    "term": "gnomon",
+    "headword": "γνώμων",
+    "greek": "γνώμων",
+    "latin": "gnomon",
+    "english": "universal gnomon (similarity-preserving increment)",
+    "translation": "gnomon",
+    "definition": "Generalized by Hero in Definitiones §58 (Hultsch §59) beyond Euclid II.Def.2: 'Universally, a gnomon is anything which, when added to anything whatever, number or figure, makes the whole similar to that to which it was added.'",
+    "hero_loci": "Definitiones §58 [Hultsch §59] (p. 21)"
+  },
+  "anaklasis": {
+    "term": "anaklasis",
+    "headword": "ἀνάκλασις",
+    "greek": "ἀνάκλασις",
+    "latin": "reflexio",
+    "english": "optical reflection",
+    "translation": "reflection",
+    "definition": "The bending back of visual rays from polished mirrors at equal angles, demonstrated in Hero's Catoptrica Prop. 4 from the teleological minimum-path principle that nature acts along shortest lines (διʼ ἐλαχίστων).",
+    "hero_loci": "Catoptrica Prop. 4 / Greek Fragment (Schmidt pp. 324–329, 368–372)"
+  },
+  "dioptra": {
+    "term": "dioptra",
+    "headword": "διόπτρα",
+    "greek": "διόπτρα",
+    "latin": "dioptra",
+    "english": "surveying transit / theodolite-level",
+    "translation": "dioptra (surveying transit)",
+    "definition": "Hero's precision geared sighting and water-level instrument capable of laying out exact orthogonal sight-lines in horizontal and vertical planes—the ancient ancestor of the modern theodolite.",
+    "hero_loci": "Dioptra Chs. 1–38 (esp. Ch. 15 mountain tunnel, Schöne pp. 238–240)"
+  },
+  "analogia": {
+    "term": "analogia",
+    "headword": "ἀναλογία",
+    "greek": "ἀναλογία",
+    "latin": "proportio",
+    "english": "geometric proportion & distributive justice",
+    "translation": "proportion",
+    "definition": "Ratio-equality across geometric magnitudes; celebrated in the Preface to Metrica Book III as the sole infallible instrument of proportional justice ('not exceeding or falling short by a single millet-seed').",
+    "hero_loci": "Metrica III Preface (Schöne pp. 140–142), III.1–23"
+  },
+  "quadrea": {
+    "term": "quadrea",
+    "headword": "Quadrea (Archimedes' Function)",
+    "greek": "ἑκκαιδεκαπλάσιον τοῦ ἀπὸ τοῦ ἐμβαδοῦ",
+    "latin": "quadrea",
+    "english": "16 times squared triangle area, A = 16Δ²",
+    "translation": "quadrea (16Δ²)",
+    "definition": "In Rational Trigonometry (Wildberger W.07), the polynomial invariant A(Q₁, Q₂, Q₃) = (Q₁+Q₂+Q₃)² − 2(Q₁²+Q₂²+Q₃²) = 16s(s−a)(s−b)(s−c) = 16Δ², encoding Hero's formula over any commutative ring without square roots.",
+    "hero_loci": "Metrica I.8; geometor/wildberger W.07"
+  },
+  "quadrance": {
+    "term": "quadrance",
+    "headword": "Quadrance (δύναμις / τὸ ἀπό)",
+    "greek": "δύναμις / τὸ ἀπὸ τῆς εὐθείας",
+    "latin": "potentia / quadratum",
+    "english": "squared length Q(A, B) = (x₂−x₁)² + (y₂−y₁)²",
+    "translation": "quadrance (squared distance)",
+    "definition": "The exact algebraic square on a segment (Euclid's καὶ Ἥρωνος 'τὸ ἀπὸ ΑΒ' / 'δυνάμει δοθεῖσα'), fundamental both to Greek geometric algebra (Metrica III.2: ΑΔ is 'given in square', δοθεῖσα δυνάμει) and to GEOMETOR's exact symbolic verification.",
+    "hero_loci": "Metrica I.5–8, I.17–18, III.2; geometor/model"
+  },
+  "spread": {
+    "term": "spread",
+    "headword": "Spread",
+    "greek": "",
+    "latin": "extensio angularis",
+    "english": "rational angle invariant s(ℓ₁, ℓ₂) = sin²θ",
+    "translation": "spread (sin²θ)",
+    "definition": "Exact rational measure of inclination between two lines in Rational Trigonometry (s = 0 parallel, s = 1 perpendicular), used in geometor.heron to certify Hero's angle bisectors, cyclic quadrilaterals, and equal-angle reflection without transcendental functions.",
+    "hero_loci": "geometor/model & geometor/wildberger"
+  }
+}

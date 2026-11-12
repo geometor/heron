@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "repository": "geometor/heron",
+  "subject": "Hero (Heron) of Alexandria (fl. c. 60 CE) — Metrica I–III, Definitiones, Catoptrica, Dioptra",
+  "public_domain_declaration": "All archival critical editions ingested into this repository were published between 1864 and 1912 and are in the worldwide public domain. All English translations in docsrc/metrica/ are original scholarly translations prepared directly from the public-domain Greek editions for GEOMETOR.",
+  "archival_editions": [
+    {
+      "id": "schoene-1903-vol3",
+      "title": "Heronis Alexandrini Opera quae supersunt omnia, Vol. III: Rationes dimetiendi et Commentatio dioptrica (Metrica & Dioptra)",
+      "editor": "Hermann Schöne",
+      "publisher": "B. G. Teubner (Leipzig)",
+      "year": 1903,
+      "language": "grc / deu",
+      "manuscript_witnesses": [
+        "Codex Constantinopolitanus Palatii Veteris 1 (Seraglio MS, fols. 67r–107v, 11th c. — unique witness of Metrica)",
+        "Codex Parisinus suppl. gr. 607 (fols. 62r–82v — primary witness of Dioptra)"
+      ],
+      "archive_url": "https://archive.org/details/heronisalexandri03hero",
+      "pdf_sha256": "65f01b7f700dadbee172820641642d7760e106cb7d9becdc5f0ab67c7ee37b96",
+      "public_domain": true
+    },
+    {
+      "id": "schmidt-1900-vol2",
+      "title": "Heronis Alexandrini Opera quae supersunt omnia, Vol. II, Fasc. 1: Mechanica et Catoptrica",
+      "editor": "Wilhelm Schmidt & Ludwig Nix",
+      "publisher": "B. G. Teubner (Leipzig)",
+      "year": 1900,
+      "language": "grc / lat / deu",
+      "manuscript_witnesses": [
+        "Olympiodorus, In Aristotelis Meteora III.2 (pp. 368–372 Schmidt — Greek shortest-path proof)",
+        "Codex Ottobonianus lat. 1850 (William of Moerbeke 1269 Latin translation of Catoptrica)"
+      ],
+      "archive_url": "https://archive.org/details/heronisalexandr02schogoog",
+      "pdf_sha256": "c48dd8b8bd43867ff72c440f28234694cf6f6a2802afb3e2c31a4a7f97a53adc",
+      "public_domain": true
+    },
+    {
+      "id": "hultsch-1864-definitiones",
+      "title": "Heronis Alexandrini Geometricorum et Stereometricorum Reliquiae (incl. Definitiones)",
+      "editor": "Friedrich Hultsch (collated with J. L. Heiberg, Teubner Vol. IV, 1912)",
+      "publisher": "Weidmann (Berlin)",
+      "year": 1864,
+      "language": "grc / lat",
+      "manuscript_witnesses": [
+        "Codex Parisinus gr. 2385",
+        "Codex Vaticanus gr. 215"
+      ],
+      "archive_url": "https://archive.org/details/heronisalexandr00hultgoog",
+      "pdf_sha256": "41e222735852e4ba0b6c3d7730c177619b9fe1ca3e7d23c361225274565c6f8a",
+      "public_domain": true
+    }
+  ],
+  "local_source_excerpts": [
+    {
+      "id": "metrica-grc",
+      "path": "resources/metrica/sources/metrica_schoene_1903_grc.txt",
+      "sha256": "10086f6e803ef9fc0645b3dec8b533b08adce045d40f33a59d32fb1ea150ebb7",
+      "source_edition": "schoene-1903-vol3",
+      "pages": "Schöne 1903, pp. 2, 18–24, 50, 126–130, 140–144"
+    },
+    {
+      "id": "dioptra-grc",
+      "path": "resources/metrica/sources/dioptra_schoene_1903_grc.txt",
+      "sha256": "c4d7eaae6e116d01fdb50583aba573510b026c4f8040fcb9ad73edfca45182e3",
+      "source_edition": "schoene-1903-vol3",
+      "pages": "Schöne 1903, pp. 238–240 (Ch. 15)"
+    },
+    {
+      "id": "catoptrica-grc",
+      "path": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt",
+      "sha256": "17e7d9a95dd0df1efb4c2e7235804f7eaf49a3e415147b58640c5cef5fd614d2",
+      "source_edition": "schmidt-1900-vol2",
+      "pages": "Schmidt 1900, pp. 368–372 (Greek Fragment / Prop. 4)"
+    },
+    {
+      "id": "definitiones-grc",
+      "path": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt",
+      "sha256": "f1d577406cc9a630821a2a6f40514b0c0cd0b0de8378acfd9db3553adacf95e6",
+      "source_edition": "hultsch-1864-definitiones",
+      "pages": "Hultsch 1864, pp. 7–8, 15, 21–23 (Heiberg §§1–4, 27, 58, 67, 76)"
+    }
+  ]
+}
