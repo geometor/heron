@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iterative Square-Root Extraction on √720 (Metrica I.8) &mdash; GEOMETOR • heron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <h1>GEOMETOR • heron</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">heron</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../mission/index.html"  >Mission: Bridging Classical Deduction and Exact Mensuration</a>
+        </li>
+        <li>
+          <a href="../metrica/index.html"  >Hero of Alexandria — Metrica, Definitiones, Catoptrica & Dioptra</a>
+        </li>
+        <li>
+          <a href="index.html" class="is-active" aria-selected="true" >Symbolic Constructions & Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; heron</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">GEOMETOR • heron</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="index.html">Symbolic Constructions &amp; Demos</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="heron-formula-proof.html" title="Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8)">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="catoptrica-reflection.html" title="Shortest-Path Law of Reflection (Catoptrica Prop. 4)"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="iterative-square-root-extraction-on-720-metrica-i-8">
+        <span id="demo-sqrt-720-iteration"></span><h1>Iterative Square-Root Extraction on √720 (Metrica I.8)<a class="headerlink" href="#iterative-square-root-extraction-on-720-metrica-i-8" title="Link to this heading">¶</a></h1>
+        <p><em>Exact Rational Convergents &amp; Quadratic Error Squaring on Hero’s (7, 8, 9) Triangle</em> — Codex Reference: <a class="reference internal" href="../metrica/book-i-triangles/book-i-triangles-en.html"><span class="doc">Metrica Book I (Preface &amp; Props. 1–9): Triangles, Heron’s Formula &amp; √720</span></a></p>
+        <section class="level-2" id="mathematical-derivation">
+        <h2>Mathematical Derivation<a class="headerlink" href="#mathematical-derivation" title="Link to this heading">¶</a></h2>
+        <p>On his opening scalene benchmark <span class="math notranslate nohighlight">\((a, b, c) = (7, 8, 9)\)</span> (<span class="citation-ref" data-cite="schoene:1903" title="Hermann Schöne (ed.) — Heronis Alexandrini Opera quae supersunt omnia, Vol. III: Rationes dimetiendi et Commentatio dioptrica (Leipzig: B. G. Teubner, pp. 2–315)">Schöne 1903, pp. 18–20</span>), <span class="person-ref" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero</span> obtains <span class="math notranslate nohighlight">\(s = 12\)</span> and <span class="math notranslate nohighlight">\(\Delta^2 = 12 \times 5 \times 4 \times 3 = 720\)</span>. Because <span class="math notranslate nohighlight">\(720 = 144 \times 5\)</span> is non-square (<span class="math notranslate nohighlight">\(\sqrt{720} = 12\sqrt{5}\)</span>), Hero introduces the iterative averaging recurrence:</p>
+        <div class="math notranslate nohighlight">
+        \[x_0 = 27 \quad (27^2 = 729), \qquad x_{k+1} = \frac{1}{2}\!\left(x_k + \frac{N}{x_k}\right).\]</div>
+        <p>Subtracting <span class="math notranslate nohighlight">\(\sqrt{N}\)</span> and squaring reveals why convergence doubles the number of exact digits at <em>every</em> step:</p>
+        <div class="math notranslate nohighlight">
+        \[x_{k+1}^2 - N = \frac{(x_k^2 - N)^2}{4 x_k^2}.\]</div>
+        </section>
+        <section class="level-2" id="exact-sympy-rational-convergent-table">
+        <h2>Exact <code class="docutils literal notranslate"><span class="pre">sympy.Rational</span></code> Convergent Table<a class="headerlink" href="#exact-sympy-rational-convergent-table" title="Link to this heading">¶</a></h2>
+        <table class="docutils align-default" id="id1">
+        <caption><span class="caption-text">Exact Rational Stream <code class="docutils literal notranslate"><span class="pre">heron_sqrt_convergents(720,</span> <span class="pre">steps=4,</span> <span class="pre">x0=27)</span></code></span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
+        <colgroup>
+        <col style="width: 10.0%" />
+        <col style="width: 34.0%" />
+        <col style="width: 36.0%" />
+        <col style="width: 20.0%" />
+        </colgroup>
+        <thead>
+        <tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(k\)</span></p></th>
+        <th class="head"><p>Exact Rational <span class="math notranslate nohighlight">\(x_k \in \mathbb{Q}\)</span></p></th>
+        <th class="head"><p>Exact Quadratic Excess <span class="math notranslate nohighlight">\(x_k^2 - 720\)</span></p></th>
+        <th class="head"><p>Accurate Digits</p></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="row-even"><td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(27\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(+9\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(2.8\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(1\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{161}{6} = 26\frac{5}{6}\)</span> <em>(Hero’s first value)</em></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{1}{36}\)</span> <em>(Hero’s</em> <span class="math notranslate nohighlight">\(\lambda\varsigma'\)</span> <em>)</em></p></td>
+        <td><p><span class="math notranslate nohighlight">\(4.3\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><span class="math notranslate nohighlight">\(2\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{51{,}841}{1932}\)</span> <em>(Hero’s second step)</em></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{1}{3{,}732{,}624} \approx 2.68 \times 10^{-7}\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(8.3\)</span></p></td>
+        </tr>
+        <tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(3\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{5{,}374{,}978{,}561}{200{,}313{,}624}\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(\frac{1}{40{,}125{,}547{,}959{,}889{,}976} \approx 2.49 \times 10^{-17}\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(18.3\)</span></p></td>
+        </tr>
+        <tr class="row-even"><td><p><span class="math notranslate nohighlight">\(4\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(79\text{-digit} / 77\text{-digit}\)</span> fraction</p></td>
+        <td><p><span class="math notranslate nohighlight">\(\approx 2.16 \times 10^{-37}\)</span></p></td>
+        <td><p><span class="math notranslate nohighlight">\(38.4\)</span></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="executable-python-api">
+        <h2>Executable Python API<a class="headerlink" href="#executable-python-api" title="Link to this heading">¶</a></h2>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">geometor.heron</span><span class="w"> </span><span class="kn">import</span> <span class="n">heron_area</span><span class="p">,</span> <span class="n">heron_sqrt_convergents</span>
+
+        <span class="n">conv</span> <span class="o">=</span> <span class="n">heron_sqrt_convergents</span><span class="p">(</span><span class="mi">720</span><span class="p">,</span> <span class="n">steps</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">27</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">conv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">approx</span> <span class="o">==</span> <span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">161</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">conv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">residual</span> <span class="o">==</span> <span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">36</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">conv</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">approx</span> <span class="o">==</span> <span class="n">sp</span><span class="o">.</span><span class="n">Rational</span><span class="p">(</span><span class="mi">51841</span><span class="p">,</span> <span class="mi">1932</span><span class="p">)</span>
+        <span class="k">assert</span> <span class="n">heron_area</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span> <span class="o">==</span> <span class="mi">12</span> <span class="o">*</span> <span class="n">sp</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+        </pre></div>
+        </div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="heron-formula-proof.html" title="Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8)">&larr; <span class="nav-label">Heron’s Formula Synthetic Proof & Quadrea (Metrica I.8)</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">GEOMETOR • heron</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="catoptrica-reflection.html" title="Shortest-Path Law of Reflection (Catoptrica Prop. 4)"><span class="nav-label">Shortest-Path Law of Reflection (Catoptrica Prop. 4)</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../types/apparatus.html">apparatus</a></li>
+        <li><a href="../types/chapter.html">chapter</a></li>
+        <li><a href="../types/el.html">el</a></li>
+        <li><a href="../types/notes.html">notes</a></li>
+        <li><a href="../types/summary.html">summary</a></li>
+        <li><a href="../types/translation.html">translation</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, phi ARCHITECT (GEOMETOR Digital Scriptorium).
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

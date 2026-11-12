@@ -1,0 +1,509 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> &mdash; GEOMETOR • heron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <h1>GEOMETOR • heron</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">heron</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../mission/index.html"  >Mission: Bridging Classical Deduction and Exact Mensuration</a>
+        </li>
+        <li>
+          <a href="../metrica/index.html"  >Hero of Alexandria — Metrica, Definitiones, Catoptrica & Dioptra</a>
+        </li>
+        <li>
+          <a href="../demos/index.html"  >Symbolic Constructions & Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+  <article class="book-layout book-reading-pane">
+    <header class="book-header">
+      <div class="book-header-bar">
+        <div class="book-header-identity">
+          <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; heron</a>
+          <span class="book-header-sep">/</span>
+          <span class="book-title-link">Content of type 'chapter'</span>
+        </div>
+      </div>
+    </header>
+    <div class="content body book-content" role="main">
+      <h1>Content of type 'chapter'</h1>
+      <section class="collection types">
+        
+              <article class="excerpt">
+        <div class="content">
+          <figure class="excerpt-svg">
+            <a href="../metrica/book-i-triangles/book-i-triangles-en.html" aria-label="Hero Metrica I.8 — Synthetic Incircle and Cyclic Quadrilateral Proof on (13, 14, 15)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" width="720" height="520" viewBox="0 0 720 520" data-graphic-id="g1" role="img" aria-label="Hero Metrica I.8 — Synthetic Incircle &amp; Cyclic Quadrilateral Proof on (13, 14, 15)">
+  <title>Hero Metrica I.8 — Synthetic Incircle &amp; Cyclic Quadrilateral Proof on (13, 14, 15)</title>
+  <defs>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <rect class="svg-bg" x="0" y="0" width="720" height="520" rx="6" />
+  <g>
+    <g>
+      <polygon class="geom-polygon tri-poly" points="374.16,84.19 301.09,259.55 505.67,259.55" />
+      <polygon class="geom-polygon cyclic-poly" points="505.67,259.55 388.77,201.09 301.09,259.55 301.09,376.45" />
+      <circle class="geom-circle incircle-curve" cx="388.77" cy="201.09" r="58.45" fill="none"><title>( H E ): (x - 6)**2 + (y - 4)**2 - 16 = 0</title></circle>
+      <circle class="geom-circle cyclic-curve" cx="403.38" cy="318" r="117.81" fill="none"><title>( M C ): (x - 7)**2 + (y + 4)**2 - 65 = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 259.55 L 360 259.55 L 706 259.55" fill="none"><title>[ B C ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 198.41 506 L 300.91 260 L 403.41 14" fill="none"><title>[ A B ]: 12*x - 5*y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 690.51 506 L 506.01 260 L 321.51 14" fill="none"><title>[ C A ]: -12*x - 9*y + 168 = 0</title></path>
+      <path class="geom-line bisector-line" d="M 14 450.94 L 341.71 232.47 L 669.41 14" fill="none"><title>[ B E ]: -12*x + 18*y = 0</title></path>
+      <path class="geom-line bisector-line" d="M 706 359.71 L 360.29 186.85 L 14.58 14" fill="none"><title>[ C G ]: -56*x/5 - 112*y/5 + 784/5 = 0</title></path>
+      <path class="geom-line bisector-line" d="M 426.88 506 L 396.13 260 L 365.38 14" fill="none"><title>[ A H ]: 8*x + y - 52 = 0</title></path>
+      <path class="geom-line aux-line" d="M 388.77 506 L 388.77 260 L 388.77 14" fill="none"><title>[ H J ]: x - 6 = 0</title></path>
+      <path class="geom-line aux-line" d="M 236.32 506 L 359.32 260 L 482.32 14" fill="none"><title>[ T U ]: -16*sqrt(3)*x + 8*sqrt(3)*y + 64*sqrt(3) = 0</title></path>
+      <path class="geom-line aux-line" d="M 301.09 506 L 301.09 260 L 301.09 14" fill="none"><title>[ W X ]: x = 0</title></path>
+      <path class="geom-line quad-line" d="M 706 145.07 L 390.19 325.54 L 74.38 506" fill="none"><title>[ C L ]: 8*x - 14*y - 112 = 0</title></path>
+      <path class="geom-segment radius-segment" d="M 388.77 201.09 L 361.79 189.85 L 334.82 178.61" fill="none"><title>/ H D /: |seg| = 4</title></path>
+      <path class="geom-segment radius-segment" d="M 388.77 201.09 L 388.77 230.32 L 388.77 259.55" fill="none"><title>/ H E /: |seg| = 4</title></path>
+      <path class="geom-segment radius-segment" d="M 388.77 201.09 L 412.15 183.56 L 435.53 166.02" fill="none"><title>/ H F /: |seg| = 4</title></path>
+      <path class="geom-segment golden-segment" d="M 301.09 259.55 L 249.95 259.55 L 198.81 259.55" fill="none"><title>/ B G /: |seg| = 7</title></path>
+      <path class="geom-segment golden-segment" d="M 374.16 84.19 L 354.49 131.4 L 334.82 178.61" fill="none"><title>/ A D /: |seg| = 7</title></path>
+      <path class="geom-segment" d="M 374.16 84.19 L 404.84 125.11 L 435.53 166.02" fill="none"><title>/ A F /: |seg| = 7</title></path>
+      <path class="geom-segment" d="M 301.09 259.55 L 317.96 219.08 L 334.82 178.61" fill="none"><title>/ B D /: |seg| = 6</title></path>
+      <path class="geom-segment" d="M 301.09 259.55 L 344.93 259.55 L 388.77 259.55" fill="none"><title>/ B E /: |seg| = 6</title></path>
+      <path class="geom-segment" d="M 505.67 259.55 L 447.22 259.55 L 388.77 259.55" fill="none"><title>/ C E /: |seg| = 8</title></path>
+      <path class="geom-segment" d="M 505.67 259.55 L 470.6 212.78 L 435.53 166.02" fill="none"><title>/ C F /: |seg| = 8</title></path>
+      <path class="geom-segment semi-segment" d="M 505.67 259.55 L 352.24 259.55 L 198.81 259.55" fill="none"><title>/ C G /: |seg| = 21</title></path>
+    </g>
+    <g>
+      <circle class="geom-point" cx="301.09" cy="259.55" r="4.3" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+      <circle class="geom-point" cx="505.67" cy="259.55" r="4.3" data-latex-x="14" data-latex-y="0"><title>C = (14, 0)</title></circle>
+      <circle class="geom-point" cx="374.16" cy="84.19" r="4.3" data-latex-x="5" data-latex-y="12"><title>A = (5, 12)</title></circle>
+      <circle class="geom-point incenter-point" cx="388.77" cy="201.09" r="5" data-latex-x="6" data-latex-y="4"><title>H = (6, 4)</title></circle>
+      <circle class="geom-point touch-point" cx="388.77" cy="259.55" r="3.9" data-latex-x="6" data-latex-y="0"><title>E = (6, 0)</title></circle>
+      <circle class="geom-point touch-point" cx="334.82" cy="178.61" r="3.9" data-latex-x="\frac{30}{13}" data-latex-y="\frac{72}{13}"><title>D = (30/13, 72/13)</title></circle>
+      <circle class="geom-point touch-point" cx="435.53" cy="166.02" r="3.9" data-latex-x="\frac{46}{5}" data-latex-y="\frac{32}{5}"><title>F = (46/5, 32/5)</title></circle>
+      <circle class="geom-point" cx="198.81" cy="259.55" r="3.9" data-latex-x="-7" data-latex-y="0"><title>G = (-7, 0)</title></circle>
+      <circle class="geom-point meet-point" cx="359.55" cy="259.55" r="4.2" data-latex-x="4" data-latex-y="0"><title>K = (4, 0)</title></circle>
+      <circle class="geom-point meet-point" cx="301.09" cy="376.45" r="4.2" data-latex-x="0" data-latex-y="-8"><title>L = (0, -8)</title></circle>
+      <circle class="geom-point" cx="403.38" cy="318" r="3.9" data-latex-x="7" data-latex-y="-4"><title>M = (7, -4)</title></circle>
+    </g>
+    <g>
+      <text class="geom-label" x="282.14" y="249.43">B</text>
+      <text class="geom-label" x="499.73" y="283.61">C</text>
+      <text class="geom-label" x="347.8" y="88.95">A</text>
+      <text class="geom-label" x="403.95" y="205.85">H</text>
+      <text class="geom-label" x="370.07" y="278.87">E</text>
+      <text class="geom-label" x="308.86" y="183.37">D</text>
+      <text class="geom-label" x="429.59" y="189.68">F</text>
+      <text class="geom-label" x="192.87" y="245.41">G</text>
+      <text class="geom-label" x="340.65" y="249.51">K</text>
+      <text class="geom-label" x="282.2" y="366.41">L</text>
+      <text class="geom-label" x="410.2" y="337.32">M</text>
+    </g>
+  </g>
+</svg>
+            </a>
+          </figure>
+          <section>
+            <h2><a href="../metrica/book-i-triangles/book-i-triangles-en.html">Metrica Book I (Preface & Props. 1–9): Triangles, Heron’s Formula & √720</a></h2>
+              <p><em>Origins of Geometry in Egypt, Homogeneous Orthogonal Units, Rectangles &amp; Triangles, Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c)), and Iterative Square-Root Extraction</em> — <strong>Schöne (1903), pp. 2–26</strong> · <em>Codex Constantinopolitanus Palatii Veteris 1, fols. 67r–72r</em></p>
+          </section>
+        </div>
+      </article>
+        
+              <article class="excerpt">
+        <div class="content">
+          <figure class="excerpt-svg">
+            <a href="../metrica/book-i-polygons-circles/book-i-polygons-circles-en.html" aria-label="Hero Metrica I.18 — Pentagon Golden Section Lemma in Q(phi)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" width="680" height="460" viewBox="0 0 680 460" data-graphic-id="g1" role="img" aria-label="Hero Metrica I.18 Lemma — Pentagon Golden Section Identity (BA + AC)^2 = 5 AC^2">
+  <title>Hero Metrica I.18 Lemma — Pentagon Golden Section Identity (BA + AC)^2 = 5 AC^2</title>
+  <defs>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <rect class="svg-bg" x="0" y="0" width="680" height="460" rx="6" />
+  <g>
+    <g>
+      <polygon class="geom-polygon tri-poly" points="293.15,230 415.81,140.88 538.46,230" />
+      <circle class="geom-circle golden-curve" cx="293.15" cy="230" r="151.61" fill="none"><title>( A B ): y**2 + (x + 1)**2 - 6 + 2*sqrt(5) = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 230 L 340 230 L 666 230" fill="none"><title>[ A C ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 415.81 446 L 415.81 230 L 415.81 14" fill="none"><title>[ B E ]: x = 0</title></path>
+      <path class="geom-line carrier-line" d="M 14 432.81 L 302.22 223.41 L 590.45 14" fill="none"><title>[ A B ]: -x*sqrt(5 - 2*sqrt(5)) + y - sqrt(5 - 2*sqrt(5)) = 0</title></path>
+      <path class="geom-line carrier-line" d="M 666 322.66 L 453.58 168.33 L 241.17 14" fill="none"><title>[ B D ]: x*sqrt(5 - 2*sqrt(5)) + y - sqrt(5 - 2*sqrt(5)) = 0</title></path>
+      <path class="geom-segment golden-segment" d="M 293.15 230 L 368.96 230 L 444.76 230" fill="none"><title>/ A G /: |seg| = -1 + sqrt(5)</title></path>
+      <path class="geom-segment golden-segment" d="M 293.15 230 L 354.48 185.44 L 415.81 140.88" fill="none"><title>/ A B /: |seg| = sqrt(6 - 2*sqrt(5))</title></path>
+      <path class="geom-segment golden-segment" d="M 415.81 140.88 L 477.14 185.44 L 538.46 230" fill="none"><title>/ B D /: |seg| = sqrt(6 - 2*sqrt(5))</title></path>
+      <path class="geom-segment" d="M 293.15 230 L 354.48 230 L 415.81 230" fill="none"><title>/ A C /: |seg| = 1</title></path>
+      <path class="geom-segment" d="M 415.81 230 L 477.14 230 L 538.46 230" fill="none"><title>/ C D /: |seg| = 1</title></path>
+    </g>
+    <g>
+      <circle class="geom-point" cx="293.15" cy="230" r="4.3" data-latex-x="-1" data-latex-y="0"><title>A = (-1, 0)</title></circle>
+      <circle class="geom-point" cx="415.81" cy="230" r="4.3" data-latex-x="0" data-latex-y="0"><title>C = (0, 0)</title></circle>
+      <circle class="geom-point" cx="538.46" cy="230" r="4.3" data-latex-x="1" data-latex-y="0"><title>D = (1, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="415.81" cy="140.88" r="4.6" data-latex-x="0" data-latex-y="\sqrt{5 - 2 \sqrt{5}}"><title>B = (0, sqrt(5 - 2*sqrt(5)))</title></circle>
+      <circle class="geom-point golden-point" cx="444.76" cy="230" r="4.6" data-latex-x="-1 + \sqrt{2} \left(- \frac{\sqrt{2}}{2} + \frac{\sqrt{10}}{2}\right)" data-latex-y="0"><title>G = (-1 + sqrt(2)*(-sqrt(2)/2 + sqrt(10)/2), 0)</title></circle>
+    </g>
+    <g>
+      <text class="geom-label" x="287.21" y="215.46">A</text>
+      <text class="geom-label" x="422.88" y="219.89">C</text>
+      <text class="geom-label" x="532.52" y="215.46">D</text>
+      <text class="geom-label" x="430.59" y="145.64">B</text>
+      <text class="geom-label" x="438.82" y="215.16">G</text>
+    </g>
+  </g>
+</svg>
+            </a>
+          </figure>
+          <section>
+            <h2><a href="../metrica/book-i-polygons-circles/book-i-polygons-circles-en.html">Metrica Book I (Props. 10–39): Quadrilaterals, Regular Polygons, Circles & Conics</a></h2>
+              <p><em>Trapezia &amp; Irregular Quadrilaterals, the Regular Polygon Series (3-gon to 12-gon) &amp; Golden Section Pentagon Lemma, Archimedes’ Plinthides &amp; Circular Annulus, Circular &amp; Parabolic Segments via the Method, Ellipse Area, and Curved Surfaces</em> — <strong>Schöne (1903), pp. 26–90</strong> · <em>Codex Constantinopolitanus Palatii Veteris 1, fols. 72r–87r</em></p>
+          </section>
+        </div>
+      </article>
+        
+              <article class="excerpt">
+        <div class="content">
+          <figure class="excerpt-svg">
+            <a href="../metrica/book-ii-solids/book-ii-solids-en.html" aria-label="Hero Metrica II.13 — Meridian Section of Dionysodorus's Torus (R = 14, r = 6)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" width="700" height="440" viewBox="0 0 700 440" data-graphic-id="g1" role="img" aria-label="Hero Metrica II.13 — Dionysodorus Torus Meridian Section (R = 14, r = 6)">
+  <title>Hero Metrica II.13 — Dionysodorus Torus Meridian Section (R = 14, r = 6)</title>
+  <defs>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <rect class="svg-bg" x="0" y="0" width="700" height="440" rx="6" />
+  <g>
+    <g>
+      <polygon class="geom-polygon cyclic-poly" points="445.7,76.45 445.7,363.55 110.75,363.55 110.75,76.45" />
+      <circle class="geom-circle incircle-curve" cx="445.7" cy="220" r="143.55" fill="none"><title>( Z B ): y**2 + (x - 14)**2 - 36 = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 220 L 350 220 L 686 220" fill="none"><title>[ A B ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 445.7 426 L 445.7 220 L 445.7 14" fill="none"><title>[ D E ]: x - 14 = 0</title></path>
+      <path class="geom-line carrier-line" d="M 110.75 426 L 110.75 220 L 110.75 14" fill="none"><title>[ I J ]: x = 0</title></path>
+      <path class="geom-line aux-line" d="M 14 76.45 L 350 76.45 L 686 76.45" fill="none"><title>[ L M ]: y - 6 = 0</title></path>
+      <path class="geom-line aux-line" d="M 14 363.55 L 350 363.55 L 686 363.55" fill="none"><title>[ O P ]: y + 6 = 0</title></path>
+      <path class="geom-segment golden-segment" d="M 110.75 220 L 278.23 220 L 445.7 220" fill="none"><title>/ A Z /: |seg| = 14</title></path>
+      <path class="geom-segment radius-segment" d="M 445.7 220 L 517.47 220 L 589.25 220" fill="none"><title>/ Z B /: |seg| = 6</title></path>
+    </g>
+    <g>
+      <circle class="geom-point" cx="110.75" cy="220" r="4.3" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+      <circle class="geom-point" cx="302.15" cy="220" r="4.3" data-latex-x="8" data-latex-y="0"><title>C = (8, 0)</title></circle>
+      <circle class="geom-point" cx="589.25" cy="220" r="4.3" data-latex-x="20" data-latex-y="0"><title>B = (20, 0)</title></circle>
+      <circle class="geom-point incenter-point" cx="445.7" cy="220" r="5" data-latex-x="14" data-latex-y="0"><title>Z = (14, 0)</title></circle>
+      <circle class="geom-point touch-point" cx="445.7" cy="76.45" r="3.9" data-latex-x="14" data-latex-y="6"><title>D = (14, 6)</title></circle>
+      <circle class="geom-point touch-point" cx="445.7" cy="363.55" r="3.9" data-latex-x="14" data-latex-y="-6"><title>E = (14, -6)</title></circle>
+      <circle class="geom-point meet-point" cx="110.75" cy="76.45" r="4.2" data-latex-x="0" data-latex-y="6"><title>H1 = (0, 6)</title></circle>
+      <circle class="geom-point meet-point" cx="110.75" cy="363.55" r="4.2" data-latex-x="0" data-latex-y="-6"><title>H2 = (0, -6)</title></circle>
+    </g>
+    <g>
+      <text class="geom-label" x="117.83" y="209.89">A</text>
+      <text class="geom-label" x="296.21" y="205.46">C</text>
+      <text class="geom-label" x="583.31" y="205.46">B</text>
+      <text class="geom-label" x="453.22" y="209.35">Z</text>
+      <text class="geom-label" x="452.52" y="66.65">D</text>
+      <text class="geom-label" x="452.52" y="353.75">E</text>
+      <text class="geom-label" x="116.36" y="66.42">H<tspan class="geom-label-sub" dy="3">1</tspan></text>
+      <text class="geom-label" x="116.36" y="353.51">H<tspan class="geom-label-sub" dy="3">2</tspan></text>
+    </g>
+  </g>
+</svg>
+            </a>
+          </figure>
+          <section>
+            <h2><a href="../metrica/book-ii-solids/book-ii-solids-en.html">Metrica Book II (Preface & Props. 1–20): Stereometry, Dionysodorus’s Torus, the Method & Platonic Solids</a></h2>
+              <p><em>Eudoxus &amp; Archimedes in Stereometry, Frusta &amp; Hip-Roof Wedges, Spheres &amp; Vaults, Dionysodorus’s Torus Theorem (9956 4/7), Archimedes’ Method Vaults, the Five Platonic Solids, and Hydrostatic Displacement</em> — <strong>Schöne (1903), pp. 90–140</strong> · <em>Codex Constantinopolitanus Palatii Veteris 1, fols. 87r–99v</em></p>
+          </section>
+        </div>
+      </article>
+        
+              <article class="excerpt">
+        <div class="content">
+          <figure class="excerpt-svg">
+            <a href="../metrica/book-iii-divisions/book-iii-divisions-en.html" aria-label="Hero Metrica III.1 and III.2 — Vertex Division (5:3) and Parallel Mean-Proportional Division (3:1) on (13, 14, 15)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" width="700" height="500" viewBox="0 0 700 500" data-graphic-id="g1" role="img" aria-label="Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division">
+  <title>Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division</title>
+  <defs>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <rect class="svg-bg" x="0" y="0" width="700" height="500" rx="6" />
+  <g>
+    <g>
+      <polygon class="geom-polygon tri-poly" points="350,241.23 279.4,410.68 477.09,410.68" />
+      <polygon class="geom-polygon cyclic-poly" points="350,241.23 288.86,387.98 460.06,387.98" />
+      <polygon class="geom-polygon quad-poly" points="288.86,387.98 279.4,410.68 477.09,410.68 460.06,387.98" />
+      <circle class="geom-circle incircle-curve" cx="314.7" cy="325.96" r="91.78" fill="none"><title>( M1 A ): (x - 5/2)**2 + (y - 6)**2 - 169/4 = 0</title></circle>
+      <circle class="geom-circle golden-curve" cx="350" cy="241.23" r="158.98" fill="none"><title>( A R ): (x - 5)**2 + (y - 12)**2 - (15/4 + 3*sqrt(3))**2 - (9 - 5*sqrt(3)/4)**2 = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 410.68 L 350 410.68 L 686 410.68" fill="none"><title>[ B C ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 248.01 486 L 346.35 250 L 444.68 14" fill="none"><title>[ A B ]: 12*x - 5*y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 533.57 486 L 356.57 250 L 179.57 14" fill="none"><title>[ C A ]: -12*x - 9*y + 168 = 0</title></path>
+      <path class="geom-line bisector-line" d="M 14 387.98 L 350 387.98 L 686 387.98" fill="none"><title>[ M N ]: y - 12 + 6*sqrt(3) = 0</title></path>
+      <path class="geom-segment" d="M 350 241.23 L 376.48 325.96 L 402.95 410.68" fill="none"><title>/ A V /: |seg| = 3*sqrt(281)/4</title></path>
+      <path class="geom-segment radius-segment" d="M 297.05 368.32 L 260.36 353.03 L 223.67 337.75" fill="none"><title>/ P R /: |seg| = 13*sqrt(3)/4</title></path>
+      <path class="geom-segment golden-segment" d="M 288.86 387.98 L 374.46 387.98 L 460.06 387.98" fill="none"><title>/ D E /: |seg| = 7*sqrt(3)</title></path>
+    </g>
+    <g>
+      <circle class="geom-point" cx="279.4" cy="410.68" r="4.3" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+      <circle class="geom-point" cx="477.09" cy="410.68" r="4.3" data-latex-x="14" data-latex-y="0"><title>C = (14, 0)</title></circle>
+      <circle class="geom-point" cx="350" cy="241.23" r="4.3" data-latex-x="5" data-latex-y="12"><title>A = (5, 12)</title></circle>
+      <circle class="geom-point touch-point" cx="402.95" cy="410.68" r="3.9" data-latex-x="\frac{35}{4}" data-latex-y="0"><title>V = (35/4, 0)</title></circle>
+      <circle class="geom-point" cx="297.05" cy="368.32" r="3.9" data-latex-x="\frac{5}{4}" data-latex-y="3"><title>P = (5/4, 3)</title></circle>
+      <circle class="geom-point touch-point" cx="223.67" cy="337.75" r="3.9" data-latex-x="\frac{5}{4} - 3 \sqrt{3}" data-latex-y="\frac{5 \sqrt{3}}{4} + 3"><title>R = (5/4 - 3*sqrt(3), 5*sqrt(3)/4 + 3)</title></circle>
+      <circle class="geom-point incenter-point" cx="288.86" cy="387.98" r="5" data-latex-x="5 - \frac{5 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>D = (5 - 5*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+      <circle class="geom-point incenter-point" cx="460.06" cy="387.98" r="5" data-latex-x="5 + \frac{9 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>E = (5 + 9*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+    </g>
+    <g>
+      <text class="geom-label" x="286.47" y="430.31">B</text>
+      <text class="geom-label" x="458.13" y="430.31">C</text>
+      <text class="geom-label" x="364.48" y="245.99">A</text>
+      <text class="geom-label" x="397.01" y="434.34">V</text>
+      <text class="geom-label" x="311.13" y="373.08">P</text>
+      <text class="geom-label" x="217.73" y="323.61">R</text>
+      <text class="geom-label" x="269.45" y="377.33">D</text>
+      <text class="geom-label" x="467.58" y="377.33">E</text>
+    </g>
+  </g>
+</svg>
+            </a>
+          </figure>
+          <section>
+            <h2><a href="../metrica/book-iii-divisions/book-iii-divisions-en.html">Metrica Book III (Preface & Props. 1–23): Proportional Divisions of Figures, Justice & ∛100</a></h2>
+              <p><em>Geometric Proportion &amp; Distributive Justice (“Not By a Single Millet-Seed”), Dividing Triangles &amp; Quadrilaterals, Euclid’s On Divisions, Exterior-Point Cuts, Solid Divisions, and Hero’s Cube-Root Algorithm</em> — <strong>Schöne (1903), pp. 140–184</strong> · <em>Codex Constantinopolitanus Palatii Veteris 1, fols. 99v–107v</em></p>
+          </section>
+        </div>
+      </article>
+        
+              <article class="excerpt">
+        <div class="content">
+          <figure class="excerpt-svg">
+            <a href="../metrica/definitiones-catoptrica-dioptra/definitiones-catoptrica-dioptra-en.html" aria-label="Hero Definitiones 58 — Universal Golden Gnomon Recursive Similarity in Q(phi)">
+              <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic euclid-thumbnail" width="680" height="440" viewBox="0 0 680 440" data-graphic-id="g1" role="img" aria-label="Hero Definitiones §58 — Universal Gnomon Realized on the Golden Rectangle in Q(phi)">
+  <title>Hero Definitiones §58 — Universal Gnomon Realized on the Golden Rectangle in Q(phi)</title>
+  <defs>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+      <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="2" stroke-linecap="round" />
+    </marker>
+    <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+      <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+      <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+            stroke-width="1.8" stroke-linecap="round" />
+    </marker>
+  </defs>
+  <rect class="svg-bg" x="0" y="0" width="680" height="440" rx="6" />
+  <g>
+    <g>
+      <polygon class="geom-polygon tri-poly" points="236.13,220 364.52,220 364.52,91.61 236.13,91.61" />
+      <polygon class="geom-polygon cyclic-poly" points="236.13,220 443.87,220 443.87,91.61 236.13,91.61" />
+      <polygon class="geom-polygon quad-poly" points="364.52,220 443.87,220 443.87,91.61 364.52,91.61" />
+      <circle class="geom-circle golden-curve" cx="300.32" cy="220" r="143.55" fill="none"><title>( M C ): y**2 + (x - 1/2)**2 - 5/4 = 0</title></circle>
+      <circle class="geom-circle incircle-curve" cx="443.87" cy="220" r="79.35" fill="none"><title>( E B ): y**2 + (x - sqrt(5)/2 - 1/2)**2 - (-1/2 + sqrt(5)/2)**2 = 0</title></circle>
+      <path class="geom-line carrier-line" d="M 14 220 L 340 220 L 666 220" fill="none"><title>[ A B ]: y = 0</title></path>
+      <path class="geom-line carrier-line" d="M 236.13 426 L 236.13 220 L 236.13 14" fill="none"><title>[ D E ]: x = 0</title></path>
+      <path class="geom-line carrier-line" d="M 364.52 426 L 364.52 220 L 364.52 14" fill="none"><title>[ G H ]: x - 1 = 0</title></path>
+      <path class="geom-line carrier-line" d="M 14 91.61 L 340 91.61 L 666 91.61" fill="none"><title>[ D C ]: y - 1 = 0</title></path>
+      <path class="geom-line carrier-line" d="M 443.87 426 L 443.87 220 L 443.87 14" fill="none"><title>[ P Q ]: x - sqrt(5)/2 - 1/2 = 0</title></path>
+      <path class="geom-line bisector-line" d="M 14 140.65 L 340 140.65 L 666 140.65" fill="none"><title>[ U V ]: y - sqrt(5)/2 + 1/2 = 0</title></path>
+      <path class="geom-segment golden-segment" d="M 236.13 220 L 340 220 L 443.87 220" fill="none"><title>/ A E /: |seg| = 1/2 + sqrt(5)/2</title></path>
+      <path class="geom-segment golden-segment" d="M 364.52 220 L 404.2 220 L 443.87 220" fill="none"><title>/ B E /: |seg| = -1/2 + sqrt(5)/2</title></path>
+    </g>
+    <g>
+      <circle class="geom-point" cx="236.13" cy="220" r="4.3" data-latex-x="0" data-latex-y="0"><title>A = (0, 0)</title></circle>
+      <circle class="geom-point" cx="364.52" cy="220" r="4.3" data-latex-x="1" data-latex-y="0"><title>B = (1, 0)</title></circle>
+      <circle class="geom-point" cx="236.13" cy="91.61" r="4.3" data-latex-x="0" data-latex-y="1"><title>D = (0, 1)</title></circle>
+      <circle class="geom-point" cx="364.52" cy="91.61" r="4.3" data-latex-x="1" data-latex-y="1"><title>C = (1, 1)</title></circle>
+      <circle class="geom-point touch-point" cx="300.32" cy="220" r="3.9" data-latex-x="\frac{1}{2}" data-latex-y="0"><title>M = (1/2, 0)</title></circle>
+      <circle class="geom-point incenter-point" cx="443.87" cy="220" r="5" data-latex-x="\frac{1}{2} + \frac{\sqrt{5}}{2}" data-latex-y="0"><title>E = (1/2 + sqrt(5)/2, 0)</title></circle>
+      <circle class="geom-point golden-point" cx="443.87" cy="91.61" r="4.6" data-latex-x="\frac{1}{2} + \frac{\sqrt{5}}{2}" data-latex-y="1"><title>F = (1/2 + sqrt(5)/2, 1)</title></circle>
+      <circle class="geom-point touch-point" cx="443.87" cy="140.65" r="3.9" data-latex-x="\frac{1}{2} + \frac{\sqrt{5}}{2}" data-latex-y="- \frac{1}{2} + \frac{\sqrt{5}}{2}"><title>G = (1/2 + sqrt(5)/2, -1/2 + sqrt(5)/2)</title></circle>
+      <circle class="geom-point touch-point" cx="364.52" cy="140.65" r="3.9" data-latex-x="1" data-latex-y="- \frac{1}{2} + \frac{\sqrt{5}}{2}"><title>H = (1, -1/2 + sqrt(5)/2)</title></circle>
+      <circle class="geom-point" cx="156.78" cy="220" r="3.9" data-latex-x="\frac{1}{2} - \frac{\sqrt{5}}{2}" data-latex-y="0"><title>E1 = (1/2 - sqrt(5)/2, 0)</title></circle>
+    </g>
+    <g>
+      <text class="geom-label" x="243.2" y="209.89">A</text>
+      <text class="geom-label" x="371.6" y="209.89">B</text>
+      <text class="geom-label" x="243.2" y="81.5">D</text>
+      <text class="geom-label" x="371.6" y="81.5">C</text>
+      <text class="geom-label" x="294.38" y="205.86">M</text>
+      <text class="geom-label" x="451.39" y="209.35">E</text>
+      <text class="geom-label" x="451.14" y="81.26">F</text>
+      <text class="geom-label" x="450.69" y="130.85">G</text>
+      <text class="geom-label" x="371.34" y="130.85">H</text>
+      <text class="geom-label" x="148.05" y="205.86">E<tspan class="geom-label-sub" dy="3">1</tspan></text>
+    </g>
+  </g>
+</svg>
+            </a>
+          </figure>
+          <section>
+            <h2><a href="../metrica/definitiones-catoptrica-dioptra/definitiones-catoptrica-dioptra-en.html">Definitiones, Catoptrica & Dioptra: Genetic Axiomatics, Universal Gnomon, Shortest-Path Optics & Mountain Tunneling</a></h2>
+              <p><em>Hero’s Genetic Definitions &amp; Universal Gnomon (§58), Proclus on Hero’s Direct Proofs, the Variational Shortest-Path Proof of Reflection (Catoptrica Prop. 4), and Two-Portal Mountain Tunneling (Dioptra Ch. 15)</em> — <strong>Hultsch (1864), pp. 7–23 · Schmidt (1900), pp. 324–372 · Schöne (1903), pp. 238–240</strong></p>
+          </section>
+        </div>
+      </article>
+        
+      </section>
+    </div>
+    <footer class="book-footer">
+      <div class="book-footer-ornament">&#10086;</div>
+    </footer>
+  </article>
+
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="apparatus.html">apparatus</a></li>
+        <li><a href="#" class="is-active" aria-current="page" aria-selected="true">chapter</a></li>
+        <li><a href="el.html">el</a></li>
+        <li><a href="notes.html">notes</a></li>
+        <li><a href="summary.html">summary</a></li>
+        <li><a href="translation.html">translation</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, phi ARCHITECT (GEOMETOR Digital Scriptorium).
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

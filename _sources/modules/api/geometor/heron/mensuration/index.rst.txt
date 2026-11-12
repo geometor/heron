@@ -1,0 +1,274 @@
+geometor.heron.mensuration
+==========================
+
+.. py:module:: geometor.heron.mensuration
+
+.. autoapi-nested-parse::
+
+   Exact symbolic mensuration formulas and rational approximations from Hero's Metrica.
+
+   Implements Hero of Alexandria's plane and solid mensuration algorithms in 100% exact
+   SymPy algebra alongside Norman J. Wildberger's Rational Trigonometry quadrea identity:
+
+   - **Heron's Formula & Archimedes' Quadrea** (*Metrica* I.8; *Wildberger* W.07).
+   - **Hero's Iterative Square-Root Extraction** (*Metrica* I.8: :math:`\sqrt{720}`).
+   - **Pentagon Golden Section Lemma** (*Metrica* I.18 Lemma over :math:`\mathbb{Q}(\phi)`).
+   - **Regular Polygon Area Ratios** (*Metrica* I.17–I.25, :math:`n = 3 \dots 12`).
+   - **Dionysodorus's Torus Theorem** (*Metrica* II.13: :math:`V = 2\pi^2 R r^2`).
+   - **Truncated Pyramid/Cone Mean-Plus-Third-Difference Identity** (*Metrica* II.6–10).
+   - **Exact Volumes of the Five Platonic Solids** (*Metrica* II.16–19).
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.heron.mensuration.PHI
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.heron.mensuration.SqrtConvergent
+   geometor.heron.mensuration.PolygonRatioEntry
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.heron.mensuration.heron_area_squared
+   geometor.heron.mensuration.heron_area
+   geometor.heron.mensuration.archimedes_quadrea
+   geometor.heron.mensuration.verify_quadrea_identity
+   geometor.heron.mensuration.heron_sqrt_convergents
+   geometor.heron.mensuration.pentagon_golden_lemma
+   geometor.heron.mensuration.regular_polygon_ratios
+   geometor.heron.mensuration.dionysodorus_torus_volume
+   geometor.heron.mensuration.frustum_volume
+   geometor.heron.mensuration.verify_frustum_mean_identity
+   geometor.heron.mensuration.platonic_solid_volumes
+
+
+Module Contents
+---------------
+
+.. py:data:: PHI
+   :type:  sympy.Expr
+
+.. py:class:: SqrtConvergent
+
+   Single step of Hero's iteration :math:`x_{k+1} = \frac{1}{2}(x_k + N/x_k)`.
+
+   .. attribute:: step
+
+      Zero-based iteration index (:math:`k = 0` is the initial rational seed).
+
+   .. attribute:: approx
+
+      Exact rational convergent :math:`x_k \in \mathbb{Q}`.
+
+   .. attribute:: square
+
+      Exact square :math:`x_k^2 \in \mathbb{Q}`.
+
+   .. attribute:: residual
+
+      Exact quadratic error :math:`x_k^2 - N \ge 0` (for :math:`k \ge 1`).
+
+
+   .. py:attribute:: step
+      :type:  int
+
+
+   .. py:attribute:: approx
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: square
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: residual
+      :type:  sympy.Rational
+
+
+.. py:class:: PolygonRatioEntry
+
+   Exact vs. Heronian area-to-side-squared ratio :math:`A_n / s^2` for a regular :math:`n`-gon.
+
+   .. attribute:: sides
+
+      Number of polygon sides :math:`n \in \{3, \dots, 12\}`.
+
+   .. attribute:: name
+
+      Classical polygon name.
+
+   .. attribute:: metrica_prop
+
+      Proposition locus in Schöne's *Metrica* Book I.
+
+   .. attribute:: exact_area_over_s2
+
+      Exact closed-form or cyclotomic SymPy expression for :math:`A_n / s^2`.
+
+   .. attribute:: heron_rational_over_s2
+
+      Hero's practical rational multiplier :math:`p / q` in *Metrica*.
+
+   .. attribute:: relative_error
+
+      Signed relative error :math:`(p/q - A_n/s^2) / (A_n/s^2)` as a float.
+
+
+   .. py:attribute:: sides
+      :type:  int
+
+
+   .. py:attribute:: name
+      :type:  str
+
+
+   .. py:attribute:: metrica_prop
+      :type:  str
+
+
+   .. py:attribute:: exact_area_over_s2
+      :type:  sympy.Expr
+
+
+   .. py:attribute:: heron_rational_over_s2
+      :type:  sympy.Rational
+
+
+   .. py:attribute:: relative_error
+      :type:  float
+
+
+.. py:function:: heron_area_squared(a: int | sympy.Expr, b: int | sympy.Expr, c: int | sympy.Expr) -> sympy.Expr
+
+   Compute exact squared area :math:`\Delta^2 = s(s-a)(s-b)(s-c)` from side lengths.
+
+   :param a: Length of side :math:`a = BC`.
+   :param b: Length of side :math:`b = CA`.
+   :param c: Length of side :math:`c = AB`.
+
+   :returns: Exact simplified SymPy expression for :math:`\Delta^2`.
+
+
+.. py:function:: heron_area(a: int | sympy.Expr, b: int | sympy.Expr, c: int | sympy.Expr) -> sympy.Expr
+
+   Compute exact triangle area :math:`\Delta = \sqrt{s(s-a)(s-b)(s-c)}` (*Metrica* I.8).
+
+   :param a: Length of side :math:`a = BC`.
+   :param b: Length of side :math:`b = CA`.
+   :param c: Length of side :math:`c = AB`.
+
+   :returns: Exact SymPy expression for :math:`\Delta`.
+
+
+.. py:function:: archimedes_quadrea(q_a: int | sympy.Expr, q_b: int | sympy.Expr, q_c: int | sympy.Expr) -> sympy.Expr
+
+   Compute Wildberger's quadrea :math:`\mathcal{A} = (Q_a+Q_b+Q_c)^2 - 2(Q_a^2+Q_b^2+Q_c^2)`.
+
+   Requires only the three side quadrances :math:`Q_a = a^2, Q_b = b^2, Q_c = c^2`
+   with zero square roots, satisfying :math:`\mathcal{A} = 16\Delta^2`.
+
+   :param q_a: Side quadrance :math:`Q_a`.
+   :param q_b: Side quadrance :math:`Q_b`.
+   :param q_c: Side quadrance :math:`Q_c`.
+
+   :returns: Exact polynomial SymPy expression for :math:`\mathcal{A} = 16\Delta^2`.
+
+
+.. py:function:: verify_quadrea_identity() -> sympy.Expr
+
+   Prove polynomially that :math:`\mathcal{A}(a^2, b^2, c^2) - 16 s(s-a)(s-b)(s-c) \equiv 0`.
+
+   :returns: Exact :class:`sympy.Integer` ``0`` certifying the identity in :math:`\mathbb{Z}[a, b, c]`.
+
+
+.. py:function:: heron_sqrt_convergents(n_val: int | sympy.Rational, steps: int = 4, x0: int | sympy.Rational | None = None) -> list[SqrtConvergent]
+
+   Generate exact rational convergents to :math:`\sqrt{N}` via Hero's *Metrica* I.8 method.
+
+   If ``x0`` is omitted, selects the integer whose square is nearest to ``n_val``
+   (matching Hero's choice :math:`x_0 = 27` with :math:`27^2 = 729` for :math:`N = 720`).
+
+   :param n_val: Positive integer or rational radicand :math:`N`.
+   :param steps: Number of Newton–Heron averaging steps after :math:`x_0`.
+   :param x0: Optional positive rational starting seed.
+
+   :returns: List of ``steps + 1`` :class:`SqrtConvergent` records from :math:`k = 0` to ``steps``.
+
+
+.. py:function:: pentagon_golden_lemma() -> dict[str, sympy.Expr]
+
+   Verify Hero's *Metrica* I.18 Golden Section Lemma in :math:`\mathbb{Q}(\phi)`.
+
+   In right triangle :math:`AB\Gamma` with :math:`\angle\Gamma = 90^\circ` and
+   :math:`\angle A = 36^\circ = \frac{2}{5}\cdot 90^\circ`, doubling :math:`A\Gamma`
+   to :math:`A\Delta = 2\cdot A\Gamma` yields :math:`\angle AB\Delta = 108^\circ`,
+   so :math:`A\Delta` is cut in extreme and mean ratio with greater segment :math:`AB`:
+   :math:`AB = A\Delta / \phi = (2/\phi)\cdot A\Gamma = (\sqrt{5} - 1) A\Gamma`,
+   hence :math:`(AB + A\Gamma)^2 = 5 \cdot A\Gamma^2`.
+
+   :returns: Dictionary of exact symbolic invariants and Hero's :math:`81 : 16` rational proxy.
+
+
+.. py:function:: regular_polygon_ratios() -> list[PolygonRatioEntry]
+
+   Return exact vs. Heronian area multipliers :math:`A_n / s^2` (*Metrica* I.17–25).
+
+   :returns: List of 10 :class:`PolygonRatioEntry` records for :math:`n = 3, \dots, 12`.
+
+
+.. py:function:: dionysodorus_torus_volume(major_radius: int | sympy.Expr, minor_radius: int | sympy.Expr, *, pi_approx: sympy.Rational | None = None) -> sympy.Expr
+
+   Compute the volume :math:`V = 2\pi^2 R r^2` of a torus (*σπεῖρα*, *Metrica* II.13).
+
+   On Hero's *Metrica* II.13 dimensions (:math:`R = 14, r = 6`) with Archimedean
+   :math:`\pi \approx 22/7`, returns the exact fraction :math:`69696/7 = 9956\frac{4}{7}`.
+
+   :param major_radius: Distance :math:`R` from torus center to generating circle center.
+   :param minor_radius: Radius :math:`r` of the generating meridian circle.
+   :param pi_approx: Optional rational proxy for :math:`\pi` (e.g., ``sp.Rational(22, 7)``).
+
+   :returns: Exact SymPy expression (or :class:`sympy.Rational` if ``pi_approx`` is rational).
+
+
+.. py:function:: frustum_volume(b1: int | sympy.Expr, b2: int | sympy.Expr, height: int | sympy.Expr) -> sympy.Expr
+
+   Compute square pyramidal frustum volume via Hero's *Metrica* II.6/II.9 decomposition.
+
+   Evaluates :math:`V = h \left[ ((b_1 + b_2)/2)^2 + \frac{1}{3}((b_1 - b_2)/2)^2 \right]`.
+
+   :param b1: Lower square base edge :math:`b_1`.
+   :param b2: Upper parallel square edge :math:`b_2`.
+   :param height: Perpendicular altitude :math:`h`.
+
+   :returns: Exact simplified SymPy expression equal to :math:`\frac{h}{3}(b_1^2 + b_1 b_2 + b_2^2)`.
+
+
+.. py:function:: verify_frustum_mean_identity() -> sympy.Expr
+
+   Prove that Hero's mean-plus-third-half-difference equals :math:`(u^2 + u v + v^2)/3`.
+
+   :returns: Exact :class:`sympy.Integer` ``0``.
+
+
+.. py:function:: platonic_solid_volumes(edge: int | sympy.Expr = 1) -> dict[str, sympy.Expr]
+
+   Compute exact closed-form volumes of the Five Platonic Solids (*Metrica* II.15–19).
+
+   :param edge: Common edge length :math:`a` (defaults to ``1``).
+
+   :returns: Mapping from solid name to exact volume over :math:`\mathbb{Q}(\sqrt{2}, \sqrt{5})`.
+
+

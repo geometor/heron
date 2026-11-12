@@ -1,0 +1,523 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.heron.mensuration &mdash; GEOMETOR • heron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • heron</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">heron</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission: Bridging Classical Deduction and Exact Mensuration</a>
+        </li>
+        <li>
+          <a href="../../../../../metrica/index.html"  >Hero of Alexandria — Metrica, Definitiones, Catoptrica & Dioptra</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Symbolic Constructions & Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; heron</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • heron</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.heron.mensuration">
+        <span id="geometor-heron-mensuration"></span><h1>geometor.heron.mensuration<a class="headerlink" href="#module-geometor.heron.mensuration" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic mensuration formulas and rational approximations from Hero’s Metrica.</p>
+        <p>Implements Hero of Alexandria’s plane and solid mensuration algorithms in 100% exact
+        SymPy algebra alongside Norman J. Wildberger’s Rational Trigonometry quadrea identity:</p>
+        <ul class="simple">
+        <li><p><strong>Heron’s Formula &amp; Archimedes’ Quadrea</strong> (<em>Metrica</em> I.8; <em>Wildberger</em> W.07).</p></li>
+        <li><p><strong>Hero’s Iterative Square-Root Extraction</strong> (<em>Metrica</em> I.8: <span class="math notranslate nohighlight">\(\sqrt{720}\)</span>).</p></li>
+        <li><p><strong>Pentagon Golden Section Lemma</strong> (<em>Metrica</em> I.18 Lemma over <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>).</p></li>
+        <li><p><strong>Regular Polygon Area Ratios</strong> (<em>Metrica</em> I.17–I.25, <span class="math notranslate nohighlight">\(n = 3 \dots 12\)</span>).</p></li>
+        <li><p><strong>Dionysodorus’s Torus Theorem</strong> (<em>Metrica</em> II.13: <span class="math notranslate nohighlight">\(V = 2\pi^2 R r^2\)</span>).</p></li>
+        <li><p><strong>Truncated Pyramid/Cone Mean-Plus-Third-Difference Identity</strong> (<em>Metrica</em> II.6–10).</p></li>
+        <li><p><strong>Exact Volumes of the Five Platonic Solids</strong> (<em>Metrica</em> II.16–19).</p></li>
+        </ul>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.PHI" title="geometor.heron.mensuration.PHI"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PHI</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.SqrtConvergent" title="geometor.heron.mensuration.SqrtConvergent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SqrtConvergent</span></code></a></p></td>
+        <td><p>Single step of Hero's iteration <span class="math notranslate nohighlight">\(x_{k+1} = \frac{1}{2}(x_k + N/x_k)\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.mensuration.PolygonRatioEntry" title="geometor.heron.mensuration.PolygonRatioEntry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PolygonRatioEntry</span></code></a></p></td>
+        <td><p>Exact vs. Heronian area-to-side-squared ratio <span class="math notranslate nohighlight">\(A_n / s^2\)</span> for a regular <span class="math notranslate nohighlight">\(n\)</span>-gon.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.heron_area_squared" title="geometor.heron.mensuration.heron_area_squared"><code class="xref py py-obj docutils literal notranslate"><span class="pre">heron_area_squared</span></code></a>(a, b, c) → sympy.Expr</p></td>
+        <td><p>Compute exact squared area <span class="math notranslate nohighlight">\(\Delta^2 = s(s-a)(s-b)(s-c)\)</span> from side lengths.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.mensuration.heron_area" title="geometor.heron.mensuration.heron_area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">heron_area</span></code></a>(a, b, c) → sympy.Expr</p></td>
+        <td><p>Compute exact triangle area <span class="math notranslate nohighlight">\(\Delta = \sqrt{s(s-a)(s-b)(s-c)}\)</span> (<em>Metrica</em> I.8).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.archimedes_quadrea" title="geometor.heron.mensuration.archimedes_quadrea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">archimedes_quadrea</span></code></a>(q_a, q_b, q_c) → sympy.Expr</p></td>
+        <td><p>Compute Wildberger's quadrea <span class="math notranslate nohighlight">\(\mathcal{A} = (Q_a+Q_b+Q_c)^2 - 2(Q_a^2+Q_b^2+Q_c^2)\)</span>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.mensuration.verify_quadrea_identity" title="geometor.heron.mensuration.verify_quadrea_identity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_quadrea_identity</span></code></a>() → sympy.Expr</p></td>
+        <td><p>Prove polynomially that <span class="math notranslate nohighlight">\(\mathcal{A}(a^2, b^2, c^2) - 16 s(s-a)(s-b)(s-c) \equiv 0\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.heron_sqrt_convergents" title="geometor.heron.mensuration.heron_sqrt_convergents"><code class="xref py py-obj docutils literal notranslate"><span class="pre">heron_sqrt_convergents</span></code></a>(n_val[, steps, x0]) → list[SqrtConvergent]</p></td>
+        <td><p>Generate exact rational convergents to <span class="math notranslate nohighlight">\(\sqrt{N}\)</span> via Hero's <em>Metrica</em> I.8 method.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.mensuration.pentagon_golden_lemma" title="geometor.heron.mensuration.pentagon_golden_lemma"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pentagon_golden_lemma</span></code></a>() → dict[str, sympy.Expr]</p></td>
+        <td><p>Verify Hero's <em>Metrica</em> I.18 Golden Section Lemma in <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.regular_polygon_ratios" title="geometor.heron.mensuration.regular_polygon_ratios"><code class="xref py py-obj docutils literal notranslate"><span class="pre">regular_polygon_ratios</span></code></a>() → list[PolygonRatioEntry]</p></td>
+        <td><p>Return exact vs. Heronian area multipliers <span class="math notranslate nohighlight">\(A_n / s^2\)</span> (<em>Metrica</em> I.17–25).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.mensuration.dionysodorus_torus_volume" title="geometor.heron.mensuration.dionysodorus_torus_volume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dionysodorus_torus_volume</span></code></a>(major_radius, minor_radius, *) → sympy.Expr</p></td>
+        <td><p>Compute the volume <span class="math notranslate nohighlight">\(V = 2\pi^2 R r^2\)</span> of a torus (<em>σπεῖρα</em>, <em>Metrica</em> II.13).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.frustum_volume" title="geometor.heron.mensuration.frustum_volume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frustum_volume</span></code></a>(b1, b2, height) → sympy.Expr</p></td>
+        <td><p>Compute square pyramidal frustum volume via Hero's <em>Metrica</em> II.6/II.9 decomposition.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.mensuration.verify_frustum_mean_identity" title="geometor.heron.mensuration.verify_frustum_mean_identity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_frustum_mean_identity</span></code></a>() → sympy.Expr</p></td>
+        <td><p>Prove that Hero's mean-plus-third-half-difference equals <span class="math notranslate nohighlight">\((u^2 + u v + v^2)/3\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.mensuration.platonic_solid_volumes" title="geometor.heron.mensuration.platonic_solid_volumes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">platonic_solid_volumes</span></code></a>([edge]) → dict[str, sympy.Expr]</p></td>
+        <td><p>Compute exact closed-form volumes of the Five Platonic Solids (<em>Metrica</em> II.15–19).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PHI">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">PHI</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.heron.mensuration.PHI" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">SqrtConvergent</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent" title="Link to this definition">¶</a></dt>
+        <dd><p>Single step of Hero’s iteration <span class="math notranslate nohighlight">\(x_{k+1} = \frac{1}{2}(x_k + N/x_k)\)</span>.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.step">
+        <span class="sig-name descname"><span class="pre">step</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.step" title="Link to this definition">¶</a></dt>
+        <dd><p>Zero-based iteration index (<span class="math notranslate nohighlight">\(k = 0\)</span> is the initial rational seed).</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.approx">
+        <span class="sig-name descname"><span class="pre">approx</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.approx" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact rational convergent <span class="math notranslate nohighlight">\(x_k \in \mathbb{Q}\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.square">
+        <span class="sig-name descname"><span class="pre">square</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.square" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact square <span class="math notranslate nohighlight">\(x_k^2 \in \mathbb{Q}\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.residual">
+        <span class="sig-name descname"><span class="pre">residual</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.residual" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact quadratic error <span class="math notranslate nohighlight">\(x_k^2 - N \ge 0\)</span> (for <span class="math notranslate nohighlight">\(k \ge 1\)</span>).</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id0">
+        <span class="sig-name descname"><span class="pre">step</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id1">
+        <span class="sig-name descname"><span class="pre">approx</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id2">
+        <span class="sig-name descname"><span class="pre">square</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id3">
+        <span class="sig-name descname"><span class="pre">residual</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">PolygonRatioEntry</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact vs. Heronian area-to-side-squared ratio <span class="math notranslate nohighlight">\(A_n / s^2\)</span> for a regular <span class="math notranslate nohighlight">\(n\)</span>-gon.</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.sides">
+        <span class="sig-name descname"><span class="pre">sides</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.sides" title="Link to this definition">¶</a></dt>
+        <dd><p>Number of polygon sides <span class="math notranslate nohighlight">\(n \in \{3, \dots, 12\}\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.name">
+        <span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.name" title="Link to this definition">¶</a></dt>
+        <dd><p>Classical polygon name.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.metrica_prop">
+        <span class="sig-name descname"><span class="pre">metrica_prop</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.metrica_prop" title="Link to this definition">¶</a></dt>
+        <dd><p>Proposition locus in Schöne’s <em>Metrica</em> Book I.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.exact_area_over_s2">
+        <span class="sig-name descname"><span class="pre">exact_area_over_s2</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.exact_area_over_s2" title="Link to this definition">¶</a></dt>
+        <dd><p>Exact closed-form or cyclotomic SymPy expression for <span class="math notranslate nohighlight">\(A_n / s^2\)</span>.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.heron_rational_over_s2">
+        <span class="sig-name descname"><span class="pre">heron_rational_over_s2</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.heron_rational_over_s2" title="Link to this definition">¶</a></dt>
+        <dd><p>Hero’s practical rational multiplier <span class="math notranslate nohighlight">\(p / q\)</span> in <em>Metrica</em>.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.relative_error">
+        <span class="sig-name descname"><span class="pre">relative_error</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.relative_error" title="Link to this definition">¶</a></dt>
+        <dd><p>Signed relative error <span class="math notranslate nohighlight">\((p/q - A_n/s^2) / (A_n/s^2)\)</span> as a float.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id4">
+        <span class="sig-name descname"><span class="pre">sides</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id5">
+        <span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id6">
+        <span class="sig-name descname"><span class="pre">metrica_prop</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id7">
+        <span class="sig-name descname"><span class="pre">exact_area_over_s2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id8">
+        <span class="sig-name descname"><span class="pre">heron_rational_over_s2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id8" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id9">
+        <span class="sig-name descname"><span class="pre">relative_error</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#id9" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.heron_area_squared">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">heron_area_squared</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.heron.mensuration.heron_area_squared" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute exact squared area <span class="math notranslate nohighlight">\(\Delta^2 = s(s-a)(s-b)(s-c)\)</span> from side lengths.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>a</strong> – Length of side <span class="math notranslate nohighlight">\(a = BC\)</span>.</p></li>
+        <li><p><strong>b</strong> – Length of side <span class="math notranslate nohighlight">\(b = CA\)</span>.</p></li>
+        <li><p><strong>c</strong> – Length of side <span class="math notranslate nohighlight">\(c = AB\)</span>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact simplified SymPy expression for <span class="math notranslate nohighlight">\(\Delta^2\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.heron_area">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">heron_area</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.heron.mensuration.heron_area" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute exact triangle area <span class="math notranslate nohighlight">\(\Delta = \sqrt{s(s-a)(s-b)(s-c)}\)</span> (<em>Metrica</em> I.8).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>a</strong> – Length of side <span class="math notranslate nohighlight">\(a = BC\)</span>.</p></li>
+        <li><p><strong>b</strong> – Length of side <span class="math notranslate nohighlight">\(b = CA\)</span>.</p></li>
+        <li><p><strong>c</strong> – Length of side <span class="math notranslate nohighlight">\(c = AB\)</span>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact SymPy expression for <span class="math notranslate nohighlight">\(\Delta\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.archimedes_quadrea">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">archimedes_quadrea</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">q_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">q_c</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.heron.mensuration.archimedes_quadrea" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute Wildberger’s quadrea <span class="math notranslate nohighlight">\(\mathcal{A} = (Q_a+Q_b+Q_c)^2 - 2(Q_a^2+Q_b^2+Q_c^2)\)</span>.</p>
+        <p>Requires only the three side quadrances <span class="math notranslate nohighlight">\(Q_a = a^2, Q_b = b^2, Q_c = c^2\)</span>
+        with zero square roots, satisfying <span class="math notranslate nohighlight">\(\mathcal{A} = 16\Delta^2\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>q_a</strong> – Side quadrance <span class="math notranslate nohighlight">\(Q_a\)</span>.</p></li>
+        <li><p><strong>q_b</strong> – Side quadrance <span class="math notranslate nohighlight">\(Q_b\)</span>.</p></li>
+        <li><p><strong>q_c</strong> – Side quadrance <span class="math notranslate nohighlight">\(Q_c\)</span>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact polynomial SymPy expression for <span class="math notranslate nohighlight">\(\mathcal{A} = 16\Delta^2\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.verify_quadrea_identity">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">verify_quadrea_identity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.heron.mensuration.verify_quadrea_identity" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove polynomially that <span class="math notranslate nohighlight">\(\mathcal{A}(a^2, b^2, c^2) - 16 s(s-a)(s-b)(s-c) \equiv 0\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Exact <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Integer</span></code> <code class="docutils literal notranslate"><span class="pre">0</span></code> certifying the identity in <span class="math notranslate nohighlight">\(\mathbb{Z}[a, b, c]\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.heron_sqrt_convergents">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">heron_sqrt_convergents</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_val</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">steps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x0</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Rational</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.heron.mensuration.SqrtConvergent" title="geometor.heron.mensuration.SqrtConvergent"><span class="pre">SqrtConvergent</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.mensuration.heron_sqrt_convergents" title="Link to this definition">¶</a></dt>
+        <dd><p>Generate exact rational convergents to <span class="math notranslate nohighlight">\(\sqrt{N}\)</span> via Hero’s <em>Metrica</em> I.8 method.</p>
+        <p>If <code class="docutils literal notranslate"><span class="pre">x0</span></code> is omitted, selects the integer whose square is nearest to <code class="docutils literal notranslate"><span class="pre">n_val</span></code>
+        (matching Hero’s choice <span class="math notranslate nohighlight">\(x_0 = 27\)</span> with <span class="math notranslate nohighlight">\(27^2 = 729\)</span> for <span class="math notranslate nohighlight">\(N = 720\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>n_val</strong> – Positive integer or rational radicand <span class="math notranslate nohighlight">\(N\)</span>.</p></li>
+        <li><p><strong>steps</strong> – Number of Newton–Heron averaging steps after <span class="math notranslate nohighlight">\(x_0\)</span>.</p></li>
+        <li><p><strong>x0</strong> – Optional positive rational starting seed.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>List of <code class="docutils literal notranslate"><span class="pre">steps</span> <span class="pre">+</span> <span class="pre">1</span></code> <a class="reference internal" href="#geometor.heron.mensuration.SqrtConvergent" title="geometor.heron.mensuration.SqrtConvergent"><code class="xref py py-class docutils literal notranslate"><span class="pre">SqrtConvergent</span></code></a> records from <span class="math notranslate nohighlight">\(k = 0\)</span> to <code class="docutils literal notranslate"><span class="pre">steps</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.pentagon_golden_lemma">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">pentagon_golden_lemma</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.mensuration.pentagon_golden_lemma" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify Hero’s <em>Metrica</em> I.18 Golden Section Lemma in <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>.</p>
+        <p>In right triangle <span class="math notranslate nohighlight">\(AB\Gamma\)</span> with <span class="math notranslate nohighlight">\(\angle\Gamma = 90^\circ\)</span> and
+        <span class="math notranslate nohighlight">\(\angle A = 36^\circ = \frac{2}{5}\cdot 90^\circ\)</span>, doubling <span class="math notranslate nohighlight">\(A\Gamma\)</span>
+        to <span class="math notranslate nohighlight">\(A\Delta = 2\cdot A\Gamma\)</span> yields <span class="math notranslate nohighlight">\(\angle AB\Delta = 108^\circ\)</span>,
+        so <span class="math notranslate nohighlight">\(A\Delta\)</span> is cut in extreme and mean ratio with greater segment <span class="math notranslate nohighlight">\(AB\)</span>:
+        <span class="math notranslate nohighlight">\(AB = A\Delta / \phi = (2/\phi)\cdot A\Gamma = (\sqrt{5} - 1) A\Gamma\)</span>,
+        hence <span class="math notranslate nohighlight">\((AB + A\Gamma)^2 = 5 \cdot A\Gamma^2\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Dictionary of exact symbolic invariants and Hero’s <span class="math notranslate nohighlight">\(81 : 16\)</span> rational proxy.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.regular_polygon_ratios">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">regular_polygon_ratios</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.heron.mensuration.PolygonRatioEntry" title="geometor.heron.mensuration.PolygonRatioEntry"><span class="pre">PolygonRatioEntry</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.mensuration.regular_polygon_ratios" title="Link to this definition">¶</a></dt>
+        <dd><p>Return exact vs. Heronian area multipliers <span class="math notranslate nohighlight">\(A_n / s^2\)</span> (<em>Metrica</em> I.17–25).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>List of 10 <a class="reference internal" href="#geometor.heron.mensuration.PolygonRatioEntry" title="geometor.heron.mensuration.PolygonRatioEntry"><code class="xref py py-class docutils literal notranslate"><span class="pre">PolygonRatioEntry</span></code></a> records for <span class="math notranslate nohighlight">\(n = 3, \dots, 12\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.dionysodorus_torus_volume">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">dionysodorus_torus_volume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">major_radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minor_radius</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">pi_approx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sympy.Rational</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.heron.mensuration.dionysodorus_torus_volume" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute the volume <span class="math notranslate nohighlight">\(V = 2\pi^2 R r^2\)</span> of a torus (<em>σπεῖρα</em>, <em>Metrica</em> II.13).</p>
+        <p>On Hero’s <em>Metrica</em> II.13 dimensions (<span class="math notranslate nohighlight">\(R = 14, r = 6\)</span>) with Archimedean
+        <span class="math notranslate nohighlight">\(\pi \approx 22/7\)</span>, returns the exact fraction <span class="math notranslate nohighlight">\(69696/7 = 9956\frac{4}{7}\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>major_radius</strong> – Distance <span class="math notranslate nohighlight">\(R\)</span> from torus center to generating circle center.</p></li>
+        <li><p><strong>minor_radius</strong> – Radius <span class="math notranslate nohighlight">\(r\)</span> of the generating meridian circle.</p></li>
+        <li><p><strong>pi_approx</strong> – Optional rational proxy for <span class="math notranslate nohighlight">\(\pi\)</span> (e.g., <code class="docutils literal notranslate"><span class="pre">sp.Rational(22,</span> <span class="pre">7)</span></code>).</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact SymPy expression (or <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Rational</span></code> if <code class="docutils literal notranslate"><span class="pre">pi_approx</span></code> is rational).</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.frustum_volume">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">frustum_volume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.heron.mensuration.frustum_volume" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute square pyramidal frustum volume via Hero’s <em>Metrica</em> II.6/II.9 decomposition.</p>
+        <p>Evaluates <span class="math notranslate nohighlight">\(V = h \left[ ((b_1 + b_2)/2)^2 + \frac{1}{3}((b_1 - b_2)/2)^2 \right]\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>b1</strong> – Lower square base edge <span class="math notranslate nohighlight">\(b_1\)</span>.</p></li>
+        <li><p><strong>b2</strong> – Upper parallel square edge <span class="math notranslate nohighlight">\(b_2\)</span>.</p></li>
+        <li><p><strong>height</strong> – Perpendicular altitude <span class="math notranslate nohighlight">\(h\)</span>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Exact simplified SymPy expression equal to <span class="math notranslate nohighlight">\(\frac{h}{3}(b_1^2 + b_1 b_2 + b_2^2)\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.verify_frustum_mean_identity">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">verify_frustum_mean_identity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">sympy.Expr</span></span></span><a class="headerlink" href="#geometor.heron.mensuration.verify_frustum_mean_identity" title="Link to this definition">¶</a></dt>
+        <dd><p>Prove that Hero’s mean-plus-third-half-difference equals <span class="math notranslate nohighlight">\((u^2 + u v + v^2)/3\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Returns<span class="colon">:</span></dt>
+        <dd class="field-odd"><p>Exact <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Integer</span></code> <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.mensuration.platonic_solid_volumes">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">platonic_solid_volumes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.mensuration.platonic_solid_volumes" title="Link to this definition">¶</a></dt>
+        <dd><p>Compute exact closed-form volumes of the Five Platonic Solids (<em>Metrica</em> II.15–19).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>edge</strong> – Common edge length <span class="math notranslate nohighlight">\(a\)</span> (defaults to <code class="docutils literal notranslate"><span class="pre">1</span></code>).</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Mapping from solid name to exact volume over <span class="math notranslate nohighlight">\(\mathbb{Q}(\sqrt{2}, \sqrt{5})\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • heron</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../../types/chapter.html">chapter</a></li>
+        <li><a href="../../../../../types/el.html">el</a></li>
+        <li><a href="../../../../../types/notes.html">notes</a></li>
+        <li><a href="../../../../../types/summary.html">summary</a></li>
+        <li><a href="../../../../../types/translation.html">translation</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, phi ARCHITECT (GEOMETOR Digital Scriptorium).
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

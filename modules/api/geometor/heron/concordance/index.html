@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.heron.concordance &mdash; GEOMETOR • heron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • heron</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">heron</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission: Bridging Classical Deduction and Exact Mensuration</a>
+        </li>
+        <li>
+          <a href="../../../../../metrica/index.html"  >Hero of Alexandria — Metrica, Definitiones, Catoptrica & Dioptra</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Symbolic Constructions & Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; heron</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • heron</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.heron.concordance">
+        <span id="geometor-heron-concordance"></span><h1>geometor.heron.concordance<a class="headerlink" href="#module-geometor.heron.concordance" title="Link to this heading">¶</a></h1>
+        <p>Codex unit specifications, provenance manifest checks, and cross-corpus concordance.</p>
+        <section class="level-2" id="attributes">
+        <h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.concordance.CODEX_UNITS" title="geometor.heron.concordance.CODEX_UNITS"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CODEX_UNITS</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.concordance.CODEX_UNITS_BY_SLUG" title="geometor.heron.concordance.CODEX_UNITS_BY_SLUG"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CODEX_UNITS_BY_SLUG</span></code></a></p></td>
+        <td><p></p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="classes">
+        <h2>Classes<a class="headerlink" href="#classes" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.concordance.CodexUnitSpec" title="geometor.heron.concordance.CodexUnitSpec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CodexUnitSpec</span></code></a></p></td>
+        <td><p>Canonical unit in the 4-Track Book Codex (<code class="docutils literal notranslate"><span class="pre">docsrc/metrica/</span></code>).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.concordance.default_repo_root" title="geometor.heron.concordance.default_repo_root"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_repo_root</span></code></a>() → pathlib.Path</p></td>
+        <td><p>Return the root directory of <code class="docutils literal notranslate"><span class="pre">geometor/heron</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.concordance.default_resources_dir" title="geometor.heron.concordance.default_resources_dir"><code class="xref py py-obj docutils literal notranslate"><span class="pre">default_resources_dir</span></code></a>() → pathlib.Path</p></td>
+        <td><p>Return <code class="docutils literal notranslate"><span class="pre">&lt;repo&gt;/resources/metrica</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.concordance.load_concordance" title="geometor.heron.concordance.load_concordance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_concordance</span></code></a>([resources_dir]) → dict[str, object]</p></td>
+        <td><p>Load <code class="docutils literal notranslate"><span class="pre">resources/metrica/concordance.json</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.concordance.load_sources_manifest" title="geometor.heron.concordance.load_sources_manifest"><code class="xref py py-obj docutils literal notranslate"><span class="pre">load_sources_manifest</span></code></a>([resources_dir]) → dict[str, object]</p></td>
+        <td><p>Load <code class="docutils literal notranslate"><span class="pre">resources/metrica/sources_manifest.json</span></code>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.concordance.verify_manifest_checksums" title="geometor.heron.concordance.verify_manifest_checksums"><code class="xref py py-obj docutils literal notranslate"><span class="pre">verify_manifest_checksums</span></code></a>([repo_root]) → list[str]</p></td>
+        <td><p>Verify SHA-256 checksums of local primary-source excerpts in <code class="docutils literal notranslate"><span class="pre">sources_manifest.json</span></code>.</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py class">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec">
+        <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">CodexUnitSpec</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec" title="Link to this definition">¶</a></dt>
+        <dd><p>Canonical unit in the 4-Track Book Codex (<code class="docutils literal notranslate"><span class="pre">docsrc/metrica/</span></code>).</p>
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec.slug">
+        <span class="sig-name descname"><span class="pre">slug</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec.slug" title="Link to this definition">¶</a></dt>
+        <dd><p>Directory and filename stem for the unit.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec.order">
+        <span class="sig-name descname"><span class="pre">order</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec.order" title="Link to this definition">¶</a></dt>
+        <dd><p>Numeric navigation order in the Book Codex.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec.number_label">
+        <span class="sig-name descname"><span class="pre">number_label</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec.number_label" title="Link to this definition">¶</a></dt>
+        <dd><p>Short display label (e.g., <code class="docutils literal notranslate"><span class="pre">&quot;Metrica</span> <span class="pre">I</span> <span class="pre">(1–9)&quot;</span></code>).</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec.title">
+        <span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec.title" title="Link to this definition">¶</a></dt>
+        <dd><p>Full unit title.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec.subtitle">
+        <span class="sig-name descname"><span class="pre">subtitle</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec.subtitle" title="Link to this definition">¶</a></dt>
+        <dd><p>Thematic summary of propositions covered.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec.edition_pages">
+        <span class="sig-name descname"><span class="pre">edition_pages</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec.edition_pages" title="Link to this definition">¶</a></dt>
+        <dd><p>Teubner / Weidmann critical edition page span.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CodexUnitSpec.manuscript_folios">
+        <span class="sig-name descname"><span class="pre">manuscript_folios</span></span><a class="headerlink" href="#geometor.heron.concordance.CodexUnitSpec.manuscript_folios" title="Link to this definition">¶</a></dt>
+        <dd><p>Manuscript witness folio span.</p>
+        </dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id0">
+        <span class="sig-name descname"><span class="pre">slug</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id1">
+        <span class="sig-name descname"><span class="pre">order</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id2">
+        <span class="sig-name descname"><span class="pre">number_label</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id3">
+        <span class="sig-name descname"><span class="pre">title</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id4">
+        <span class="sig-name descname"><span class="pre">subtitle</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id5">
+        <span class="sig-name descname"><span class="pre">edition_pages</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py attribute">
+        <dt class="sig sig-object py" id="id6">
+        <span class="sig-name descname"><span class="pre">manuscript_folios</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        </dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CODEX_UNITS">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">CODEX_UNITS</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#geometor.heron.concordance.CodexUnitSpec" title="geometor.heron.concordance.CodexUnitSpec"><span class="pre">CodexUnitSpec</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.heron.concordance.CODEX_UNITS" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py data">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.CODEX_UNITS_BY_SLUG">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">CODEX_UNITS_BY_SLUG</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="#geometor.heron.concordance.CodexUnitSpec" title="geometor.heron.concordance.CodexUnitSpec"><span class="pre">CodexUnitSpec</span></a><span class="p"><span class="pre">]</span></span></span><a class="headerlink" href="#geometor.heron.concordance.CODEX_UNITS_BY_SLUG" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.default_repo_root">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">default_repo_root</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#geometor.heron.concordance.default_repo_root" title="Link to this definition">¶</a></dt>
+        <dd><p>Return the root directory of <code class="docutils literal notranslate"><span class="pre">geometor/heron</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.default_resources_dir">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">default_resources_dir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#geometor.heron.concordance.default_resources_dir" title="Link to this definition">¶</a></dt>
+        <dd><p>Return <code class="docutils literal notranslate"><span class="pre">&lt;repo&gt;/resources/metrica</span></code>.</p>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.load_concordance">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">load_concordance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.concordance.load_concordance" title="Link to this definition">¶</a></dt>
+        <dd><p>Load <code class="docutils literal notranslate"><span class="pre">resources/metrica/concordance.json</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>resources_dir</strong> – Optional override directory.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Parsed JSON dictionary.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.load_sources_manifest">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">load_sources_manifest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resources_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">object</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.concordance.load_sources_manifest" title="Link to this definition">¶</a></dt>
+        <dd><p>Load <code class="docutils literal notranslate"><span class="pre">resources/metrica/sources_manifest.json</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>resources_dir</strong> – Optional override directory.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Parsed JSON dictionary.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.concordance.verify_manifest_checksums">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.concordance.</span></span><span class="sig-name descname"><span class="pre">verify_manifest_checksums</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">repo_root</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pathlib.Path</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.concordance.verify_manifest_checksums" title="Link to this definition">¶</a></dt>
+        <dd><p>Verify SHA-256 checksums of local primary-source excerpts in <code class="docutils literal notranslate"><span class="pre">sources_manifest.json</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>repo_root</strong> – Optional repository root path.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>List of error strings (empty when all files exist and match their SHA-256 digest).</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • heron</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../../types/chapter.html">chapter</a></li>
+        <li><a href="../../../../../types/el.html">el</a></li>
+        <li><a href="../../../../../types/notes.html">notes</a></li>
+        <li><a href="../../../../../types/summary.html">summary</a></li>
+        <li><a href="../../../../../types/translation.html">translation</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, phi ARCHITECT (GEOMETOR Digital Scriptorium).
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

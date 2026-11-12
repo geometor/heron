@@ -1,0 +1,147 @@
+geometor.heron.concordance
+==========================
+
+.. py:module:: geometor.heron.concordance
+
+.. autoapi-nested-parse::
+
+   Codex unit specifications, provenance manifest checks, and cross-corpus concordance.
+
+
+
+Attributes
+----------
+
+.. autoapisummary::
+
+   geometor.heron.concordance.CODEX_UNITS
+   geometor.heron.concordance.CODEX_UNITS_BY_SLUG
+
+
+Classes
+-------
+
+.. autoapisummary::
+
+   geometor.heron.concordance.CodexUnitSpec
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.heron.concordance.default_repo_root
+   geometor.heron.concordance.default_resources_dir
+   geometor.heron.concordance.load_concordance
+   geometor.heron.concordance.load_sources_manifest
+   geometor.heron.concordance.verify_manifest_checksums
+
+
+Module Contents
+---------------
+
+.. py:class:: CodexUnitSpec
+
+   Canonical unit in the 4-Track Book Codex (``docsrc/metrica/``).
+
+   .. attribute:: slug
+
+      Directory and filename stem for the unit.
+
+   .. attribute:: order
+
+      Numeric navigation order in the Book Codex.
+
+   .. attribute:: number_label
+
+      Short display label (e.g., ``"Metrica I (1–9)"``).
+
+   .. attribute:: title
+
+      Full unit title.
+
+   .. attribute:: subtitle
+
+      Thematic summary of propositions covered.
+
+   .. attribute:: edition_pages
+
+      Teubner / Weidmann critical edition page span.
+
+   .. attribute:: manuscript_folios
+
+      Manuscript witness folio span.
+
+
+   .. py:attribute:: slug
+      :type:  str
+
+
+   .. py:attribute:: order
+      :type:  int
+
+
+   .. py:attribute:: number_label
+      :type:  str
+
+
+   .. py:attribute:: title
+      :type:  str
+
+
+   .. py:attribute:: subtitle
+      :type:  str
+
+
+   .. py:attribute:: edition_pages
+      :type:  str
+
+
+   .. py:attribute:: manuscript_folios
+      :type:  str
+
+
+.. py:data:: CODEX_UNITS
+   :type:  tuple[CodexUnitSpec, ...]
+
+.. py:data:: CODEX_UNITS_BY_SLUG
+   :type:  dict[str, CodexUnitSpec]
+
+.. py:function:: default_repo_root() -> pathlib.Path
+
+   Return the root directory of ``geometor/heron``.
+
+
+.. py:function:: default_resources_dir() -> pathlib.Path
+
+   Return ``<repo>/resources/metrica``.
+
+
+.. py:function:: load_concordance(resources_dir: pathlib.Path | None = None) -> dict[str, object]
+
+   Load ``resources/metrica/concordance.json``.
+
+   :param resources_dir: Optional override directory.
+
+   :returns: Parsed JSON dictionary.
+
+
+.. py:function:: load_sources_manifest(resources_dir: pathlib.Path | None = None) -> dict[str, object]
+
+   Load ``resources/metrica/sources_manifest.json``.
+
+   :param resources_dir: Optional override directory.
+
+   :returns: Parsed JSON dictionary.
+
+
+.. py:function:: verify_manifest_checksums(repo_root: pathlib.Path | None = None) -> list[str]
+
+   Verify SHA-256 checksums of local primary-source excerpts in ``sources_manifest.json``.
+
+   :param repo_root: Optional repository root path.
+
+   :returns: List of error strings (empty when all files exist and match their SHA-256 digest).
+
+

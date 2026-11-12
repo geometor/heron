@@ -1,0 +1,37 @@
+geometor.heron.cli
+==================
+
+.. py:module:: geometor.heron.cli
+
+.. autoapi-nested-parse::
+
+   Command-line interface for ``geometor.heron``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.heron.cli.build_parser
+   geometor.heron.cli.main
+
+
+Module Contents
+---------------
+
+.. py:function:: build_parser() -> argparse.ArgumentParser
+
+   Build the ``heron`` CLI argument parser.
+
+
+.. py:function:: main(argv: collections.abc.Sequence[str] | None = None) -> int
+
+   Execute the ``heron`` CLI entry point.
+
+   :param argv: Optional command-line argument sequence.
+
+   :returns: Process exit code (``0`` on success).
+
+

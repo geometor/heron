@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../../../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>geometor.heron.constructions &mdash; GEOMETOR • heron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../../../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../../../../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../../../../../index.html">
+        <h1>GEOMETOR • heron</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">heron</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../../../../../mission/index.html"  >Mission: Bridging Classical Deduction and Exact Mensuration</a>
+        </li>
+        <li>
+          <a href="../../../../../metrica/index.html"  >Hero of Alexandria — Metrica, Definitiones, Catoptrica & Dioptra</a>
+        </li>
+        <li>
+          <a href="../../../../../demos/index.html"  >Symbolic Constructions & Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; heron</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • heron</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="module-geometor.heron.constructions">
+        <span id="geometor-heron-constructions"></span><h1>geometor.heron.constructions<a class="headerlink" href="#module-geometor.heron.constructions" title="Link to this heading">¶</a></h1>
+        <p>Exact symbolic geometric constructions for Hero of Alexandria in <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code>.</p>
+        <p>Every model in this module obeys the GEOMETOR Iron Law of 100% Exact Symbolic Algebra:</p>
+        <ul class="simple">
+        <li><p>Initialized with <code class="docutils literal notranslate"><span class="pre">Model(...,</span> <span class="pre">auto_intersect=False,</span> <span class="pre">enable_logging=False)</span></code>.</p></li>
+        <li><p>Zero <code class="docutils literal notranslate"><span class="pre">float</span></code> or <code class="xref py py-class docutils literal notranslate"><span class="pre">sympy.Float</span></code> coordinates anywhere in the model.</p></li>
+        <li><p>Clean alphanumeric point IDs without underscores for <code class="docutils literal notranslate"><span class="pre">geometor_interactive.js</span></code>.</p></li>
+        <li><p>Verified step-by-step via <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code> proof assertions and
+        Rational Trigonometry invariants (<code class="docutils literal notranslate"><span class="pre">quadrance</span></code>, <code class="docutils literal notranslate"><span class="pre">line_spread</span></code>, <code class="docutils literal notranslate"><span class="pre">cross_ratio</span></code>).</p></li>
+        </ul>
+        <section class="level-2" id="functions">
+        <h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+        <table class="autosummary longtable docutils align-default">
+        <tbody>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.constructions.construct_heron_proof" title="geometor.heron.constructions.construct_heron_proof"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_heron_proof</span></code></a>([model]) → tuple[geometor.model.Model, dict[str, sympy.Expr]]</p></td>
+        <td><p>Construct Hero's synthetic incircle proof of <em>Metrica</em> I.8 on <code class="docutils literal notranslate"><span class="pre">(13,</span> <span class="pre">14,</span> <span class="pre">15)</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.constructions.construct_pentagon_lemma" title="geometor.heron.constructions.construct_pentagon_lemma"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_pentagon_lemma</span></code></a>([model]) → tuple[geometor.model.Model, dict[str, sympy.Expr]]</p></td>
+        <td><p>Construct Hero's <em>Metrica</em> I.18 Pentagon Golden Section Lemma in <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.constructions.construct_dionysodorus_torus" title="geometor.heron.constructions.construct_dionysodorus_torus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_dionysodorus_torus</span></code></a>([model]) → tuple[geometor.model.Model, dict[str, sympy.Expr]]</p></td>
+        <td><p>Construct the meridian section of Dionysodorus's torus (<em>Metrica</em> II.13).</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.constructions.construct_catoptrica_reflection" title="geometor.heron.constructions.construct_catoptrica_reflection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_catoptrica_reflection</span></code></a>([model]) → tuple[geometor.model.Model, dict[str, sympy.Expr]]</p></td>
+        <td><p>Construct Hero's Variational Shortest-Path Reflection Proof (<em>Catoptrica</em> Prop. 4).</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.constructions.construct_area_division" title="geometor.heron.constructions.construct_area_division"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_area_division</span></code></a>([model, m_ratio, n_ratio]) → tuple[geometor.model.Model, dict[str, sympy.Expr]]</p></td>
+        <td><p>Construct Hero's <em>Metrica</em> III.1 &amp; III.2 area divisions on <code class="docutils literal notranslate"><span class="pre">(13,</span> <span class="pre">14,</span> <span class="pre">15)</span></code>.</p></td>
+        </tr>
+        <tr class="row-even"><td><p><a class="reference internal" href="#geometor.heron.constructions.construct_heronian_gnomon" title="geometor.heron.constructions.construct_heronian_gnomon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_heronian_gnomon</span></code></a>([model]) → tuple[geometor.model.Model, dict[str, sympy.Expr]]</p></td>
+        <td><p>Construct Hero's Universal Gnomon (<em>Definitiones</em> §58) in <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>.</p></td>
+        </tr>
+        <tr class="row-odd"><td><p><a class="reference internal" href="#geometor.heron.constructions.construct_dioptra_tunnel" title="geometor.heron.constructions.construct_dioptra_tunnel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">construct_dioptra_tunnel</span></code></a>([model]) → tuple[geometor.model.Model, dict[str, sympy.Expr]]</p></td>
+        <td><p>Construct Hero's Two-Portal Mountain Tunneling survey (<em>Dioptra</em> Ch. 15).</p></td>
+        </tr>
+        </tbody>
+        </table>
+        </section>
+        <section class="level-2" id="module-contents">
+        <h2>Module Contents<a class="headerlink" href="#module-contents" title="Link to this heading">¶</a></h2>
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.constructions.construct_heron_proof">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.constructions.</span></span><span class="sig-name descname"><span class="pre">construct_heron_proof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.constructions.construct_heron_proof" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Hero’s synthetic incircle proof of <em>Metrica</em> I.8 on <code class="docutils literal notranslate"><span class="pre">(13,</span> <span class="pre">14,</span> <span class="pre">15)</span></code>.</p>
+        <p>Matches Schöne (1903), pp. 20–24 (<strong>Fig. 7</strong>), setting <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">0)</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">C</span> <span class="pre">=</span> <span class="pre">(14,</span> <span class="pre">0)</span></code> (Hero’s <span class="math notranslate nohighlight">\(\Gamma\)</span>), and <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">(5,</span> <span class="pre">12)</span></code> so <span class="math notranslate nohighlight">\(|AB| = 13\)</span>,
+        <span class="math notranslate nohighlight">\(|BC| = 14\)</span>, <span class="math notranslate nohighlight">\(|CA| = 15\)</span>, semiperimeter <span class="math notranslate nohighlight">\(s = 21\)</span>, incenter
+        <code class="docutils literal notranslate"><span class="pre">H</span> <span class="pre">=</span> <span class="pre">(6,</span> <span class="pre">4)</span></code> (<span class="math notranslate nohighlight">\(X(1)\)</span>), inradius <span class="math notranslate nohighlight">\(r = 4\)</span>, extended semiperimeter point
+        <code class="docutils literal notranslate"><span class="pre">G</span> <span class="pre">=</span> <span class="pre">(-7,</span> <span class="pre">0)</span></code> (Hero’s <span class="math notranslate nohighlight">\(\Theta\)</span>), orthogonal meet <code class="docutils literal notranslate"><span class="pre">K</span> <span class="pre">=</span> <span class="pre">(4,</span> <span class="pre">0)</span></code> on <code class="docutils literal notranslate"><span class="pre">BC</span></code>,
+        and cyclic-quadrilateral vertex <code class="docutils literal notranslate"><span class="pre">L</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">-8)</span></code> (Hero’s <span class="math notranslate nohighlight">\(\Lambda\)</span>).</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple <code class="docutils literal notranslate"><span class="pre">(model,</span> <span class="pre">invariants)</span></code> containing the populated model and verified
+        symbolic expressions.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.constructions.construct_pentagon_lemma">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.constructions.</span></span><span class="sig-name descname"><span class="pre">construct_pentagon_lemma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.constructions.construct_pentagon_lemma" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Hero’s <em>Metrica</em> I.18 Pentagon Golden Section Lemma in <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>.</p>
+        <p>Constructs <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">(-1,</span> <span class="pre">0)</span></code>, <code class="docutils literal notranslate"><span class="pre">C</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">0)</span></code> (Hero’s <span class="math notranslate nohighlight">\(\Gamma\)</span>), <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">=</span> <span class="pre">(1,</span> <span class="pre">0)</span></code>
+        (Hero’s <span class="math notranslate nohighlight">\(\Delta\)</span>), cuts <code class="docutils literal notranslate"><span class="pre">AD</span></code> in extreme and mean ratio via compass so
+        <code class="docutils literal notranslate"><span class="pre">|AG|</span> <span class="pre">=</span> <span class="pre">|AB|</span> <span class="pre">=</span> <span class="pre">|BD|</span> <span class="pre">=</span> <span class="pre">sqrt(5)</span> <span class="pre">-</span> <span class="pre">1</span> <span class="pre">=</span> <span class="pre">2/phi</span></code>, and proves
+        <span class="math notranslate nohighlight">\((|BA| + |AC|)^2 = 5 |AC|^2\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple <code class="docutils literal notranslate"><span class="pre">(model,</span> <span class="pre">invariants)</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.constructions.construct_dionysodorus_torus">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.constructions.</span></span><span class="sig-name descname"><span class="pre">construct_dionysodorus_torus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.constructions.construct_dionysodorus_torus" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct the meridian section of Dionysodorus’s torus (<em>Metrica</em> II.13).</p>
+        <p>Models Schöne (1903), pp. 126–130 on <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">0)</span></code>, inner rim <code class="docutils literal notranslate"><span class="pre">C</span> <span class="pre">=</span> <span class="pre">(8,</span> <span class="pre">0)</span></code>,
+        tube center <code class="docutils literal notranslate"><span class="pre">Z</span> <span class="pre">=</span> <span class="pre">(14,</span> <span class="pre">0)</span></code>, outer rim <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">(20,</span> <span class="pre">0)</span></code>, vertical tube diameter
+        <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">=</span> <span class="pre">(14,</span> <span class="pre">6)</span></code> and <code class="docutils literal notranslate"><span class="pre">E</span> <span class="pre">=</span> <span class="pre">(14,</span> <span class="pre">-6)</span></code>, and revolution-axis endpoints <code class="docutils literal notranslate"><span class="pre">H1</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">6)</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">H2</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">-6)</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple <code class="docutils literal notranslate"><span class="pre">(model,</span> <span class="pre">invariants)</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.constructions.construct_catoptrica_reflection">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.constructions.</span></span><span class="sig-name descname"><span class="pre">construct_catoptrica_reflection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.constructions.construct_catoptrica_reflection" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Hero’s Variational Shortest-Path Reflection Proof (<em>Catoptrica</em> Prop. 4).</p>
+        <p>Models Schmidt (1900), pp. 368–372 (<strong>Fig. 92</strong>): plane mirror <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">0)</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">(12,</span> <span class="pre">0)</span></code>, eye <code class="docutils literal notranslate"><span class="pre">C</span> <span class="pre">=</span> <span class="pre">(1,</span> <span class="pre">3)</span></code> (<span class="math notranslate nohighlight">\(\Gamma\)</span>), object <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">=</span> <span class="pre">(10,</span> <span class="pre">6)</span></code>
+        (<span class="math notranslate nohighlight">\(\Delta\)</span>), foot <code class="docutils literal notranslate"><span class="pre">H</span> <span class="pre">=</span> <span class="pre">(10,</span> <span class="pre">0)</span></code>, reflected virtual image <code class="docutils literal notranslate"><span class="pre">K</span> <span class="pre">=</span> <span class="pre">(10,</span> <span class="pre">-6)</span></code>,
+        equal-angle reflection point <code class="docutils literal notranslate"><span class="pre">E</span> <span class="pre">=</span> <span class="pre">(4,</span> <span class="pre">0)</span></code>, and unequal-angle point <code class="docutils literal notranslate"><span class="pre">Z</span> <span class="pre">=</span> <span class="pre">(7,</span> <span class="pre">0)</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple <code class="docutils literal notranslate"><span class="pre">(model,</span> <span class="pre">invariants)</span></code> proving <span class="math notranslate nohighlight">\((|CE|+|ED|)^2 = 162 &lt; 180 = (|CZ|+|ZD|)^2\)</span>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.constructions.construct_area_division">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.constructions.</span></span><span class="sig-name descname"><span class="pre">construct_area_division</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_ratio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.constructions.construct_area_division" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Hero’s <em>Metrica</em> III.1 &amp; III.2 area divisions on <code class="docutils literal notranslate"><span class="pre">(13,</span> <span class="pre">14,</span> <span class="pre">15)</span></code>.</p>
+        <p>Constructs both:</p>
+        <ul class="simple">
+        <li><p><strong>Prop. III.1</strong>: Vertex cevian <code class="docutils literal notranslate"><span class="pre">AV</span></code> dividing <code class="docutils literal notranslate"><span class="pre">BC</span></code> at <code class="docutils literal notranslate"><span class="pre">V</span> <span class="pre">=</span> <span class="pre">(35/4,</span> <span class="pre">0)</span></code> in <code class="docutils literal notranslate"><span class="pre">5</span> <span class="pre">:</span> <span class="pre">3</span></code>.</p></li>
+        <li><p><strong>Prop. III.2</strong>: Line <code class="docutils literal notranslate"><span class="pre">DE</span> <span class="pre">||</span> <span class="pre">BC</span></code> dividing area in ratio <code class="docutils literal notranslate"><span class="pre">m_ratio</span> <span class="pre">:</span> <span class="pre">n_ratio</span></code>
+        (default <code class="docutils literal notranslate"><span class="pre">3</span> <span class="pre">:</span> <span class="pre">1</span></code>) by constructing the mean proportional <code class="docutils literal notranslate"><span class="pre">|AD|^2</span> <span class="pre">=</span> <span class="pre">(m/(m+n))|AB|^2</span></code>
+        via a semicircle on diameter <code class="docutils literal notranslate"><span class="pre">AB</span></code> (<em>Elements</em> VI.13 &amp; VI.19).</p></li>
+        </ul>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p></li>
+        <li><p><strong>m_ratio</strong> – Upper triangle area share <span class="math notranslate nohighlight">\(m &gt; 0\)</span>.</p></li>
+        <li><p><strong>n_ratio</strong> – Lower trapezium area share <span class="math notranslate nohighlight">\(n &gt; 0\)</span>.</p></li>
+        </ul>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple <code class="docutils literal notranslate"><span class="pre">(model,</span> <span class="pre">invariants)</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.constructions.construct_heronian_gnomon">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.constructions.</span></span><span class="sig-name descname"><span class="pre">construct_heronian_gnomon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.constructions.construct_heronian_gnomon" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Hero’s Universal Gnomon (<em>Definitiones</em> §58) in <span class="math notranslate nohighlight">\(\mathbb{Q}(\phi)\)</span>.</p>
+        <p>Starts from unit square <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">A</span> <span class="pre">B</span> <span class="pre">C</span> <span class="pre">D</span> <span class="pre">&gt;</span></code>, bisects <code class="docutils literal notranslate"><span class="pre">AB</span></code> at <code class="docutils literal notranslate"><span class="pre">M</span> <span class="pre">=</span> <span class="pre">(1/2,</span> <span class="pre">0)</span></code>, swings
+        compass arc <code class="docutils literal notranslate"><span class="pre">(M,</span> <span class="pre">C)</span></code> to <code class="docutils literal notranslate"><span class="pre">E</span> <span class="pre">=</span> <span class="pre">(phi,</span> <span class="pre">0)</span></code>, completes <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">A</span> <span class="pre">E</span> <span class="pre">F</span> <span class="pre">D</span> <span class="pre">&gt;</span></code> with
+        <code class="docutils literal notranslate"><span class="pre">F</span> <span class="pre">=</span> <span class="pre">(phi,</span> <span class="pre">1)</span></code>, and subdivides <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">B</span> <span class="pre">E</span> <span class="pre">F</span> <span class="pre">C</span> <span class="pre">&gt;</span></code> by a second square gnomon
+        <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">B</span> <span class="pre">E</span> <span class="pre">G</span> <span class="pre">H</span> <span class="pre">&gt;</span></code>, proving recursive similarity <code class="docutils literal notranslate"><span class="pre">&lt;</span> <span class="pre">A</span> <span class="pre">E</span> <span class="pre">F</span> <span class="pre">D</span> <span class="pre">&gt;</span> <span class="pre">~</span> <span class="pre">&lt;</span> <span class="pre">C</span> <span class="pre">B</span> <span class="pre">E</span> <span class="pre">F</span> <span class="pre">&gt;</span> <span class="pre">~</span> <span class="pre">&lt;</span> <span class="pre">H</span> <span class="pre">G</span> <span class="pre">F</span> <span class="pre">C</span> <span class="pre">&gt;</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple <code class="docutils literal notranslate"><span class="pre">(model,</span> <span class="pre">invariants)</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        <dl class="py function">
+        <dt class="sig sig-object py" id="geometor.heron.constructions.construct_dioptra_tunnel">
+        <span class="sig-prename descclassname"><span class="pre">geometor.heron.constructions.</span></span><span class="sig-name descname"><span class="pre">construct_dioptra_tunnel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">geometor.model.Model</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">geometor.model.Model</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">sympy.Expr</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#geometor.heron.constructions.construct_dioptra_tunnel" title="Link to this definition">¶</a></dt>
+        <dd><p>Construct Hero’s Two-Portal Mountain Tunneling survey (<em>Dioptra</em> Ch. 15).</p>
+        <p>Models Schöne (1903), pp. 238–240 (<strong>Fig. 95</strong>): portals <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">=</span> <span class="pre">(0,</span> <span class="pre">0)</span></code> and
+        <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">=</span> <span class="pre">(12,</span> <span class="pre">5)</span></code> (tunnel length <code class="docutils literal notranslate"><span class="pre">13</span></code>), orthogonal dioptra stations <code class="docutils literal notranslate"><span class="pre">E</span> <span class="pre">=</span> <span class="pre">(-2,</span> <span class="pre">0)</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">Z</span> <span class="pre">=</span> <span class="pre">(-2,</span> <span class="pre">-3)</span></code>, <code class="docutils literal notranslate"><span class="pre">H</span> <span class="pre">=</span> <span class="pre">(16,</span> <span class="pre">-3)</span></code>, <code class="docutils literal notranslate"><span class="pre">G</span> <span class="pre">=</span> <span class="pre">(16,</span> <span class="pre">8)</span></code> (<span class="math notranslate nohighlight">\(\Theta\)</span>), <code class="docutils literal notranslate"><span class="pre">K</span> <span class="pre">=</span> <span class="pre">(14,</span> <span class="pre">8)</span></code>,
+        <code class="docutils literal notranslate"><span class="pre">M</span> <span class="pre">=</span> <span class="pre">(14,</span> <span class="pre">5)</span></code>, virtual right-angle vertex <code class="docutils literal notranslate"><span class="pre">N</span> <span class="pre">=</span> <span class="pre">(12,</span> <span class="pre">0)</span></code>, and exterior sighting
+        triangles <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">O</span> <span class="pre">X</span></code> (<code class="docutils literal notranslate"><span class="pre">O</span> <span class="pre">=</span> <span class="pre">(-6,</span> <span class="pre">0),</span> <span class="pre">X</span> <span class="pre">=</span> <span class="pre">(-6,</span> <span class="pre">-5/2)</span></code>) and <code class="docutils literal notranslate"><span class="pre">D</span> <span class="pre">P</span> <span class="pre">Q</span></code>
+        (<code class="docutils literal notranslate"><span class="pre">P</span> <span class="pre">=</span> <span class="pre">(18,</span> <span class="pre">5),</span> <span class="pre">Q</span> <span class="pre">=</span> <span class="pre">(18,</span> <span class="pre">15/2)</span></code>) collinear along <code class="docutils literal notranslate"><span class="pre">5x</span> <span class="pre">-</span> <span class="pre">12y</span> <span class="pre">=</span> <span class="pre">0</span></code>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Parameters<span class="colon">:</span></dt>
+        <dd class="field-odd"><p><strong>model</strong> – Optional existing <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code>.</p>
+        </dd>
+        <dt class="field-even">Returns<span class="colon">:</span></dt>
+        <dd class="field-even"><p>Tuple <code class="docutils literal notranslate"><span class="pre">(model,</span> <span class="pre">invariants)</span></code>.</p>
+        </dd>
+        </dl>
+        </dd></dl>
+
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • heron</a>
+          </div>
+          <div class="book-nav-next">
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../../../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../../../../types/apparatus.html">apparatus</a></li>
+        <li><a href="../../../../../types/chapter.html">chapter</a></li>
+        <li><a href="../../../../../types/el.html">el</a></li>
+        <li><a href="../../../../../types/notes.html">notes</a></li>
+        <li><a href="../../../../../types/summary.html">summary</a></li>
+        <li><a href="../../../../../types/translation.html">translation</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../../../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, phi ARCHITECT (GEOMETOR Digital Scriptorium).
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../../../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../../../../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../../../../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../../../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../../../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../../../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

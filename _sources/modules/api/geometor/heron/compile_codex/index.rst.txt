@@ -1,0 +1,78 @@
+geometor.heron.compile_codex
+============================
+
+.. py:module:: geometor.heron.compile_codex
+
+.. autoapi-nested-parse::
+
+   Deterministic apparatus compiler and 4-Track Book Codex verifier for ``geometor.heron``.
+
+
+
+Functions
+---------
+
+.. autoapisummary::
+
+   geometor.heron.compile_codex.slugify_key
+   geometor.heron.compile_codex.default_docsrc_book_dir
+   geometor.heron.compile_codex.render_concordance_rst
+   geometor.heron.compile_codex.render_bibliography_rst
+   geometor.heron.compile_codex.render_persons_rst
+   geometor.heron.compile_codex.render_glossary_rst
+   geometor.heron.compile_codex.write_apparatus_pages
+   geometor.heron.compile_codex.verify_codex_tracks
+
+
+Module Contents
+---------------
+
+.. py:function:: slugify_key(key: str) -> str
+
+   Slugify an apparatus key identically to ``photon_platform.publish.roles.geometry``.
+
+
+.. py:function:: default_docsrc_book_dir() -> pathlib.Path
+
+   Return ``<repo>/docsrc/metrica``.
+
+
+.. py:function:: render_concordance_rst(concordance: dict[str, object]) -> str
+
+   Render ``docsrc/metrica/concordance.rst`` from ``concordance.json``.
+
+
+.. py:function:: render_bibliography_rst(citations: dict[str, dict[str, object]]) -> str
+
+   Render ``docsrc/metrica/bibliography.rst`` from ``citations.json``.
+
+
+.. py:function:: render_persons_rst(persons: dict[str, dict[str, object]]) -> str
+
+   Render ``docsrc/metrica/persons.rst`` from ``persons.json``.
+
+
+.. py:function:: render_glossary_rst(glossary: dict[str, dict[str, object]]) -> str
+
+   Render ``docsrc/metrica/glossary.rst`` from ``glossary.json``.
+
+
+.. py:function:: write_apparatus_pages(resources_dir: pathlib.Path | None = None, book_dir: pathlib.Path | None = None) -> list[pathlib.Path]
+
+   Compile ``concordance.rst``, ``bibliography.rst``, ``persons.rst``, and ``glossary.rst``.
+
+   :param resources_dir: Optional override for ``resources/metrica``.
+   :param book_dir: Optional override for ``docsrc/metrica``.
+
+   :returns: List of written RST file paths.
+
+
+.. py:function:: verify_codex_tracks(book_dir: pathlib.Path | None = None) -> dict[str, object]
+
+   Verify all 5 Codex units have 4 synchronized tracks, zero Python blocks, and valid SHA-256s.
+
+   :param book_dir: Optional override for ``docsrc/metrica``.
+
+   :returns: Dictionary with ``valid``, ``units``, ``track_files``, and ``errors``.
+
+

@@ -1,0 +1,269 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8) &mdash; GEOMETOR • heron</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=66998e95" />
+  <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../_static/favicon.ico" />
+</head>
+
+<body class="book-theme-classical-serif">
+  <header>
+    <div class="logo">
+      <a href="../index.html">
+        <h1>GEOMETOR • heron</h1>
+      </a>
+      <div class="org-repo">
+        <span class="org">GEOMETOR</span>
+        •
+        <span class="repo">heron</span>
+      </div>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../mission/index.html"  >Mission: Bridging Classical Deduction and Exact Mensuration</a>
+        </li>
+        <li>
+          <a href="../metrica/index.html"  >Hero of Alexandria — Metrica, Definitiones, Catoptrica & Dioptra</a>
+        </li>
+        <li>
+          <a href="index.html" class="is-active" aria-selected="true" >Symbolic Constructions & Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <div class="book-header-identity">
+            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; heron</a>
+            <span class="book-header-sep">/</span>
+            <a class="book-title-link" href="../index.html">GEOMETOR • heron</a>
+          </div>
+          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
+            <a class="book-crumb-link" href="index.html">Symbolic Constructions &amp; Demos</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="index.html" title="Symbolic Constructions &amp; Demos">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="sqrt-720-iteration.html" title="Iterative Square-Root Extraction on √720 (Metrica I.8)"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content" role="main">
+        <section class="level-1" id="heron-s-formula-synthetic-proof-quadrea-metrica-i-8">
+        <span id="demo-heron-formula-proof"></span><h1>Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8)<a class="headerlink" href="#heron-s-formula-synthetic-proof-quadrea-metrica-i-8" title="Link to this heading">¶</a></h1>
+        <p><em>Exact Compass-and-Straightedge Model of Hero’s Incircle &amp; Cyclic Quadrilateral Proof</em> — Codex Reference: <a class="reference internal" href="../metrica/book-i-triangles/book-i-triangles-en.html"><span class="doc">Metrica Book I (Preface &amp; Props. 1–9): Triangles, Heron’s Formula &amp; √720</span></a></p>
+        <section class="level-2" id="interactive-construction-heron-i8-incircle-svg">
+        <h2>Interactive Construction (<cite>heron-i8-incircle.svg</cite>)<a class="headerlink" href="#interactive-construction-heron-i8-incircle-svg" title="Link to this heading">¶</a></h2>
+        <p>Hover or click any geometric label below—such as <span class="geom-ref" data-ref="g1:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span>, incenter <span class="geom-ref" data-ref="g1:H" title="H">H</span>, cyclic quadrilateral <span class="geom-ref" data-ref="g1:&lt; C H B L &gt;" title="&lt; C H B L &gt;">CHBL</span>, or extended semiperimeter <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">CG</span>—to trace <span class="person-ref" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero's</span> synthetic proof step-by-step:</p>
+        <figure class="photon-picture photon-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" width="720" height="520" viewBox="0 0 720 520" data-graphic-id="g1" role="img" aria-label="Hero Metrica I.8 — Synthetic Incircle &amp; Cyclic Quadrilateral Proof on (13, 14, 15)">
+          <title>Hero Metrica I.8 — Synthetic Incircle &amp; Cyclic Quadrilateral Proof on (13, 14, 15)</title>
+          <defs>
+            <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-2" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+              <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+            </marker>
+            <marker id="geom-tick-3" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+              <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <rect class="svg-bg" x="0" y="0" width="720" height="520" rx="6" />
+          <g id="elements">
+            <g id="graphics">
+              <polygon class="geom-polygon tri-poly" points="374.16,84.19 301.09,259.55 505.67,259.55" data-ref="&lt; A B C &gt;" />
+              <polygon class="geom-polygon cyclic-poly" points="505.67,259.55 388.77,201.09 301.09,259.55 301.09,376.45" data-ref="&lt; C H B L &gt;" />
+              <circle class="geom-circle incircle-curve" cx="388.77" cy="201.09" r="58.45" data-ref="( H E )" data-aliases="( H D ) | ( H F ) | ( E D F )" fill="none"><title>( H E ): (x - 6)**2 + (y - 4)**2 - 16 = 0</title></circle>
+              <circle class="geom-circle cyclic-curve" cx="403.38" cy="318" r="117.81" data-ref="( M C )" data-aliases="( M B ) | ( M H ) | ( M L ) | ( B C H )" fill="none"><title>( M C ): (x - 7)**2 + (y + 4)**2 - 65 = 0</title></circle>
+              <path class="geom-line carrier-line" d="M 14 259.55 L 360 259.55 L 706 259.55" data-ref="[ B C ]" data-aliases="[ C B ] | [ B E ] | [ E B ] | [ B G ] | [ G B ] | [ B K ] | [ K B ] | [ C E ] | [ E C ] | [ C G ] | [ G C ] | [ C K ] | [ K C ] | [ E G ] | [ G E ] | [ E K ] | [ K E ] | [ G K ] | [ K G ]" fill="none"><title>[ B C ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 198.41 506 L 300.91 260 L 403.41 14" data-ref="[ A B ]" data-aliases="[ B A ] | [ B D ] | [ D B ] | [ A D ] | [ D A ]" fill="none"><title>[ A B ]: 12*x - 5*y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 690.51 506 L 506.01 260 L 321.51 14" data-ref="[ C A ]" data-aliases="[ A C ] | [ C F ] | [ F C ] | [ A F ] | [ F A ]" fill="none"><title>[ C A ]: -12*x - 9*y + 168 = 0</title></path>
+              <path class="geom-line bisector-line" d="M 14 450.94 L 341.71 232.47 L 669.41 14" data-ref="[ B E ]" data-aliases="[ B H ] | [ H B ]" fill="none"><title>[ B E ]: -12*x + 18*y = 0</title></path>
+              <path class="geom-line bisector-line" d="M 706 359.71 L 360.29 186.85 L 14.58 14" data-ref="[ C G ]" data-aliases="[ C H ] | [ H C ]" fill="none"><title>[ C G ]: -56*x/5 - 112*y/5 + 784/5 = 0</title></path>
+              <path class="geom-line bisector-line" d="M 426.88 506 L 396.13 260 L 365.38 14" data-ref="[ A H ]" data-aliases="[ H A ] | [ A M ] | [ M A ] | [ H M ] | [ M H ]" fill="none"><title>[ A H ]: 8*x + y - 52 = 0</title></path>
+              <path class="geom-line aux-line" d="M 388.77 506 L 388.77 260 L 388.77 14" data-ref="[ H J ]" data-aliases="[ H E ] | [ E H ]" fill="none"><title>[ H J ]: x - 6 = 0</title></path>
+              <path class="geom-line aux-line" d="M 236.32 506 L 359.32 260 L 482.32 14" data-ref="[ T U ]" data-aliases="[ H K ] | [ K H ] | [ H L ] | [ L H ] | [ K L ] | [ L K ]" fill="none"><title>[ T U ]: -16*sqrt(3)*x + 8*sqrt(3)*y + 64*sqrt(3) = 0</title></path>
+              <path class="geom-line aux-line" d="M 301.09 506 L 301.09 260 L 301.09 14" data-ref="[ W X ]" data-aliases="[ B L ] | [ L B ]" fill="none"><title>[ W X ]: x = 0</title></path>
+              <path class="geom-line quad-line" d="M 706 145.07 L 390.19 325.54 L 74.38 506" data-ref="[ C L ]" data-aliases="[ L C ] | [ C M ] | [ M C ] | [ L M ] | [ M L ]" fill="none"><title>[ C L ]: 8*x - 14*y - 112 = 0</title></path>
+              <path class="geom-segment radius-segment" d="M 388.77 201.09 L 361.79 189.85 L 334.82 178.61" data-ref="/ H D /" data-aliases="/ D H /" fill="none"><title>/ H D /: |seg| = 4</title></path>
+              <path class="geom-segment radius-segment" d="M 388.77 201.09 L 388.77 230.32 L 388.77 259.55" data-ref="/ H E /" data-aliases="/ E H /" fill="none"><title>/ H E /: |seg| = 4</title></path>
+              <path class="geom-segment radius-segment" d="M 388.77 201.09 L 412.15 183.56 L 435.53 166.02" data-ref="/ H F /" data-aliases="/ F H /" fill="none"><title>/ H F /: |seg| = 4</title></path>
+              <path class="geom-segment golden-segment" d="M 301.09 259.55 L 249.95 259.55 L 198.81 259.55" data-ref="/ B G /" data-aliases="/ G B /" fill="none"><title>/ B G /: |seg| = 7</title></path>
+              <path class="geom-segment golden-segment" d="M 374.16 84.19 L 354.49 131.4 L 334.82 178.61" data-ref="/ A D /" data-aliases="/ D A /" fill="none"><title>/ A D /: |seg| = 7</title></path>
+              <path class="geom-segment" d="M 374.16 84.19 L 404.84 125.11 L 435.53 166.02" data-ref="/ A F /" data-aliases="/ F A /" fill="none"><title>/ A F /: |seg| = 7</title></path>
+              <path class="geom-segment" d="M 301.09 259.55 L 317.96 219.08 L 334.82 178.61" data-ref="/ B D /" data-aliases="/ D B /" fill="none"><title>/ B D /: |seg| = 6</title></path>
+              <path class="geom-segment" d="M 301.09 259.55 L 344.93 259.55 L 388.77 259.55" data-ref="/ B E /" data-aliases="/ E B /" fill="none"><title>/ B E /: |seg| = 6</title></path>
+              <path class="geom-segment" d="M 505.67 259.55 L 447.22 259.55 L 388.77 259.55" data-ref="/ C E /" data-aliases="/ E C /" fill="none"><title>/ C E /: |seg| = 8</title></path>
+              <path class="geom-segment" d="M 505.67 259.55 L 470.6 212.78 L 435.53 166.02" data-ref="/ C F /" data-aliases="/ F C /" fill="none"><title>/ C F /: |seg| = 8</title></path>
+              <path class="geom-segment semi-segment" d="M 505.67 259.55 L 352.24 259.55 L 198.81 259.55" data-ref="/ C G /" data-aliases="/ G C /" fill="none"><title>/ C G /: |seg| = 21</title></path>
+            </g>
+            <g id="highlights" style="pointer-events: none;"></g>
+            <g id="points">
+              <circle class="geom-point" cx="301.09" cy="259.55" r="4.3" data-ref="B" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+              <circle class="geom-point" cx="505.67" cy="259.55" r="4.3" data-ref="C" data-latex-x="14" data-latex-y="0"><title>C = (14, 0)</title></circle>
+              <circle class="geom-point" cx="374.16" cy="84.19" r="4.3" data-ref="A" data-latex-x="5" data-latex-y="12"><title>A = (5, 12)</title></circle>
+              <circle class="geom-point incenter-point" cx="388.77" cy="201.09" r="5" data-ref="H" data-latex-x="6" data-latex-y="4"><title>H = (6, 4)</title></circle>
+              <circle class="geom-point touch-point" cx="388.77" cy="259.55" r="3.9" data-ref="E" data-latex-x="6" data-latex-y="0"><title>E = (6, 0)</title></circle>
+              <circle class="geom-point touch-point" cx="334.82" cy="178.61" r="3.9" data-ref="D" data-latex-x="\frac{30}{13}" data-latex-y="\frac{72}{13}"><title>D = (30/13, 72/13)</title></circle>
+              <circle class="geom-point touch-point" cx="435.53" cy="166.02" r="3.9" data-ref="F" data-latex-x="\frac{46}{5}" data-latex-y="\frac{32}{5}"><title>F = (46/5, 32/5)</title></circle>
+              <circle class="geom-point" cx="198.81" cy="259.55" r="3.9" data-ref="G" data-latex-x="-7" data-latex-y="0"><title>G = (-7, 0)</title></circle>
+              <circle class="geom-point meet-point" cx="359.55" cy="259.55" r="4.2" data-ref="K" data-latex-x="4" data-latex-y="0"><title>K = (4, 0)</title></circle>
+              <circle class="geom-point meet-point" cx="301.09" cy="376.45" r="4.2" data-ref="L" data-latex-x="0" data-latex-y="-8"><title>L = (0, -8)</title></circle>
+              <circle class="geom-point" cx="403.38" cy="318" r="3.9" data-ref="M" data-latex-x="7" data-latex-y="-4"><title>M = (7, -4)</title></circle>
+            </g>
+            <g id="labels">
+              <text class="geom-label" x="282.14" y="249.43" data-ref="B">B</text>
+              <text class="geom-label" x="499.73" y="283.61" data-ref="C">C</text>
+              <text class="geom-label" x="347.8" y="88.95" data-ref="A">A</text>
+              <text class="geom-label" x="403.95" y="205.85" data-ref="H">H</text>
+              <text class="geom-label" x="370.07" y="278.87" data-ref="E">E</text>
+              <text class="geom-label" x="308.86" y="183.37" data-ref="D">D</text>
+              <text class="geom-label" x="429.59" y="189.68" data-ref="F">F</text>
+              <text class="geom-label" x="192.87" y="245.41" data-ref="G">G</text>
+              <text class="geom-label" x="340.65" y="249.51" data-ref="K">K</text>
+              <text class="geom-label" x="282.2" y="366.41" data-ref="L">L</text>
+              <text class="geom-label" x="410.2" y="337.32" data-ref="M">M</text>
+            </g>
+          </g>
+        </svg>
+        </figure>
+        </section>
+        <section class="level-2" id="exact-symbolic-coordinates-deductive-chain">
+        <h2>Exact Symbolic Coordinates &amp; Deductive Chain<a class="headerlink" href="#exact-symbolic-coordinates-deductive-chain" title="Link to this heading">¶</a></h2>
+        <p>On Hero’s synthesis triangle <span class="math notranslate nohighlight">\((AB, BC, CA) = (13, 14, 15)\)</span> placed at <span class="geom-ref" data-ref="g1:B" title="B">B</span> <span class="math notranslate nohighlight">\(= (0, 0)\)</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> <span class="math notranslate nohighlight">\(= (14, 0)\)</span>, and <span class="geom-ref" data-ref="g1:A" title="A">A</span> <span class="math notranslate nohighlight">\(= (5, 12)\)</span>:</p>
+        <ol class="arabic">
+        <li><p><strong>Incenter &amp; Inradius</strong>: Internal angle bisectors meet at <span class="geom-ref" data-ref="g1:H" title="H">H</span> <span class="math notranslate nohighlight">\(= (6, 4)\)</span> (<cite>X(1)</cite> in <span class="citation-ref" data-cite="kimberling:etc" title="Clark Kimberling — Encyclopedia of Triangle Centers (ETC) (X(1) Incenter (geometor/etc))">Kimberling's ETC</span>), with touchpoints <span class="geom-ref" data-ref="g1:E" title="E">E</span> <span class="math notranslate nohighlight">\(= (6, 0)\)</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span> <span class="math notranslate nohighlight">\(= \left(\frac{30}{13}, \frac{72}{13}\right)\)</span>, and <span class="geom-ref" data-ref="g1:F" title="F">F</span> <span class="math notranslate nohighlight">\(= \left(\frac{46}{5}, \frac{32}{5}\right)\)</span> of radius <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">HE</span> <span class="math notranslate nohighlight">\(r = 4\)</span>.</p></li>
+        <li><p><strong>Extended Semiperimeter</strong>: Compass extension past <span class="geom-ref" data-ref="g1:B" title="B">B</span> locates <span class="geom-ref" data-ref="g1:G" title="G">G</span> <span class="math notranslate nohighlight">\(= (-7, 0)\)</span> so that <span class="geom-eq-ref" data-assert-equal="g1:/ B G /,/ A D /" title="/ B G /,/ A D /">BG = AD</span> <span class="math notranslate nohighlight">\(= s - a = 7\)</span> and <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">CG</span> <span class="math notranslate nohighlight">\(= s = 21\)</span>, certifying <span class="math notranslate nohighlight">\(\Delta = s \cdot r = 21 \times 4 = 84\)</span>.</p></li>
+        <li><p><strong>Cyclic Auxiliary Quadrilateral</strong>: Erecting <span class="math notranslate nohighlight">\(HL \perp CH\)</span> at <span class="geom-ref" data-ref="g1:H" title="H">H</span> (meeting <span class="geom-ref" data-ref="g1:[ B C ]" title="[ B C ]">BC</span> at <span class="geom-ref" data-ref="g1:K" title="K">K</span> <span class="math notranslate nohighlight">\(= (4, 0)\)</span>) and <span class="math notranslate nohighlight">\(BL \perp BC\)</span> at <span class="geom-ref" data-ref="g1:B" title="B">B</span> meets at <span class="geom-ref" data-ref="g1:L" title="L">L</span> <span class="math notranslate nohighlight">\(= (0, -8)\)</span>. Quadrilateral <span class="geom-ref" data-ref="g1:&lt; C H B L &gt;" title="&lt; C H B L &gt;">CHBL</span> is inscribed in circle <span class="geom-ref" data-ref="g1:( M C )" title="( M C )">(MC)</span> with center <span class="geom-ref" data-ref="g1:M" title="M">M</span> <span class="math notranslate nohighlight">\(= (7, -4)\)</span> and squared radius <span class="math notranslate nohighlight">\(Q(M, C) = 65\)</span>.</p></li>
+        <li><p><strong>Right-Triangle Altitude Identity (:just:`VI.8`)</strong>: In right triangle <span class="math notranslate nohighlight">\(KHC\)</span>, altitude <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">HE</span> satisfies <span class="math notranslate nohighlight">\(|KE| \cdot |EC| = 2 \times 8 = 16 = 4^2 = r^2\)</span>, completing Hero’s proportion:</p>
+        <div class="math notranslate nohighlight">
+        \[\Delta^2 = |CG|^2 \cdot |HE|^2 = |CG| \cdot |BG| \cdot |BE| \cdot |EC| = 21 \times 7 \times 6 \times 8 = 7056 = 84^2.\]</div>
+        </li>
+        <li><p><strong>Wildberger’s Polynomial Quadrea</strong>: Over <span class="math notranslate nohighlight">\(\mathbb{Z}[Q_a, Q_b, Q_c]\)</span> with <span class="math notranslate nohighlight">\((Q_a, Q_b, Q_c) = (196, 225, 169)\)</span>:</p>
+        <div class="math notranslate nohighlight">
+        \[\mathcal{A} = (196 + 225 + 169)^2 - 2(196^2 + 225^2 + 169^2) = 112{,}896 = 16 \times 7056.\]</div>
+        </li>
+        </ol>
+        </section>
+        <section class="level-2" id="executable-python-api">
+        <h2>Executable Python API<a class="headerlink" href="#executable-python-api" title="Link to this heading">¶</a></h2>
+        <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">geometor.heron</span><span class="w"> </span><span class="kn">import</span> <span class="n">archimedes_quadrea</span><span class="p">,</span> <span class="n">construct_heron_proof</span><span class="p">,</span> <span class="n">verify_quadrea_identity</span>
+
+        <span class="n">model</span><span class="p">,</span> <span class="n">inv</span> <span class="o">=</span> <span class="n">construct_heron_proof</span><span class="p">()</span>
+        <span class="k">assert</span> <span class="n">inv</span><span class="p">[</span><span class="s2">"area"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">84</span>
+        <span class="k">assert</span> <span class="n">inv</span><span class="p">[</span><span class="s2">"quadrea"</span><span class="p">]</span> <span class="o">==</span> <span class="n">archimedes_quadrea</span><span class="p">(</span><span class="mi">196</span><span class="p">,</span> <span class="mi">225</span><span class="p">,</span> <span class="mi">169</span><span class="p">)</span> <span class="o">==</span> <span class="mi">112896</span>
+        <span class="k">assert</span> <span class="n">verify_quadrea_identity</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span>
+        </pre></div>
+        </div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="index.html" title="Symbolic Constructions &amp; Demos">&larr; <span class="nav-label">Symbolic Constructions & Demos</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">GEOMETOR • heron</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="sqrt-720-iteration.html" title="Iterative Square-Root Extraction on √720 (Metrica I.8)"><span class="nav-label">Iterative Square-Root Extraction on √720 (Metrica I.8)</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../types/apparatus.html">apparatus</a></li>
+        <li><a href="../types/chapter.html">chapter</a></li>
+        <li><a href="../types/el.html">el</a></li>
+        <li><a href="../types/notes.html">notes</a></li>
+        <li><a href="../types/summary.html">summary</a></li>
+        <li><a href="../types/translation.html">translation</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, phi ARCHITECT (GEOMETOR Digital Scriptorium).
+      </p>
+    </div>
+  </footer>
+
+  <script src="../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../_static/documentation_options.js?v=01f34227"></script>
+  <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../_static/js/search_highlight.js"></script>
+
+</body>
+</html>
