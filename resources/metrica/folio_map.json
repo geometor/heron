@@ -1,0 +1,266 @@
+{
+  "schema_version": "1.0",
+  "repository": "geometor/heron",
+  "edition": "metrica",
+  "description": "Primary-source folio mapping for Hero of Alexandria (Metrica, Definitiones, Catoptrica, Dioptra)",
+  "folios": {
+    "Hultsch 15": {
+      "default": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L26",
+      "el": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L26",
+      "grc": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L26",
+      "en": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L26"
+    },
+    "Hultsch 21": {
+      "default": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L35",
+      "el": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L35",
+      "grc": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L35",
+      "en": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L35"
+    },
+    "Hultsch 7": {
+      "default": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11",
+      "el": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11",
+      "grc": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11",
+      "en": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11"
+    },
+    "Hultsch 7–23 · Schmidt 324–372 · Schöne 238–240": {
+      "default": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11",
+      "el": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11",
+      "grc": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11",
+      "en": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11"
+    },
+    "Schmidt 368": {
+      "default": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
+      "el": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
+      "grc": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
+      "en": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11"
+    },
+    "Schöne 10": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L35",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L35",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L35",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L35"
+    },
+    "Schöne 110": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
+    },
+    "Schöne 120": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
+    },
+    "Schöne 126": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
+    },
+    "Schöne 130": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110"
+    },
+    "Schöne 132": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110"
+    },
+    "Schöne 138": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L110"
+    },
+    "Schöne 140": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116"
+    },
+    "Schöne 140–184": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L116"
+    },
+    "Schöne 142": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L127",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L127",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L127",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L127"
+    },
+    "Schöne 144": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
+    },
+    "Schöne 148": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
+    },
+    "Schöne 162": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
+    },
+    "Schöne 174": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
+    },
+    "Schöne 178": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
+    },
+    "Schöne 18": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L36",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L36",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L36",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L36"
+    },
+    "Schöne 2": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10"
+    },
+    "Schöne 20": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L46",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L46",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L46",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L46"
+    },
+    "Schöne 22": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L62",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L62",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L62",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L62"
+    },
+    "Schöne 238": {
+      "default": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9",
+      "el": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9",
+      "grc": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9",
+      "en": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9"
+    },
+    "Schöne 24": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L82",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L82",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L82",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L82"
+    },
+    "Schöne 26": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 26–90": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 2–26": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10"
+    },
+    "Schöne 32": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 4": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L26",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L26",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L26",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L26"
+    },
+    "Schöne 46": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 50": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 56": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 6": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L32",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L32",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L32",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L32"
+    },
+    "Schöne 60": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 66": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 74": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 80": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 86": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L87"
+    },
+    "Schöne 90": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
+    },
+    "Schöne 90–140": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
+    },
+    "Schöne 96": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
+    }
+  }
+}
