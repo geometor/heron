@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.1.1 (2026-11-13)
+------------------
+
+- Curated and verified track-aware primary-source folio links for *Metrica*, *Definitiones*, *Catoptrica*, and *Dioptra* (62/62 directives and 20/20 badges resolved).
+
 0.1.0 (2026-11-12)
 ------------------
 

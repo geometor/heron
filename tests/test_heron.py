@@ -37,7 +37,7 @@ from geometor.heron.compile_codex import default_docsrc_book_dir, verify_codex_t
 
 
 def test_version_and_quadrea_polynomial_identity():
-    assert __version__ == "0.1.0"
+    assert __version__ == "0.1.1"
     assert verify_quadrea_identity() == sp.Integer(0)
     assert heron_area_squared(7, 8, 9) == sp.Integer(720)
     assert heron_area(7, 8, 9) == 12 * sp.sqrt(5)
