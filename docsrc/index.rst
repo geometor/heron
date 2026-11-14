@@ -68,6 +68,7 @@ Architecture of the Codex
 Explore the Edition
 -------------------
 
+* **About:** :doc:`about/index` (Mission, Architectural Principles & Sources)
 * **Book Codex:** :doc:`metrica/index` (*Metrica & Geometric Works*)
 * **People:** :doc:`metrica/persons` (Biographical Register of Geometers & Scholars)
 * **Bibliography:** :doc:`metrica/bibliography` (Sources & Editions)
@@ -77,10 +78,10 @@ Explore the Edition
    :maxdepth: 2
    :hidden:
 
+   about/index
    metrica/index
    metrica/persons
    metrica/bibliography
-   mission/index
    usage/index
    demos/index
    changelog
