@@ -1,15 +1,25 @@
 :navigation: header
-:order: 10
+:order: 1
+:nav_title: Metrica
 :layout: book
-:book_title: Metrica · Definitiones · Catoptrica · Dioptra
+:book_title: Metrica & Geometric Works
+:book_subtitle: Metrica · Definitiones · Catoptrica · Dioptra — Hero of Alexandria
+:author: Hero of Alexandria
+:year: c. 60 CE
 
 .. _heron-codex-index:
 
-============================================================================
-Hero of Alexandria — *Metrica*, *Definitiones*, *Catoptrica* & *Dioptra*
-============================================================================
+Metrica & Geometric Works
+=========================
 
-*Four-Track Bilingual Scholarly Codex (English · Teubner/Hultsch Greek · Summary · GEOMETOR Notes)*
+.. rubric:: *Metrica · Definitiones · Catoptrica · Dioptra* — :person:`Hero of Alexandria <hero>`
+
+.. container:: title-page
+
+   | **Author:** :person:`Hero of Alexandria <hero>` (*fl.* c. 60 CE)
+   | **Primary Critical Editions:** :person:`Hermann Schöne <schoene>` (1903), :person:`Wilhelm Schmidt <schmidt>` (1900), :person:`Friedrich Hultsch <hultsch>` (1864)
+   | **English Translation:** Original GEOMETOR translation curated for the Digital Scriptorium
+   | **Synchronized 4-Track Codex:** *English · Greek (Teubner/Hultsch) · Summary · Notes*
 
 Welcome to the **GEOMETOR Digital Scriptorium** edition of **Hero of Alexandria** (*fl.* c. 60 CE). Every chapter in this codex presents four synchronized companion tracks selectable from the reader bar above:
 
@@ -18,8 +28,10 @@ Welcome to the **GEOMETOR Digital Scriptorium** edition of **Hero of Alexandria*
 3. **Summary** — Proposition-by-proposition structural, geometric, and algorithmic synopses.
 4. **Notes** — GEOMETOR mathematical, philosophical, and Rational Trigonometry commentary cross-linked to :doc:`/demos/index` and sister repositories.
 
-Codex Table of Contents
------------------------
+.. _table-of-contents:
+
+Table of Contents
+-----------------
 
 - **Unit I** — :doc:`book-i-triangles/book-i-triangles-en` (*Schöne 1903, pp. 2–26*)
 - **Unit II** — :doc:`book-i-polygons-circles/book-i-polygons-circles-en` (*Schöne 1903, pp. 26–90*)
@@ -27,8 +39,8 @@ Codex Table of Contents
 - **Unit IV** — :doc:`book-iii-divisions/book-iii-divisions-en` (*Schöne 1903, pp. 140–184*)
 - **Unit V** — :doc:`definitiones-catoptrica-dioptra/definitiones-catoptrica-dioptra-en` (*Hultsch pp. 7–23 · Schmidt pp. 324–372 · Schöne pp. 238–240*)
 
-Critical Apparatus
-------------------
+Scholarly Apparatus
+-------------------
 
 - :doc:`concordance` — 24 cross-corpus loci linking Hero to ``euclid``, ``elements``, ``proclus``, ``pappus``, ``wildberger``, ``etc``, and ``divine``.
 - :doc:`bibliography` — Primary manuscript witnesses, critical editions, and modern scholarship.

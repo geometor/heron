@@ -65,11 +65,22 @@ Architecture of the Codex
      - Hultsch pp. 7–23 · Schmidt pp. 324–372 · Schöne pp. 238–240
      - ``heronian-golden-gnomon.svg``, ``catoptrica-reflection.svg``, ``dioptra-mountain-tunnel.svg`` (:doc:`Optics </demos/catoptrica-reflection>`, :doc:`Gnomon & Dioptra </demos/golden-gnomon-dioptra>`)
 
+Explore the Edition
+-------------------
+
+* **Book Codex:** :doc:`metrica/index` (*Metrica & Geometric Works*)
+* **People:** :doc:`metrica/persons` (Biographical Register of Geometers & Scholars)
+* **Bibliography:** :doc:`metrica/bibliography` (Sources & Editions)
+* **Reader's Guide:** :doc:`usage/index` (Using this Edition & CLI)
+
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   mission/index
    metrica/index
+   metrica/persons
+   metrica/bibliography
+   mission/index
+   usage/index
    demos/index
    changelog
