@@ -1,10 +1,13 @@
+:navigation: footer
+:nav_title: Concordance
 :order: 90
 :type: apparatus
 
 .. _heron-concordance:
+.. _concordance:
 
-Schöne / Schmidt / Hultsch & GEOMETOR Concordance
-=================================================
+Concordance
+===========
 
 Bidirectional scholarly concordance mapping **Hero of Alexandria's** *Metrica* (*ed.* Hermann Schöne, 1903), *Catoptrica* (*ed.* Wilhelm Schmidt & Ludwig Nix, 1900), *Dioptra* (*ed.* Schöne, 1903), and *Definitiones* (*ed.* Friedrich Hultsch, 1864 / J. L. Heiberg, 1912) across the **GEOMETOR** canon (``euclid``, ``elements``, ``proclus``, ``pappus``, ``wildberger``, ``etc``) and exact ``geometor.heron`` symbolic constructions (**24 loci**).
 

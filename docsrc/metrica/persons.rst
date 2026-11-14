@@ -1,12 +1,31 @@
-:order: 92
-:type: apparatus
+:navigation: header
+:order: 5
+:nav_title: People
 
 .. _codex-persons:
+.. _persons:
 
-Index Nominum (Persons)
-=======================
+People
+======
 
 Prosopographical register of geometers, astronomers, philosophers, commentators, medieval translators, and critical editors connected with Hero of Alexandria's mathematical corpus.
+
+----
+
+Authors, Translators & Editors
+------------------------------
+
+.. _person-hero:
+
+**Hero (Heron) of Alexandria** (*Ἥρων ὁ Ἀλεξανδρεύς*) — fl. c. 60 CE
+  Author of the Metrica, Dioptra, Mechanica, Pneumatica, Automata, Catoptrica, and Definitiones; dated securely via the lunar eclipse of 13 March 62 CE recorded in Dioptra Ch. 35. Unified Euclidean synthetic demonstration with Archimedean exhaustion and Babylonian-Egyptian numerical calculation.
+  *Loci*: Metrica I–III passim; Dioptra Chs. 1–38; Catoptrica Prop. 4 (Schmidt pp. 324–329, 368–372); Definitiones §§1–138.
+
+.. _person-schoene:
+
+**Hermann Schöne** — 1870–1941
+  Following Richard Schöne's and Paul Tannery's identification of the unique 11th-century Constantinople manuscript (Codex Constantinopolitanus Palatii Veteris 1) in 1896, Hermann Schöne published the landmark 1903 Teubner editio princeps of Hero's Metrica and critical text of the Dioptra.
+  *Loci*: Metrica I–III & Dioptra (Teubner Vol. III, 1903).
 
 Classical Geometers & Philosophers
 ----------------------------------
@@ -77,12 +96,6 @@ Hellenistic Mathematicians & Astronomers
 Roman Imperial Geometers & Physicists
 -------------------------------------
 
-.. _person-hero:
-
-**Hero (Heron) of Alexandria** (*Ἥρων ὁ Ἀλεξανδρεύς*) — fl. c. 60 CE
-  Author of the Metrica, Dioptra, Mechanica, Pneumatica, Automata, Catoptrica, and Definitiones; dated securely via the lunar eclipse of 13 March 62 CE recorded in Dioptra Ch. 35. Unified Euclidean synthetic demonstration with Archimedean exhaustion and Babylonian-Egyptian numerical calculation.
-  *Loci*: Metrica I–III passim; Dioptra Chs. 1–38; Catoptrica Prop. 4 (Schmidt pp. 324–329, 368–372); Definitiones §§1–138.
-
 .. _person-ptolemy:
 
 **Claudius Ptolemy** (*Κλαύδιος Πτολεμαῖος*) — c. 100–170 CE
@@ -148,12 +161,6 @@ Modern Philologists, Historians & Mathematicians
 **Wilhelm Schmidt** — 1862–1905
   Edited Vols. I and II.1 of the Teubner Opera omnia of Hero of Alexandria (Pneumatica, Automata, Mechanica, and Catoptrica, 1899–1900), decisively restoring the Catoptrica (De speculis) from pseudo-Ptolemy to Hero.
   *Loci*: Catoptrica (Teubner Vol. II.1, 1900).
-
-.. _person-schoene:
-
-**Hermann Schöne** — 1870–1941
-  Following Richard Schöne's and Paul Tannery's identification of the unique 11th-century Constantinople manuscript (Codex Constantinopolitanus Palatii Veteris 1) in 1896, Hermann Schöne published the landmark 1903 Teubner editio princeps of Hero's Metrica and critical text of the Dioptra.
-  *Loci*: Metrica I–III & Dioptra (Teubner Vol. III, 1903).
 
 .. _person-heiberg:
 

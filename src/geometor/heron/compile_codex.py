@@ -46,13 +46,16 @@ def render_concordance_rst(concordance: dict[str, object]) -> str:
     )
 
     lines: list[str] = [
+        ":navigation: footer",
+        ":nav_title: Concordance",
         ":order: 90",
         ":type: apparatus",
         "",
         ".. _heron-concordance:",
+        ".. _concordance:",
         "",
-        "Schöne / Schmidt / Hultsch & GEOMETOR Concordance",
-        "=================================================",
+        "Concordance",
+        "===========",
         "",
         (
             "Bidirectional scholarly concordance mapping **Hero of Alexandria's** "
@@ -153,13 +156,15 @@ def render_concordance_rst(concordance: dict[str, object]) -> str:
 def render_bibliography_rst(citations: dict[str, dict[str, object]]) -> str:
     """Render ``docsrc/metrica/bibliography.rst`` from ``citations.json``."""
     lines: list[str] = [
-        ":order: 91",
-        ":type: apparatus",
+        ":navigation: header",
+        ":order: 6",
+        ":nav_title: Bibliography",
         "",
         ".. _codex-bibliography:",
+        ".. _bibliography:",
         "",
-        "Bibliography & Primary Sources",
-        "==============================",
+        "Bibliography",
+        "============",
         "",
         (
             "Critical register of public-domain Greek/Latin editions of Hero of Alexandria, "
@@ -219,13 +224,15 @@ def render_bibliography_rst(citations: dict[str, dict[str, object]]) -> str:
 def render_persons_rst(persons: dict[str, dict[str, object]]) -> str:
     """Render ``docsrc/metrica/persons.rst`` from ``persons.json``."""
     lines: list[str] = [
-        ":order: 92",
-        ":type: apparatus",
+        ":navigation: header",
+        ":order: 5",
+        ":nav_title: People",
         "",
         ".. _codex-persons:",
+        ".. _persons:",
         "",
-        "Index Nominum (Persons)",
-        "=======================",
+        "People",
+        "======",
         "",
         (
             "Prosopographical register of geometers, astronomers, philosophers, "
@@ -233,7 +240,39 @@ def render_persons_rst(persons: dict[str, dict[str, object]]) -> str:
             "Hero of Alexandria's mathematical corpus."
         ),
         "",
+        "----",
+        "",
+        "Authors, Translators & Editors",
+        "------------------------------",
+        "",
     ]
+
+    featured = ["hero", "schoene"]
+    for f_key in featured:
+        if f_key in persons:
+            entry = persons[f_key]
+            slug = slugify_key(f_key)
+            name = str(entry.get("name", f_key))
+            greek = str(entry.get("greek", ""))
+            dates = str(entry.get("dates", ""))
+            summary = str(entry.get("summary", ""))
+            loci = str(entry.get("hero_loci", ""))
+            head = f"**{name}**"
+            if greek:
+                head += f" (*{greek}*)"
+            if dates:
+                head += f" — {dates}"
+            lines.extend(
+                [
+                    f".. _person-{slug}:",
+                    "",
+                    head,
+                    f"  {summary}",
+                ]
+            )
+            if loci:
+                lines.append(f"  *Loci*: {loci}.")
+            lines.append("")
 
     eras = [
         ("Classical Geometers & Philosophers", "classical"),
@@ -247,7 +286,7 @@ def render_persons_rst(persons: dict[str, dict[str, object]]) -> str:
         items = [
             (k, v)
             for k, v in persons.items()
-            if str(v.get("era", "hellenistic")) == era_key
+            if str(v.get("era", "hellenistic")) == era_key and k not in featured
         ]
         if not items:
             continue
@@ -284,13 +323,16 @@ def render_persons_rst(persons: dict[str, dict[str, object]]) -> str:
 def render_glossary_rst(glossary: dict[str, dict[str, object]]) -> str:
     """Render ``docsrc/metrica/glossary.rst`` from ``glossary.json``."""
     lines: list[str] = [
+        ":navigation: footer",
+        ":nav_title: Glossary",
         ":order: 93",
         ":type: apparatus",
         "",
         ".. _codex-glossary:",
+        ".. _glossary:",
         "",
-        "Heronian & Rational-Trigonometric Glossary",
-        "==========================================",
+        "Glossary",
+        "========",
         "",
         (
             "Lexicon of Greek mensurational, optical, geodetic, and geometric terminology "

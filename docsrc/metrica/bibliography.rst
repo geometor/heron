@@ -1,10 +1,12 @@
-:order: 91
-:type: apparatus
+:navigation: header
+:order: 6
+:nav_title: Bibliography
 
 .. _codex-bibliography:
+.. _bibliography:
 
-Bibliography & Primary Sources
-==============================
+Bibliography
+============
 
 Critical register of public-domain Greek/Latin editions of Hero of Alexandria, ancient mathematical treatises cited in the *Metrica*, *Catoptrica*, and *Dioptra*, and companion GEOMETOR works. Every ``:cite:`` reference resolves directly below.
 

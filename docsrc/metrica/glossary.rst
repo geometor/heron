@@ -1,10 +1,13 @@
+:navigation: footer
+:nav_title: Glossary
 :order: 93
 :type: apparatus
 
 .. _codex-glossary:
+.. _glossary:
 
-Heronian & Rational-Trigonometric Glossary
-==========================================
+Glossary
+========
 
 Lexicon of Greek mensurational, optical, geodetic, and geometric terminology in Hero of Alexandria's *Metrica*, *Definitiones*, *Catoptrica*, and *Dioptra*, paired with modern Rational Trigonometry invariants.
 
