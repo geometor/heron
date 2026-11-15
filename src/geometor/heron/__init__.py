@@ -36,7 +36,7 @@ from geometor.heron.mensuration import (
 )
 from geometor.heron.render import export_all_figures, export_svg, render_svg_string
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 
 __all__ = [
     "CODEX_UNITS",
