@@ -2,6 +2,11 @@
 Changelog
 =========
 
+0.1.5 (2026-11-15)
+------------------
+
+- Synchronized ``.. picture::`` geometric figures onto all 5 Greek source track units alongside the English translation tracks and rebuilt inline SVGs with explicit ``viewBox`` dimensions and scoped theme styles (``publish`` ``v0.4.6``).
+
 0.1.4
 -----
 *2026-11-15*
