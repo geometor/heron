@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=8713e751" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=99410eb1" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -90,7 +90,33 @@
         <h2>1. Universal Golden Gnomon (<cite>heronian-golden-gnomon.svg</cite>)<a class="headerlink" href="#universal-golden-gnomon-heronian-golden-gnomon-svg" title="Link to this heading">¶</a></h2>
         <p>Realizing <span class="person-ref" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero's</span> <strong>Definition 58</strong> (<em>“a gnomon is anything which, added to any number or figure, makes the whole similar to that to which it was added”</em>), adjoining the unit square gnomon <span class="geom-ref" data-ref="g1:&lt; A B C D &gt;" title="&lt; A B C D &gt;">ABCD</span> to the golden seed <span class="geom-ref" data-ref="g1:&lt; B E F C &gt;" title="&lt; B E F C &gt;">BEFC</span> via compass swing <span class="geom-ref" data-ref="g1:( M C )" title="( M C )">(MC)</span> creates the whole rectangle <span class="geom-ref" data-ref="g1:&lt; A E F D &gt;" title="&lt; A E F D &gt;">AEFD</span> with identical aspect quadrance <span class="math notranslate nohighlight">\(\phi^2 = \frac{3 + \sqrt{5}}{2}\)</span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" width="680" height="440" viewBox="0 0 680 440" data-graphic-id="g1" role="img" aria-label="Hero Definitiones §58 — Universal Gnomon Realized on the Golden Rectangle in Q(phi)">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" width="680" height="440" viewBox="0 0 680 440" data-graphic-id="g1" role="img" aria-label="Hero Definitiones §58 — Universal Gnomon Realized on the Golden Rectangle in Q(phi)" data-svg-scope="s-a7347107">
+          <style>
+            svg[data-svg-scope="s-a7347107"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #334155; --conic: #0284c7; --cyclic: #7c3aed; --bisector: #0f766e; --aux: #64748b; --golden: #b45309; --tangent: #0369a1; --radius-col: #059669; --pt-given: #0f172a; --pt-incenter: #d97706; --pt-touch: #0284c7; --pt-meet: #7c3aed; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-a7347107"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #cbd5e1; --conic: #38bdf8; --cyclic: #c084fc; --bisector: #2dd4bf; --aux: #94a3b8; --golden: #facc15; --tangent: #38bdf8; --radius-col: #34d399; --pt-given: #f1f5f9; --pt-incenter: #fbbf24; --pt-touch: #38bdf8; --pt-meet: #c084fc }
+            svg[data-svg-scope="s-a7347107"] .geom-circle.incircle-curve { fill: none; stroke: var(--conic); stroke-width: 2.25; opacity: 0.92 }
+            svg[data-svg-scope="s-a7347107"] .geom-circle.cyclic-curve { fill: none; stroke: var(--cyclic); stroke-width: 1.75; stroke-dasharray: 6 4; opacity: 0.78 }
+            svg[data-svg-scope="s-a7347107"] .geom-circle.golden-curve { fill: none; stroke: var(--golden); stroke-width: 1.9; stroke-dasharray: 5 3.5; opacity: 0.85 }
+            svg[data-svg-scope="s-a7347107"] .geom-line { fill: none; stroke: var(--aux); stroke-width: 1.35; stroke-linecap: round; opacity: 0.72 }
+            svg[data-svg-scope="s-a7347107"] .carrier-line { stroke: var(--carrier); stroke-width: 2.05; opacity: 0.92 }
+            svg[data-svg-scope="s-a7347107"] .bisector-line { stroke: var(--bisector); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-a7347107"] .aux-line { stroke: var(--aux); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.75 }
+            svg[data-svg-scope="s-a7347107"] .quad-line { stroke: var(--cyclic); stroke-width: 1.75; opacity: 0.85 }
+            svg[data-svg-scope="s-a7347107"] .geom-segment { fill: none; stroke: var(--tangent); stroke-width: 2.5; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-a7347107"] .geom-segment.golden-segment { stroke: var(--golden); stroke-width: 3.3; opacity: 0.92 }
+            svg[data-svg-scope="s-a7347107"] .geom-segment.radius-segment { stroke: var(--radius-col); stroke-width: 2.3; opacity: 0.9 }
+            svg[data-svg-scope="s-a7347107"] .geom-segment.semi-segment { stroke: var(--carrier); stroke-width: 2.4; opacity: 0.82 }
+            svg[data-svg-scope="s-a7347107"] .geom-polygon.tri-poly { fill: var(--conic); fill-opacity: 0.06; stroke: var(--carrier); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-a7347107"] .geom-polygon.cyclic-poly { fill: var(--cyclic); fill-opacity: 0.07; stroke: var(--cyclic); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-a7347107"] .geom-polygon.quad-poly { fill: var(--golden); fill-opacity: 0.07; stroke: var(--golden); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-a7347107"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-a7347107"] .incenter-point { fill: var(--pt-incenter); stroke-width: 1.8 }
+            svg[data-svg-scope="s-a7347107"] .touch-point { fill: var(--pt-touch) }
+            svg[data-svg-scope="s-a7347107"] .meet-point { fill: var(--pt-meet) }
+            svg[data-svg-scope="s-a7347107"] .golden-point { fill: var(--golden); stroke-width: 1.8 }
+            svg[data-svg-scope="s-a7347107"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-a7347107"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Hero Definitiones §58 — Universal Gnomon Realized on the Golden Rectangle in Q(phi)</title>
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
@@ -112,7 +138,6 @@
                     stroke-width="1.8" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="680" height="440" rx="6" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon tri-poly" points="236.13,220 364.52,220 364.52,91.61 236.13,91.61" data-ref="&lt; A B C D &gt;" />
@@ -162,7 +187,33 @@
         <h2>2. Two-Portal Mountain Tunneling (<cite>dioptra-mountain-tunnel.svg</cite>)<a class="headerlink" href="#two-portal-mountain-tunneling-dioptra-mountain-tunnel-svg" title="Link to this heading">¶</a></h2>
         <p>Realizing <strong>Dioptra Chapter 15</strong> (<span class="citation-ref" data-cite="schoene:1903" title="Hermann Schöne (ed.) — Heronis Alexandrini Opera quae supersunt omnia, Vol. III: Rationes dimetiendi et Commentatio dioptrica (Leipzig: B. G. Teubner, pp. 2–315)">Schöne 1903, pp. 238–240</span>), orthogonal dioptra stations <span class="geom-ref" data-ref="g3:E" title="E">E</span>, <span class="geom-ref" data-ref="g3:Z" title="Z">Z</span>, <span class="geom-ref" data-ref="g3:H" title="H">H</span>, <span class="geom-ref" data-ref="g3:G" title="G">G</span>, <span class="geom-ref" data-ref="g3:K" title="K">K</span>, <span class="geom-ref" data-ref="g3:M" title="M">M</span> determine the subterranean displacement <span class="math notranslate nohighlight">\((\Delta x, \Delta y) = (12, 5)\)</span> of <span class="geom-ref" data-ref="g3:&lt; B N D &gt;" title="&lt; B N D &gt;">BND</span>, aligning exterior sighting triangles <span class="geom-ref" data-ref="g3:&lt; B O X &gt;" title="&lt; B O X &gt;">BOX</span> and <span class="geom-ref" data-ref="g3:&lt; D P Q &gt;" title="&lt; D P Q &gt;">DPQ</span> collinearly along <span class="geom-ref" data-ref="g3:[ X Q ]" title="[ X Q ]">XQ</span>:</p>
         <figure class="photon-picture photon-svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="euclid-graphic" width="720" height="480" viewBox="0 0 720 480" data-graphic-id="g3" role="img" aria-label="Hero Dioptra Ch. 15 — Two-Portal Mountain Tunneling by Orthogonal Traverse">
+            <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480" data-graphic-id="g3" role="img" aria-label="Hero Dioptra Ch. 15 — Two-Portal Mountain Tunneling by Orthogonal Traverse" data-svg-scope="s-fbaa94ac">
+          <style>
+            svg[data-svg-scope="s-fbaa94ac"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #334155; --conic: #0284c7; --cyclic: #7c3aed; --bisector: #0f766e; --aux: #64748b; --golden: #b45309; --tangent: #0369a1; --radius-col: #059669; --pt-given: #0f172a; --pt-incenter: #d97706; --pt-touch: #0284c7; --pt-meet: #7c3aed; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-fbaa94ac"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #cbd5e1; --conic: #38bdf8; --cyclic: #c084fc; --bisector: #2dd4bf; --aux: #94a3b8; --golden: #facc15; --tangent: #38bdf8; --radius-col: #34d399; --pt-given: #f1f5f9; --pt-incenter: #fbbf24; --pt-touch: #38bdf8; --pt-meet: #c084fc }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-circle.incircle-curve { fill: none; stroke: var(--conic); stroke-width: 2.25; opacity: 0.92 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-circle.cyclic-curve { fill: none; stroke: var(--cyclic); stroke-width: 1.75; stroke-dasharray: 6 4; opacity: 0.78 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-circle.golden-curve { fill: none; stroke: var(--golden); stroke-width: 1.9; stroke-dasharray: 5 3.5; opacity: 0.85 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-line { fill: none; stroke: var(--aux); stroke-width: 1.35; stroke-linecap: round; opacity: 0.72 }
+            svg[data-svg-scope="s-fbaa94ac"] .carrier-line { stroke: var(--carrier); stroke-width: 2.05; opacity: 0.92 }
+            svg[data-svg-scope="s-fbaa94ac"] .bisector-line { stroke: var(--bisector); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-fbaa94ac"] .aux-line { stroke: var(--aux); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.75 }
+            svg[data-svg-scope="s-fbaa94ac"] .quad-line { stroke: var(--cyclic); stroke-width: 1.75; opacity: 0.85 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-segment { fill: none; stroke: var(--tangent); stroke-width: 2.5; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-segment.golden-segment { stroke: var(--golden); stroke-width: 3.3; opacity: 0.92 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-segment.radius-segment { stroke: var(--radius-col); stroke-width: 2.3; opacity: 0.9 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-segment.semi-segment { stroke: var(--carrier); stroke-width: 2.4; opacity: 0.82 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-polygon.tri-poly { fill: var(--conic); fill-opacity: 0.06; stroke: var(--carrier); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-polygon.cyclic-poly { fill: var(--cyclic); fill-opacity: 0.07; stroke: var(--cyclic); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-polygon.quad-poly { fill: var(--golden); fill-opacity: 0.07; stroke: var(--golden); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-fbaa94ac"] .incenter-point { fill: var(--pt-incenter); stroke-width: 1.8 }
+            svg[data-svg-scope="s-fbaa94ac"] .touch-point { fill: var(--pt-touch) }
+            svg[data-svg-scope="s-fbaa94ac"] .meet-point { fill: var(--pt-meet) }
+            svg[data-svg-scope="s-fbaa94ac"] .golden-point { fill: var(--golden); stroke-width: 1.8 }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-fbaa94ac"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
           <title>Hero Dioptra Ch. 15 — Two-Portal Mountain Tunneling by Orthogonal Traverse</title>
           <defs>
             <marker id="geom-tick-1" viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
@@ -184,7 +235,6 @@
                     stroke-width="1.8" stroke-linecap="round" />
             </marker>
           </defs>
-          <rect class="svg-bg" x="0" y="0" width="720" height="480" rx="6" />
           <g id="elements">
             <g id="graphics">
               <polygon class="geom-polygon cyclic-poly" points="227.5,295.21 492.5,295.21 492.5,184.79" data-ref="&lt; B N D &gt;" />
@@ -326,7 +376,7 @@
 
   <script src="../_static/jquery.js?v=5d32c60e"></script>
   <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-  <script src="../_static/documentation_options.js?v=fd825880"></script>
+  <script src="../_static/documentation_options.js?v=59fadc99"></script>
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
