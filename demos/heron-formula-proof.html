@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8) &mdash; GEOMETOR • heron</title>
+
+  <title>Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8) — Heron of Alexandria • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/heron/demos/heron-formula-proof.html" />
+  <meta name="description" content="Exact Compass-and-Straightedge Model of Hero’s Incircle &amp; Cyclic Quadrilateral Proof — Codex Reference: Prop. I.8: Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c)) &amp; Root Extraction" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8) — Heron of Alexandria • GEOMETOR" />
+  <meta property="og:description" content="Exact Compass-and-Straightedge Model of Hero’s Incircle &amp; Cyclic Quadrilateral Proof — Codex Reference: Prop. I.8: Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c)) &amp; Root Extraction" />
+  <meta property="og:url" content="https://geometor.github.io/heron/demos/heron-formula-proof.html" />
+  <meta property="og:image" content="https://geometor.github.io/heron/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Heron of Alexandria — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8) — Heron of Alexandria • GEOMETOR" />
+  <meta name="twitter:description" content="Exact Compass-and-Straightedge Model of Hero’s Incircle &amp; Cyclic Quadrilateral Proof — Codex Reference: Prop. I.8: Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c)) &amp; Root Extraction" />
+  <meta name="twitter:image" content="https://geometor.github.io/heron/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Heron of Alexandria — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="../index.html">
-        <img src="../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../index.html" title="Home">
+        <img src="../_static/logo.png" class="logo" alt="GEOMETOR heron"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">heron</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">heron</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -40,10 +60,19 @@
           <a href="../metrica/index.html"  >Metrica</a>
         </li>
         <li>
-          <a href="../metrica/persons.html"  >People</a>
+          <a href="../definitiones/index.html"  >Definitiones</a>
         </li>
         <li>
-          <a href="../metrica/bibliography.html"  >Bibliography</a>
+          <a href="../catoptrica/index.html"  >Catoptrica</a>
+        </li>
+        <li>
+          <a href="../dioptra/index.html"  >Dioptra</a>
+        </li>
+        <li>
+          <a href="../persons.html"  >People</a>
+        </li>
+        <li>
+          <a href="../bibliography.html"  >Bibliography</a>
         </li>
         <li>
           <a href="../about/index.html"  >About</a>
@@ -62,14 +91,11 @@
     <article class="book-layout book-reading-pane">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; heron</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../index.html">GEOMETOR • heron</a>
-          </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
-            <a class="book-crumb-link" href="index.html">Symbolic Constructions &amp; Demos</a>
-          </div>
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="index.html">Demos</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Heron’s Formula Synthetic Proof & Quadrea…</span>
+          </nav>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
@@ -85,10 +111,10 @@
       <div class="content body book-content" role="main">
         <section class="level-1" id="heron-s-formula-synthetic-proof-quadrea-metrica-i-8">
         <span id="demo-heron-formula-proof"></span><h1>Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8)<a class="headerlink" href="#heron-s-formula-synthetic-proof-quadrea-metrica-i-8" title="Link to this heading">¶</a></h1>
-        <p><em>Exact Compass-and-Straightedge Model of Hero’s Incircle &amp; Cyclic Quadrilateral Proof</em> — Codex Reference: <a class="reference internal" href="../metrica/book-i-triangles/book-i-triangles-en.html"><span class="doc">Metrica Book I (Preface &amp; Props. 1–9): Triangles, Heron’s Formula &amp; √720</span></a></p>
+        <p><em>Exact Compass-and-Straightedge Model of Hero’s Incircle &amp; Cyclic Quadrilateral Proof</em> — Codex Reference: <a class="reference internal" href="../metrica/book_01/prop_08.html"><span class="doc">Prop. I.8: Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c)) &amp; Root Extraction</span></a></p>
         <section class="level-2" id="interactive-construction-heron-i8-incircle-svg">
         <h2>Interactive Construction (<cite>heron-i8-incircle.svg</cite>)<a class="headerlink" href="#interactive-construction-heron-i8-incircle-svg" title="Link to this heading">¶</a></h2>
-        <p>Hover or click any geometric label below—such as <span class="geom-ref" data-ref="g1:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span>, incenter <span class="geom-ref" data-ref="g1:H" title="H">H</span>, cyclic quadrilateral <span class="geom-ref" data-ref="g1:&lt; C H B L &gt;" title="&lt; C H B L &gt;">CHBL</span>, or extended semiperimeter <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">CG</span>—to trace <span class="person-ref" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero's</span> synthetic proof step-by-step:</p>
+        <p>Hover or click any geometric label below—such as <span class="geom-ref" data-ref="g1:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span>, incenter <span class="geom-ref" data-ref="g1:H" title="H">H</span>, cyclic quadrilateral <span class="geom-ref" data-ref="g1:&lt; C H B L &gt;" title="&lt; C H B L &gt;">CHBL</span>, or extended semiperimeter <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">CG</span>—to trace <a class="person-ref" id="occ-person-hero-1" href="../persons.html#person-hero" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero's</a> synthetic proof step-by-step:</p>
         <figure class="photon-picture photon-svg">
             <svg class="euclid-graphic" xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" data-graphic-id="g1" role="img" aria-label="Hero Metrica I.8 — Synthetic Incircle &amp; Cyclic Quadrilateral Proof on (13, 14, 15)" data-svg-scope="s-281e9bf3">
           <style>
@@ -201,7 +227,7 @@
         <h2>Exact Symbolic Coordinates &amp; Deductive Chain<a class="headerlink" href="#exact-symbolic-coordinates-deductive-chain" title="Link to this heading">¶</a></h2>
         <p>On Hero’s synthesis triangle <span class="math notranslate nohighlight">\((AB, BC, CA) = (13, 14, 15)\)</span> placed at <span class="geom-ref" data-ref="g1:B" title="B">B</span> <span class="math notranslate nohighlight">\(= (0, 0)\)</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> <span class="math notranslate nohighlight">\(= (14, 0)\)</span>, and <span class="geom-ref" data-ref="g1:A" title="A">A</span> <span class="math notranslate nohighlight">\(= (5, 12)\)</span>:</p>
         <ol class="arabic">
-        <li><p><strong>Incenter &amp; Inradius</strong>: Internal angle bisectors meet at <span class="geom-ref" data-ref="g1:H" title="H">H</span> <span class="math notranslate nohighlight">\(= (6, 4)\)</span> (<cite>X(1)</cite> in <span class="citation-ref" data-cite="kimberling:etc" title="Clark Kimberling — Encyclopedia of Triangle Centers (ETC) (X(1) Incenter (geometor/etc))">Kimberling's ETC</span>), with touchpoints <span class="geom-ref" data-ref="g1:E" title="E">E</span> <span class="math notranslate nohighlight">\(= (6, 0)\)</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span> <span class="math notranslate nohighlight">\(= \left(\frac{30}{13}, \frac{72}{13}\right)\)</span>, and <span class="geom-ref" data-ref="g1:F" title="F">F</span> <span class="math notranslate nohighlight">\(= \left(\frac{46}{5}, \frac{32}{5}\right)\)</span> of radius <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">HE</span> <span class="math notranslate nohighlight">\(r = 4\)</span>.</p></li>
+        <li><p><strong>Incenter &amp; Inradius</strong>: Internal angle bisectors meet at <span class="geom-ref" data-ref="g1:H" title="H">H</span> <span class="math notranslate nohighlight">\(= (6, 4)\)</span> (<cite>X(1)</cite> in <a class="citation-ref" id="occ-cite-kimberling-etc-1" href="../bibliography.html#cite-kimberling-etc" data-cite="kimberling:etc" title="Clark Kimberling — Encyclopedia of Triangle Centers (ETC) (X(1) Incenter (geometor/etc))">Kimberling's ETC</a>), with touchpoints <span class="geom-ref" data-ref="g1:E" title="E">E</span> <span class="math notranslate nohighlight">\(= (6, 0)\)</span>, <span class="geom-ref" data-ref="g1:D" title="D">D</span> <span class="math notranslate nohighlight">\(= \left(\frac{30}{13}, \frac{72}{13}\right)\)</span>, and <span class="geom-ref" data-ref="g1:F" title="F">F</span> <span class="math notranslate nohighlight">\(= \left(\frac{46}{5}, \frac{32}{5}\right)\)</span> of radius <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">HE</span> <span class="math notranslate nohighlight">\(r = 4\)</span>.</p></li>
         <li><p><strong>Extended Semiperimeter</strong>: Compass extension past <span class="geom-ref" data-ref="g1:B" title="B">B</span> locates <span class="geom-ref" data-ref="g1:G" title="G">G</span> <span class="math notranslate nohighlight">\(= (-7, 0)\)</span> so that <span class="geom-eq-ref" data-assert-equal="g1:/ B G /,/ A D /" title="/ B G /,/ A D /">BG = AD</span> <span class="math notranslate nohighlight">\(= s - a = 7\)</span> and <span class="geom-ref" data-ref="g1:/ C G /" title="/ C G /">CG</span> <span class="math notranslate nohighlight">\(= s = 21\)</span>, certifying <span class="math notranslate nohighlight">\(\Delta = s \cdot r = 21 \times 4 = 84\)</span>.</p></li>
         <li><p><strong>Cyclic Auxiliary Quadrilateral</strong>: Erecting <span class="math notranslate nohighlight">\(HL \perp CH\)</span> at <span class="geom-ref" data-ref="g1:H" title="H">H</span> (meeting <span class="geom-ref" data-ref="g1:[ B C ]" title="[ B C ]">BC</span> at <span class="geom-ref" data-ref="g1:K" title="K">K</span> <span class="math notranslate nohighlight">\(= (4, 0)\)</span>) and <span class="math notranslate nohighlight">\(BL \perp BC\)</span> at <span class="geom-ref" data-ref="g1:B" title="B">B</span> meets at <span class="geom-ref" data-ref="g1:L" title="L">L</span> <span class="math notranslate nohighlight">\(= (0, -8)\)</span>. Quadrilateral <span class="geom-ref" data-ref="g1:&lt; C H B L &gt;" title="&lt; C H B L &gt;">CHBL</span> is inscribed in circle <span class="geom-ref" data-ref="g1:( M C )" title="( M C )">(MC)</span> with center <span class="geom-ref" data-ref="g1:M" title="M">M</span> <span class="math notranslate nohighlight">\(= (7, -4)\)</span> and squared radius <span class="math notranslate nohighlight">\(Q(M, C) = 65\)</span>.</p></li>
         <li><p><strong>Right-Triangle Altitude Identity (:just:`VI.8`)</strong>: In right triangle <span class="math notranslate nohighlight">\(KHC\)</span>, altitude <span class="geom-ref" data-ref="g1:/ H E /" title="/ H E /">HE</span> satisfies <span class="math notranslate nohighlight">\(|KE| \cdot |EC| = 2 \times 8 = 16 = 4^2 = r^2\)</span>, completing Hero’s proportion:</p>
@@ -232,13 +258,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="index.html" title="Symbolic Constructions &amp; Demos">&larr; <span class="nav-label">Symbolic Constructions & Demos</span></a>
+            <a class="book-nav-btn" href="index.html" title="Symbolic Constructions &amp; Demos">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../index.html">GEOMETOR • heron</a>
+            <a class="book-toc-link" href="index.html">Demos</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="sqrt-720-iteration.html" title="Iterative Square-Root Extraction on √720 (Metrica I.8)"><span class="nav-label">Iterative Square-Root Extraction on √720 (Metrica I.8)</span> &rarr;</a>
+            <a class="book-nav-btn" href="sqrt-720-iteration.html" title="Iterative Square-Root Extraction on √720 (Metrica I.8)"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -267,9 +293,10 @@
       <h3>Types</h3>
       <ul>
         <li><a href="../types/apparatus.html">apparatus</a></li>
-        <li><a href="../types/chapter.html">chapter</a></li>
-        <li><a href="../types/el.html">el</a></li>
+        <li><a href="../types/book.html">book</a></li>
         <li><a href="../types/notes.html">notes</a></li>
+        <li><a href="../types/proposition.html">proposition</a></li>
+        <li><a href="../types/section.html">section</a></li>
         <li><a href="../types/summary.html">summary</a></li>
         <li><a href="../types/translation.html">translation</a></li>
       </ul>
@@ -278,8 +305,8 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../metrica/concordance.html"  >Concordance</a></li>
-        <li><a href="../metrica/glossary.html"  >Glossary</a></li>
+        <li><a href="../concordance.html"  >Concordance</a></li>
+        <li><a href="../glossary.html"  >Glossary</a></li>
         <li><a href="../changelog.html"  >Changelog</a></li>
       </ul>
     </div>

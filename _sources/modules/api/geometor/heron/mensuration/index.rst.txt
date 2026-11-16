@@ -65,21 +65,11 @@ Module Contents
 
    Single step of Hero's iteration :math:`x_{k+1} = \frac{1}{2}(x_k + N/x_k)`.
 
-   .. attribute:: step
+   :ivar step: Zero-based iteration index (:math:`k = 0` is the initial rational seed).
+   :ivar approx: Exact rational convergent :math:`x_k \in \mathbb{Q}`.
+   :ivar square: Exact square :math:`x_k^2 \in \mathbb{Q}`.
+   :ivar residual: Exact quadratic error :math:`x_k^2 - N \ge 0` (for :math:`k \ge 1`).
 
-      Zero-based iteration index (:math:`k = 0` is the initial rational seed).
-
-   .. attribute:: approx
-
-      Exact rational convergent :math:`x_k \in \mathbb{Q}`.
-
-   .. attribute:: square
-
-      Exact square :math:`x_k^2 \in \mathbb{Q}`.
-
-   .. attribute:: residual
-
-      Exact quadratic error :math:`x_k^2 - N \ge 0` (for :math:`k \ge 1`).
 
 
    .. py:attribute:: step
@@ -102,29 +92,13 @@ Module Contents
 
    Exact vs. Heronian area-to-side-squared ratio :math:`A_n / s^2` for a regular :math:`n`-gon.
 
-   .. attribute:: sides
+   :ivar sides: Number of polygon sides :math:`n \in \{3, \dots, 12\}`.
+   :ivar name: Classical polygon name.
+   :ivar metrica_prop: Proposition locus in Schöne's *Metrica* Book I.
+   :ivar exact_area_over_s2: Exact closed-form or cyclotomic SymPy expression for :math:`A_n / s^2`.
+   :ivar heron_rational_over_s2: Hero's practical rational multiplier :math:`p / q` in *Metrica*.
+   :ivar relative_error: Signed relative error :math:`(p/q - A_n/s^2) / (A_n/s^2)` as a float.
 
-      Number of polygon sides :math:`n \in \{3, \dots, 12\}`.
-
-   .. attribute:: name
-
-      Classical polygon name.
-
-   .. attribute:: metrica_prop
-
-      Proposition locus in Schöne's *Metrica* Book I.
-
-   .. attribute:: exact_area_over_s2
-
-      Exact closed-form or cyclotomic SymPy expression for :math:`A_n / s^2`.
-
-   .. attribute:: heron_rational_over_s2
-
-      Hero's practical rational multiplier :math:`p / q` in *Metrica*.
-
-   .. attribute:: relative_error
-
-      Signed relative error :math:`(p/q - A_n/s^2) / (A_n/s^2)` as a float.
 
 
    .. py:attribute:: sides

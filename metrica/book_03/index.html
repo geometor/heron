@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-content_root="../../">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Metrica III: Metrica Book III: Proportional Divisions of Figures — Metrica Book III • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/heron/metrica/book_03/" />
+  <meta name="description" content="Division of plane and solid figures in given ratios, distributive justice, Euclidean divisions, cevian cuts, exterior-point division via hyperbolic excess, and Hero’s cube root algorithm." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Metrica III: Metrica Book III: Proportional Divisions of Figures — Metrica Book III • GEOMETOR" />
+  <meta property="og:description" content="Division of plane and solid figures in given ratios, distributive justice, Euclidean divisions, cevian cuts, exterior-point division via hyperbolic excess, and Hero’s cube root algorithm." />
+  <meta property="og:url" content="https://geometor.github.io/heron/metrica/book_03/" />
+  <meta property="og:image" content="https://geometor.github.io/heron/_static/social/metrica.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Heron of Alexandria — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Metrica III: Metrica Book III: Proportional Divisions of Figures — Metrica Book III • GEOMETOR" />
+  <meta name="twitter:description" content="Division of plane and solid figures in given ratios, distributive justice, Euclidean divisions, cevian cuts, exterior-point division via hyperbolic excess, and Hero’s cube root algorithm." />
+  <meta name="twitter:image" content="https://geometor.github.io/heron/_static/social/metrica.png" />
+  <meta name="twitter:image:alt" content="Heron of Alexandria — GEOMETOR" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=ea5fcf70" />
+  <link rel="stylesheet" type="text/css" href="../../_static/css/styles.css?v=81e79cc0" />
+  <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+  <link rel="stylesheet" href="../../_static/css/print.css" type="text/css" media="print" />
+  <link rel="icon" href="../../_static/favicon.ico" />
+</head>
+
+<body class="is-book-page book-theme-classical-serif" data-folio="Schöne 140–184 · Cod. Cpolit. 1, fols. 99v–107v">
+  <header>
+    <div class="logo">
+      <a href="../../index.html" title="Home">
+        <img src="../../_static/logo.png" class="logo" alt="GEOMETOR heron"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">heron</span>
+        </div>
+      </a>
+    </div>
+    <nav aria-label="Header">
+      <input type="checkbox" id="nav-Header-toggle" >
+      <label for="nav-Header-toggle" >Header</label>
+      <ul>
+        <li>
+          <a href="../index.html" class="is-active" aria-selected="true" >Metrica</a>
+        </li>
+        <li>
+          <a href="../../definitiones/index.html"  >Definitiones</a>
+        </li>
+        <li>
+          <a href="../../catoptrica/index.html"  >Catoptrica</a>
+        </li>
+        <li>
+          <a href="../../dioptra/index.html"  >Dioptra</a>
+        </li>
+        <li>
+          <a href="../../persons.html"  >People</a>
+        </li>
+        <li>
+          <a href="../../bibliography.html"  >Bibliography</a>
+        </li>
+        <li>
+          <a href="../../about/index.html"  >About</a>
+        </li>
+        <li>
+          <a href="../../usage/index.html"  >Usage</a>
+        </li>
+        <li>
+          <a href="../../demos/index.html"  >Demos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="motto"></div>
+  </header>
+  <main class="book-main">
+    <article class="book-layout book-reading-pane" data-folio="Schöne 140–184 · Cod. Cpolit. 1, fols. 99v–107v" data-canonical-id="Metrica III">
+      <header class="book-header">
+        <div class="book-header-bar">
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="../index.html">Metrica</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Metrica III</span>
+          </nav>
+          <div class="book-provenance-badges">
+            <a class="book-badge folio-badge folio-link" href="https://github.com/geometor/heron/blob/main/resources/metrica/sources/metrica_schoene_1903_grc.txt#L116" target="_blank" rel="noopener" title="View Folio Schöne 140–184 · Cod. Cpolit. 1, fols. 99v–107v">Folio Schöne 140–184 · Cod. Cpolit. 1, fols. 99v–107v</a>
+          </div>
+        </div>
+        <div class="book-header-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book_02/prop_16_20.html" title="Props. II.16–II.20: Five Platonic Solids &amp; Irregular Hydrostatic Displacement">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <nav class="book-tracks-nav" aria-label="Document Tracks">
+              <strong class="book-track-item is-active" aria-current="page">Overview</strong>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="summary.html">Summary</a>
+              <span class="book-track-sep">&middot;</span>
+              <a class="book-track-item" href="notes.html">Notes</a>
+            </nav>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="prooemium.html" title="Book III Prooemium: Geometric Proportion, Distributive Justice &amp; the Millet-Seed"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </header>
+      <div class="content body book-content folio-book-page" role="main">
+        <section class="level-1" id="metrica-book-iii-proportional-divisions-of-figures">
+        <span id="metrica-book-3"></span><span id="unit-book-iii-divisions-en"></span><h1>Metrica Book III: Proportional Divisions of Figures<a class="headerlink" href="#metrica-book-iii-proportional-divisions-of-figures" title="Link to this heading">¶</a></h1>
+        <p class="rubric"><em>Προοίμιον καὶ Προτάσεις α΄–κγ΄</em> — <a class="person-ref" id="occ-person-hero-1" href="../../persons.html#person-hero" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero of Alexandria</a> (<em>Schöne pp. 140–184</em>)</p>
+        <section class="level-2" id="table-of-contents">
+        <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">¶</a></h2>
+            <section class="collection ">
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="prooemium-el.html">Προοίμιον Βιβλίου Γ΄ — Ἀναλογία καὶ Δικαιοσύνη</a></h2>
+                      <p><strong>ΗΡΩΝΟΣ ΜΕΤΡΙΚΩΝ Γ. ΠΡΟΟΙΜΙΟΝ (Schöne pp. 140–142; fol. 99v)</strong>.</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prooemium-el.html">Greek (Teubner)</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="prooemium.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="prooemium.html">Book III Prooemium: Geometric Proportion, Distributive Justice & the Millet-Seed</a></h2>
+                      <p><strong>Book III, Prooemium (Schöne pp. 140–142; fol. 99v)</strong>:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prooemium-el.html">Greek (Teubner)</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="prooemium.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="prop_01_03-el.html" aria-label="Μετρικῶν Γ΄ α΄–β΄ — Διαιρέσεις Τριγώνων κατὰ τὸν Δοθέντα Λόγον">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" width="700" height="500" viewBox="0 0 700 500" data-graphic-id="g1" role="img" aria-label="Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division" data-svg-scope="s-7f5e43ec">
+          <style>
+            svg[data-svg-scope="s-7f5e43ec"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #334155; --conic: #0284c7; --cyclic: #7c3aed; --bisector: #0f766e; --aux: #64748b; --golden: #b45309; --tangent: #0369a1; --radius-col: #059669; --pt-given: #0f172a; --pt-incenter: #d97706; --pt-touch: #0284c7; --pt-meet: #7c3aed; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-7f5e43ec"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #cbd5e1; --conic: #38bdf8; --cyclic: #c084fc; --bisector: #2dd4bf; --aux: #94a3b8; --golden: #facc15; --tangent: #38bdf8; --radius-col: #34d399; --pt-given: #f1f5f9; --pt-incenter: #fbbf24; --pt-touch: #38bdf8; --pt-meet: #c084fc }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-circle.incircle-curve { fill: none; stroke: var(--conic); stroke-width: 2.25; opacity: 0.92 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-circle.cyclic-curve { fill: none; stroke: var(--cyclic); stroke-width: 1.75; stroke-dasharray: 6 4; opacity: 0.78 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-circle.golden-curve { fill: none; stroke: var(--golden); stroke-width: 1.9; stroke-dasharray: 5 3.5; opacity: 0.85 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-line { fill: none; stroke: var(--aux); stroke-width: 1.35; stroke-linecap: round; opacity: 0.72 }
+            svg[data-svg-scope="s-7f5e43ec"] .carrier-line { stroke: var(--carrier); stroke-width: 2.05; opacity: 0.92 }
+            svg[data-svg-scope="s-7f5e43ec"] .bisector-line { stroke: var(--bisector); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-7f5e43ec"] .aux-line { stroke: var(--aux); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.75 }
+            svg[data-svg-scope="s-7f5e43ec"] .quad-line { stroke: var(--cyclic); stroke-width: 1.75; opacity: 0.85 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment { fill: none; stroke: var(--tangent); stroke-width: 2.5; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment.golden-segment { stroke: var(--golden); stroke-width: 3.3; opacity: 0.92 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment.radius-segment { stroke: var(--radius-col); stroke-width: 2.3; opacity: 0.9 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment.semi-segment { stroke: var(--carrier); stroke-width: 2.4; opacity: 0.82 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-polygon.tri-poly { fill: var(--conic); fill-opacity: 0.06; stroke: var(--carrier); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-polygon.cyclic-poly { fill: var(--cyclic); fill-opacity: 0.07; stroke: var(--cyclic); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-polygon.quad-poly { fill: var(--golden); fill-opacity: 0.07; stroke: var(--golden); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-7f5e43ec"] .incenter-point { fill: var(--pt-incenter); stroke-width: 1.8 }
+            svg[data-svg-scope="s-7f5e43ec"] .touch-point { fill: var(--pt-touch) }
+            svg[data-svg-scope="s-7f5e43ec"] .meet-point { fill: var(--pt-meet) }
+            svg[data-svg-scope="s-7f5e43ec"] .golden-point { fill: var(--golden); stroke-width: 1.8 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
+          <title>Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division</title>
+          <defs>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+              <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+              <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g>
+            <g>
+              <polygon class="geom-polygon tri-poly" points="350,241.23 279.4,410.68 477.09,410.68" />
+              <polygon class="geom-polygon cyclic-poly" points="350,241.23 288.86,387.98 460.06,387.98" />
+              <polygon class="geom-polygon quad-poly" points="288.86,387.98 279.4,410.68 477.09,410.68 460.06,387.98" />
+              <circle class="geom-circle incircle-curve" cx="314.7" cy="325.96" r="91.78" fill="none"><title>( M1 A ): (x - 5/2)**2 + (y - 6)**2 - 169/4 = 0</title></circle>
+              <circle class="geom-circle golden-curve" cx="350" cy="241.23" r="158.98" fill="none"><title>( A R ): (x - 5)**2 + (y - 12)**2 - (15/4 + 3*sqrt(3))**2 - (9 - 5*sqrt(3)/4)**2 = 0</title></circle>
+              <path class="geom-line carrier-line" d="M 14 410.68 L 350 410.68 L 686 410.68" fill="none"><title>[ B C ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 248.01 486 L 346.35 250 L 444.68 14" fill="none"><title>[ A B ]: 12*x - 5*y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 533.57 486 L 356.57 250 L 179.57 14" fill="none"><title>[ C A ]: -12*x - 9*y + 168 = 0</title></path>
+              <path class="geom-line bisector-line" d="M 14 387.98 L 350 387.98 L 686 387.98" fill="none"><title>[ M N ]: y - 12 + 6*sqrt(3) = 0</title></path>
+              <path class="geom-segment" d="M 350 241.23 L 376.48 325.96 L 402.95 410.68" fill="none"><title>/ A V /: |seg| = 3*sqrt(281)/4</title></path>
+              <path class="geom-segment radius-segment" d="M 297.05 368.32 L 260.36 353.03 L 223.67 337.75" fill="none"><title>/ P R /: |seg| = 13*sqrt(3)/4</title></path>
+              <path class="geom-segment golden-segment" d="M 288.86 387.98 L 374.46 387.98 L 460.06 387.98" fill="none"><title>/ D E /: |seg| = 7*sqrt(3)</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="279.4" cy="410.68" r="4.3" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+              <circle class="geom-point" cx="477.09" cy="410.68" r="4.3" data-latex-x="14" data-latex-y="0"><title>C = (14, 0)</title></circle>
+              <circle class="geom-point" cx="350" cy="241.23" r="4.3" data-latex-x="5" data-latex-y="12"><title>A = (5, 12)</title></circle>
+              <circle class="geom-point touch-point" cx="402.95" cy="410.68" r="3.9" data-latex-x="\frac{35}{4}" data-latex-y="0"><title>V = (35/4, 0)</title></circle>
+              <circle class="geom-point" cx="297.05" cy="368.32" r="3.9" data-latex-x="\frac{5}{4}" data-latex-y="3"><title>P = (5/4, 3)</title></circle>
+              <circle class="geom-point touch-point" cx="223.67" cy="337.75" r="3.9" data-latex-x="\frac{5}{4} - 3 \sqrt{3}" data-latex-y="\frac{5 \sqrt{3}}{4} + 3"><title>R = (5/4 - 3*sqrt(3), 5*sqrt(3)/4 + 3)</title></circle>
+              <circle class="geom-point incenter-point" cx="288.86" cy="387.98" r="5" data-latex-x="5 - \frac{5 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>D = (5 - 5*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+              <circle class="geom-point incenter-point" cx="460.06" cy="387.98" r="5" data-latex-x="5 + \frac{9 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>E = (5 + 9*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="286.47" y="430.31">B</text>
+              <text class="geom-label" x="458.13" y="430.31">C</text>
+              <text class="geom-label" x="364.48" y="245.99">A</text>
+              <text class="geom-label" x="397.01" y="434.34">V</text>
+              <text class="geom-label" x="311.13" y="373.08">P</text>
+              <text class="geom-label" x="217.73" y="323.61">R</text>
+              <text class="geom-label" x="269.45" y="377.33">D</text>
+              <text class="geom-label" x="467.58" y="377.33">E</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="prop_01_03-el.html">Διαιρέσεις Τριγώνων (α΄–γ΄)</a></h2>
+                      <p><strong>α΄. Διαίρεσις ἀπὸ Κορυφῆς ἐν Λόγῳ ε΄ πρὸς γ΄ (Schöne p. 142; fol. 100r)</strong>:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prop_01_03-el.html">Greek (Teubner)</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="prop_01_03.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <figure class="excerpt-svg">
+                    <a href="prop_01_03.html" aria-label="Hero Metrica III.1 and III.2 — Vertex Division (5:3) and Parallel Mean-Proportional Division (3:1) on (13, 14, 15)">
+                      <svg class="euclid-graphic euclid-thumbnail" xmlns="http://www.w3.org/2000/svg" width="700" height="500" viewBox="0 0 700 500" data-graphic-id="g1" role="img" aria-label="Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division" data-svg-scope="s-7f5e43ec">
+          <style>
+            svg[data-svg-scope="s-7f5e43ec"] { --svg-bg: #fafaf9; --ink: #1c1917; --label-halo: rgba(250, 250, 249, 0.92); --carrier: #334155; --conic: #0284c7; --cyclic: #7c3aed; --bisector: #0f766e; --aux: #64748b; --golden: #b45309; --tangent: #0369a1; --radius-col: #059669; --pt-given: #0f172a; --pt-incenter: #d97706; --pt-touch: #0284c7; --pt-meet: #7c3aed; font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif }
+            body:not(.light-mode):not([data-theme="light"]) svg[data-svg-scope="s-7f5e43ec"] { --svg-bg: #141417; --ink: #f4f4f5; --label-halo: rgba(20, 20, 23, 0.92); --carrier: #cbd5e1; --conic: #38bdf8; --cyclic: #c084fc; --bisector: #2dd4bf; --aux: #94a3b8; --golden: #facc15; --tangent: #38bdf8; --radius-col: #34d399; --pt-given: #f1f5f9; --pt-incenter: #fbbf24; --pt-touch: #38bdf8; --pt-meet: #c084fc }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-circle.incircle-curve { fill: none; stroke: var(--conic); stroke-width: 2.25; opacity: 0.92 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-circle.cyclic-curve { fill: none; stroke: var(--cyclic); stroke-width: 1.75; stroke-dasharray: 6 4; opacity: 0.78 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-circle.golden-curve { fill: none; stroke: var(--golden); stroke-width: 1.9; stroke-dasharray: 5 3.5; opacity: 0.85 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-line { fill: none; stroke: var(--aux); stroke-width: 1.35; stroke-linecap: round; opacity: 0.72 }
+            svg[data-svg-scope="s-7f5e43ec"] .carrier-line { stroke: var(--carrier); stroke-width: 2.05; opacity: 0.92 }
+            svg[data-svg-scope="s-7f5e43ec"] .bisector-line { stroke: var(--bisector); stroke-width: 1.85; opacity: 0.88 }
+            svg[data-svg-scope="s-7f5e43ec"] .aux-line { stroke: var(--aux); stroke-width: 1.35; stroke-dasharray: 5 3.5; opacity: 0.75 }
+            svg[data-svg-scope="s-7f5e43ec"] .quad-line { stroke: var(--cyclic); stroke-width: 1.75; opacity: 0.85 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment { fill: none; stroke: var(--tangent); stroke-width: 2.5; stroke-linecap: round; opacity: 0.85 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment.golden-segment { stroke: var(--golden); stroke-width: 3.3; opacity: 0.92 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment.radius-segment { stroke: var(--radius-col); stroke-width: 2.3; opacity: 0.9 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-segment.semi-segment { stroke: var(--carrier); stroke-width: 2.4; opacity: 0.82 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-polygon.tri-poly { fill: var(--conic); fill-opacity: 0.06; stroke: var(--carrier); stroke-width: 1.9; stroke-linejoin: round }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-polygon.cyclic-poly { fill: var(--cyclic); fill-opacity: 0.07; stroke: var(--cyclic); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-polygon.quad-poly { fill: var(--golden); fill-opacity: 0.07; stroke: var(--golden); stroke-width: 1.6; stroke-linejoin: round }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-point { fill: var(--pt-given); stroke: var(--svg-bg); stroke-width: 1.5 }
+            svg[data-svg-scope="s-7f5e43ec"] .incenter-point { fill: var(--pt-incenter); stroke-width: 1.8 }
+            svg[data-svg-scope="s-7f5e43ec"] .touch-point { fill: var(--pt-touch) }
+            svg[data-svg-scope="s-7f5e43ec"] .meet-point { fill: var(--pt-meet) }
+            svg[data-svg-scope="s-7f5e43ec"] .golden-point { fill: var(--golden); stroke-width: 1.8 }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-label { fill: var(--ink); font-size: 13.5px; font-weight: 600; paint-order: stroke fill; stroke: var(--label-halo); stroke-width: 3.6px; stroke-linejoin: round; user-select: none }
+            svg[data-svg-scope="s-7f5e43ec"] .geom-label-sub { font-size: 10px; font-weight: 600 }
+          </style>
+          <title>Hero Metrica III.1–2 — Vertex (5:3) &amp; Parallel Mean-Proportional (3:1) Area Division</title>
+          <defs>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-2" y1="-4.5" x2="-2" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+              <line x1="2" y1="-4.5" x2="2" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="2" stroke-linecap="round" />
+            </marker>
+            <marker viewBox="-6 -6 12 12" orient="auto" markerUnits="userSpaceOnUse">
+              <line x1="-3.5" y1="-4.5" x2="-3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+              <line x1="0" y1="-4.5" x2="0" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+              <line x1="3.5" y1="-4.5" x2="3.5" y2="4.5" stroke="var(--geom-assert, #059669)"
+                    stroke-width="1.8" stroke-linecap="round" />
+            </marker>
+          </defs>
+          <g>
+            <g>
+              <polygon class="geom-polygon tri-poly" points="350,241.23 279.4,410.68 477.09,410.68" />
+              <polygon class="geom-polygon cyclic-poly" points="350,241.23 288.86,387.98 460.06,387.98" />
+              <polygon class="geom-polygon quad-poly" points="288.86,387.98 279.4,410.68 477.09,410.68 460.06,387.98" />
+              <circle class="geom-circle incircle-curve" cx="314.7" cy="325.96" r="91.78" fill="none"><title>( M1 A ): (x - 5/2)**2 + (y - 6)**2 - 169/4 = 0</title></circle>
+              <circle class="geom-circle golden-curve" cx="350" cy="241.23" r="158.98" fill="none"><title>( A R ): (x - 5)**2 + (y - 12)**2 - (15/4 + 3*sqrt(3))**2 - (9 - 5*sqrt(3)/4)**2 = 0</title></circle>
+              <path class="geom-line carrier-line" d="M 14 410.68 L 350 410.68 L 686 410.68" fill="none"><title>[ B C ]: y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 248.01 486 L 346.35 250 L 444.68 14" fill="none"><title>[ A B ]: 12*x - 5*y = 0</title></path>
+              <path class="geom-line carrier-line" d="M 533.57 486 L 356.57 250 L 179.57 14" fill="none"><title>[ C A ]: -12*x - 9*y + 168 = 0</title></path>
+              <path class="geom-line bisector-line" d="M 14 387.98 L 350 387.98 L 686 387.98" fill="none"><title>[ M N ]: y - 12 + 6*sqrt(3) = 0</title></path>
+              <path class="geom-segment" d="M 350 241.23 L 376.48 325.96 L 402.95 410.68" fill="none"><title>/ A V /: |seg| = 3*sqrt(281)/4</title></path>
+              <path class="geom-segment radius-segment" d="M 297.05 368.32 L 260.36 353.03 L 223.67 337.75" fill="none"><title>/ P R /: |seg| = 13*sqrt(3)/4</title></path>
+              <path class="geom-segment golden-segment" d="M 288.86 387.98 L 374.46 387.98 L 460.06 387.98" fill="none"><title>/ D E /: |seg| = 7*sqrt(3)</title></path>
+            </g>
+            <g>
+              <circle class="geom-point" cx="279.4" cy="410.68" r="4.3" data-latex-x="0" data-latex-y="0"><title>B = (0, 0)</title></circle>
+              <circle class="geom-point" cx="477.09" cy="410.68" r="4.3" data-latex-x="14" data-latex-y="0"><title>C = (14, 0)</title></circle>
+              <circle class="geom-point" cx="350" cy="241.23" r="4.3" data-latex-x="5" data-latex-y="12"><title>A = (5, 12)</title></circle>
+              <circle class="geom-point touch-point" cx="402.95" cy="410.68" r="3.9" data-latex-x="\frac{35}{4}" data-latex-y="0"><title>V = (35/4, 0)</title></circle>
+              <circle class="geom-point" cx="297.05" cy="368.32" r="3.9" data-latex-x="\frac{5}{4}" data-latex-y="3"><title>P = (5/4, 3)</title></circle>
+              <circle class="geom-point touch-point" cx="223.67" cy="337.75" r="3.9" data-latex-x="\frac{5}{4} - 3 \sqrt{3}" data-latex-y="\frac{5 \sqrt{3}}{4} + 3"><title>R = (5/4 - 3*sqrt(3), 5*sqrt(3)/4 + 3)</title></circle>
+              <circle class="geom-point incenter-point" cx="288.86" cy="387.98" r="5" data-latex-x="5 - \frac{5 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>D = (5 - 5*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+              <circle class="geom-point incenter-point" cx="460.06" cy="387.98" r="5" data-latex-x="5 + \frac{9 \sqrt{3}}{2}" data-latex-y="12 - 6 \sqrt{3}"><title>E = (5 + 9*sqrt(3)/2, 12 - 6*sqrt(3))</title></circle>
+            </g>
+            <g>
+              <text class="geom-label" x="286.47" y="430.31">B</text>
+              <text class="geom-label" x="458.13" y="430.31">C</text>
+              <text class="geom-label" x="364.48" y="245.99">A</text>
+              <text class="geom-label" x="397.01" y="434.34">V</text>
+              <text class="geom-label" x="311.13" y="373.08">P</text>
+              <text class="geom-label" x="217.73" y="323.61">R</text>
+              <text class="geom-label" x="269.45" y="377.33">D</text>
+              <text class="geom-label" x="467.58" y="377.33">E</text>
+            </g>
+          </g>
+        </svg>
+                    </a>
+                  </figure>
+                  <section>
+                    <h2><a href="prop_01_03.html">Props. III.1–III.3: Dividing Triangles from a Vertex, Parallel to Base & From a Side Point</a></h2>
+                      <p><em>(Diagram Mapping: Both **Proposition III.1*</em> and <strong>Proposition III.2</strong> act upon Hero’s canonical <cite>(13, 14, 15)</cite> triangle* <span class="geom-ref" data-ref="g1:&lt; A B C &gt;" title="&lt; A B C &gt;">ABC</span> <em>of area</em> <span class="math notranslate nohighlight">\(84\)</span> <em>with</em> <span class="geom-ref" data-ref="g1:A" title="A">A</span> = <span class="math notranslate nohighlight">\((5, 12)\)</span>, <span class="geom-ref" data-ref="g1:B" title="B">B</span> = <span class="math notranslate nohighlight">\((0, 0)\)</span>, <span class="geom-ref" data-ref="g1:C" title="C">C</span> = <span class="math notranslate nohighlight">\((14, 0)\)</span> <em>).</em></p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prop_01_03-el.html">Greek (Teubner)</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="prop_01_03.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="prop_04_19.html">Props. III.4–III.19: Trapezia, Quadrilaterals, Annuli & Exterior-Point Cuts</a></h2>
+                      <p>Extending <span class="person-ref">Euclid's</span> treatise <span class="citation-ref">On Divisions of Figures</span> (<em>Περὶ διαιρέσεων</em>) to survey engineering, Hero solves sixteen increasingly intricate planar division problems:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prop_04_19.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="prop_20_23-el.html">Διαιρέσεις Στερεῶν καὶ Κυβικὴ Πλευρὰ τῶν ρ΄ (κ΄–κγ΄)</a></h2>
+                      <p><strong>κ΄. Εὕρεσις Κυβικῆς Πλευρᾶς τῶν ρ΄ [∛100 ≈ 4 9/14] (Schöne pp. 176–178; fol. 106r)</strong>:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prop_20_23-el.html">Greek (Teubner)</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="prop_20_23.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="prop_20_23.html">Props. III.20–III.23: Stereometric Divisions & Hero’s Cube-Root Algorithm (∛100 ≈ 4 9/14)</a></h2>
+                      <p>In the final four propositions of the <em>Metrica</em>, Hero ascends from two-dimensional area divisions (governed by duplicate ratios and square roots) to <strong>three-dimensional solid divisions</strong> (governed by triplicate ratios <span class="justification" data-ref-target="XII.12" title="XII.12">[XII.12]</span> and <strong>cube roots</strong>):</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prop_20_23-el.html">Greek (Teubner)</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="prop_20_23.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="summary.html">Metrica Book III — Analytical Summary & Division Synopsis</a></h2>
+                      <p>Whereas Books I and II compute a scalar measure (area or volume) from given dimensions, <strong>Book III solves the inverse constructive problem</strong>: given a figure and a target ratio <span class="math notranslate nohighlight">\(m : n\)</span>, construct the dividing line or plane with zero geometric error (<em>“not exceeding or falling short by a single millet-seed”</em>):</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prooemium.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+              <article class="excerpt">
+                <div class="content">
+                  <section>
+                    <h2><a href="notes.html">Metrica Book III — Scholarly Commentary & Algorithmic Notes</a></h2>
+                      <p><span class="person-ref">Proclus</span> (<span class="citation-ref">In Euclidem</span>, Friedlein p. 69) records that <span class="person-ref">Euclid</span> composed a dedicated treatise <em>On Divisions</em> (<em>Περὶ διαιρέσεων βιβλίον</em>), lost in Greek but partially preserved in a 10th-century Arabic compendium by al-Sijzī (published by Woepcke in 1851; reconstructed by Archibald in 1915). Comparing Euclid’s <em>On Divisions</em> with <em>Metrica</em> Book III illuminates Hero’s genius:</p>
+                    <nav class="excerpt-tracks" aria-label="Tracks">
+                      <a class="excerpt-track-link" href="prooemium.html">English</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="summary.html">Summary</a>
+                      <span class="excerpt-track-sep">&middot;</span>
+                      <a class="excerpt-track-link" href="notes.html">Notes</a>
+                    </nav>
+                  </section>
+                </div>
+              </article>
+            </section><div class="toctree-wrapper compound">
+        </div>
+        </section>
+        </section>
+
+      </div>
+      <footer class="book-footer">
+        <div class="book-footer-ornament">&#10086;</div>
+        <div class="book-footer-nav">
+          <div class="book-nav-prev">
+            <a class="book-nav-btn" href="../book_02/prop_16_20.html" title="Props. II.16–II.20: Five Platonic Solids &amp; Irregular Hydrostatic Displacement">&larr; <span class="nav-label">Prev</span></a>
+          </div>
+          <div class="book-nav-center">
+            <a class="book-toc-link" href="../index.html">Metrica</a>
+          </div>
+          <div class="book-nav-next">
+            <a class="book-nav-btn" href="prooemium.html" title="Book III Prooemium: Geometric Proportion, Distributive Justice &amp; the Millet-Seed"><span class="nav-label">Next</span> &rarr;</a>
+          </div>
+        </div>
+      </footer>
+    </article>
+  </main>
+  <div class="asides">
+    <aside class="aside-search">
+      <h3>Search</h3>
+      <div id="searchbox" role="search">
+        <form id="rtd-search-form" class="wy-form search-form" action="../../search.html" method="get">
+          <div class="search-field">
+            <input type="search" name="q" placeholder="Search docs..." aria-label="Search docs" autocomplete="off" />
+            <button type="submit" class="search-submit" aria-label="Search" title="Search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </button>
+          </div>
+          <input type="hidden" name="check_keywords" value="yes" />
+          <input type="hidden" name="area" value="default" />
+        </form>
+      </div>
+    </aside>
+    <aside class="aside-types">
+      <h3>Types</h3>
+      <ul>
+        <li><a href="../../types/apparatus.html">apparatus</a></li>
+        <li><a href="../../types/book.html">book</a></li>
+        <li><a href="../../types/notes.html">notes</a></li>
+        <li><a href="../../types/proposition.html">proposition</a></li>
+        <li><a href="../../types/section.html">section</a></li>
+        <li><a href="../../types/summary.html">summary</a></li>
+        <li><a href="../../types/translation.html">translation</a></li>
+      </ul>
+    </aside>
+  </div>
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="../../concordance.html"  >Concordance</a></li>
+        <li><a href="../../glossary.html"  >Glossary</a></li>
+        <li><a href="../../changelog.html"  >Changelog</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div role="contentinfo">
+      <p>
+        &copy; Copyright 2026, phi ARCHITECT (GEOMETOR Digital Scriptorium).
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../_static/jquery.js?v=5d32c60e"></script>
+  <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+  <script src="../../_static/documentation_options.js?v=59fadc99"></script>
+  <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+  <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+  <script src="../../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../../_static/js/geometor_interactive.js?v=b2892320"></script>
+  <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  <script src="../../_static/js/search_highlight.js"></script>
+
+</body>
+</html>

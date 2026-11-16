@@ -34,7 +34,7 @@ Module Contents
 
 .. py:function:: default_docsrc_book_dir() -> pathlib.Path
 
-   Return ``<repo>/docsrc/metrica``.
+   Return ``<repo>/docsrc``.
 
 
 .. py:function:: render_concordance_rst(concordance: dict[str, object]) -> str
@@ -69,9 +69,9 @@ Module Contents
 
 .. py:function:: verify_codex_tracks(book_dir: pathlib.Path | None = None) -> dict[str, object]
 
-   Verify all 5 Codex units have 4 synchronized tracks, zero Python blocks, and valid SHA-256s.
+   Verify all 6 Codex units have valid structure, zero Python blocks, and valid SHA-256s.
 
-   :param book_dir: Optional override for ``docsrc/metrica``.
+   :param book_dir: Optional override for ``docsrc``.
 
    :returns: Dictionary with ``valid``, ``units``, ``track_files``, and ``errors``.
 

@@ -1,0 +1,30 @@
+:order: 2
+:type: proposition
+:canonical_id: I.1–7
+:folio: Schöne 6–18
+:tracks: English: prop_01_07 | Greek: prop_01_07-el | Summary: summary | Notes: notes
+
+.. _sec-metrica-i-1-7:
+
+Props. I.1–I.7: Rectangles, Right/Isosceles Triangles & General Altitude Projections
+====================================================================================
+
+.. folio:: Schöne 6
+   :page: 6
+
+- **Proposition I.1 (Oblong Rectangle, Schöne pp. 6–8)**: Given an oblong rectangular region :math:`AB\Gamma\Delta` with :math:`AB = 5` feet and :math:`B\Gamma = 3` feet, dividing each side into unit-foot segments partitions the rectangle into :math:`5 \times 3 = 15` orthogonal unit squares. Thus the :term:`area <embadon>` of every rectangle equals the product of two containing sides.
+
+- **Proposition I.2 (Right-Angled Triangle, Schöne p. 8)**: Given a right-angled triangle with legs :math:`3` and :math:`4` (and hypotenuse :math:`5` by :just:`I.47`), completing the oblong rectangle of sides :math:`3` and :math:`4` shows by :just:`I.34` and :just:`I.41` that the triangle is half the rectangle, namely :math:`\frac{1}{2}(3 \times 4) = 6` unit squares.
+
+- **Proposition I.3 (Isosceles Triangle, Schöne pp. 8–10)**: Given an isosceles triangle with equal sides :math:`AB = A\Gamma = 10` and base :math:`B\Gamma = 12`, dropping the :term:`altitude <kathetos>` :math:`A\Delta` bisects the base (:math:`B\Delta = 6`), whence by :just:`I.47` :math:`A\Delta^2 = 10^2 - 6^2 = 64`, so :math:`A\Delta = 8` and the area is :math:`6 \times 8 = 48`.
+
+.. folio:: Schöne 10
+   :page: 10
+
+- **Proposition I.4 (Distinguishing Acute vs. Obtuse Scalene Triangles, Schöne pp. 10–12)**: Given the three sides :math:`a, b, c` of a scalene triangle, before dropping an altitude to side :math:`BC = a`, how do we know whether the angle at :math:`B` is acute, right, or obtuse—that is, whether the altitude falls *inside* or *outside* segment :math:`BC`? Hero invokes :just:`II.13` and :just:`II.12`: compare :math:`AC^2` against :math:`AB^2 + BC^2`. If :math:`AC^2 < AB^2 + BC^2`, :math:`\angle B` is acute; if equal, right (:just:`I.48`); if :math:`AC^2 > AB^2 + BC^2`, :math:`\angle B` is obtuse.
+
+- **Proposition I.5 (Acute-Angled Scalene Triangle on (13, 14, 15), Schöne pp. 12–14)**: Let :math:`AB = 13`, :math:`B\Gamma = 14`, :math:`A\Gamma = 15`. Since :math:`15^2 = 225 < 13^2 + 14^2 = 365`, the altitude :math:`A\Delta` falls inside :math:`B\Gamma`. By :just:`II.13`, :math:`AB^2 + B\Gamma^2 - A\Gamma^2 = 2 \cdot B\Gamma \cdot B\Delta`, whence :math:`2 \cdot 14 \cdot B\Delta = 169 + 196 - 225 = 140`, so :math:`B\Delta = 5`, :math:`A\Delta = \sqrt{169 - 25} = 12`, and the area is :math:`\frac{1}{2}(14 \times 12) = 84`.
+
+- **Proposition I.6 (Obtuse-Angled Scalene Triangle on (5, 6, 9) / (10, 9, 17) type, Schöne pp. 14–16)**: In Hero's numerical example :math:`AB = 13, B\Gamma = 11, A\Gamma = 20`, :math:`20^2 = 400 > 13^2 + 11^2 = 290`, so :math:`\angle B` is obtuse and the foot :math:`\Delta` falls *outside* :math:`B\Gamma` past :math:`B`. By :just:`II.12`, :math:`2 \cdot B\Gamma \cdot B\Delta = 400 - 290 = 110`, whence :math:`B\Delta = 5`, :math:`A\Delta = \sqrt{13^2 - 5^2} = 12`, and the area is :math:`\frac{1}{2}(11 \times 12) = 66`.
+
+- **Proposition I.7 (Unified Projection Formula without Case-Splitting, Schöne pp. 16–18)**: Hero next shows that one can compute the area of *any* triangle—acute, right, or obtuse—by a single algebraic rule without testing :math:`AC^2 \lessgtr AB^2 + BC^2`, paving the way directly for his supreme achievement in Proposition I.8.

@@ -45,33 +45,14 @@ Module Contents
 
    Canonical unit in the 4-Track Book Codex (``docsrc/metrica/``).
 
-   .. attribute:: slug
+   :ivar slug: Directory and filename stem for the unit.
+   :ivar order: Numeric navigation order in the Book Codex.
+   :ivar number_label: Short display label (e.g., ``"Metrica I (1–9)"``).
+   :ivar title: Full unit title.
+   :ivar subtitle: Thematic summary of propositions covered.
+   :ivar edition_pages: Teubner / Weidmann critical edition page span.
+   :ivar manuscript_folios: Manuscript witness folio span.
 
-      Directory and filename stem for the unit.
-
-   .. attribute:: order
-
-      Numeric navigation order in the Book Codex.
-
-   .. attribute:: number_label
-
-      Short display label (e.g., ``"Metrica I (1–9)"``).
-
-   .. attribute:: title
-
-      Full unit title.
-
-   .. attribute:: subtitle
-
-      Thematic summary of propositions covered.
-
-   .. attribute:: edition_pages
-
-      Teubner / Weidmann critical edition page span.
-
-   .. attribute:: manuscript_folios
-
-      Manuscript witness folio span.
 
 
    .. py:attribute:: slug

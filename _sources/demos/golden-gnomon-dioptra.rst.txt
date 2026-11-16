@@ -3,7 +3,7 @@
 Universal Golden Gnomon & Dioptra Mountain Tunnel
 =================================================
 
-*Self-Similar Accretion in Q(φ) (Definitiones §58) & Subterranean Geodesy (Dioptra Ch. 15)* — Codex Reference: :doc:`/metrica/definitiones-catoptrica-dioptra/definitiones-catoptrica-dioptra-en`
+*Self-Similar Accretion in Q(φ) (Definitiones §58) & Subterranean Geodesy (Dioptra Ch. 15)* — Codex Reference: :doc:`/definitiones/gnomon` · :doc:`/dioptra/cap_15`
 
 1. Universal Golden Gnomon (`heronian-golden-gnomon.svg`)
 ---------------------------------------------------------

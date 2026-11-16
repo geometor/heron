@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shortest-Path Law of Reflection (Catoptrica Prop. 4) &mdash; GEOMETOR • heron</title>
+
+  <title>Shortest-Path Law of Reflection (Catoptrica Prop. 4) — Heron of Alexandria • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/heron/demos/catoptrica-reflection.html" />
+  <meta name="description" content="Hero’s Mirror-Unfolding Variational Proof Preserved in Greek by Olympiodorus — Codex Reference: Catoptrica Prop. 4: Variational Shortest-Path Proof of the Law of Reflection" />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Shortest-Path Law of Reflection (Catoptrica Prop. 4) — Heron of Alexandria • GEOMETOR" />
+  <meta property="og:description" content="Hero’s Mirror-Unfolding Variational Proof Preserved in Greek by Olympiodorus — Codex Reference: Catoptrica Prop. 4: Variational Shortest-Path Proof of the Law of Reflection" />
+  <meta property="og:url" content="https://geometor.github.io/heron/demos/catoptrica-reflection.html" />
+  <meta property="og:image" content="https://geometor.github.io/heron/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Heron of Alexandria — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shortest-Path Law of Reflection (Catoptrica Prop. 4) — Heron of Alexandria • GEOMETOR" />
+  <meta name="twitter:description" content="Hero’s Mirror-Unfolding Variational Proof Preserved in Greek by Olympiodorus — Codex Reference: Catoptrica Prop. 4: Variational Shortest-Path Proof of the Law of Reflection" />
+  <meta name="twitter:image" content="https://geometor.github.io/heron/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Heron of Alexandria — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="../index.html">
-        <img src="../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../index.html" title="Home">
+        <img src="../_static/logo.png" class="logo" alt="GEOMETOR heron"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">heron</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">heron</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -40,10 +60,19 @@
           <a href="../metrica/index.html"  >Metrica</a>
         </li>
         <li>
-          <a href="../metrica/persons.html"  >People</a>
+          <a href="../definitiones/index.html"  >Definitiones</a>
         </li>
         <li>
-          <a href="../metrica/bibliography.html"  >Bibliography</a>
+          <a href="../catoptrica/index.html"  >Catoptrica</a>
+        </li>
+        <li>
+          <a href="../dioptra/index.html"  >Dioptra</a>
+        </li>
+        <li>
+          <a href="../persons.html"  >People</a>
+        </li>
+        <li>
+          <a href="../bibliography.html"  >Bibliography</a>
         </li>
         <li>
           <a href="../about/index.html"  >About</a>
@@ -62,14 +91,11 @@
     <article class="book-layout book-reading-pane">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../index.html" title="Return to Project Portal">&larr; heron</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../index.html">GEOMETOR • heron</a>
-          </div>
-          <div class="book-header-breadcrumbs book-header-badges" role="navigation" aria-label="Breadcrumbs">
-            <a class="book-crumb-link" href="index.html">Symbolic Constructions &amp; Demos</a>
-          </div>
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <a class="book-section-home-link" href="index.html">Demos</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Shortest-Path Law of Reflection (Catoptrica…</span>
+          </nav>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
@@ -85,7 +111,7 @@
       <div class="content body book-content" role="main">
         <section class="level-1" id="shortest-path-law-of-reflection-catoptrica-prop-4">
         <span id="demo-catoptrica-reflection"></span><h1>Shortest-Path Law of Reflection (Catoptrica Prop. 4)<a class="headerlink" href="#shortest-path-law-of-reflection-catoptrica-prop-4" title="Link to this heading">¶</a></h1>
-        <p><em>Hero’s Mirror-Unfolding Variational Proof Preserved in Greek by Olympiodorus</em> — Codex Reference: <a class="reference internal" href="../metrica/definitiones-catoptrica-dioptra/definitiones-catoptrica-dioptra-en.html"><span class="doc">Definitiones, Catoptrica &amp; Dioptra: Genetic Axiomatics, Universal Gnomon, Shortest-Path Optics &amp; Mountain Tunneling</span></a></p>
+        <p><em>Hero’s Mirror-Unfolding Variational Proof Preserved in Greek by Olympiodorus</em> — Codex Reference: <a class="reference internal" href="../catoptrica/prop_04.html"><span class="doc">Catoptrica Prop. 4: Variational Shortest-Path Proof of the Law of Reflection</span></a></p>
         <section class="level-2" id="interactive-construction-catoptrica-reflection-svg">
         <h2>Interactive Construction (<cite>catoptrica-reflection.svg</cite>)<a class="headerlink" href="#interactive-construction-catoptrica-reflection-svg" title="Link to this heading">¶</a></h2>
         <p>Hover or click any geometric label—plane mirror <span class="geom-ref" data-ref="g1:[ A B ]" title="[ A B ]">AB</span>, visual source <span class="geom-ref" data-ref="g1:C" title="C">C</span>, object <span class="geom-ref" data-ref="g1:D" title="D">D</span>, reflected virtual image <span class="geom-ref" data-ref="g1:K" title="K">K</span>, optimal incidence point <span class="geom-ref" data-ref="g1:E" title="E">E</span>, or perturbed triangle <span class="geom-ref" data-ref="g1:&lt; C Z K &gt;" title="&lt; C Z K &gt;">CZK</span>—to inspect Hero’s shortest-path proof:</p>
@@ -186,7 +212,7 @@
         <li><p>Dropping perpendicular <span class="geom-ref" data-ref="g1:/ D H /" title="/ D H /">DH</span> onto <span class="geom-ref" data-ref="g1:[ A B ]" title="[ A B ]">AB</span> gives foot <span class="geom-ref" data-ref="g1:H" title="H">H</span> <span class="math notranslate nohighlight">\(= (10, 0)\)</span>, and compass reflection across <span class="geom-ref" data-ref="g1:H" title="H">H</span> gives virtual image <span class="geom-ref" data-ref="g1:K" title="K">K</span> <span class="math notranslate nohighlight">\(= (10, -6)\)</span>.</p></li>
         <li><p>Joining the straight line <span class="geom-ref" data-ref="g1:[ C K ]" title="[ C K ]">CK</span> intersects mirror <span class="geom-ref" data-ref="g1:[ A B ]" title="[ A B ]">AB</span> at the unique equal-angle point <span class="geom-ref" data-ref="g1:E" title="E">E</span> <span class="math notranslate nohighlight">\(= (4, 0)\)</span>:</p>
         <ul class="simple">
-        <li><p>Incidence and reflection <span class="glossary-term" data-term="spread" title="Spread (spread (sin²θ)): Exact rational measure of inclination between two lines in Rational Trigonometry (s = 0 parallel, s = 1 perpendicular), used in geometor.heron to certify Hero&#x27;s angle bisectors, cyclic quadrilaterals, and equal-angle reflection without transcendental functions.">spreads</span> with the mirror are strictly equal: <span class="math notranslate nohighlight">\(s(AB, CE) = s(AB, ED) = \frac{1}{2}\)</span> (<span class="math notranslate nohighlight">\(45^\circ\)</span>).</p></li>
+        <li><p>Incidence and reflection <a class="term-ref glossary-term" id="occ-term-spread-1" href="../glossary.html#term-spread" data-term="spread" title="Spread (spread (sin²θ)): Exact rational measure of inclination between two lines in Rational Trigonometry (s = 0 parallel, s = 1 perpendicular), used in geometor.heron to certify Hero&#x27;s angle bisectors, cyclic quadrilaterals, and equal-angle reflection without transcendental functions.">spreads</a> with the mirror are strictly equal: <span class="math notranslate nohighlight">\(s(AB, CE) = s(AB, ED) = \frac{1}{2}\)</span> (<span class="math notranslate nohighlight">\(45^\circ\)</span>).</p></li>
         <li><p>Total unfolded ray length is <span class="math notranslate nohighlight">\(|CE| + |ED| = 3\sqrt{2} + 6\sqrt{2} = 9\sqrt{2} = |CK|\)</span>, with exact squared length <span class="math notranslate nohighlight">\((9\sqrt{2})^2 = 162\)</span>.</p></li>
         </ul>
         </li>
@@ -215,13 +241,13 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="sqrt-720-iteration.html" title="Iterative Square-Root Extraction on √720 (Metrica I.8)">&larr; <span class="nav-label">Iterative Square-Root Extraction on √720 (Metrica I.8)</span></a>
+            <a class="book-nav-btn" href="sqrt-720-iteration.html" title="Iterative Square-Root Extraction on √720 (Metrica I.8)">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../index.html">GEOMETOR • heron</a>
+            <a class="book-toc-link" href="index.html">Demos</a>
           </div>
           <div class="book-nav-next">
-            <a class="book-nav-btn" href="area-division-book-iii.html" title="Proportional Area Divisions &amp; ∛100 (Metrica Book III)"><span class="nav-label">Proportional Area Divisions & ∛100 (Metrica Book III)</span> &rarr;</a>
+            <a class="book-nav-btn" href="area-division-book-iii.html" title="Proportional Area Divisions &amp; ∛100 (Metrica Book III)"><span class="nav-label">Next</span> &rarr;</a>
           </div>
         </div>
       </footer>
@@ -250,9 +276,10 @@
       <h3>Types</h3>
       <ul>
         <li><a href="../types/apparatus.html">apparatus</a></li>
-        <li><a href="../types/chapter.html">chapter</a></li>
-        <li><a href="../types/el.html">el</a></li>
+        <li><a href="../types/book.html">book</a></li>
         <li><a href="../types/notes.html">notes</a></li>
+        <li><a href="../types/proposition.html">proposition</a></li>
+        <li><a href="../types/section.html">section</a></li>
         <li><a href="../types/summary.html">summary</a></li>
         <li><a href="../types/translation.html">translation</a></li>
       </ul>
@@ -261,8 +288,8 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../metrica/concordance.html"  >Concordance</a></li>
-        <li><a href="../metrica/glossary.html"  >Glossary</a></li>
+        <li><a href="../concordance.html"  >Concordance</a></li>
+        <li><a href="../glossary.html"  >Glossary</a></li>
         <li><a href="../changelog.html"  >Changelog</a></li>
       </ul>
     </div>

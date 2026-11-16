@@ -6,12 +6,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>geometor.heron.mensuration &mdash; GEOMETOR • heron</title>
+
+  <title>geometor.heron.mensuration — Heron of Alexandria • GEOMETOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="canonical" href="https://geometor.github.io/heron/modules/api/geometor/heron/mensuration/" />
+  <meta name="description" content="Exact symbolic mensuration formulas and rational approximations from Hero’s Metrica." />
+  <meta property="og:site_name" content="GEOMETOR" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="geometor.heron.mensuration — Heron of Alexandria • GEOMETOR" />
+  <meta property="og:description" content="Exact symbolic mensuration formulas and rational approximations from Hero’s Metrica." />
+  <meta property="og:url" content="https://geometor.github.io/heron/modules/api/geometor/heron/mensuration/" />
+  <meta property="og:image" content="https://geometor.github.io/heron/_static/social/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Heron of Alexandria — GEOMETOR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="geometor.heron.mensuration — Heron of Alexandria • GEOMETOR" />
+  <meta name="twitter:description" content="Exact symbolic mensuration formulas and rational approximations from Hero’s Metrica." />
+  <meta name="twitter:image" content="https://geometor.github.io/heron/_static/social/banner.png" />
+  <meta name="twitter:image:alt" content="Heron of Alexandria — GEOMETOR" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=99410eb1" />
+  <link rel="stylesheet" type="text/css" href="../../../../../_static/css/styles.css?v=81e79cc0" />
   <link rel="stylesheet" type="text/css" href="../../../../../_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
@@ -23,14 +43,14 @@
 <body class="book-theme-classical-serif">
   <header>
     <div class="logo">
-      <a href="../../../../../index.html">
-        <img src="../../../../../_static/logo.png" class="logo" alt="Logo"/>
+      <a href="../../../../../index.html" title="Home">
+        <img src="../../../../../_static/logo.png" class="logo" alt="GEOMETOR heron"/>
+        <div class="org-repo">
+          <span class="org">GEOMETOR</span>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span class="repo">heron</span>
+        </div>
       </a>
-      <div class="org-repo">
-        <span class="org">GEOMETOR</span>
-        •
-        <span class="repo">heron</span>
-      </div>
     </div>
     <nav aria-label="Header">
       <input type="checkbox" id="nav-Header-toggle" >
@@ -40,10 +60,19 @@
           <a href="../../../../../metrica/index.html"  >Metrica</a>
         </li>
         <li>
-          <a href="../../../../../metrica/persons.html"  >People</a>
+          <a href="../../../../../definitiones/index.html"  >Definitiones</a>
         </li>
         <li>
-          <a href="../../../../../metrica/bibliography.html"  >Bibliography</a>
+          <a href="../../../../../catoptrica/index.html"  >Catoptrica</a>
+        </li>
+        <li>
+          <a href="../../../../../dioptra/index.html"  >Dioptra</a>
+        </li>
+        <li>
+          <a href="../../../../../persons.html"  >People</a>
+        </li>
+        <li>
+          <a href="../../../../../bibliography.html"  >Bibliography</a>
         </li>
         <li>
           <a href="../../../../../about/index.html"  >About</a>
@@ -62,11 +91,9 @@
     <article class="book-layout book-reading-pane">
       <header class="book-header">
         <div class="book-header-bar">
-          <div class="book-header-identity">
-            <a class="book-portal-link" href="../../../../../index.html" title="Return to Project Portal">&larr; heron</a>
-            <span class="book-header-sep">/</span>
-            <a class="book-title-link" href="../../../../../index.html">GEOMETOR • heron</a>
-          </div>
+          <nav class="book-breadcrumbs" aria-label="Breadcrumb">
+            <span class="book-crumb-current is-section-root" aria-current="page">geometor.heron.mensuration</span>
+          </nav>
         </div>
       </header>
       <div class="content body book-content" role="main">
@@ -158,48 +185,34 @@
         <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent">
         <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">SqrtConvergent</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent" title="Link to this definition">¶</a></dt>
         <dd><p>Single step of Hero’s iteration <span class="math notranslate nohighlight">\(x_{k+1} = \frac{1}{2}(x_k + N/x_k)\)</span>.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>step</strong> – Zero-based iteration index (<span class="math notranslate nohighlight">\(k = 0\)</span> is the initial rational seed).</p></li>
+        <li><p><strong>approx</strong> – Exact rational convergent <span class="math notranslate nohighlight">\(x_k \in \mathbb{Q}\)</span>.</p></li>
+        <li><p><strong>square</strong> – Exact square <span class="math notranslate nohighlight">\(x_k^2 \in \mathbb{Q}\)</span>.</p></li>
+        <li><p><strong>residual</strong> – Exact quadratic error <span class="math notranslate nohighlight">\(x_k^2 - N \ge 0\)</span> (for <span class="math notranslate nohighlight">\(k \ge 1\)</span>).</p></li>
+        </ul>
+        </dd>
+        </dl>
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.step">
-        <span class="sig-name descname"><span class="pre">step</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.step" title="Link to this definition">¶</a></dt>
-        <dd><p>Zero-based iteration index (<span class="math notranslate nohighlight">\(k = 0\)</span> is the initial rational seed).</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">step</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.step" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.approx">
-        <span class="sig-name descname"><span class="pre">approx</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.approx" title="Link to this definition">¶</a></dt>
-        <dd><p>Exact rational convergent <span class="math notranslate nohighlight">\(x_k \in \mathbb{Q}\)</span>.</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">approx</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.approx" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.square">
-        <span class="sig-name descname"><span class="pre">square</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.square" title="Link to this definition">¶</a></dt>
-        <dd><p>Exact square <span class="math notranslate nohighlight">\(x_k^2 \in \mathbb{Q}\)</span>.</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">square</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.square" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.SqrtConvergent.residual">
-        <span class="sig-name descname"><span class="pre">residual</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.residual" title="Link to this definition">¶</a></dt>
-        <dd><p>Exact quadratic error <span class="math notranslate nohighlight">\(x_k^2 - N \ge 0\)</span> (for <span class="math notranslate nohighlight">\(k \ge 1\)</span>).</p>
-        </dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id0">
-        <span class="sig-name descname"><span class="pre">step</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id1">
-        <span class="sig-name descname"><span class="pre">approx</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id1" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id2">
-        <span class="sig-name descname"><span class="pre">square</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id3">
-        <span class="sig-name descname"><span class="pre">residual</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id3" title="Link to this definition">¶</a></dt>
+        <span class="sig-name descname"><span class="pre">residual</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.heron.mensuration.SqrtConvergent.residual" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
 
         </dd></dl>
@@ -208,70 +221,46 @@
         <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry">
         <span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">geometor.heron.mensuration.</span></span><span class="sig-name descname"><span class="pre">PolygonRatioEntry</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry" title="Link to this definition">¶</a></dt>
         <dd><p>Exact vs. Heronian area-to-side-squared ratio <span class="math notranslate nohighlight">\(A_n / s^2\)</span> for a regular <span class="math notranslate nohighlight">\(n\)</span>-gon.</p>
+        <dl class="field-list simple">
+        <dt class="field-odd">Variables<span class="colon">:</span></dt>
+        <dd class="field-odd"><ul class="simple">
+        <li><p><strong>sides</strong> – Number of polygon sides <span class="math notranslate nohighlight">\(n \in \{3, \dots, 12\}\)</span>.</p></li>
+        <li><p><strong>name</strong> – Classical polygon name.</p></li>
+        <li><p><strong>metrica_prop</strong> – Proposition locus in Schöne’s <em>Metrica</em> Book I.</p></li>
+        <li><p><strong>exact_area_over_s2</strong> – Exact closed-form or cyclotomic SymPy expression for <span class="math notranslate nohighlight">\(A_n / s^2\)</span>.</p></li>
+        <li><p><strong>heron_rational_over_s2</strong> – Hero’s practical rational multiplier <span class="math notranslate nohighlight">\(p / q\)</span> in <em>Metrica</em>.</p></li>
+        <li><p><strong>relative_error</strong> – Signed relative error <span class="math notranslate nohighlight">\((p/q - A_n/s^2) / (A_n/s^2)\)</span> as a float.</p></li>
+        </ul>
+        </dd>
+        </dl>
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.sides">
-        <span class="sig-name descname"><span class="pre">sides</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.sides" title="Link to this definition">¶</a></dt>
-        <dd><p>Number of polygon sides <span class="math notranslate nohighlight">\(n \in \{3, \dots, 12\}\)</span>.</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">sides</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.sides" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.name">
-        <span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.name" title="Link to this definition">¶</a></dt>
-        <dd><p>Classical polygon name.</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.name" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.metrica_prop">
-        <span class="sig-name descname"><span class="pre">metrica_prop</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.metrica_prop" title="Link to this definition">¶</a></dt>
-        <dd><p>Proposition locus in Schöne’s <em>Metrica</em> Book I.</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">metrica_prop</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.metrica_prop" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.exact_area_over_s2">
-        <span class="sig-name descname"><span class="pre">exact_area_over_s2</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.exact_area_over_s2" title="Link to this definition">¶</a></dt>
-        <dd><p>Exact closed-form or cyclotomic SymPy expression for <span class="math notranslate nohighlight">\(A_n / s^2\)</span>.</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">exact_area_over_s2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.exact_area_over_s2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.heron_rational_over_s2">
-        <span class="sig-name descname"><span class="pre">heron_rational_over_s2</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.heron_rational_over_s2" title="Link to this definition">¶</a></dt>
-        <dd><p>Hero’s practical rational multiplier <span class="math notranslate nohighlight">\(p / q\)</span> in <em>Metrica</em>.</p>
-        </dd></dl>
+        <span class="sig-name descname"><span class="pre">heron_rational_over_s2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.heron_rational_over_s2" title="Link to this definition">¶</a></dt>
+        <dd></dd></dl>
 
         <dl class="py attribute">
         <dt class="sig sig-object py" id="geometor.heron.mensuration.PolygonRatioEntry.relative_error">
-        <span class="sig-name descname"><span class="pre">relative_error</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.relative_error" title="Link to this definition">¶</a></dt>
-        <dd><p>Signed relative error <span class="math notranslate nohighlight">\((p/q - A_n/s^2) / (A_n/s^2)\)</span> as a float.</p>
-        </dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id4">
-        <span class="sig-name descname"><span class="pre">sides</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></span><a class="headerlink" href="#id4" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id5">
-        <span class="sig-name descname"><span class="pre">name</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id5" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id6">
-        <span class="sig-name descname"><span class="pre">metrica_prop</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></span><a class="headerlink" href="#id6" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id7">
-        <span class="sig-name descname"><span class="pre">exact_area_over_s2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Expr</span></span><a class="headerlink" href="#id7" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id8">
-        <span class="sig-name descname"><span class="pre">heron_rational_over_s2</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">sympy.Rational</span></span><a class="headerlink" href="#id8" title="Link to this definition">¶</a></dt>
-        <dd></dd></dl>
-
-        <dl class="py attribute">
-        <dt class="sig sig-object py" id="id9">
-        <span class="sig-name descname"><span class="pre">relative_error</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#id9" title="Link to this definition">¶</a></dt>
+        <span class="sig-name descname"><span class="pre">relative_error</span></span><span class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">float</span></span><a class="headerlink" href="#geometor.heron.mensuration.PolygonRatioEntry.relative_error" title="Link to this definition">¶</a></dt>
         <dd></dd></dl>
 
         </dd></dl>
@@ -465,7 +454,7 @@
           <div class="book-nav-prev">
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="../../../../../index.html">GEOMETOR • heron</a>
+            <a class="book-toc-link" href="../../../../../index.html">Heron of Alexandria</a>
           </div>
           <div class="book-nav-next">
           </div>
@@ -496,9 +485,10 @@
       <h3>Types</h3>
       <ul>
         <li><a href="../../../../../types/apparatus.html">apparatus</a></li>
-        <li><a href="../../../../../types/chapter.html">chapter</a></li>
-        <li><a href="../../../../../types/el.html">el</a></li>
+        <li><a href="../../../../../types/book.html">book</a></li>
         <li><a href="../../../../../types/notes.html">notes</a></li>
+        <li><a href="../../../../../types/proposition.html">proposition</a></li>
+        <li><a href="../../../../../types/section.html">section</a></li>
         <li><a href="../../../../../types/summary.html">summary</a></li>
         <li><a href="../../../../../types/translation.html">translation</a></li>
       </ul>
@@ -507,8 +497,8 @@
   <footer>
     <div class="footer-nav">
       <ul>
-        <li><a href="../../../../../metrica/concordance.html"  >Concordance</a></li>
-        <li><a href="../../../../../metrica/glossary.html"  >Glossary</a></li>
+        <li><a href="../../../../../concordance.html"  >Concordance</a></li>
+        <li><a href="../../../../../glossary.html"  >Glossary</a></li>
         <li><a href="../../../../../changelog.html"  >Changelog</a></li>
       </ul>
     </div>
