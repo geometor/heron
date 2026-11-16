@@ -4,13 +4,13 @@
 
 .. container:: author-overline
 
-   the works of
+   semantic digital archive • the works of
 
 ===================
 Heron of Alexandria
 ===================
 
-The mission of this project is to capture a semantic digital library of the works of :person:`Heron of Alexandria <hero>` (fl. c. 60 CE), the Alexandrian geometer and engineer whose *Metrica*, *Definitiones*, *Catoptrica*, and *Dioptra* united classical geometry with exact mensuration, geodesy, and variational optics.
+The works of :person:`Heron of Alexandria <hero>` (fl. c. 60 CE) united classical Euclidean geometry with practical mensuration, geodesy, and the variational foundations of optics. Within the interconnected `GEOMETOR <https://geometor.com/books/>`_ semantic digital archive, the *Metrica*, *Definitiones*, *Catoptrica*, and *Dioptra* are liberated from static print bounds—decomposed into addressable semantic units, calibrated vector diagrams, primary-source folio provenance, and cross-corpus citations speaking one shared geometric language.
 
 .. collection::
    :type: book
