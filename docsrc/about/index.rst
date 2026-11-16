@@ -49,4 +49,4 @@ Critical Primary Editions
 Digital Scriptorium Architecture
     * **Strict Content / Code Separation**: The historical Book Codex (:doc:`/metrica/index`) preserves pure, scan-verified Greek texts and English translations without inline code blocks, while runnable symbolic demonstrations reside in :doc:`/demos/index` and :mod:`geometor.heron`.
     * **Exact Symbolic Demonstrations**: All constructions—from the synthetic incircle proof of Heron's formula to the variational reflection law in *Catoptrica* and mountain tunneling in *Dioptra*—are executed over exact rationals and quadratic fields in :mod:`sympy`.
-    * **Scholarly Registries**: Full cross-references are maintained in the :doc:`/metrica/concordance`, :doc:`/metrica/bibliography`, :doc:`/metrica/persons`, and :doc:`/metrica/glossary`.
+    * **Scholarly Registries**: Full cross-references are maintained in the :doc:`/concordance`, :doc:`/bibliography`, :doc:`/persons`, and :doc:`/glossary`.

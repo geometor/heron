@@ -3,7 +3,7 @@
 Shortest-Path Law of Reflection (Catoptrica Prop. 4)
 ====================================================
 
-*Hero's Mirror-Unfolding Variational Proof Preserved in Greek by Olympiodorus* — Codex Reference: :doc:`/metrica/definitiones-catoptrica-dioptra/definitiones-catoptrica-dioptra-en`
+*Hero's Mirror-Unfolding Variational Proof Preserved in Greek by Olympiodorus* — Codex Reference: :doc:`/catoptrica/prop_04`
 
 Interactive Construction (`catoptrica-reflection.svg`)
 ------------------------------------------------------

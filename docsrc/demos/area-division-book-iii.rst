@@ -3,7 +3,7 @@
 Proportional Area Divisions & ∛100 (Metrica Book III)
 =====================================================
 
-*Exact Mean-Proportional Compass Cuts Carrying Zero "Millet-Seed" Error* — Codex Reference: :doc:`/metrica/book-iii-divisions/book-iii-divisions-en`
+*Exact Mean-Proportional Compass Cuts Carrying Zero "Millet-Seed" Error* — Codex Reference: :doc:`/metrica/book_03/prop_01_03`
 
 Interactive Construction (`metrica-iii-area-division.svg`)
 ----------------------------------------------------------

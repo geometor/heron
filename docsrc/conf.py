@@ -11,6 +11,7 @@ for _extra_src in (
     _PROJECT_ROOT / "src",
     _WORKSPACE_ROOT / "model" / "src",
     _WORKSPACE_ROOT / "divine" / "src",
+    _WORKSPACE_ROOT / ".venv" / "lib" / "python3.13" / "site-packages",
 ):
     if _extra_src.is_dir() and str(_extra_src) not in sys.path:
         sys.path.insert(0, str(_extra_src))
@@ -33,7 +34,9 @@ repo_name = "heron"
 
 setup_globals(org, org_name, repo, repo_name)  # noqa: F405
 
-project = "GEOMETOR • heron"
+site_title = "Heron of Alexandria"
+project = site_title
+html_title = f"{site_title} • {org_name}"
 author = "Hero of Alexandria"
 copyright = "2026, phi ARCHITECT (GEOMETOR Digital Scriptorium)"
 
@@ -45,3 +48,8 @@ if "extensions" in globals():
 
 if "intersphinx_mapping" in globals():
     configure_local_intersphinx(intersphinx_mapping, _PROJECT_ROOT)  # noqa: F405
+
+autoapi_add_toctree_entry = False
+autoapi_options = [opt for opt in autoapi_options if opt != "imported-members"]  # noqa: F405
+napoleon_use_ivar = True
+suppress_warnings = ["autoapi.python_import_resolution", "toc.not_included"]

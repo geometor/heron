@@ -1,0 +1,30 @@
+:order: 5
+:type: proposition
+:canonical_id: I.10–16
+:folio: Schöne 26–46
+:tracks: English: prop_10_16 | Greek: prop_10_16-el | Summary: summary | Notes: notes
+
+.. _sec-metrica-i-10-16:
+
+Props. I.10–I.16: Trapezia, Rhombi & General Quadrilaterals
+===========================================================
+
+.. folio:: Schöne 26
+   :page: 26
+
+Having mastered every species of triangle in Propositions I.1–I.9, :person:`Hero <hero>` points out a foundational distinction between triangles and four-sided figures: whereas three given sides uniquely determine the angles and :term:`area <embadon>` of a triangle (:just:`I.8`), four given sides do *not* determine a quadrilateral unless either a right angle, a parallel relation, or a diagonal is also specified.
+
+- **Proposition I.10 (Right-Angled Trapezium, Schöne pp. 26–28)**: Given a trapezium :math:`AB\Gamma\Delta` with parallel bases :math:`A\Delta = 6`, :math:`B\Gamma = 14`, and perpendicular side :math:`AB = 15` (so :math:`\Gamma\Delta = 17`), the area equals half the sum of the parallel bases multiplied by the perpendicular height:
+
+  .. math::
+
+     \text{Area} = \frac{A\Delta + B\Gamma}{2} \cdot AB = \frac{6 + 14}{2} \times 15 = 150.
+
+- **Proposition I.11 (Isosceles Trapezium, Schöne pp. 28–30)**: Given parallel bases :math:`6` and :math:`20` and equal oblique legs :math:`13` and :math:`13`, dropping two :term:`perpendiculars <kathetos>` from the upper vertices cuts off equal projections :math:`\frac{20 - 6}{2} = 7`—or in Hero's crisp integer example (:math:`A\Delta = 10, B\Gamma = 20, AB = \Gamma\Delta = 13`), projections of :math:`5`, yielding height :math:`\sqrt{13^2 - 5^2} = 12` and area :math:`\frac{10 + 20}{2} \times 12 = 180`.
+
+.. folio:: Schöne 32
+   :page: 32
+
+- **Propositions I.12–I.13 (Acute & Obtuse General Trapezia, Schöne pp. 30–36)**: Given unequal parallel bases :math:`a > c` and unequal oblique legs :math:`b, d`, drawing a line through an upper vertex parallel to one leg (:just:`I.31`) decomposes the trapezium into a parallelogram of base :math:`c` and a scalene differential triangle of sides :math:`(b, d, a - c)`. Applying Hero's Formula (Prop. I.8) or the Euclidean projection rule (Props. I.5–I.6) to that differential triangle determines the common altitude :math:`h`, whence :math:`\text{Area} = \frac{a + c}{2} h`.
+
+- **Propositions I.14–I.16 (Rhombi, Rhomboids & Re-Entrant Quadrilaterals, Schöne pp. 36–46)**: For a rhombus, rhomboid, or arbitrary convex or non-convex (*κοιλογώνιον*, dart-shaped) quadrilateral, Hero requires one diagonal :math:`d` in addition to the four sides, partitioning the figure into two given triangles measured either via perpendiculars or directly via Proposition I.8.

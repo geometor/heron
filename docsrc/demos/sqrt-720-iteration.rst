@@ -3,7 +3,7 @@
 Iterative Square-Root Extraction on √720 (Metrica I.8)
 ======================================================
 
-*Exact Rational Convergents & Quadratic Error Squaring on Hero's (7, 8, 9) Triangle* — Codex Reference: :doc:`/metrica/book-i-triangles/book-i-triangles-en`
+*Exact Rational Convergents & Quadratic Error Squaring on Hero's (7, 8, 9) Triangle* — Codex Reference: :doc:`/metrica/book_01/prop_08`
 
 Mathematical Derivation
 -----------------------

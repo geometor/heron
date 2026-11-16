@@ -44,37 +44,22 @@ class CodexUnitSpec:
 
 CODEX_UNITS: tuple[CodexUnitSpec, ...] = (
     CodexUnitSpec(
-        slug="book-i-triangles",
+        slug="metrica/book_01",
         order=10,
-        number_label="Metrica I (Pref. & 1–9)",
-        title="Metrica Book I (Preface & Props. 1–9): Triangles, Heron's Formula & Root Iteration",
+        number_label="Metrica I",
+        title="Metrica Book I: Planar Mensuration, Heron's Formula & Surface Areas",
         subtitle=(
-            "Origins of Geometry, Orthogonal Comparison Units, Right/Isosceles/Scalene "
-            "Triangles, Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c)), and √720 Iteration"
+            "Origins of Geometry, Orthogonal Units, Triangles, Quadrilaterals, "
+            "Regular Polygons via φ, Circles, Annulus, Parabola & Curved Surfaces"
         ),
-        edition_pages="Schöne 1903, pp. 2–26",
-        manuscript_folios="Cod. Cpolit. 1, fols. 67r–72r",
+        edition_pages="Schöne 1903, pp. 2–90",
+        manuscript_folios="Cod. Cpolit. 1, fols. 67r–86v",
     ),
     CodexUnitSpec(
-        slug="book-i-polygons-circles",
+        slug="metrica/book_02",
         order=20,
-        number_label="Metrica I (10–39)",
-        title="Metrica Book I (Props. 10–39): Quadrilaterals, Regular Polygons, Circles & Surfaces",
-        subtitle=(
-            "Trapezia, Regular Polygons (3-gon to 12-gon via Golden Section φ), "
-            "Archimedean Circle & Annulus (Ἴτυς), Parabolic/Elliptic Sections, and Curved Surfaces"
-        ),
-        edition_pages="Schöne 1903, pp. 26–90",
-        manuscript_folios="Cod. Cpolit. 1, fols. 72r–86v",
-    ),
-    CodexUnitSpec(
-        slug="book-ii-solids",
-        order=30,
-        number_label="Metrica II (Pref. & 1–20)",
-        title=(
-            "Metrica Book II (Preface & Props. 1–20): "
-            "Stereometry, Torus, Vaults & Platonic Solids"
-        ),
+        number_label="Metrica II",
+        title="Metrica Book II: Stereometry, Torus, Vaults & Platonic Solids",
         subtitle=(
             "Eudoxus & Archimedes, Cones, Frusta, Spheres, Dionysodorus's Torus (Σπεῖρα), "
             "Cylindrical Ungula & Groin Vault (Method), Five Platonic Solids, and Bath Displacement"
@@ -83,13 +68,10 @@ CODEX_UNITS: tuple[CodexUnitSpec, ...] = (
         manuscript_folios="Cod. Cpolit. 1, fols. 87r–99r",
     ),
     CodexUnitSpec(
-        slug="book-iii-divisions",
-        order=40,
-        number_label="Metrica III (Pref. & 1–23)",
-        title=(
-            "Metrica Book III (Preface & Props. 1–23): "
-            "Proportional Division of Plane & Solid Figures"
-        ),
+        slug="metrica/book_03",
+        order=30,
+        number_label="Metrica III",
+        title="Metrica Book III: Proportional Division of Plane & Solid Figures",
         subtitle=(
             "Proportional Distributive Justice, Dividing Triangles, Trapezia, Quadrilaterals, "
             "Polygons, Concentric Circles, Pyramids, Cones, Frusta & Spheres in Given Ratios"
@@ -98,16 +80,40 @@ CODEX_UNITS: tuple[CodexUnitSpec, ...] = (
         manuscript_folios="Cod. Cpolit. 1, fols. 99v–107v",
     ),
     CodexUnitSpec(
-        slug="definitiones-catoptrica-dioptra",
-        order=50,
-        number_label="Definitiones · Catoptrica · Dioptra",
-        title="Foundations, Variational Optics & Geodesy: Definitiones, Catoptrica & Dioptra",
+        slug="definitiones",
+        order=40,
+        number_label="Definitiones",
+        title="Definitiones (Geometric Definitions)",
         subtitle=(
-            "Genetic Circle & Universal Gnomon (Def. §58), Variational Shortest-Path Law of "
-            "Reflection (Catoptrica Prop. 4), and Two-Portal Mountain Tunneling (Dioptra Ch. 15)"
+            "Genetic Definitions, Rigid-Motion Symmetry, Three Postulates, "
+            "Direct Proofs, and the Universal Gnomon (§58)"
         ),
-        edition_pages="Hultsch pp. 7–23 · Schmidt pp. 324–372 · Schöne pp. 238–240",
-        manuscript_folios="Par. gr. 2385 · Olympiodorus In Meteora III.2 · Par. suppl. gr. 607",
+        edition_pages="Hultsch pp. 7–23 · Heiberg IV, pp. 1–160",
+        manuscript_folios="Cod. Par. gr. 2385 · Cod. Vat. gr. 215",
+    ),
+    CodexUnitSpec(
+        slug="catoptrica",
+        order=50,
+        number_label="Catoptrica",
+        title="Catoptrica (Variational Optics)",
+        subtitle=(
+            "Variational Shortest-Path Law of Reflection (Prop. 4), Olympiodorus "
+            "Testimony, and Moerbeke Translation"
+        ),
+        edition_pages="Schmidt 1900, pp. 324–372",
+        manuscript_folios="Cod. Ottobonianus lat. 1850 · Olympiodorus In Meteora III.2",
+    ),
+    CodexUnitSpec(
+        slug="dioptra",
+        order=60,
+        number_label="Dioptra",
+        title="Dioptra (Geodesy & Surveying)",
+        subtitle=(
+            "Precision Surveying Instruments, Orthogonal Coordinate Traverse, "
+            "and Two-Portal Mountain Tunneling (Ch. 15)"
+        ),
+        edition_pages="Schöne 1903, pp. 188–314",
+        manuscript_folios="Cod. Par. suppl. gr. 607, fols. 62r–82v",
     ),
 )
 

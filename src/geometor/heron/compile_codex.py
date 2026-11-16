@@ -32,8 +32,8 @@ def slugify_key(key: str) -> str:
 
 
 def default_docsrc_book_dir() -> Path:
-    """Return ``<repo>/docsrc/metrica``."""
-    return default_repo_root() / "docsrc" / "metrica"
+    """Return ``<repo>/docsrc``."""
+    return default_repo_root() / "docsrc"
 
 
 def render_concordance_rst(concordance: dict[str, object]) -> str:
@@ -89,7 +89,7 @@ def render_concordance_rst(concordance: dict[str, object]) -> str:
         u_entries = by_unit[unit.slug]
         lines.extend(
             [
-                f"   * - :doc:`{unit.number_label} <{unit.slug}/{unit.slug}-en>`",
+                f"   * - :doc:`{unit.number_label} </{unit.slug}/index>`",
                 f"     - {unit.edition_pages}",
                 f"     - {len(u_entries)}",
                 f"     - {unit.subtitle}",
@@ -102,16 +102,15 @@ def render_concordance_rst(concordance: dict[str, object]) -> str:
         heading = f"{unit.number_label} ({unit.edition_pages})"
         lines.extend(
             [
-                f".. _concordance-{unit.slug}:",
+                f".. _concordance-{slugify_key(unit.slug)}:",
                 "",
                 heading,
                 "-" * len(heading),
                 "",
                 (
-                    f"Codex tracks: :doc:`English <{unit.slug}/{unit.slug}-en>` · "
-                    f":doc:`Greek (Teubner) <{unit.slug}/{unit.slug}-el>` · "
-                    f":doc:`Summary <{unit.slug}/{unit.slug}-summary>` · "
-                    f":doc:`Notes <{unit.slug}/{unit.slug}-notes>`"
+                    f"Codex tracks: :doc:`Book Overview </{unit.slug}/index>` · "
+                    f":doc:`Summary </{unit.slug}/summary>` · "
+                    f":doc:`Notes </{unit.slug}/notes>`"
                 ),
                 "",
             ]
@@ -408,10 +407,10 @@ def write_apparatus_pages(
 
 
 def verify_codex_tracks(book_dir: Path | None = None) -> dict[str, object]:
-    """Verify all 5 Codex units have 4 synchronized tracks, zero Python blocks, and valid SHA-256s.
+    """Verify all 6 Codex units have valid structure, zero Python blocks, and valid SHA-256s.
 
     Args:
-        book_dir: Optional override for ``docsrc/metrica``.
+        book_dir: Optional override for ``docsrc``.
 
     Returns:
         Dictionary with ``valid``, ``units``, ``track_files``, and ``errors``.
@@ -428,25 +427,30 @@ def verify_codex_tracks(book_dir: Path | None = None) -> dict[str, object]:
 
     for unit in CODEX_UNITS:
         udir = bdir / unit.slug
-        for suffix in ("en", "el", "summary", "notes"):
-            f_path = udir / f"{unit.slug}-{suffix}.rst"
-            if not f_path.is_file():
-                errors.append(f"Missing unit track file: {f_path}")
-                continue
+        if not udir.is_dir():
+            errors.append(f"Missing unit directory: {udir}")
+            continue
+        for req in ("index.rst", "summary.rst", "notes.rst"):
+            req_path = udir / req
+            if not req_path.is_file():
+                errors.append(f"Missing {req} in unit {unit.slug}")
+
+        for f_path in udir.glob("*.rst"):
             track_counts += 1
             txt = f_path.read_text(encoding="utf-8")
             if code_block_re.search(txt):
                 errors.append(
                     f"Forbidden embedded Python code-block in historical treatise: {f_path}"
                 )
-            if suffix in ("en", "el") and ".. folio::" not in txt:
-                errors.append(f"Expected `.. folio::` milestone markers in {f_path}")
+            if f_path.name not in ("index.rst", "summary.rst", "notes.rst"):
+                if ".. folio::" not in txt:
+                    errors.append(f"Expected `.. folio::` milestone marker in {f_path}")
 
     idx_path = bdir / "index.rst"
     if idx_path.is_file():
         idx_txt = idx_path.read_text(encoding="utf-8")
-        if ":layout: book" not in idx_txt:
-            errors.append("Missing `:layout: book` metadata in docsrc/metrica/index.rst")
+        if ":type: book" not in idx_txt and ":layout: book" not in idx_txt:
+            errors.append("Missing `:type: book` or `:layout: book` metadata in docsrc/index.rst")
 
     return {
         "valid": len(errors) == 0,
