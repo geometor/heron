@@ -3,6 +3,11 @@ GEOMETOR • heron
 
 **Visit the Online Archive:** https://geometor.github.io/heron/
 
+.. image:: docsrc/_static/constructions/catoptrica-reflection.svg
+   :alt: GEOMETOR • heron featured geometric construction
+   :target: https://geometor.github.io/heron/
+   :align: center
+
 **Heron of Alexandria • Metrica, Definitiones, Catoptrica, Dioptra • semantic digital archive**
 
 Mission
@@ -13,10 +18,10 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Metrica (Rationes dimetiendi) <https://geometor.github.io/heron/metrica/>`_** — Books I, II & III (ed. Hermann Schöne, 1903) establishing synthetic triangle area proofs, Archimedean volume quadratures, and exact division algorithms.
-- **`Definitiones (Geometric Definitions) <https://geometor.github.io/heron/definitiones/>`_** — Ὅροι τῶν γεωμετρίας ὀνομάτων (ed. Friedrich Hultsch, 1864 / J. L. Heiberg, 1912) formulating 133 genetic definitions and the universal gnomon.
-- **`Catoptrica (Variational Optics) <https://geometor.github.io/heron/catoptrica/>`_** — Κατοπτρικά / De speculis (ed. Wilhelm Schmidt, 1900) presenting the foundational shortest-path variational proof for the law of reflection.
-- **`Dioptra (Geodesy & Surveying) <https://geometor.github.io/heron/dioptra/>`_** — Περὶ διόπτρας (ed. Hermann Schöne, 1903) describing optical instrumentation, stellar alignment, and two-portal mountain tunneling.
+- **`Metrica <https://geometor.github.io/heron/metrica/>`_** — Books I, II & III (ed. Hermann Schöne, 1903) establishing synthetic triangle area proofs, Archimedean volume quadratures, and exact division algorithms.
+- **`Definitions <https://geometor.github.io/heron/definitiones/>`_** — Ὅροι τῶν γεωμετρίας ὀνομάτων (ed. Friedrich Hultsch, 1864 / J. L. Heiberg, 1912) formulating 133 genetic definitions and the universal gnomon.
+- **`Catoptrics <https://geometor.github.io/heron/catoptrica/>`_** — Κατοπτρικά / De speculis (ed. Wilhelm Schmidt, 1900) presenting the foundational shortest-path variational proof for the law of reflection.
+- **`On the Dioptra <https://geometor.github.io/heron/dioptra/>`_** — Περὶ διόπτρας (ed. Hermann Schöne, 1903) describing optical instrumentation, stellar alignment, and two-portal mountain tunneling.
 
 Repository Contents
 -------------------

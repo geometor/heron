@@ -442,7 +442,7 @@ def verify_codex_tracks(book_dir: Path | None = None) -> dict[str, object]:
                 errors.append(
                     f"Forbidden embedded Python code-block in historical treatise: {f_path}"
                 )
-            if f_path.name not in ("index.rst", "summary.rst", "notes.rst"):
+            if f_path.name not in ("index.rst", "summary.rst", "notes.rst") and not f_path.name.startswith("title-"):
                 if ".. folio::" not in txt:
                     errors.append(f"Expected `.. folio::` milestone marker in {f_path}")
 

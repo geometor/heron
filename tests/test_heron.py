@@ -165,7 +165,7 @@ def test_codex_tracks_manifest_concordance_and_cli():
     report = verify_codex_tracks()
     assert report["valid"] is True, f"Codex verification errors: {report['errors']}"
     assert report["units"] == 6
-    assert report["track_files"] == 55
+    assert report["track_files"] == 58
 
     # Ensure zero raw $ inline math delimiters in docsrc/metrica
     for rst_file in default_docsrc_book_dir().rglob("*.rst"):

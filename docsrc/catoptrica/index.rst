@@ -1,21 +1,22 @@
 :order: 3
 :type: book
 :navigation: header
-:nav_title: Catoptrica
-:breadcrumb_title: Catoptrica
+:nav_title: Catoptrics
+:breadcrumb_title: Catoptrics
 :layout: book
-:book_title: Catoptrica (Variational Optics)
+:book_title: Catoptrics
 :book_subtitle: Κατοπτρικά / De speculis — Hero of Alexandria (ed. Wilhelm Schmidt, 1900)
 :author: Heron of Alexandria
 :year: c. 60 CE
 :folio: Schmidt 324–372 · Olympiodorus In Meteora III.2
+:tracks: English: index | Greek: title-el
 :excerpt: The first variational principle of mathematical physics: deduction of the Law of Reflection from the principle that Nature acts along the shortest path (διʼ ἐλαχίστων).
 
 .. _catoptrica-index:
 
-============================================
-Catoptrica (Variational Optics)
-============================================
+==========
+Catoptrics
+==========
 
 .. rubric:: *Κατοπτρικά* (*De speculis*) — :person:`Hero of Alexandria <hero>` (ed. :person:`Wilhelm Schmidt <schmidt>`, 1900)
 
@@ -40,3 +41,10 @@ Table of Contents
    summary
    notes
    prop_04-el
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Title Pages
+
+   title-el
