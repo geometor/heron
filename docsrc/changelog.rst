@@ -1,5 +1,5 @@
 :navigation: footer
-:order: 99
+:order: 20
 :nav_title: Changelog
 
 .. _heron-changelog:
