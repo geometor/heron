@@ -6,8 +6,8 @@
 
 .. _sec-metrica-iii-prooemium:
 
-Book III Prooemium: Geometric Proportion, Distributive Justice & the Millet-Seed
-================================================================================
+Book III Preface: Geometric Proportion, Distributive Justice & the Millet-Seed
+==============================================================================
 
 .. folio:: Schöne 140
    :page: 140

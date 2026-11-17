@@ -4,8 +4,8 @@
 :folio: Schöne 90–94
 :tracks: English: prooemium | Greek: prooemium-el | Summary: summary | Notes: notes
 
-Book II Prooemium: Eudoxus & Archimedes in Stereometry
-======================================================
+Book II Preface: Eudoxus & Archimedes in Stereometry
+====================================================
 
 .. folio:: Schöne 90
    :page: 90
