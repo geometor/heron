@@ -1,6 +1,6 @@
-:navigation: footer
+:navigation: header
+:order: 16
 :nav_title: Glossary
-:order: 93
 :type: apparatus
 
 .. _codex-glossary:

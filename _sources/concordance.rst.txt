@@ -1,6 +1,6 @@
-:navigation: footer
+:navigation: header
+:order: 14
 :nav_title: Concordance
-:order: 90
 :type: apparatus
 
 .. _heron-concordance:
