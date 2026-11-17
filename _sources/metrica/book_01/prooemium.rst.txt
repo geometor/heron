@@ -6,8 +6,8 @@
 
 .. _sec-metrica-i-prooemium:
 
-Prooemium: Egyptian Origins & Orthogonal Unit Measures
-======================================================
+Preface: Egyptian Origins & Orthogonal Unit Measures
+====================================================
 
 .. folio:: Schöne 2
    :page: 2
