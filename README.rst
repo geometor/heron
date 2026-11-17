@@ -18,10 +18,10 @@ Mission
 Books in This Archive
 ---------------------
 
-- **`Metrica <https://geometor.github.io/heron/metrica/>`_** — Books I, II & III (ed. Hermann Schöne, 1903) establishing synthetic triangle area proofs, Archimedean volume quadratures, and exact division algorithms.
-- **`Definitions <https://geometor.github.io/heron/definitiones/>`_** — Ὅροι τῶν γεωμετρίας ὀνομάτων (ed. Friedrich Hultsch, 1864 / J. L. Heiberg, 1912) formulating 133 genetic definitions and the universal gnomon.
-- **`Catoptrics <https://geometor.github.io/heron/catoptrica/>`_** — Κατοπτρικά / De speculis (ed. Wilhelm Schmidt, 1900) presenting the foundational shortest-path variational proof for the law of reflection.
-- **`On the Dioptra <https://geometor.github.io/heron/dioptra/>`_** — Περὶ διόπτρας (ed. Hermann Schöne, 1903) describing optical instrumentation, stellar alignment, and two-portal mountain tunneling.
+- `Metrica <https://geometor.github.io/heron/metrica/>`_ — Books I, II & III (ed. Hermann Schöne, 1903) establishing synthetic triangle area proofs, Archimedean volume quadratures, and exact division algorithms.
+- `Definitions <https://geometor.github.io/heron/definitiones/>`_ — Ὅροι τῶν γεωμετρίας ὀνομάτων (ed. Friedrich Hultsch, 1864 / J. L. Heiberg, 1912) formulating 133 genetic definitions and the universal gnomon.
+- `Catoptrics <https://geometor.github.io/heron/catoptrica/>`_ — Κατοπτρικά / De speculis (ed. Wilhelm Schmidt, 1900) presenting the foundational shortest-path variational proof for the law of reflection.
+- `On the Dioptra <https://geometor.github.io/heron/dioptra/>`_ — Περὶ διόπτρας (ed. Hermann Schöne, 1903) describing optical instrumentation, stellar alignment, and two-portal mountain tunneling.
 
 Repository Contents
 -------------------
