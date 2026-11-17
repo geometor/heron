@@ -419,7 +419,7 @@ def verify_codex_tracks(book_dir: Path | None = None) -> dict[str, object]:
     errors: list[str] = list(verify_manifest_checksums())
     track_counts = 0
 
-    for rf in ("index.rst", "concordance.rst", "bibliography.rst", "persons.rst", "glossary.rst"):
+    for rf in ("index.rst", "concordance.rst", "bibliography.rst", "people/index.rst", "glossary.rst"):
         if not (bdir / rf).is_file():
             errors.append(f"Missing book apparatus/index file: {bdir / rf}")
 
