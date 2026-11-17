@@ -23,6 +23,21 @@ Books in This Archive
 - `Catoptrics <https://geometor.github.io/heron/catoptrica/>`_ — Κατοπτρικά / De speculis (ed. Wilhelm Schmidt, 1900) presenting the foundational shortest-path variational proof for the law of reflection.
 - `On the Dioptra <https://geometor.github.io/heron/dioptra/>`_ — Περὶ διόπτρας (ed. Hermann Schöne, 1903) describing optical instrumentation, stellar alignment, and two-portal mountain tunneling.
 
+Python Package & Modules
+------------------------
+
+The ``geometor-heron`` Python package (``import geometor.heron``) provides the executable symbolic geometry, construction, and compilation modules powering this archive:
+
+- ``compile_codex.py`` — Deterministic apparatus compiler and 4-Track Book Codex verifier for ``geometor.heron``.
+- ``concordance.py`` — Codex unit specifications, provenance manifest checks, and cross-corpus concordance.
+- ``constructions.py`` — Exact symbolic geometric constructions for Hero of Alexandria in ``geometor.model``.
+- ``mensuration.py`` — Exact symbolic mensuration formulas and rational approximations from Hero's Metrica.
+- ``render.py`` — Publication-grade interactive ``.euclid-graphic`` SVG renderer for ``geometor.heron``.
+- ``cli.py`` — Command-line interface for ``geometor.heron``.
+- ``sphinx_ext.py`` — Runtime Sphinx & ``photon-platform/publish`` integration for ``geometor.heron``.
+
+See the `API Reference <https://geometor.github.io/heron/modules/>`_ for full module documentation.
+
 Repository Contents
 -------------------
 
