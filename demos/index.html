@@ -40,7 +40,7 @@
   <link rel="icon" href="../_static/favicon.ico" />
 </head>
 
-<body class="book-theme-classical-serif">
+<body class="is-book-page book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="../index.html" title="Home">
@@ -69,7 +69,7 @@
           <a href="../dioptra/index.html"  >On the Dioptra</a>
         </li>
         <li>
-          <a href="../persons.html"  >People</a>
+          <a href="../people/index.html"  >People</a>
         </li>
         <li>
           <a href="../bibliography.html"  >Bibliography</a>
@@ -92,12 +92,14 @@
       <header class="book-header">
         <div class="book-header-bar">
           <nav class="book-breadcrumbs" aria-label="Breadcrumb">
-            <span class="book-crumb-current is-section-root" aria-current="page">Demos</span>
+            <a class="book-section-home-link" href="../index.html">Heron of Alexandria</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <span class="book-crumb-current" aria-current="page">Demos</span>
           </nav>
         </div>
         <div class="book-header-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../dioptra/title-el.html" title="Ἥρωνος Περὶ Διόπτρας">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../usage/index.html" title="Using This Edition">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
           </div>
@@ -106,11 +108,11 @@
           </div>
         </div>
       </header>
-      <div class="content body book-content" role="main">
+      <div class="content body book-content folio-book-page" role="main">
         <section class="level-1" id="symbolic-constructions-demos">
         <span id="demos-index"></span><h1>Symbolic Constructions &amp; Demos<a class="headerlink" href="#symbolic-constructions-demos" title="Link to this heading">¶</a></h1>
         <p><em>100% Exact SymPy &amp; ``geometor.model`` Demonstrations Bringing Hero of Alexandria’s Geometry Alive</em></p>
-        <p>While the <strong>4-Track Book Codex</strong> (<a class="reference internal" href="../metrica/index.html"><span class="doc">Metrica</span></a>) preserves strict separation of historical text and scholarly commentary (zero embedded Python scripts), this <strong>Constructive Laboratory</strong> pairs every major theorem of <a class="person-ref" id="occ-person-hero-1" href="../persons.html#person-hero" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero of Alexandria</a> with executable, zero-float <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> DAG constructions, Rational Trigonometry invariants, and standalone Rich CLI demonstrations in <code class="docutils literal notranslate"><span class="pre">demos/</span></code>.</p>
+        <p>While the <strong>4-Track Book Codex</strong> (<a class="reference internal" href="../metrica/index.html"><span class="doc">Metrica</span></a>) preserves strict separation of historical text and scholarly commentary (zero embedded Python scripts), this <strong>Constructive Laboratory</strong> pairs every major theorem of <a class="person-ref" id="occ-person-hero-1" href="../people/hero.html#person-hero" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero of Alexandria</a> with executable, zero-float <code class="docutils literal notranslate"><span class="pre">geometor.model</span></code> DAG constructions, Rational Trigonometry invariants, and standalone Rich CLI demonstrations in <code class="docutils literal notranslate"><span class="pre">demos/</span></code>.</p>
         <table class="docutils align-default" id="id1">
         <caption><span class="caption-text">Executable Demonstrations in <code class="docutils literal notranslate"><span class="pre">geometor.heron</span></code></span><a class="headerlink" href="#id1" title="Link to this table">¶</a></caption>
         <colgroup>
@@ -175,7 +177,7 @@
         <div class="book-footer-ornament">&#10086;</div>
         <div class="book-footer-nav">
           <div class="book-nav-prev">
-            <a class="book-nav-btn" href="../dioptra/title-el.html" title="Ἥρωνος Περὶ Διόπτρας">&larr; <span class="nav-label">Prev</span></a>
+            <a class="book-nav-btn" href="../usage/index.html" title="Using This Edition">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
             <a class="book-toc-link" href="../index.html">Heron of Alexandria</a>
@@ -213,6 +215,7 @@
         <li><a href="../types/book.html">book</a></li>
         <li><a href="../types/book_title.html">book_title</a></li>
         <li><a href="../types/notes.html">notes</a></li>
+        <li><a href="../types/person.html">person</a></li>
         <li><a href="../types/proposition.html">proposition</a></li>
         <li><a href="../types/section.html">section</a></li>
         <li><a href="../types/summary.html">summary</a></li>
@@ -242,6 +245,7 @@
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/collection_directory.js?v=f242906c"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../_static/js/search_highlight.js"></script>

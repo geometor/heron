@@ -40,7 +40,7 @@
   <link rel="icon" href="../_static/favicon.ico" />
 </head>
 
-<body class="book-theme-classical-serif">
+<body class="is-book-page book-theme-classical-serif">
   <header>
     <div class="logo">
       <a href="../index.html" title="Home">
@@ -69,7 +69,7 @@
           <a href="../dioptra/index.html"  >On the Dioptra</a>
         </li>
         <li>
-          <a href="../persons.html"  >People</a>
+          <a href="../people/index.html"  >People</a>
         </li>
         <li>
           <a href="../bibliography.html"  >Bibliography</a>
@@ -92,7 +92,9 @@
       <header class="book-header">
         <div class="book-header-bar">
           <nav class="book-breadcrumbs" aria-label="Breadcrumb">
-            <a class="book-section-home-link" href="index.html">Demos</a>
+            <a class="book-section-home-link" href="../index.html">Heron of Alexandria</a>
+            <span class="book-crumb-sep" aria-hidden="true">/</span>
+            <a class="book-crumb-link" href="index.html">Demos</a>
             <span class="book-crumb-sep" aria-hidden="true">/</span>
             <span class="book-crumb-current" aria-current="page">Iterative Square-Root Extraction on √720…</span>
           </nav>
@@ -108,13 +110,13 @@
           </div>
         </div>
       </header>
-      <div class="content body book-content" role="main">
+      <div class="content body book-content folio-book-page" role="main">
         <section class="level-1" id="iterative-square-root-extraction-on-720-metrica-i-8">
         <span id="demo-sqrt-720-iteration"></span><h1>Iterative Square-Root Extraction on √720 (Metrica I.8)<a class="headerlink" href="#iterative-square-root-extraction-on-720-metrica-i-8" title="Link to this heading">¶</a></h1>
         <p><em>Exact Rational Convergents &amp; Quadratic Error Squaring on Hero’s (7, 8, 9) Triangle</em> — Codex Reference: <a class="reference internal" href="../metrica/book_01/prop_08.html"><span class="doc">Prop. I.8: Synthetic Incircle Proof of Δ = √(s(s−a)(s−b)(s−c)) &amp; Root Extraction</span></a></p>
         <section class="level-2" id="mathematical-derivation">
         <h2>Mathematical Derivation<a class="headerlink" href="#mathematical-derivation" title="Link to this heading">¶</a></h2>
-        <p>On his opening scalene benchmark <span class="math notranslate nohighlight">\((a, b, c) = (7, 8, 9)\)</span> (<a class="citation-ref" id="occ-cite-schoene-1903-1" href="../bibliography.html#cite-schoene-1903" data-cite="schoene:1903" title="Hermann Schöne (ed.) — Heronis Alexandrini Opera quae supersunt omnia, Vol. III: Rationes dimetiendi et Commentatio dioptrica (Leipzig: B. G. Teubner, pp. 2–315)">Schöne 1903, pp. 18–20</a>), <a class="person-ref" id="occ-person-hero-1" href="../persons.html#person-hero" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero</a> obtains <span class="math notranslate nohighlight">\(s = 12\)</span> and <span class="math notranslate nohighlight">\(\Delta^2 = 12 \times 5 \times 4 \times 3 = 720\)</span>. Because <span class="math notranslate nohighlight">\(720 = 144 \times 5\)</span> is non-square (<span class="math notranslate nohighlight">\(\sqrt{720} = 12\sqrt{5}\)</span>), Hero introduces the iterative averaging recurrence:</p>
+        <p>On his opening scalene benchmark <span class="math notranslate nohighlight">\((a, b, c) = (7, 8, 9)\)</span> (<a class="citation-ref" id="occ-cite-schoene-1903-1" href="../bibliography.html#cite-schoene-1903" data-cite="schoene:1903" title="Hermann Schöne (ed.) — Heronis Alexandrini Opera quae supersunt omnia, Vol. III: Rationes dimetiendi et Commentatio dioptrica (Leipzig: B. G. Teubner, pp. 2–315)">Schöne 1903, pp. 18–20</a>), <a class="person-ref" id="occ-person-hero-1" href="../people/hero.html#person-hero" data-person="hero" title="Hero (Heron) of Alexandria (fl. c. 60 CE) — Alexandrian geometer, mechanician, and optical physicist">Hero</a> obtains <span class="math notranslate nohighlight">\(s = 12\)</span> and <span class="math notranslate nohighlight">\(\Delta^2 = 12 \times 5 \times 4 \times 3 = 720\)</span>. Because <span class="math notranslate nohighlight">\(720 = 144 \times 5\)</span> is non-square (<span class="math notranslate nohighlight">\(\sqrt{720} = 12\sqrt{5}\)</span>), Hero introduces the iterative averaging recurrence:</p>
         <div class="math notranslate nohighlight">
         \[x_0 = 27 \quad (27^2 = 729), \qquad x_{k+1} = \frac{1}{2}\!\left(x_k + \frac{N}{x_k}\right).\]</div>
         <p>Subtracting <span class="math notranslate nohighlight">\(\sqrt{N}\)</span> and squaring reveals why convergence doubles the number of exact digits at <em>every</em> step:</p>
@@ -190,7 +192,7 @@
             <a class="book-nav-btn" href="heron-formula-proof.html" title="Heron’s Formula Synthetic Proof &amp; Quadrea (Metrica I.8)">&larr; <span class="nav-label">Prev</span></a>
           </div>
           <div class="book-nav-center">
-            <a class="book-toc-link" href="index.html">Demos</a>
+            <a class="book-toc-link" href="../index.html">Heron of Alexandria</a>
           </div>
           <div class="book-nav-next">
             <a class="book-nav-btn" href="catoptrica-reflection.html" title="Shortest-Path Law of Reflection (Catoptrica Prop. 4)"><span class="nav-label">Next</span> &rarr;</a>
@@ -225,6 +227,7 @@
         <li><a href="../types/book.html">book</a></li>
         <li><a href="../types/book_title.html">book_title</a></li>
         <li><a href="../types/notes.html">notes</a></li>
+        <li><a href="../types/person.html">person</a></li>
         <li><a href="../types/proposition.html">proposition</a></li>
         <li><a href="../types/section.html">section</a></li>
         <li><a href="../types/summary.html">summary</a></li>
@@ -254,6 +257,7 @@
   <script src="../_static/doctools.js?v=fd6eb6e6"></script>
   <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
   <script src="../_static/js/collection_controls.js?v=b6b5297a"></script>
+  <script src="../_static/js/collection_directory.js?v=f242906c"></script>
   <script src="../_static/js/geometor_interactive.js?v=b2892320"></script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="../_static/js/search_highlight.js"></script>
