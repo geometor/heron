@@ -1,0 +1,22 @@
+{
+  "repository": "geometor/heron",
+  "rights_category": "public-domain",
+  "sources": [
+    {
+      "id": "schoene-1903-heron-metrica",
+      "title": "Heronis Alexandrini Opera (Metrica, Dioptra, Catoptrica, Definitiones)",
+      "author": "Hermann Schöne, Wilhelm Schmidt, Friedrich Hultsch (eds.)",
+      "year": "1903",
+      "era": "Open Greek & Latin / Teubner",
+      "languages": [
+        "Greek"
+      ],
+      "site_url": "https://github.com/OpenGreekAndLatin",
+      "local_path": "resources/",
+      "pages": null,
+      "publisher": "B. G. Teubner, Leipzig (1864–1903)",
+      "rights": "Public Domain (1864–1903)",
+      "excerpt": "Teubner Greek e-texts (Metrica 1903, Dioptra 1903, Catoptrica 1900, Definitiones 1864)."
+    }
+  ]
+}
