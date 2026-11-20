@@ -9,7 +9,7 @@ authors = [
   { name = "phi ARCHITECT", email = "github@phiarchitect.com" },
 ]
 description = "Hero of Alexandria's Metrica, Definitiones, Catoptrica, and Dioptra: 4-Track Bilingual Book Codex and Exact Symbolic Constructions"
-readme = "README.rst"
+readme = "README.md"
 requires-python = ">=3.13"
 license = { text = "MIT" }
 classifiers = [
