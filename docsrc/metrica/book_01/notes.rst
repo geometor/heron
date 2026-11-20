@@ -1,4 +1,4 @@
-:order: 10
+:order: 42
 :type: notes
 :canonical_id: Metrica I Notes
 :folio: Schöne 2–90

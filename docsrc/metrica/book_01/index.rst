@@ -30,19 +30,54 @@ Table of Contents
    :hidden:
 
    prooemium
-   prop_01_07
+   prop_01
+   prop_02
+   prop_03
+   prop_04
+   prop_05
+   prop_06
+   prop_07
    prop_08
    prop_09
-   prop_10_16
-   prop_17_25
-   prop_26_33
-   prop_34_39
+   prop_10
+   prop_11
+   prop_12
+   prop_13
+   prop_14
+   prop_15
+   prop_16
+   prop_17
+   prop_18
+   prop_19
+   prop_20
+   prop_21
+   prop_22
+   prop_23
+   prop_24
+   prop_25
+   prop_26
+   prop_27
+   prop_28
+   prop_29
+   prop_30
+   prop_31
+   prop_32
+   prop_33
+   prop_34
+   prop_35
+   prop_36
+   prop_37
+   prop_38
+   prop_39
    summary
    notes
    prooemium-el
-   prop_01_07-el
+   prop_01-el
    prop_08-el
-   prop_10_16-el
-   prop_17_25-el
-   prop_26_33-el
-   prop_34_39-el
+   prop_10-el
+   prop_18-el
+   prop_22-el
+   prop_26-el
+   prop_27-el
+   prop_34-el
+   prop_38-el

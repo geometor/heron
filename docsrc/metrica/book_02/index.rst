@@ -29,11 +29,29 @@ Table of Contents
    :hidden:
 
    prooemium
-   prop_01_10
-   prop_11_15
-   prop_16_20
+   prop_01
+   prop_02
+   prop_03
+   prop_04
+   prop_05
+   prop_06
+   prop_07
+   prop_08
+   prop_09
+   prop_10
+   prop_11
+   prop_12
+   prop_13
+   prop_14
+   prop_15
+   prop_16
+   prop_17
+   prop_18
+   prop_19
+   prop_20
    summary
    notes
    prooemium-el
-   prop_11_15-el
-   prop_16_20-el
+   prop_13-el
+   prop_15-el
+   prop_20-el

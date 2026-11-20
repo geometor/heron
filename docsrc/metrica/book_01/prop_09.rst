@@ -1,7 +1,7 @@
-:order: 4
+:order: 10
 :type: proposition
 :canonical_id: I.9
-:folio: Schöne 24–26
+:folio: Schöne 24
 :tracks: English: prop_09 | Summary: summary | Notes: notes
 
 Prop. I.9: Triangles with Irrational Sides

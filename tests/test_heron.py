@@ -165,7 +165,42 @@ def test_codex_tracks_manifest_concordance_and_cli():
     report = verify_codex_tracks()
     assert report["valid"] is True, f"Codex verification errors: {report['errors']}"
     assert report["units"] == 6
-    assert report["track_files"] == 58
+    assert report["track_files"] == 132
+
+    metrica_dir = default_docsrc_book_dir() / "metrica"
+    expected_props = {"book_01": 39, "book_02": 20, "book_03": 23}
+    for book, count in expected_props.items():
+        bdir = metrica_dir / book
+        props = [
+            f for f in bdir.glob("prop_*.rst")
+            if not f.name.endswith("-el.rst")
+        ]
+        assert len(props) == count, f"Expected {count} props in {book}, got {len(props)}"
+
+    bundled_removed = (
+        "book_01/prop_01_07.rst",
+        "book_01/prop_01_07-el.rst",
+        "book_01/prop_10_16.rst",
+        "book_01/prop_10_16-el.rst",
+        "book_01/prop_17_25.rst",
+        "book_01/prop_17_25-el.rst",
+        "book_01/prop_26_33.rst",
+        "book_01/prop_26_33-el.rst",
+        "book_01/prop_34_39.rst",
+        "book_01/prop_34_39-el.rst",
+        "book_02/prop_01_10.rst",
+        "book_02/prop_11_15.rst",
+        "book_02/prop_11_15-el.rst",
+        "book_02/prop_16_20.rst",
+        "book_02/prop_16_20-el.rst",
+        "book_03/prop_01_03.rst",
+        "book_03/prop_01_03-el.rst",
+        "book_03/prop_04_19.rst",
+        "book_03/prop_20_23.rst",
+        "book_03/prop_20_23-el.rst",
+    )
+    for rel in bundled_removed:
+        assert not (metrica_dir / rel).exists(), f"Bundled leaf still exists: {rel}"
 
     # Ensure zero raw $ inline math delimiters in docsrc/metrica
     for rst_file in default_docsrc_book_dir().rglob("*.rst"):
