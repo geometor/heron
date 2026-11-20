@@ -28,6 +28,12 @@
       "grc": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11",
       "en": "resources/metrica/sources/definitiones_hultsch_1864_grc.txt#L11"
     },
+    "Schmidt 324": {
+      "default": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
+      "el": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
+      "grc": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
+      "en": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11"
+    },
     "Schmidt 368": {
       "default": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
       "el": "resources/metrica/sources/catoptrica_schmidt_1900_grc.txt#L11",
@@ -100,6 +106,12 @@
       "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
       "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
     },
+    "Schöne 146": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
+    },
     "Schöne 148": {
       "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
       "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
@@ -107,6 +119,12 @@
       "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
     },
     "Schöne 162": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136"
+    },
+    "Schöne 172": {
       "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
       "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
       "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L136",
@@ -129,6 +147,12 @@
       "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L36",
       "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L36",
       "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L36"
+    },
+    "Schöne 188": {
+      "default": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9",
+      "el": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9",
+      "grc": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9",
+      "en": "resources/metrica/sources/dioptra_schoene_1903_grc.txt#L9"
     },
     "Schöne 2": {
       "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L10",
@@ -251,6 +275,12 @@
       "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
     },
     "Schöne 90–140": {
+      "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
+      "en": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99"
+    },
+    "Schöne 94": {
       "default": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
       "el": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
       "grc": "resources/metrica/sources/metrica_schoene_1903_grc.txt#L99",
