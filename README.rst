@@ -1,13 +1,13 @@
+.. image:: docsrc/_static/logo.png
+   :alt: GEOMETOR • heron Medallion
+   :target: https://geometor.github.io/heron/
+   :width: 150px
+   :align: right
+
 GEOMETOR • heron
 ================
 
 **Visit the Online Archive:** https://geometor.github.io/heron/
-
-.. image:: docsrc/_static/logo.png
-   :alt: GEOMETOR • heron Medallion
-   :target: https://geometor.github.io/heron/
-   :width: 180px
-   :align: center
 
 .. image:: docsrc/_static/constructions/catoptrica-reflection.svg
    :alt: GEOMETOR • heron featured geometric construction
