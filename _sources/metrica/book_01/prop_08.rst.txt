@@ -1,7 +1,7 @@
-:order: 3
+:order: 9
 :type: proposition
 :canonical_id: I.8
-:folio: Schöne 18–24
+:folio: Schöne 18
 :tracks: English: prop_08 | Greek: prop_08-el | Summary: summary | Notes: notes
 
 .. _sec-metrica-i-8-proof:

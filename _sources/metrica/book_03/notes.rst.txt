@@ -1,4 +1,4 @@
-:order: 6
+:order: 26
 :type: notes
 :canonical_id: Metrica III Notes
 :folio: Schöne 140–184

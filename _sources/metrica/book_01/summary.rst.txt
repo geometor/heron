@@ -1,4 +1,4 @@
-:order: 9
+:order: 41
 :type: summary
 :canonical_id: Metrica I Summary
 :folio: Schöne 2–90

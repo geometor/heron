@@ -1,4 +1,4 @@
-:order: 5
+:order: 25
 :type: summary
 :canonical_id: Metrica III Summary
 :folio: Schöne 140–184
