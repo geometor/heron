@@ -14,7 +14,7 @@ Prop. II.19: Volume of a Regular Dodecahedron over Q(φ)
 
 **Proposition II.19 (Regular Dodecahedron, Schöne pp. 136–138; fol. 98v)**:
 
-Decomposing the regular dodecahedron (*Δωδεκάεδρον*, :math:`12` regular pentagons, illustrated on edge :math:`a = 10`, with inradius-to-edge ratio :math:`9 : 8` in Hero's approximation, :just:`XIII.17`) into :math:`12` congruent pentagonal pyramids whose base areas follow from the golden-section pentagon lemma (:just:`I.18`), Hero obtains:
+Decompose the regular dodecahedron (*Δωδεκάεδρον*, :math:`12` regular pentagons; let edge :math:`a = 10`, with inradius-to-edge ratio :math:`9 : 8`, :just:`XIII.17`) into :math:`12` equal pentagonal pyramids whose base areas follow from Proposition I.18, obtaining:
 
 .. math::
 

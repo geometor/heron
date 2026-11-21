@@ -14,4 +14,4 @@ Prop. I.16: Arbitrary Convex & Re-Entrant Quadrilaterals
 
 **Proposition I.16 (General & Re-Entrant Quadrilaterals, Schöne pp. 42–46)**:
 
-For an arbitrary convex or non-convex (*κοιλογώνιον*, dart-shaped) quadrilateral, Hero requires one diagonal :math:`d` (or right angle) in addition to the four sides, partitioning the figure into two given triangles measured either via perpendiculars or directly via Proposition I.8 (summed for convex figures, subtracted for re-entrant figures).
+For an arbitrary convex or non-convex (*κοιλογώνιον*) quadrilateral, let one diagonal :math:`d` (or a right angle) be given in addition to the four sides, partitioning the figure into two given triangles measured either via perpendiculars or directly via Proposition I.8 (summed for convex figures, subtracted for re-entrant figures).

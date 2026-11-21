@@ -14,7 +14,7 @@ Prop. II.8: The Bomiskos (Hip-Roof Wedge / Prismatoid)
 
 **Proposition II.8 (The *Βωμίσκος* / Hip-Roof Wedge / Prismatoid, Schöne pp. 114–116)**:
 
-Generalizing to a solid bounded by two parallel dissimilar rectangles :math:`(a_1 \times b_1)` and :math:`(a_2 \times b_2)` at distance :math:`h`—essential for temple altars (*βωμίσκοι*), stone lintels, and hipped roofs—Hero decomposes the solid into a central parallelepiped, two triangular prisms, and four corner pyramids, proving the exact universal prismatoid law:
+For a solid bounded by two parallel dissimilar rectangles :math:`(a_1 \times b_1)` and :math:`(a_2 \times b_2)` at height :math:`h` (an altar-shaped prismatoid, *βωμίσκος*), decomposing the solid into a central parallelepiped, two triangular prisms, and four corner pyramids gives:
 
 .. math::
 

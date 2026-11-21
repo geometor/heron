@@ -14,4 +14,4 @@ Prop. II.3: Hexagonal & Polygonal Prisms
 
 **Proposition II.3 (Polygonal Prisms, Schöne pp. 98–100)**:
 
-Given a right or oblique prism on a triangular, hexagonal, or arbitrary polygonal base, Hero computes the base area via Book I (:just:`I.8`, :just:`I.17–25`) and multiplies by the perpendicular altitude :math:`h`: :math:`V_{\text{prism}} = A_{\text{base}} \cdot h`.
+Given a right or oblique prism on a triangular, hexagonal, or arbitrary polygonal base, find the base area via Book I (:just:`I.8`, :just:`I.17–25`) and multiply by the perpendicular height :math:`h`: :math:`V_{\text{prism}} = A_{\text{base}} \cdot h`.

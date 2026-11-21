@@ -14,7 +14,7 @@ Prop. I.22: Regular Enneagon via the Table of Chords
 
 **Proposition I.22 (Regular Enneagon / 9-gon, Schöne pp. 60–62)**:
 
-For the non-constructible regular enneagon (:math:`n = 9`) of side :math:`a`, Hero explicitly appeals to *"the treatises on chords in a circle"* (*ἐκ τῶν περὶ τῶν ἐν κύκλῳ εὐθειῶν*)—providing vital historical testimony to pre-Ptolemaic Hellenistic chord tables descending from :person:`Hipparchus <hipparchus>`—and obtains:
+For the regular enneagon (:math:`n = 9`) of side :math:`a`, since it is proved in *the treatises on straight lines in a circle* (*ἐκ τῶν περὶ τῶν ἐν κύκλῳ εὐθειῶν*, :person:`Hipparchus <hipparchus>`) that the diameter bears nearly the ratio :math:`3 : 1` to the side of the enneagon, we obtain:
 
 .. math::
 

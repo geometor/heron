@@ -14,7 +14,7 @@ Prop. II.6: Square Pyramidal Frustum via Mean-Plus-Third-Difference
 
 **Proposition II.6 (Square Pyramidal Frustum, Schöne pp. 108–112)**:
 
-Rather than computing a truncated pyramid (:term:`frustum <kolouros>`, *κόλουρος*) by extending it to its apex and subtracting two large pyramids, Hero transforms the classical multiplier :math:`\frac{a^2 + ab + b^2}{3}` into his signature **mean-square plus one-third half-difference-square** identity:
+To measure a truncated square pyramid (:term:`frustum <kolouros>`, *κόλουρος*) directly without extending it to its apex, rewrite :math:`\frac{a^2 + ab + b^2}{3}` as the square on the half-sum plus one-third the square on the half-difference:
 
 .. math::
 

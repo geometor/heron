@@ -14,4 +14,4 @@ Prop. II.7: Triangular & Polygonal Pyramidal Frusta
 
 **Proposition II.7 (Triangular & Polygonal Frusta, Schöne pp. 112–114)**:
 
-Extending Proposition II.6 to any frustum on similar triangular or polygonal parallel bases of homologous sides :math:`a > b` (or areas :math:`A_1, A_2`), Hero decomposes the frustum into a central prism, side wedges, and corner pyramids, proving :math:`V = h \left(\frac{A_1 + A_2 + \sqrt{A_1 A_2}}{3}\right)`.
+For any frustum on similar triangular or polygonal parallel bases of homologous sides :math:`a > b` (or areas :math:`A_1, A_2`), decomposing the solid into a central prism, side wedges, and corner pyramids yields :math:`V = h \left(\frac{A_1 + A_2 + \sqrt{A_1 A_2}}{3}\right)`.

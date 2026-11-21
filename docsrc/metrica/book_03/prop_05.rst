@@ -20,4 +20,4 @@ Given parallel bases :math:`a < b`, a cut :math:`x` parallel to the bases divide
 
    \frac{x^2 - a^2}{b^2 - x^2} = \frac{m}{n} \qquad \Longrightarrow \qquad x^2 = \frac{n a^2 + m b^2}{m + n}.
 
-Hero proves this by extending the non-parallel legs to meet at an auxiliary apex pyramid-style, reducing the trapezium to nested similar triangles (:just:`VI.19`)!
+Produce the non-parallel sides until they meet at a common vertex, reducing the trapezium to nested similar triangles (:just:`VI.19`).

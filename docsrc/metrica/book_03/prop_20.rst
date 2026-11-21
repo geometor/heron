@@ -26,7 +26,7 @@ To cut a pyramid (or cone) of slant edge :math:`5` into ratio :math:`4 : 1` from
 .. folio:: Schöne 178
    :page: 178
 
-How can one extract the **cube root of 100** (:math:`\sqrt[3]{100}`), the sole surviving cube-root algorithm in all of Greek mathematical literature? Hero gives his celebrated **weighted secant/error-interpolation rule** (Schöne p. 178):
+To take the **cubic side of 100** (:math:`\sqrt[3]{100}`, Schöne p. 178), proceed by the following weighted interpolation between the two bracketing cubes:
 
 1. Take the nearest integer cubes **above** and **below** :math:`N = 100`: :math:`5^3 = 125` (root :math:`u = 5`) and :math:`4^3 = 64` (root :math:`\ell = 4`).
 2. Compute the upper excess :math:`e_u = 125 - 100 = 25` and the lower deficit :math:`e_\ell = 100 - 64 = 36`.

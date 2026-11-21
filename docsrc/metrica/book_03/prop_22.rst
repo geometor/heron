@@ -14,4 +14,4 @@ Prop. III.22: Dividing a Conical Frustum Parallel to Its Bases
 
 **Proposition III.22 (Dividing a Conical Frustum, Schöne pp. 180–182)**:
 
-Extending Proposition III.21 to a circular conical frustum of base diameters :math:`D_1` and :math:`D_2`, Hero reduces the dividing parallel circle diameter :math:`x` to the identical weighted cubic mean :math:`x^3 = \frac{n D_1^3 + m D_2^3}{m + n}` (:just:`XII.12`), extracted via Proposition III.20.
+For a circular conical frustum of base diameters :math:`D_1` and :math:`D_2`, the dividing parallel circle diameter :math:`x` satisfies :math:`x^3 = \frac{n D_1^3 + m D_2^3}{m + n}` (:just:`XII.12`), extracted by Proposition III.20.

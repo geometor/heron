@@ -14,7 +14,7 @@ Prop. III.21: Dividing a Pyramidal Frustum Parallel to Its Bases
 
 **Proposition III.21 (Dividing a Pyramidal Frustum, Schöne pp. 178–180)**:
 
-To divide a truncated pyramid (frustum) of lower side :math:`a` and upper side :math:`b` in ratio :math:`m : n` by a plane parallel to its bases, Hero extends the lateral faces to the virtual apex, reducing the cut edge :math:`x` to:
+To divide a truncated pyramid (frustum) of lower side :math:`a` and upper side :math:`b` in ratio :math:`m : n` by a plane parallel to its bases, produce the lateral edges to meet at the apex, reducing the dividing edge :math:`x` to:
 
 .. math::
 

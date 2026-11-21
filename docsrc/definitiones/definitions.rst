@@ -12,7 +12,7 @@ Definitiones: Genetic Motion, Axial Symmetry & Postulate Economy
 .. folio:: Hultsch 7
    :page: 7
 
-Addressed to Dionysius as a systematic philosophical primer to :person:`Euclid's <euclid>` :cite:`Elements <euclid:elements>`, :person:`Hero's <hero>` *Definitions of the Terms of Geometry* (*Ὅροι τῶν γεωμετρίας ὀνομάτων*) enriches Euclid's static Platonic boundary definitions with **kinematic generation**, **Archimedean minimal-length characterization**, and **rotational invariance**:
+Setting forth for Dionysius the foundational definitions of geometry (*Ὅροι τῶν γεωμετρίας ὀνομάτων*) alongside :person:`Euclid's <euclid>` :cite:`Elements <euclid:elements>`, let the primary boundary terms be characterized by kinematic generation, minimal length, and rotational invariance:
 
 - **Definition 1 — Point (*Σημεῖον*, Heiberg §1 / Hultsch p. 7 §1–2)**:
   *"A point is that of which there is no part (:just:`I.def.1`), or a dimensionless limit or boundary of a line, incorporeal and partless and magnitudeless, possessing position alone, apprehensible by intellectual intuition (*νοητῇ μόνῃ ἐπιβολῇ*) alone."*

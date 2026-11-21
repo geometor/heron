@@ -21,7 +21,7 @@ In his *Catoptrica*—preserved in medieval Latin translation by :person:`Willia
 .. picture:: /_static/figures/catoptrica-reflection.svg
    :alt: Hero Catoptrica Prop. 4 — Variational Shortest-Path Proof of Reflection (Schmidt Fig. 92)
 
-**Hero's Geometric Proof (Schmidt pp. 370–372)**:
+**Geometric Proof (Schmidt pp. 370–372)**:
 
 1. Let the plane mirror be :g:`AB <g2:[ A B ]>`, the eye :g:`C <g2:C>`, and the object seen :g:`D <g2:D>`. Let ray :g:`CE <g2:/ C E />` strike the mirror at :g:`E <g2:E>` and reflect as :g:`ED <g2:/ E D />` making equal grazing angles with the mirror (:math:`\angle \Gamma EA = \angle \Delta EB`); and let another ray :g:`CZ <g2:/ C Z />` strike any other point :g:`Z <g2:Z>` and reflect as :g:`ZD <g2:/ Z D />` at unequal angles. *I say that* :math:`\Gamma E + E\Delta < \Gamma Z + Z\Delta`.
 2. Drop the perpendicular :g:`DH <g2:/ D H />` from :g:`D <g2:D>` onto mirror :g:`AB <g2:[ A B ]>` (:just:`I.12`), produce it straight through to :g:`K <g2:K>` so that :eq:`HK = DH <g2:/ H K /,/ D H />` (:just:`I.3`), and join :g:`EK <g2:/ E K />` and :g:`ZK <g2:/ Z K />`.

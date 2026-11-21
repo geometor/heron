@@ -14,7 +14,7 @@ Prop. I.29: Refined Circular Segment Formula with 1/14 Correction
 
 **Proposition I.29 (Refined Circular Segment Rule, Schöne pp. 74–76)**:
 
-To bring the semicircle estimate into agreement with :person:`Archimedes' <archimedes>` :math:`\frac{11}{14} d^2`, Hero presents the corrected ancient rule:
+To bring the rule for a circular segment into agreement with :person:`Archimedes' <archimedes>` ratio :math:`\frac{11}{14} d^2` for the circle, add one-fourteenth of the square on half the base:
 
 .. math::
 

@@ -14,7 +14,7 @@ Prop. I.39: Surface Area of a Spherical Segment (Cap)
 
 **Proposition I.39 (Spherical Segment / Cap Surface, Schöne pp. 88–90)**:
 
-Concluding Book I's doctrine of surfaces, Hero states from :cite:`Sphere and Cylinder I.42–43 <archimedes:sphere-cylinder>` that the surface of any spherical segment is equal to the circle whose radius is the chord :math:`c = \sqrt{r_{\text{base}}^2 + h^2}` drawn from the vertex (*πόλος*) of the segment to its base circumference:
+By :cite:`Sphere and Cylinder I.42–43 <archimedes:sphere-cylinder>`, the surface of any spherical segment is equal to the circle whose radius is the chord :math:`c = \sqrt{r_{\text{base}}^2 + h^2}` drawn from the vertex (*πόλος*) of the segment to its base circumference:
 
 .. math::
 

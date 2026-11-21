@@ -14,4 +14,4 @@ Prop. I.14: Area of a Rhombus
 
 **Proposition I.14 (Rhombus, Schöne pp. 36–38)**:
 
-Given a rhombus of equal sides with one diagonal specified, Hero shows that the diagonals bisect one another at right angles, partitioning the figure into two congruent isosceles triangles (or four right triangles) whose area equals half the product of the two diagonals.
+Given a rhombus of equal sides with one diagonal specified, the diagonals bisect one another at right angles, partitioning the figure into two congruent isosceles triangles (or four right triangles) whose area equals half the product of the two diagonals.

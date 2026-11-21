@@ -14,4 +14,4 @@ Prop. I.32: Circular Segment Greater Than a Semicircle
 
 **Proposition I.32 (Major Circular Segment, Schöne p. 78)**:
 
-For a circular segment *greater* than a semicircle, Hero first reconstructs the full circle diameter via Proposition I.30, computes the area of the full circle (:just:`I.26`), and subtracts the complementary minor segment measured by Propositions I.28–I.31.
+For a circular segment *greater* than a semicircle, reconstruct the diameter of the whole circle via Proposition I.30, compute the area of the whole circle (:just:`I.26`), and subtract the complementary segment less than a semicircle measured by Propositions I.28–I.31.

@@ -13,7 +13,7 @@ Prop. III.4: Dividing a Trapezium from a Vertex or Base Point
 .. folio:: Schöne 148
    :page: 146
 
-Extending :person:`Euclid's <euclid>` treatise :cite:`On Divisions of Figures <euclid:divisions>` (*Περὶ διαιρέσεων*) to survey engineering, Hero begins the trapezium and quadrilateral division theorems (Props. III.4–III.19):
+Proceeding from triangles to trapezia and quadrilaterals (cf. :person:`Euclid <euclid>`, :cite:`On Divisions of Figures <euclid:divisions>`):
 
 **Proposition III.4 (Dividing a Trapezium from a Given Point, Schöne pp. 146–148)**:
 

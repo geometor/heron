@@ -14,7 +14,7 @@ Prop. II.9: Conical Frustum via Mean-Plus-Third-Difference
 
 **Proposition II.9 (Circular Conical Frustum, Schöne pp. 116–118)**:
 
-Applying the identical mean-plus-third-difference identity (:just:`II.6`) to a truncated circular cone (:term:`frustum <kolouros>`) of lower diameter :math:`D_1`, upper diameter :math:`D_2`, and perpendicular height :math:`h`, Hero derives:
+Applying the same identity (:just:`II.6`) to a truncated circular cone (:term:`frustum <kolouros>`) of lower diameter :math:`D_1`, upper diameter :math:`D_2`, and perpendicular height :math:`h` yields:
 
 .. math::
 

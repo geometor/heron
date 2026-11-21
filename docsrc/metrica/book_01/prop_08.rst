@@ -64,7 +64,7 @@ Since :math:`720` does not possess a :term:`rational square root <rhetos>` (*ῥ
 
       \Delta(\triangle ABC) = |CG| \cdot |HE| = s \cdot r, \qquad \Delta^2 = |CG|^2 \cdot |HE|^2.
 
-   *(Here Hero explicitly forms the fourth-degree product of two squares—a* :term:`dynamodynamis` *—writing that* :math:`|CG| \cdot |HE|` *is the square root of* :math:`|CG|^2 \cdot |HE|^2` *).*
+   *(Forming the fourth-degree product of two squares—a* :term:`dynamodynamis` *—the rectangle* :math:`|CG| \cdot |HE|` *is the square root of* :math:`|CG|^2 \cdot |HE|^2` *).*
 
 .. folio:: Schöne 22
    :page: 22
@@ -82,7 +82,7 @@ Since :math:`720` does not possess a :term:`rational square root <rhetos>` (*ῥ
       \angle AHD = \angle CLB, \qquad \angle ADH = \angle CBL = 90^\circ \implies \triangle AHD \sim \triangle CBL \quad (\text{by } \text{VI.4}).
 
 4. **Proportion Chain & Right-Triangle Altitude Climax**:
-   From :math:`\triangle AHD \sim \triangle CBL` and the parallelism :g:`BL <g1:[ W X ]>` :math:`\parallel` :g:`HE <g1:[ H J ]>` (:just:`I.28`, yielding :math:`\triangle KBL \sim \triangle KEH`), Hero chains five Euclidean ratio steps:
+   From :math:`\triangle AHD \sim \triangle CBL` and the parallelism :g:`BL <g1:[ W X ]>` :math:`\parallel` :g:`HE <g1:[ H J ]>` (:just:`I.28`, yielding :math:`\triangle KBL \sim \triangle KEH`), we chain five Euclidean ratio steps:
 
    .. math::
 

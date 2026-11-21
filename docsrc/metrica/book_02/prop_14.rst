@@ -14,7 +14,7 @@ Prop. II.14: Cylindrical Ungula (Hoof) via Archimedes' Method
 
 **Proposition II.14 (Cylindrical Hoof / Ungula, Schöne pp. 130–131; fol. 96v)**:
 
-Citing :person:`Archimedes' <archimedes>` :term:`Method <ephodikon>` (*Ἐφοδικόν*, Props. 12–14)—one of the primary witnesses to the treatise prior to the 1906 rediscovery of the Archimedes Palimpsest—Hero states that when a plane cuts a right cylinder through a diameter of its base and meets the opposite generator at height :math:`h` (useful for fluted niches and half-vaults), the cut-off wedge is exactly **one-sixth** of the circumscribing square prism (:math:`d \times d \times h`):
+As :person:`Archimedes <archimedes>` proved in the :term:`Method <ephodikon>` (*Ἐφοδικόν*, Props. 12–14), when a plane cuts a right cylinder through a diameter of its base and meets the opposite side at height :math:`h`, the cut-off cylindrical wedge is exactly **one-sixth** of the circumscribing square prism (:math:`d \times d \times h`):
 
 .. math::
 

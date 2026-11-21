@@ -14,7 +14,7 @@ Prop. I.24: Regular Hendecagon via the Table of Chords
 
 **Proposition I.24 (Regular Hendecagon / 11-gon, Schöne pp. 64–66)**:
 
-Like the enneagon (Prop. I.22), the regular hendecagon (:math:`n = 11`) is not constructible by compass and straightedge. Hero again draws the chord-to-diameter ratio from *"the treatises on chords in a circle"* (:person:`Hipparchus <hipparchus>`), deriving:
+For the regular hendecagon (:math:`n = 11`) of side :math:`a`, taking the ratio of the side to the diameter from *the treatises on straight lines in a circle* (:person:`Hipparchus <hipparchus>`), we obtain:
 
 .. math::
 

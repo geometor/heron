@@ -14,4 +14,4 @@ Prop. III.23: Dividing a Sphere in a Given Ratio
 
 **Proposition III.23 (Dividing a Sphere by a Plane, Schöne pp. 182–184; fol. 107v)**:
 
-Concluding the entire three-book treatise, Hero poses the famous cubic problem of :person:`Archimedes' <archimedes>` :cite:`Sphere and Cylinder II.4 <archimedes:sphere-cylinder>`—to cut a sphere by a plane so that its segments have a given ratio :math:`m : n`—and cites :person:`Dionysodorus's <dionysodorus>` conic-section solution via the intersection of a parabola and a rectangular hyperbola!
+To cut a given sphere by a plane so that its segments have a given ratio :math:`m : n` (:person:`Archimedes <archimedes>`, :cite:`Sphere and Cylinder II.4 <archimedes:sphere-cylinder>`), apply the conic-section construction of :person:`Dionysodorus <dionysodorus>` by intersecting a parabola and a rectangular hyperbola.

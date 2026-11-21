@@ -14,7 +14,7 @@ Prop. I.21: Area of a Regular Octagon
 
 **Proposition I.21 (Regular Octagon, Schöne pp. 58–60)**:
 
-Circumscribing a square around the regular octagon of side :math:`a` and subtracting the four corner right-isosceles triangles of legs :math:`\frac{a}{\sqrt{2}}` yields the exact multiplier :math:`2(1 + \sqrt{2}) a^2`. Using the rational convergent :math:`\sqrt{2} \approx \frac{17}{12}`, Hero obtains:
+Circumscribing a square around the regular octagon of side :math:`a` and subtracting the four corner right-isosceles triangles of legs :math:`\frac{a}{\sqrt{2}}` yields the exact multiplier :math:`2(1 + \sqrt{2}) a^2`. Using the rational approximation :math:`\sqrt{2} \approx \frac{17}{12}`, we obtain:
 
 .. math::
 

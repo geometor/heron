@@ -14,4 +14,4 @@ Prop. III.19: Dividing a Polygon Through an Exterior Point
 
 **Proposition III.19 (Exterior-Point Polygon Division, Schöne p. 172)**:
 
-Completing the planar division program, Hero locates the bounding wedge from an exterior point :math:`\Delta` across a general polygon and constructs the dividing secant via hyperbolic/elliptic application of areas (:just:`III.10`, :just:`VI.28`–:just:`VI.29`).
+Given an exterior point :math:`\Delta` and a general polygon, locate the bounding wedge from :math:`\Delta` and construct the dividing straight line by application of areas (:just:`III.10`, :just:`VI.28`–:just:`VI.29`).

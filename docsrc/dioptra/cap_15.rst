@@ -12,7 +12,7 @@ Dioptra Ch. 15: Tunneling a Mountain from Both Ends simultaneously
 .. folio:: Schöne 238
    :page: 238
 
-In his treatise *On the Dioptra* (*Περὶ διόπτρας*, :cite:`Schöne 1903, pp. 188–314 <schoene:1903>`), :person:`Hero <hero>` designs a precision geared sighting and leveling theodolite (:term:`dioptra <dioptra>`) and demonstrates in **Chapter 15 (pp. 238–240, Fig. 95)** how engineers can bore a straight underground tunnel or aqueduct (*ὑπόνομος*) through an opaque mountain **simultaneously from both portals**—providing the mathematical paradigm behind masterpieces like :person:`Eupalinus of Megara's <eupalinus>` Tunnel of Samos:
+With the sighting and leveling :term:`dioptra <dioptra>` (*Περὶ διόπτρας*, :cite:`Schöne 1903, pp. 188–314 <schoene:1903>`, Ch. 15, pp. 238–240, Fig. 95), to bore a straight underground tunnel (*ὑπόνομος*) through a mountain **simultaneously from two given portals** so that the two headings meet exactly:
 
    **Problem 15**: *"To bore straight through a mountain when the mouths (:g:`B <g3:B>`, :g:`D <g3:D>`) of the tunnel upon the mountain are given."*
 
@@ -21,7 +21,7 @@ In his treatise *On the Dioptra* (*Περὶ διόπτρας*, :cite:`Schöne 1
 .. picture:: /_static/figures/dioptra-mountain-tunnel.svg
    :alt: Hero Dioptra Ch. 15 — Orthogonal Traverse and Similar-Triangle Sighting for Two-Portal Mountain Tunneling (Schöne Fig. 95)
 
-**Hero's Survey & Alignment Algorithm**:
+**Survey & Alignment Construction**:
 
 1. **Orthogonal Traverse Around the Mountain**: Starting from portal :g:`B <g3:B>`, sight an arbitrary baseline :g:`BE <g3:/ B E />` with the :term:`dioptra <dioptra>`, turn successively through **exact right angles** around the base of the mountain along segments :g:`EZ <g3:/ E Z />`, :g:`ZH <g3:/ Z H />`, :g:`HG <g3:/ H G />`, :g:`GK <g3:/ G K />`, and slide the dioptra along the perpendicular line through :g:`K <g3:K>` until the second portal :g:`D <g3:D>` appears directly through the orthogonal sights at station :g:`M <g3:M>` (giving :g:`MD <g3:/ M D />` parallel to :g:`BE <g3:[ E B ]>` and :g:`ZH <g3:/ Z H />`).
 2. **Signed Coordinate Summation**: Summing the signed East–West and North–South legs determines the invisible right-angled triangle :g:`BND <g3:< B N D >>` inside the rock:

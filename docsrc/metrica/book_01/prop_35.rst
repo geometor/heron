@@ -14,7 +14,7 @@ Prop. I.35: Area of a Parabolic Segment via Archimedes' Method
 
 **Proposition I.35 (Area of a Parabolic Segment, Schöne pp. 82–84)**:
 
-Hero explicitly cites :person:`Archimedes' <archimedes>` :term:`Method <ephodikon>` (*ἐν τῷ Ἐφοδικῷ*)—prior to the 1906 rediscovery of the Archimedes Palimpsest, *Metrica* I.35, II.14, and II.15 were our principal Greek witnesses to the *Method*'s very existence!—stating that every segment bounded by a right-angled cone's section (parabola) and a straight line is :math:`\frac{4}{3}` of the triangle having the same base and equal height:
+As :person:`Archimedes <archimedes>` demonstrated in the :term:`Method <ephodikon>` (*ἐν τῷ Ἐφοδικῷ*), every segment bounded by a section of a right-angled cone (parabola) and a straight line is :math:`\frac{4}{3}` of the triangle having the same base and equal height:
 
 .. math::
 

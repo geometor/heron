@@ -14,7 +14,7 @@ Prop. III.9: Dividing a Circle & Concentric Ring (Annulus)
 
 **Proposition III.9 (Dividing a Circle & Concentric Ring, Schöne pp. 160–162)**:
 
-To divide a circle of diameter :math:`d` into an inner disk and an outer :term:`annulus <itys>` in ratio :math:`m : n`, Hero applies :just:`XII.2` (circles are to one another as the squares on their diameters):
+To divide a circle of diameter :math:`d` into an inner disk and an outer :term:`annulus <itys>` in ratio :math:`m : n`, by :just:`XII.2` (circles are to one another as the squares on their diameters):
 
 .. math::
 

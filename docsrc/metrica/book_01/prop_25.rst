@@ -14,7 +14,7 @@ Prop. I.25: Area of a Regular Dodecagon
 
 **Proposition I.25 (Regular Dodecagon, Schöne pp. 64–66)**:
 
-Closing the regular-polygon sequence (:math:`3 \le n \le 12`), Hero computes the regular dodecagon (:math:`n = 12`) of side :math:`a` via :math:`3(2 + \sqrt{3})\,a^2`, approximating :math:`\sqrt{3} \approx \frac{7}{4}` to obtain:
+For the regular dodecagon (:math:`n = 12`) of side :math:`a`, the area is :math:`3(2 + \sqrt{3})\,a^2`; taking :math:`\sqrt{3} \approx \frac{7}{4}`, we obtain:
 
 .. math::
 

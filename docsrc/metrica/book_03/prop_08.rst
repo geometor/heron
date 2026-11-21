@@ -14,4 +14,4 @@ Prop. III.8: Dividing a Quadrilateral from a Side Point
 
 **Proposition III.8 (Quadrilateral Division from a Side Point, Schöne pp. 158–160)**:
 
-Given an arbitrary point on one side of a quadrilateral, Hero constructs a straight dividing line cutting the quadrilateral in a prescribed ratio :math:`m : n` by transforming the quadrilateral into an equivalent triangle (:just:`I.37`) and applying Proposition III.3.
+Given an arbitrary point on one side of a quadrilateral, transform the quadrilateral into an equal triangle (:just:`I.37`) and apply Proposition III.3 to draw the dividing line in ratio :math:`m : n`.

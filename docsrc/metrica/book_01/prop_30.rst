@@ -14,7 +14,7 @@ Prop. I.30: Circle Diameter from Chord and Sagitta
 
 **Proposition I.30 (Reconstructing the Full Circle, Schöne pp. 76–78)**:
 
-To measure a circular segment when :math:`b > 3h`—where the empirical rule of Prop. I.29 breaks down—Hero reconstructs the full circle's diameter :math:`d` from chord :math:`b` and sagitta :math:`h` via Euclid's intersecting-chords theorem (:just:`III.35`):
+When the base exceeds three times the height (:math:`b > 3h`), where the preceding rule no longer suffices, reconstruct the diameter :math:`d` of the whole circle from base :math:`b` and height :math:`h` via :just:`III.35`:
 
 .. math::
 
