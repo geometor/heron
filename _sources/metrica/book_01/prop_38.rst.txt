@@ -14,7 +14,7 @@ Prop. I.38: Surface Area of a Sphere
 
 **Proposition I.38 (Sphere Surface, Schöne pp. 88–90)**:
 
-Invoking :person:`Archimedes' <archimedes>` :cite:`Sphere and Cylinder I.33 <archimedes:sphere-cylinder>`, Hero states that the surface of any sphere is **four times** its greatest circle:
+As proved by :person:`Archimedes <archimedes>` (:cite:`Sphere and Cylinder I.33 <archimedes:sphere-cylinder>`), the surface of every sphere is **four times** its greatest circle:
 
 .. math::
 

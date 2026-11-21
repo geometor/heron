@@ -15,7 +15,7 @@ Prop. II.16: Volume of a Regular Tetrahedron
 
 **Proposition II.16 (Regular Tetrahedron / Pyramid, Schöne pp. 132–134; fol. 97r)**:
 
-Opening the mensuration of the five cosmic regular polyhedra of :person:`Plato <plato>`, :person:`Theaetetus <theaetetus>`, and :person:`Euclid <euclid>` (:just:`XIII.13`–:just:`XIII.17`), Hero computes the regular tetrahedron (*Πυραμίς*) of edge :math:`a` (illustrated on :math:`a = 12`) using its altitude :math:`h = \sqrt{\frac{2}{3}}\,a` and equilateral base area (:just:`I.17`):
+To measure the five regular polyhedra (:person:`Plato <plato>`, :person:`Theaetetus <theaetetus>`, :person:`Euclid <euclid>`, :just:`XIII.13`–:just:`XIII.17`), begin with the regular tetrahedron (*Πυραμίς*) of edge :math:`a` (let :math:`a = 12`): from its altitude :math:`h = \sqrt{\frac{2}{3}}\,a` and equilateral base area (:just:`I.17`), its volume is:
 
 .. math::
 

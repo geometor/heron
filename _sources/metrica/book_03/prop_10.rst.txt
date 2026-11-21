@@ -14,4 +14,4 @@ Prop. III.10: Dividing a Triangle Through an Exterior Point (I)
 
 **Proposition III.10 (Exterior-Point Division of a Triangle, Schöne pp. 162–164)**:
 
-Suppose a well, boundary stone, or road junction :math:`\Delta` lies *outside* a triangular estate, and the surveyor must draw a straight boundary line passing through :math:`\Delta` that cuts off a prescribed area from the triangle. Hero reduces the cut to **application of areas with hyperbolic/elliptic excess** (:just:`VI.28`–:just:`VI.29`, equivalent to solving a quadratic equation geometrically).
+Given a point :math:`\Delta` outside a triangle, to draw a straight line through :math:`\Delta` cutting off a prescribed area from the triangle, reduce the problem to **application of areas** (:just:`VI.28`–:just:`VI.29`).

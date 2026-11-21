@@ -14,7 +14,7 @@ Prop. II.12: Spherical Segment, Vaulted Basin & Apse Niche
 
 **Proposition II.12 (Spherical Segment & Basin, Schöne pp. 122–126)**:
 
-For a spherical segment (vaulted basin *λουτήρ*, shell *κόγχη*, or apse niche) of base radius :math:`r_b` and sagitta (*height*) :math:`h`, Hero applies :cite:`Sphere and Cylinder II.2 <archimedes:sphere-cylinder>` to derive the intrinsic formula requiring no separate lookup of the full sphere's radius:
+For a spherical segment (*λουτήρ* or *κόγχη*) of base radius :math:`r_b` and height :math:`h`, by :cite:`Sphere and Cylinder II.2 <archimedes:sphere-cylinder>` the volume is expressed directly in terms of :math:`r_b` and :math:`h`:
 
 .. math::
 

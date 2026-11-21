@@ -14,4 +14,4 @@ Prop. III.18: Dividing a Polygon Through an Interior Point
 
 **Proposition III.18 (Interior-Point Polygon Division, Schöne p. 172)**:
 
-Given an interior point (such as a spring or shrine inside an estate), Hero draws rays through the vertices to partition the polygon into sectors, identifies the bounding opposite sides, and reduces the cut to Proposition III.10.
+Given an interior point (such as a spring or shrine inside an estate), draw straight lines through the vertices to partition the polygon into triangles, locate the bounding opposite sides, and reduce the cut to Proposition III.10.

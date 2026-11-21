@@ -14,7 +14,7 @@ Prop. I.23: Regular Decagon over Q(φ)
 
 **Proposition I.23 (Regular Decagon, Schöne pp. 62–64)**:
 
-Since the side of the inscribed decagon equals the greater segment of the circumradius cut in extreme and mean ratio (:just:`XIII.9`), Hero reduces the decagon's apothem and area directly to :math:`\mathbb{Q}(\phi)` (:just:`I.18`) and obtains the rational approximation:
+Since the side of the inscribed decagon equals the greater segment of the circumradius cut in extreme and mean ratio (:just:`XIII.9`), the apothem and area of the decagon follow directly from Proposition I.18, giving the rational approximation:
 
 .. math::
 

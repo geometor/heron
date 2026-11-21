@@ -14,7 +14,7 @@ Prop. I.27: Continued Geometric Progression in Ratio 4 : 1
 
 **Proposition I.27 (Geometric Progression in Ratio 4 : 1, Schöne pp. 70–72)**:
 
-As preparation for Archimedes' quadrature of the parabola and exhaustion bounds on circular segments, Hero proves that if :math:`A, B, C, D` are in continuous ratio :math:`4 : 1`, then:
+Let four magnitudes :math:`A, B, C, D` be in continual ratio :math:`4 : 1`; then:
 
 .. math::
 

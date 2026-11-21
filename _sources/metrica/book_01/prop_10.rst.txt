@@ -13,7 +13,7 @@ Prop. I.10: Area of a Right-Angled Trapezium
 .. folio:: Schöne 26
    :page: 26
 
-Having mastered every species of triangle in Propositions I.1–I.9, :person:`Hero <hero>` points out a foundational distinction between triangles and four-sided figures: whereas three given sides uniquely determine the angles and :term:`area <embadon>` of a triangle (:just:`I.8`), four given sides do *not* determine a quadrilateral unless either a right angle, a parallel relation, or a diagonal is also specified.
+Having treated every species of triangle in Propositions I.1–I.9, observe this distinction between triangles and four-sided figures: whereas three given sides uniquely determine the angles and :term:`area <embadon>` of a triangle (:just:`I.8`), four given sides do *not* determine a quadrilateral unless either a right angle, a parallel relation, or a diagonal is also specified.
 
 **Proposition I.10 (Right-Angled Trapezium, Schöne pp. 26–28)**:
 

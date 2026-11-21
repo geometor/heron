@@ -13,11 +13,11 @@ Prop. I.17: Area of an Equilateral Triangle
 .. folio:: Schöne 46
    :page: 46
 
-Beginning the systematic mensuration of every regular :math:`n`-gon of given side :math:`a` from :math:`n = 3` through :math:`n = 12`, Hero computes the area :math:`A_3` of the equilateral triangle (:math:`n = 3`) both by an exact geometric relation and by a close rational multiplier.
+To measure every regular :math:`n`-gon of given side :math:`a` from :math:`n = 3` through :math:`n = 12`, let us first find the area :math:`A_3` of the equilateral triangle (:math:`n = 3`) both geometrically and by a close rational multiplier.
 
 **Proposition I.17 (Equilateral Triangle, Schöne pp. 46–48)**:
 
-For side :math:`a = 10`, :math:`h^2 = a^2 - \left(\frac{a}{2}\right)^2 = \frac{3}{4}a^2`, so :math:`A_3^2 = \frac{3}{16}a^4` (:term:`dynamodynamis`). Approximating :math:`\frac{\sqrt{3}}{4} \approx \frac{13}{30}` (:math:`+0.074\%` relative error), Hero obtains:
+For side :math:`a = 10`, :math:`h^2 = a^2 - \left(\frac{a}{2}\right)^2 = \frac{3}{4}a^2`, so :math:`A_3^2 = \frac{3}{16}a^4` (:term:`dynamodynamis`). Taking the rational approximation :math:`\frac{\sqrt{3}}{4} \approx \frac{13}{30}`, we obtain:
 
 .. math::
 

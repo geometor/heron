@@ -14,7 +14,7 @@ Prop. II.18: Volume of a Regular Icosahedron over Q(φ)
 
 **Proposition II.18 (Regular Icosahedron, Schöne pp. 135–136; fol. 98r)**:
 
-Decomposing the regular icosahedron (*Εἰκοσάεδρον*, :math:`20` equilateral triangles, illustrated on edge :math:`a = 10`) into :math:`20` congruent triangular pyramids meeting at the center of the inscribed sphere (with inradius ratio :math:`93 : 127` in Hero's rational approximation, :just:`XIII.16`), Hero obtains the exact :math:`\mathbb{Q}(\phi)` volume:
+Decompose the regular icosahedron (*Εἰκοσάεδρον*, :math:`20` equilateral triangles; let edge :math:`a = 10`) into :math:`20` equal triangular pyramids meeting at the center of the inscribed sphere (with inradius ratio :math:`93 : 127`, :just:`XIII.16`), obtaining:
 
 .. math::
 

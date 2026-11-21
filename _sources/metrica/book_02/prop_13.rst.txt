@@ -14,7 +14,7 @@ Prop. II.13: Dionysodorus's Torus Theorem (Σπεῖρα)
 
 **Proposition II.13 — Dionysodorus's Torus Theorem (*Περὶ τῆς σπείρας*, Schöne pp. 126–130; fols. 95v–96r)**:
 
-Hero preserves our **sole surviving Greek witness** to the lost treatise :cite:`On the Torus <dionysodorus:speira>` (*Περὶ τῆς σπείρας*) by :person:`Dionysodorus of Caunus <dionysodorus>` (fl. c. 200 BCE):
+On the measurement of the torus (*σπεῖρα*), as demonstrated by :person:`Dionysodorus <dionysodorus>` in :cite:`On the Torus <dionysodorus:speira>` (*Περὶ τῆς σπείρας*):
 
    *"Let it be required to measure a torus (:term:`speira`), having first set out its generation. Let there be in a plane a straight line* :g:`AB <g1:[ A B ]>` *and two points* :g:`B <g1:B>`, :g:`C <g1:C>` *(Hero's* :math:`\Gamma` *) upon it. Let the circle* :g:`BCDE <g1:( Z B )>` *be perpendicular to the underlying plane in which* :g:`AB <g1:[ A B ]>` *lies; and while point* :g:`A <g1:A>` *remains fixed, let* :g:`AB <g1:[ A B ]>` *be carried round in the plane until it is restored to the same position, carrying round with it the circle* :g:`BCDE <g1:( Z B )>` *remaining always perpendicular to the underlying plane. Then the circumference* :g:`BCDE <g1:( Z B )>` *will generate a certain surface which they call spiric (toroidal)..."*
 
@@ -29,7 +29,7 @@ Hero preserves our **sole surviving Greek witness** to the lost treatise :cite:`
 
       \frac{V_{\text{torus}}}{2\pi R^2 r} = \frac{\pi r^2}{R r} \qquad \Longrightarrow \qquad V_{\text{torus}} = 2\pi^2 R r^2.
 
-2. **Hero's Unrolled-Cylinder Centroid Demonstration**: Hero immediately adds a breathtaking physical-geometric alternative (*«δυνατὸν δέ ἐστι καὶ ἄλλως μετρῆσαι»*) that directly anticipates **Pappus's Centroid Theorem** (:cite:`Synagoge VII <pappus:synagoge>`):
+2. **Alternative Unrolled-Cylinder Measurement** (*«δυνατὸν δέ ἐστι καὶ ἄλλως μετρῆσαι»*, cf. :cite:`Synagoge VII <pappus:synagoge>`):
    For :math:`AC = 8` and :math:`BC = 12` (so minor radius :g:`ZB <g1:/ Z B />` :math:`r = 6` and major radius :g:`AZ <g1:/ A Z />` :math:`R = 14`), the circle swept by center :g:`Z <g1:Z>` has diameter :math:`2R = 28` and circumference :math:`2\pi R \approx \frac{22}{7} \times 28 = 88`. *"When therefore the torus is unrolled and becomes like a cylinder"* (*ἁπλωθεῖσα ἄρα ἡ σπεῖρα καὶ γενομένη ὡς κύλινδρος*), it has length :math:`L = 88` and circular cross-section of diameter :math:`BC = 12` (area :math:`\frac{11}{14} \times 144 = \frac{792}{7}`), yielding the exact rational volume:
 
    .. math::

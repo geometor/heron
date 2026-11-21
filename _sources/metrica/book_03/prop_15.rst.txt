@@ -14,4 +14,4 @@ Prop. III.15: Dividing a Polygon from a Vertex
 
 **Proposition III.15 (Polygon Division from a Vertex, Schöne pp. 170–171)**:
 
-To divide any rectilinear polygon of :math:`n` sides in a given ratio :math:`m : n` by a straight line through one of its vertices, Hero triangulates the polygon from that vertex, sums the consecutive triangle areas until crossing the target threshold, and divides the remaining triangle via Proposition III.1.
+To divide any rectilinear polygon of :math:`n` sides in a given ratio :math:`m : n` by a straight line through one of its vertices, triangulate the polygon from that vertex, sum the consecutive triangles until crossing the prescribed share, and divide the remaining triangle by Proposition III.1.

@@ -14,4 +14,4 @@ Prop. III.16: Dividing a Polygon from a Boundary Point
 
 **Proposition III.16 (Polygon Division from a Side Point, Schöne p. 171)**:
 
-Given an arbitrary point on the perimeter of a polygon, Hero triangulates from that point and applies Proposition III.3 to the final bounding triangle to achieve the exact ratio :math:`m : n`.
+Given an arbitrary point on the perimeter of a polygon, triangulate from that point and apply Proposition III.3 to the bounding triangle to cut off the prescribed ratio :math:`m : n`.

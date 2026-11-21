@@ -14,4 +14,4 @@ Prop. III.6: Dividing a Quadrilateral from a Vertex
 
 **Proposition III.6 (Quadrilateral Division from a Vertex, Schöne pp. 152–154)**:
 
-To divide an arbitrary quadrilateral in a given ratio :math:`m : n` by a line drawn through a given vertex, Hero reduces the quadrilateral to an equivalent triangle having the same vertex (:just:`I.37`) and transfers the division point from the base back onto the quadrilateral boundary (:just:`III.1`).
+To divide an arbitrary quadrilateral in a given ratio :math:`m : n` by a line drawn through a given vertex, reduce the quadrilateral to an equal triangle having the same vertex (:just:`I.37`) and transfer the division point from the base back onto the boundary (:just:`III.1`).

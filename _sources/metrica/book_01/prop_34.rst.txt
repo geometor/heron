@@ -15,7 +15,7 @@ Prop. I.34: Area of an Ellipse
 
 **Proposition I.34 (Area of an Ellipse, Schöne pp. 80–82)**:
 
-Given an ellipse cut obliquely from a cylinder or cone (:cite:`Apollonius, Conics I.13 <apollonius:conics>`) with major axis :math:`2a = 16` and minor axis :math:`2b = 12`, Hero invokes :person:`Archimedes' <archimedes>` :cite:`On Conoids and Spheroids <archimedes:conoids>` (Prop. 4): the ellipse has the same area as the circle whose diameter is the geometric mean :math:`\sqrt{(2a)(2b)}` of its axes:
+Given an ellipse (:cite:`Apollonius, Conics I.13 <apollonius:conics>`) with major axis :math:`2a = 16` and minor axis :math:`2b = 12`, by :person:`Archimedes <archimedes>` (:cite:`On Conoids and Spheroids <archimedes:conoids>`, Prop. 4): the ellipse has the same area as the circle whose diameter is the geometric mean :math:`\sqrt{(2a)(2b)}` of its axes:
 
 .. math::
 

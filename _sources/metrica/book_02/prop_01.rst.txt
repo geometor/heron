@@ -15,7 +15,7 @@ Prop. II.1: Volume of a Right or Oblique Cylinder
 
 **Proposition II.1 (Right & Oblique Cylinders, Schöne pp. 94–96)**:
 
-Hero computes the volume of any right or oblique cylinder as the product of its circular base area and perpendicular altitude :math:`h`:
+To measure the volume of any right or oblique cylinder, multiply the area of its circular base by its perpendicular height :math:`h`:
 
 .. math::
 

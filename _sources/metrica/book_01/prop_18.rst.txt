@@ -14,7 +14,7 @@ Prop. I.18: Regular Pentagon via Extreme and Mean Ratio
 
 **Proposition I.18 & Lemma — The Regular Pentagon via Extreme and Mean Ratio (Schöne pp. 48–54; fol. 77v)**:
 
-To measure the regular pentagon of side :math:`a = 10`, Hero inscribes it in a circle of center :math:`Z` and considers the right triangle formed by the circumradius :math:`ZB`, the apothem :math:`Z\Gamma`, and the half-side :math:`B\Gamma = \frac{a}{2}`, whose acute central angle at :math:`Z` is one-tenth of four right angles, i.e., :math:`\frac{2}{5}` of a right angle (:math:`36^\circ`). He isolates its fundamental golden-section property in an explicit Euclidean lemma:
+To measure the regular pentagon of side :math:`a = 10`, inscribe it in a circle of center :math:`Z` and take the right triangle formed by the circumradius :math:`ZB`, the apothem :math:`Z\Gamma`, and the half-side :math:`B\Gamma = \frac{a}{2}`, whose acute central angle at :math:`Z` is one-tenth of four right angles, i.e., :math:`\frac{2}{5}` of a right angle (:math:`36^\circ`). First prove the following lemma:
 
    **Lemma (Schöne p. 50; fol. 77v)**: *Let* :g:`ABC <g1:[ A C ]>` *be a right-angled triangle having a right angle at* :g:`C <g1:C>` *(Hero's* :math:`\Gamma` *), and at* :g:`A <g1:A>` *an angle of two-fifths of a right angle (* :math:`36^\circ` *). To prove that the square on the sum* :math:`(BA + A\Gamma)` *is five times the square on* :math:`A\Gamma`:
 
@@ -39,4 +39,4 @@ To measure the regular pentagon of side :math:`a = 10`, Hero inscribes it in a c
 
       (BA + A\Gamma)^2 = 5\,A\Gamma^2. \qquad \text{Q.E.D.}
 
-Approximating :math:`\sqrt{5} \approx \frac{9}{4}` (since :math:`(\frac{9}{4})^2 = \frac{81}{16} = 5\frac{1}{16}`), Hero derives :math:`\frac{BA}{A\Gamma} \approx \frac{5}{4}`, whence :math:`\frac{B\Gamma}{A\Gamma} \approx \frac{3}{4}` (a :math:`3\text{-}4\text{-}5` triangle approximation to the :math:`36^\circ\text{-}54^\circ\text{-}90^\circ` triangle!) and obtains the rational pentagon formula :math:`A_5 \approx \frac{5}{3}a^2` (or more closely :math:`\frac{12}{7}a^2 = 171\frac{3}{7}` vs. exact :math:`\frac{\sqrt{25 + 10\sqrt{5}}}{4}a^2 \approx 172.0477`).
+Taking :math:`\sqrt{5} \approx \frac{9}{4}` (since :math:`(\frac{9}{4})^2 = \frac{81}{16} = 5\frac{1}{16}`), we obtain :math:`\frac{BA}{A\Gamma} \approx \frac{5}{4}`, whence :math:`\frac{B\Gamma}{A\Gamma} \approx \frac{3}{4}`, giving the rational pentagon area :math:`A_5 \approx \frac{5}{3}a^2` (and more closely :math:`\frac{12}{7}a^2 = 171\frac{3}{7}`).

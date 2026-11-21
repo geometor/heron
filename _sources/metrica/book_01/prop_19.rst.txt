@@ -14,7 +14,7 @@ Prop. I.19: Area of a Regular Hexagon
 
 **Proposition I.19 (Regular Hexagon, Schöne pp. 54–56)**:
 
-Decomposing the regular hexagon of side :math:`a` into six equilateral triangles (:just:`IV.15`), its area equals :math:`\frac{3\sqrt{3}}{2} a^2` (since :math:`A_6^2 = \frac{27}{4} a^4`). Using the rational approximation :math:`\sqrt{3} \approx \frac{26}{15}` from Proposition I.17, Hero derives:
+Decomposing the regular hexagon of side :math:`a` into six equilateral triangles (:just:`IV.15`), its area equals :math:`\frac{3\sqrt{3}}{2} a^2` (since :math:`A_6^2 = \frac{27}{4} a^4`). Using the rational approximation :math:`\sqrt{3} \approx \frac{26}{15}` from Proposition I.17, we obtain:
 
 .. math::
 

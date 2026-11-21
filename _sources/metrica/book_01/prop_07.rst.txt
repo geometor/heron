@@ -14,4 +14,4 @@ Prop. I.7: Unified Projection Formula Without Case-Splitting
 
 **Proposition I.7 (Unified Projection Formula, Schöne pp. 16–18)**:
 
-Hero next shows that one can compute the area of *any* triangle—acute, right, or obtuse—by a single algebraic rule without testing :math:`AC^2 \lessgtr AB^2 + BC^2`, paving the way directly for his supreme achievement in Proposition I.8.
+Let us next find the area of *any* triangle—acute, right, or obtuse—directly without first testing whether :math:`AC^2 \lessgtr AB^2 + BC^2`, leading into the general side-only formula of Proposition I.8.

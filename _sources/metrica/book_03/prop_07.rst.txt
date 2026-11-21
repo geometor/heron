@@ -14,4 +14,4 @@ Prop. III.7: Dividing a Quadrilateral Parallel to a Side
 
 **Proposition III.7 (Quadrilateral Division Parallel to a Given Side, Schöne pp. 154–158)**:
 
-To cut off a prescribed fraction of an arbitrary quadrilateral by a line parallel to one of its sides, Hero extends the adjacent non-parallel sides to meet at an auxiliary vertex and reduces the problem to Proposition III.5 (parallel cut of a trapezium/triangle).
+To cut off a prescribed fraction of an arbitrary quadrilateral by a line parallel to one of its sides, produce the adjacent non-parallel sides to meet at a common vertex and apply Proposition III.5.

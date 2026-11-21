@@ -14,7 +14,7 @@ Prop. I.20: Area of a Regular Heptagon
 
 **Proposition I.20 (Regular Heptagon, Schöne pp. 56–58)**:
 
-For the non-constructible regular heptagon (:math:`n = 7`) of side :math:`a`, Hero uses the practical approximation relating the side of the inscribed heptagon to the apothem of the inscribed hexagon (:math:`a \approx r_{\text{hex}}\frac{\sqrt{3}}{2}`), deriving:
+For the regular heptagon (:math:`n = 7`) of side :math:`a`, taking the side of the inscribed heptagon to be nearly equal to the perpendicular from the center to the side of the inscribed hexagon (:math:`a \approx r_{\text{hex}}\frac{\sqrt{3}}{2}`), we obtain:
 
 .. math::
 
