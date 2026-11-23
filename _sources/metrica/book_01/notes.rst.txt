@@ -19,7 +19,7 @@ GEOMETOR Mathematical & Historical Commentary
 2. **Fourth-Degree Magnitude (*Dynamodynamis*) Inside Greek Geometry**:
    Classical Euclidean geometry restricts magnitudes to three homogeneous spatial dimensions (line, square, solid). At *Schöne* p. 20, lines 22–25, Hero boldly writes: *"the rectangle* :math:`\Gamma\Theta \cdot EH` *is the square root of* :math:`\Gamma\Theta^2 \cdot EH^2` *"*—multiplying a square by a square (a fourth-degree :term:`dynamodynamis`, named explicitly at *Metrica* I.17, *Schöne* p. 48) inside a *synthetic* proof! This conceptual leap bridges classical geometric algebra (:just:`Elements Book II <II.13>`) and Diophantine symbolic algebra.
 
-3. **Archimedes' Function / Wildberger's Quadrea (:math:`\mathcal{A} = 16\Delta^2`)**:
+3. **Archimedes' Function / Wildberger's Quadrea** (:math:`\mathcal{A} = 16\Delta^2`):
    In :person:`Norman J. Wildberger's <wildberger>` :cite:`Rational Trigonometry <wildberger:2005>` (formalized in ``geometor/wildberger`` W.07), expanding :math:`16 s(s-a)(s-b)(s-c)` in the side :term:`quadrances <quadrance>` :math:`Q_a = a^2, Q_b = b^2, Q_c = c^2` eliminates every square root:
 
    .. math::

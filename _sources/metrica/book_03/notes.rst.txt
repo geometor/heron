@@ -22,7 +22,7 @@ Metrica Book III — Scholarly Commentary & Algorithmic Notes
 
 Notice how Hero phrases the conclusion of his *analysis* in **Proposition III.2** (:cite:`Schöne 1903 <schoene:1903>`, p. 142):
 
-   *«δοθεῖσα ἄρα καὶ ἡ ΑΔ δυνάμει»* — *"Therefore :math:`A\Delta` is given in square (:term:`quadrance`)."*
+   *«δοθεῖσα ἄρα καὶ ἡ ΑΔ δυνάμει»* — “*Therefore* :math:`A\Delta` *is given in square* (:term:`quadrance`).”
 
 In :person:`Norman Wildberger's <wildberger>` Rational Trigonometry (:cite:`2005 <wildberger:2005>`), area division by a parallel line is **purely rational and linear in quadrance**: for *any* rational division ratio :math:`m : n`, the cut quadrance :math:`Q(A, D) = \frac{m}{m+n} Q(A, B)` belongs strictly to :math:`\mathbb{Q}` (:math:`\frac{507}{4}` on :math:`(13, 14, 15)` for :math:`3 : 1`), and compass construction via the semicircle on :math:`AB` (:just:`VI.13`) constructs the exact Euclidean point :math:`D` without numerical approximation. See the companion demonstration in :doc:`/demos/area-division-book-iii`.
 

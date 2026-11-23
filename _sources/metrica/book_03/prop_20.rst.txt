@@ -15,7 +15,7 @@ Prop. III.20: Dividing a Pyramid or Cone & Hero's Cube-Root Algorithm
 
 Ascending from two-dimensional area divisions (governed by duplicate ratios and square roots) to **three-dimensional solid divisions** (governed by triplicate ratios :just:`XII.12` and **cube roots**):
 
-**Proposition III.20 — Dividing a Pyramid or Cone Parallel to Its Base & Extracting :math:`\sqrt[3]{100}` (Schöne pp. 172–178; fols. 105v–106v)**:
+**Proposition III.20 — Dividing a Pyramid or Cone Parallel to Its Base & Extracting** :math:`\sqrt[3]{100}` **(Schöne pp. 172–178; fols. 105v–106v)**:
 
 To cut a pyramid (or cone) of slant edge :math:`5` into ratio :math:`4 : 1` from the apex (:math:`\frac{4}{5}` upper pyramid to :math:`\frac{1}{5}` lower frustum), similar pyramids stand in the **triplicate ratio** of their homologous edges:
 
@@ -37,4 +37,4 @@ To take the **cubic side of 100** (:math:`\sqrt[3]{100}`, Schöne p. 178), proce
 
       x \approx 4 + \frac{9}{14} = \frac{65}{14} \approx 4.642857\dots \qquad \text{(exact } \sqrt[3]{100} \approx 4.6415888\dots\text{)},
 
-   achieving **relative accuracy of :math:`0.027\%`** (:math:`(\frac{65}{14})^3 = \frac{274{,}625}{2744} \approx 100.082`) in a single rational step!
+   achieving **relative accuracy of** :math:`0.027\%` (:math:`(\frac{65}{14})^3 = \frac{274{,}625}{2744} \approx 100.082`) in a single rational step!
