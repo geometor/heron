@@ -14,7 +14,7 @@ Prop. III.2: Dividing a Triangle Parallel to Base in Ratio 3 : 1
 
 **Proposition III.2 (Division by a Line Parallel to the Base in Ratio 3 : 1, Schöne pp. 142–144; fol. 100v)**:
 
-*To divide the given triangle* :g:`ABC <g1:< A B C >>` *(:math:`AB = 13, B\Gamma = 14, A\Gamma = 15`) into two regions—an upper triangle* :g:`ADE <g1:< A D E >>` *and a lower trapezium* :g:`DECB <g1:< D B C E >>` *—in the given ratio :math:`m : n = 3 : 1` by a straight line* :g:`DE <g1:/ D E />` *parallel to base* :g:`BC <g1:[ B C ]>`.
+*To divide the given triangle* :g:`ABC <g1:< A B C >>` (:math:`AB = 13, B\Gamma = 14, A\Gamma = 15`) *into two regions—an upper triangle* :g:`ADE <g1:< A D E >>` *and a lower trapezium* :g:`DECB <g1:< D B C E >>` — *in the given ratio* :math:`m : n = 3 : 1` *by a straight line* :g:`DE <g1:/ D E />` *parallel to base* :g:`BC <g1:[ B C ]>`.
 
 .. picture:: /_static/figures/metrica-iii-area-division.svg
    :alt: Hero Metrica III.1 and III.2 — Vertex Division (5:3) and Parallel Mean-Proportional Division (3:1) on (13, 14, 15)

@@ -15,7 +15,7 @@ Prop. III.1: Dividing a Triangle from a Vertex in Ratio 5 : 3
 
 **Proposition III.1 (Division from a Vertex in Ratio 5 : 3, Schöne p. 142; fol. 100r)**:
 
-*To divide a given triangular region* :g:`ABC <g1:< A B C >>` *(:math:`AB = 13, B\Gamma = 14, A\Gamma = 15`) into two triangles in a given ratio (:math:`5 : 3`) having the same vertex* :g:`A <g1:A>`.
+*To divide a given triangular region* :g:`ABC <g1:< A B C >>` (:math:`AB = 13, B\Gamma = 14, A\Gamma = 15`) *into two triangles in a given ratio* (:math:`5 : 3`) *having the same vertex* :g:`A <g1:A>`.
 
 *(Diagram Mapping: Acts upon Hero's canonical `(13, 14, 15)` triangle* :g:`ABC <g1:< A B C >>` *of area* :math:`84` *with* :g:`A <g1:A>` = :math:`(5, 12)`, :g:`B <g1:B>` = :math:`(0, 0)`, :g:`C <g1:C>` = :math:`(14, 0)` *).*
 
