@@ -7,7 +7,9 @@
 :book_title: Definitions
 :book_subtitle: Ὅροι τῶν γεωμετρίας ὀνομάτων — Hero of Alexandria (ed. Friedrich Hultsch, 1864 / J. L. Heiberg, 1912)
 :author: Heron of Alexandria
-:year: c. 60 CE
+:year: 60
+:year_label: ca. 60 CE
+:edition_year: 1903
 :folio: Hultsch 7–23 · Heiberg IV, 1–160
 :tracks: English: index | Greek: title-el
 :excerpt: Philosophical primer on geometric foundations, enriching Euclid's static boundaries with kinematic generation, rigid-motion symmetry, three-postulate economy, direct proofs, and the Universal Gnomon.

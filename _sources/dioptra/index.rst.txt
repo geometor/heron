@@ -7,7 +7,9 @@
 :book_title: On the Dioptra
 :book_subtitle: Περὶ διόπτρας — Hero of Alexandria (ed. Hermann Schöne, 1903)
 :author: Heron of Alexandria
-:year: c. 60 CE
+:year: 60
+:year_label: ca. 60 CE
+:edition_year: 1903
 :folio: Schöne 188–314 · Cod. Par. suppl. gr. 607
 :tracks: English: index | Greek: title-el
 :excerpt: Precision geodetic instruments, theodolite engineering, orthogonal coordinate traverse, and two-portal mountain tunneling (Tunnel of Eupalinus paradigm).
