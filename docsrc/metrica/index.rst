@@ -7,7 +7,9 @@
 :book_title: Metrica
 :book_subtitle: Books I, II & III — Hero of Alexandria (ed. Hermann Schöne, 1903)
 :author: Heron of Alexandria
-:year: c. 60 CE
+:year: 60
+:year_label: ca. 60 CE
+:edition_year: 1903
 :tracks: English: index | Greek: title-el
 :excerpt: Hero of Alexandria's three-book masterwork on the mensuration of plane figures, surfaces, stereometry, volumes of solids, and proportional divisions.
 
