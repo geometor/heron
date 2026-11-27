@@ -28,5 +28,5 @@
 Πίναξ τῶν Περιεχομένων
 ----------------------
 
-* :doc:`definitions-el`
-* :doc:`gnomon-el`
+* :doc:`definitions/el`
+* :doc:`gnomon/el`

@@ -39,10 +39,8 @@ Table of Contents
    :maxdepth: 1
    :hidden:
 
-   prop_04
    summary
    notes
-   prop_04-el
 
 .. toctree::
    :maxdepth: 1

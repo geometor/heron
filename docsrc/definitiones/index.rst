@@ -40,12 +40,8 @@ Table of Contents
    :maxdepth: 1
    :hidden:
 
-   definitions
-   gnomon
    summary
    notes
-   definitions-el
-   gnomon-el
 
 .. toctree::
    :maxdepth: 1

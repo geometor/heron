@@ -2,7 +2,6 @@
 :type: book
 :layout: book
 :canonical_id: Metrica III
-:book_title: Metrica Book III: Proportional Divisions of Figures
 :book_subtitle: Dividing Triangles, Trapezia, Quadrilaterals, Cones, Spheres & Cube-Root Extraction
 :author: Heron of Alexandria
 :year: c. 60 CE
@@ -28,9 +27,6 @@ Table of Contents
    :maxdepth: 1
    :hidden:
 
-   prooemium
-   prop_01
-   prop_02
    prop_03
    prop_04
    prop_05
@@ -48,13 +44,8 @@ Table of Contents
    prop_17
    prop_18
    prop_19
-   prop_20
    prop_21
    prop_22
    prop_23
    summary
    notes
-   prooemium-el
-   prop_01-el
-   prop_02-el
-   prop_20-el
