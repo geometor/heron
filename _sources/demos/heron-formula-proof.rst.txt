@@ -3,7 +3,7 @@
 Heron's Formula Synthetic Proof & Quadrea (Metrica I.8)
 =======================================================
 
-*Exact Compass-and-Straightedge Model of Hero's Incircle & Cyclic Quadrilateral Proof* — Codex Reference: :doc:`/metrica/book_01/prop_08`
+*Exact Compass-and-Straightedge Model of Hero's Incircle & Cyclic Quadrilateral Proof* — Codex Reference: :doc:`/metrica/book_01/prop_08/index`
 
 Interactive Construction (`heron-i8-incircle.svg`)
 --------------------------------------------------

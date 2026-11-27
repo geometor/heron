@@ -38,14 +38,6 @@ Table of Contents
 .. toctree::
    :maxdepth: 1
    :hidden:
-
-   book_01/index
-   book_02/index
-   book_03/index
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
    :caption: Title Pages
 
    title-el

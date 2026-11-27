@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=ea5fcf70" />
-  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=6f74f1da" />
+  <link rel="stylesheet" type="text/css" href="_static/css/styles.css?v=0b57331d" />
   <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
   <link rel="stylesheet" href="_static/css/print.css" type="text/css" media="print" />
   <link rel="icon" href="_static/favicon.ico" />
@@ -88,7 +88,7 @@
     <div class="motto"></div>
   </header>
   <main class="book-main">
-    <article class="book-layout book-reading-pane">
+    <article class="book-layout book-reading-pane" data-pagename="index" data-outline-src="outline-data.js" data-outline-url="outline.html">
       <div class="content body book-content folio-book-page" role="main">
         <div class="author-overline docutils container" id="heron-home">
         <p>semantic digital archive • the works of</p>
@@ -111,7 +111,7 @@
         <ul class="simple">
         <li><p><a class="reference internal" href="metrica/index.html"><span class="doc">Open the Metrica →</span></a></p></li>
         <li><p><a class="reference internal" href="metrica/book_01/index.html"><span class="doc">Book I (Plane Area) →</span></a></p></li>
-        <li><p><a class="reference internal" href="metrica/book_01/prop_08.html"><span class="doc">Heron’s Formula (I.8) →</span></a></p></li>
+        <li><p><a class="reference internal" href="metrica/book_01/prop_08/index.html"><span class="doc">Heron’s Formula (I.8) →</span></a></p></li>
         </ul>
         </div>
         </div>
@@ -127,8 +127,8 @@
         <div class="home-actions docutils container">
         <ul class="simple">
         <li><p><a class="reference internal" href="definitiones/index.html"><span class="doc">Open Definitions →</span></a></p></li>
-        <li><p><a class="reference internal" href="definitiones/definitions.html"><span class="doc">Browse 133 Definitions →</span></a></p></li>
-        <li><p><a class="reference internal" href="definitiones/gnomon.html"><span class="doc">The Universal Gnomon →</span></a></p></li>
+        <li><p><a class="reference internal" href="definitiones/definitions/index.html"><span class="doc">Browse 133 Definitions →</span></a></p></li>
+        <li><p><a class="reference internal" href="definitiones/gnomon/index.html"><span class="doc">The Universal Gnomon →</span></a></p></li>
         </ul>
         </div>
         </div>
@@ -144,7 +144,7 @@
         <div class="home-actions docutils container">
         <ul class="simple">
         <li><p><a class="reference internal" href="catoptrica/index.html"><span class="doc">Open Catoptrics →</span></a></p></li>
-        <li><p><a class="reference internal" href="catoptrica/prop_04.html"><span class="doc">Reflection Law (Prop. 4) →</span></a></p></li>
+        <li><p><a class="reference internal" href="catoptrica/prop_04/index.html"><span class="doc">Reflection Law (Prop. 4) →</span></a></p></li>
         <li><p><a class="reference internal" href="demos/catoptrica-reflection.html"><span class="doc">Symbolic Proof Demo →</span></a></p></li>
         </ul>
         </div>
@@ -161,7 +161,7 @@
         <div class="home-actions docutils container">
         <ul class="simple">
         <li><p><a class="reference internal" href="dioptra/index.html"><span class="doc">Open On the Dioptra →</span></a></p></li>
-        <li><p><a class="reference internal" href="dioptra/cap_15.html"><span class="doc">Mountain Tunnel (Ch. 15) →</span></a></p></li>
+        <li><p><a class="reference internal" href="dioptra/cap_15/index.html"><span class="doc">Mountain Tunnel (Ch. 15) →</span></a></p></li>
         <li><p><a class="reference internal" href="demos/golden-gnomon-dioptra.html"><span class="doc">Geodetic Demo →</span></a></p></li>
         </ul>
         </div>
@@ -216,6 +216,27 @@
       <footer class="book-footer">
         <div class="book-footer-ornament">&#10086;</div>
       </footer>
+      <div class="book-outline-backdrop" data-outline-close hidden></div>
+      <aside id="book-outline-drawer" class="book-outline-drawer" aria-label="Full Book Outline" hidden>
+        <div class="book-outline-drawer-header">
+          <div class="book-outline-drawer-heading">
+            <span class="book-outline-drawer-kicker">Book Outline</span>
+            <strong class="book-outline-drawer-title">Heron of Alexandria</strong>
+          </div>
+          <div class="book-outline-drawer-actions">
+            <a class="book-outline-fullpage-link" href="outline.html" title="Open full-page outline">Full Page &nearr;</a>
+            <button type="button" class="book-outline-close-btn" data-outline-close aria-label="Close outline">&times;</button>
+          </div>
+        </div>
+        <div class="book-outline-controls">
+          <input type="search" class="book-outline-search" placeholder="Filter sections, chapters, propositions..." aria-label="Filter book outline" />
+          <div class="book-outline-btn-group">
+            <button type="button" class="book-outline-ctrl-btn" data-outline-expand>Expand all</button>
+            <button type="button" class="book-outline-ctrl-btn" data-outline-collapse>Collapse all</button>
+          </div>
+        </div>
+        <nav class="book-outline-drawer-body" aria-label="Complete Book Hierarchy"></nav>
+      </aside>
     </article>
   </main>
   <div class="asides">
@@ -278,6 +299,7 @@
   <script src="_static/js/collection_controls.js?v=b6b5297a"></script>
   <script src="_static/js/collection_directory.js?v=0928c9d3"></script>
   <script src="_static/js/geometor_interactive.js?v=219c1955"></script>
+  <script src="_static/js/book_outline.js?v=aca1ae7c"></script>
   <script>window.MathJax = {"options": {"ignoreHtmlClass": ".*|etc-lazy-math", "processHtmlClass": "math|arithmatex", "enableComplexity": true, "makeCollapsible": true, "menuOptions": {"settings": {"zoom": "Click", "zscale": "200%", "collapsible": true, "enrich": true, "speech": false, "braille": false, "assistiveMml": false}}}, "output": {"displayOverflow": "linebreak", "linebreaks": {"inline": true}}}</script>
   <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
   <script src="_static/js/search_highlight.js"></script>

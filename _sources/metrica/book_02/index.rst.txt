@@ -2,7 +2,6 @@
 :type: book
 :layout: book
 :canonical_id: Metrica II
-:book_title: Metrica Book II: Stereometry, Dionysodorus's Torus, Vaults & Platonic Solids
 :book_subtitle: Cones, Cylinders, Frusta, Torus, Method Vaults, Five Regular Solids & Bath Displacement
 :author: Heron of Alexandria
 :year: c. 60 CE
@@ -28,7 +27,6 @@ Table of Contents
    :maxdepth: 1
    :hidden:
 
-   prooemium
    prop_01
    prop_02
    prop_03
@@ -41,17 +39,10 @@ Table of Contents
    prop_10
    prop_11
    prop_12
-   prop_13
    prop_14
-   prop_15
    prop_16
    prop_17
    prop_18
    prop_19
-   prop_20
    summary
    notes
-   prooemium-el
-   prop_13-el
-   prop_15-el
-   prop_20-el

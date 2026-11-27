@@ -38,7 +38,7 @@ Works in This Archive
 
          * :doc:`Open the Metrica → <metrica/index>`
          * :doc:`Book I (Plane Area) → <metrica/book_01/index>`
-         * :doc:`Heron's Formula (I.8) → <metrica/book_01/prop_08>`
+         * :doc:`Heron's Formula (I.8) → <metrica/book_01/prop_08/index>`
 
 .. container:: home-book-hero
 
@@ -57,8 +57,8 @@ Works in This Archive
       .. container:: home-actions
 
          * :doc:`Open Definitions → <definitiones/index>`
-         * :doc:`Browse 133 Definitions → <definitiones/definitions>`
-         * :doc:`The Universal Gnomon → <definitiones/gnomon>`
+         * :doc:`Browse 133 Definitions → <definitiones/definitions/index>`
+         * :doc:`The Universal Gnomon → <definitiones/gnomon/index>`
 
 .. container:: home-book-hero
 
@@ -77,7 +77,7 @@ Works in This Archive
       .. container:: home-actions
 
          * :doc:`Open Catoptrics → <catoptrica/index>`
-         * :doc:`Reflection Law (Prop. 4) → <catoptrica/prop_04>`
+         * :doc:`Reflection Law (Prop. 4) → <catoptrica/prop_04/index>`
          * :doc:`Symbolic Proof Demo → <demos/catoptrica-reflection>`
 
 .. container:: home-book-hero
@@ -97,7 +97,7 @@ Works in This Archive
       .. container:: home-actions
 
          * :doc:`Open On the Dioptra → <dioptra/index>`
-         * :doc:`Mountain Tunnel (Ch. 15) → <dioptra/cap_15>`
+         * :doc:`Mountain Tunnel (Ch. 15) → <dioptra/cap_15/index>`
          * :doc:`Geodetic Demo → <demos/golden-gnomon-dioptra>`
 
 Key Features

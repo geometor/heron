@@ -38,10 +38,8 @@ Table of Contents
    :maxdepth: 1
    :hidden:
 
-   cap_15
    summary
    notes
-   cap_15-el
 
 .. toctree::
    :maxdepth: 1
